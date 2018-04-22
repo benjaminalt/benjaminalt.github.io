@@ -5,7 +5,7 @@ date:   2018-04-09 16:16:01
 categories: [Neural Networks, Human Brain Project]
 ---
 
-Last semester, I had the fortune of doing some work with the [Human Brain Project](https://www.humanbrainproject.eu/en/), an EU-funded research project with the aim of understanding, mapping and partly reconstructing the human brain through computer simulations and actual hardware. Using the [Neurorobotics Platform (NRP)](https://neurorobotics.net/), an environment for developing and running experiments with spiking neural networks and simulated robots, I implemented a closed loop control-based solution for tracking an object in space using spiking neural networks. In this post, I am outlining spiking neural networks, the Neurorobotics platform and how one can implement simple control loops for solving tracking tasks using spiking neural networks and the NRP toolset.
+Last semester, I had the fortune of doing some work with the [Human Brain Project](https://www.humanbrainproject.eu/en/), an EU-funded research project with the aim of understanding, mapping and partly reconstructing the human brain through computer simulations and actual hardware. Using the [Neurorobotics Platform (NRP)](https://neurorobotics.net/), an environment for developing and running experiments with spiking neural networks and simulated robots, I implemented a closed loop control-based solution for tracking an object in space using spiking neural networks. In this post, I am outlining spiking neural networks, the Neurorobotics platform and how one can implement simple control loops for solving tracking tasks using spiking neural networks and the NRP toolset. The code for the corresponding NRP experiment can be found [on GitHub](https://github.com/Scaatis/hbpprak_perception).
 
 # Spiking Neural Networks
 
@@ -21,9 +21,13 @@ It has been shown that [every possible function can be realized with a tradition
 
 Spiking neural networks mostly differ from deep neural networks because they are dynamical systems - their outputs depend on the inputs *over time*. Unlike deep neural networks, where information is encoded in tensors, spiking neural networks encode information in the *spike train*, the function of spiking activity over time, through the frequency and timing of spikes. Depending on the neuron model, spike emission may be stochastic; in this case, the information encoding is called a [spike density code](https://link.springer.com/referenceworkentry/10.1007%2F978-3-540-92910-9_10).
 
+[TODO Spike train in the NRP image]
+
 # The Neurorobotics Platform
 
 The Neurorobotics Platform (NRP) is an application developed by the Neurorobotics group of the Human Brain Project for developing and running experiments about controlling robots using spiking neural networks. Its backend is a combination of [ROS](http://www.ros.org/) for infrastructure and interaction with (simulated) robots, the [Gazebo robot simulator](http://gazebosim.org/) and the [NEST neural network simulator](http://www.nest-simulator.org/); it has a Javascript-based web interface and allows manipulation of the 3D environment, neural network and experiment setup in a browser. An NRP experiment is defined in an XML file and consists of a state machine, a brain file, an (SDF) environment model and an optional ROS launch file.
+
+[TODO NRP Screenshot]
 
 ## State Machine
 
@@ -35,4 +39,18 @@ In the NRP, the brain consists of two components: A [PyNN](http://neuralensemble
 
 # Closed-Loop Control for Object Tracking
 
+There are [many approaches for tracking objects](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.112.8588&rep=rep1&type=pdf), many of which rely on direct or indirect solutions to the correspondence problem or particle filters. When humans track objects, however, they do not analytically compute two-dimensional convolutions with a reference pattern, like many traditional filter-based approaches do. Instead, humans move their eyes to keep the object in the center of their field of vision. When trying to evict a fly from your living room, for example, you constantly keep your eyes centered on the fly and follow its motion. This can be modelled in a straightforward way with a closed-loop control circuit: The sensors on the retina cause excitations of the neurons of the visual cortex; these excitation patterns instruct the eye and neck muscles to move in order to keep the tracked object in the center. Small deviations in the position of the tracked object cause compensatory movements of the eyes, which in turn cause the image on the retina to change, etc. In control theory terms, the retina is the sensor, the eye muscles are the controller and the position and orientation of the eyes are the controlled system.
+
+[TODO Control Loop Schematic]
+
+Because the NRP comes with a Closed Loop Engine (CLE), implementing closed loop control with spiking neural networks is straightforward in the NRP: The spiking activity of an input population ("virtual retina") encodes where in the field of vision a tracked object is located at a given time. Via a set of synapses and transfer functions (in the human brain, this would happen in the visual cortex and [sensorimotor circuits](https://www.researchgate.net/figure/Summary-of-sensorimotor-circuitry-for-the-generation-of-visuomotor-and-vestibulomotor-eye_fig4_7428849)), the outputs of this population are connected to the inputs of a motor population which, in turn, controls the joint actuators in the eye and neck of the robot.
+
+## Thimblerigger Experiment
+
+To try this out, my colleagues and I created an experiment (the code is on [GitHub](https://github.com/Scaatis/hbpprak_perception)) in which a simulated iCub robot is to play the thimblerigger game: A ball is hidden under one of three cups; after the cups are shuffled, the robot has to guess which cup the ball is hidden under. Humans instinctively approach this task by trying to follow the cup hiding the ball with their eyes. While it would be easier and probably more robust to solve this problem using traditional image processing and frame-by-frame analysis, we chose to implement a closed-loop solution for tracking which is as close to the human approach as possible to demonstrate how closed-loop control for visuomotor coupling can be implemented with spiking neural networks in just a few lines of code. 
+
+[TODO: Screenshot of experiment setup]
+
 ## Virtual Retina
+
+## Transfer Function

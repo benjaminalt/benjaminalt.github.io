@@ -51,6 +51,49 @@ To try this out, my colleagues and I created an experiment (the code is on [GitH
 
 [TODO: Screenshot of experiment setup]
 
-## Virtual Retina
+## Virtual Retina & Brain File
 
-## Transfer Function
+The central component of our implementation is the brain file. The brain itself consists of two populations: An input population, representing the virtual retina, and an output population whose outputs are used to control the robot's joints.
+
+~~~ python
+from hbp_nrp_cle.brainsim import simulator as sim
+import numpy as np
+
+resolution = 17
+n_motors = 4  # down, up, left, right
+
+sensors = sim.Population(resolution * resolution, cellclass=sim.IF_curr_exp())
+down, up, left, right = [sim.Population(1, cellclass=sim.IF_curr_exp()) for _ in range(n_motors)]
+
+indices = np.arange(resolution * resolution).reshape((resolution, resolution))
+ones = np.ones(shape=((resolution // 2) * resolution,1))
+
+upper_half = sim.PopulationView(sensors, indices[:resolution // 2].flatten())
+lower_half = sim.PopulationView(sensors, indices[resolution - resolution//2:].flatten())
+left_half = sim.PopulationView(sensors, indices[:, :resolution // 2].flatten())
+right_half = sim.PopulationView(sensors, indices[:, resolution - resolution//2:].flatten())
+
+pro_down = sim.Projection(lower_half, down, sim.AllToAllConnector(), sim.StaticSynapse(weight=ones))
+pro_up = sim.Projection(upper_half, up, sim.AllToAllConnector(), sim.StaticSynapse(weight=ones))
+pro_left = sim.Projection(left_half, left, sim.AllToAllConnector(), sim.StaticSynapse(weight=ones))
+pro_right = sim.Projection(right_half, right, sim.AllToAllConnector(), sim.StaticSynapse(weight=ones))
+
+circuit = sensors + down + up + left + right
+
+~~~
+
+The `sensors` population contains the sensor neurons whose spike train correlates with the position of the tracked object. Each neuron is responsible for a small rectangular part of the field of view and spikes when a part of the tracked object is inside this rectangle. For our retina, we chose a resolution of 17x17 neurons, so `sensors` is a population of 289 neurons.
+
+The `down`, `up`, `left` and `right` populations consist of one neuron each. They are our *output* or *motor populations* and encode whether and how quickly the eye is to move in either direction. For simplicity and mechanical stability,[^1] we chose to actuate only iCub's left eye as opposed to both eyes and used only the image from the left eye's camera as opposed the combined (stereo) image.
+
+`upper_half`, `lower_half`, `left_half` and `right_half` are *PopulationViews* which  divide the `sensors` population into four different but overlapping areas corresponding to larger areas in the image. Our `down`, `up`, `left` and `right` populations will end up controlling the eye, but we still need to somehow connect "what the retina sees" to these output populations. To that end, we divide the retina into these upper, lower, left and right areas. If the tracked object is in the upper half, the neurons in the `upper_half` PopulationView fire more frequently than those in the other areas, so we know that we have to move our eye upwards to keep the tracked object in the center of the field of view.
+
+[TODO: Image of halves for field of view]
+
+The coupling between the output of the retinal sensors and the `down`, `up`, `left` and `right` motor populations is done via the *Projections* `pro_down`, `pro_up`, `pro_left` and `pro_right`. Projections are connections between populations (or, in our case, PopulationViews) which define which neurons from the input population are connected to which neurons from the output population (fully connected (all to all) in our case) as well as the synapse type used for the connections. We use `StaticSynapse`s whose properties do not change over time. The `weight` parameter is a matrix defining the connection weights. Because we used an `AllToAllConnector`, `weight` is a 136 * 1 matrix assigning a weight for each of the incoming connections from the (17//2)*17 input neurons per half of the retina. Our `weight` matrix contains only ones - each input neuron is weighted equally for the computation of the output. How the input spike trains are aggregated in each motor neuron and what their output looks like is defined by the `cellclass` used when defining the motor neuron populations. We use PyNN's [`IF_curr_exp`](http://pynn.readthedocs.io/en/latest/reference/neuronmodels.html#pyNN.standardmodels.cells.IF_curr_exp), a [basic integrate-and-fire model](http://pynn.readthedocs.io/en/latest/reference/neuronmodels.html).
+
+## Transfer Functions
+
+---
+
+[^1]: At least with the [Bullet](http://bulletphysics.org/wordpress/) physics engine used in the NRP, the robot started oscillating and sometimes toppled over if the neck was moved too quickly. For quick-moving objects like the cups in our experiment, these oscillations in turn caused the input to our closed-loop controller (the image) to oscillate and made stable control very difficult.

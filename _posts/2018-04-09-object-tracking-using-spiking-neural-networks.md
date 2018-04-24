@@ -51,6 +51,8 @@ To try this out, my colleagues and I created an experiment (the code is on [GitH
 
 [TODO: Screenshot of experiment setup]
 
+The experiment itself is defined using an SMACH state machine (the code for it is [on GitHub](https://github.com/Scaatis/hbpprak_perception/blob/master/state_machine.exd)). When the user starts the experiment, three red cups are spawned. One cup is selected at random to conceal a green ball. This cup is lifted to briefly reveal the ball, then lowered again. The cups are shuffled by moving them to a series of random permutations. In the end, the ball is revealed again - if the tracking system worked, the robot is now looking directly at the ball.
+
 ## Virtual Retina & Brain File
 
 The central component of our implementation is the brain file. The brain itself consists of two populations: An input population, representing the virtual retina, and an output population whose outputs are used to control the robot's joints.
@@ -93,6 +95,126 @@ The `down`, `up`, `left` and `right` populations consist of one neuron each. The
 The coupling between the output of the retinal sensors and the `down`, `up`, `left` and `right` motor populations is done via the *Projections* `pro_down`, `pro_up`, `pro_left` and `pro_right`. Projections are connections between populations (or, in our case, PopulationViews) which define which neurons from the input population are connected to which neurons from the output population (fully connected (all to all) in our case) as well as the synapse type used for the connections. We use `StaticSynapse`s whose properties do not change over time. The `weight` parameter is a matrix defining the connection weights. Because we used an `AllToAllConnector`, `weight` is a 136 * 1 matrix assigning a weight for each of the incoming connections from the (17//2)*17 input neurons per half of the retina. Our `weight` matrix contains only ones - each input neuron is weighted equally for the computation of the output. How the input spike trains are aggregated in each motor neuron and what their output looks like is defined by the `cellclass` used when defining the motor neuron populations. We use PyNN's [`IF_curr_exp`](http://pynn.readthedocs.io/en/latest/reference/neuronmodels.html#pyNN.standardmodels.cells.IF_curr_exp), a [basic integrate-and-fire model](http://pynn.readthedocs.io/en/latest/reference/neuronmodels.html).
 
 ## Transfer Functions
+
+In the NRP, *transfer functions* connect the brain defined in the brain file to the robot and the environment. Activating sensor populations based on input from (simulated) sensors such as the cameras in iCub's eyes or from joint encoders as well as the coupling between the outputs of the motor neurons and the joint actuators is done in transfer functions. To implement our object-tracking solution, we need two transfer functions: One to connect the sensory input (the camera image) to the sensor population, and another to connect the motor neurons to the eye's actuators.
+
+### Object detection
+
+~~~ python
+# detect_object.py
+
+import numpy as np
+import sensor_msgs.msg
+import std_msgs.msg
+from cv_bridge import CvBridge
+@nrp.MapRobotSubscriber("camera", Topic("/icub_model/left_eye_camera/image_raw", sensor_msgs.msg.Image))
+@nrp.MapRobotSubscriber("shuffle_status_sub", Topic("/group_3/shuffling", std_msgs.msg.Bool))
+@nrp.MapSpikeSource("sensors", nrp.map_neurons(range(0, nrp.config.brain_root.resolution ** 2), lambda i: nrp.brain.sensors[i]), nrp.dc_source)
+@nrp.Robot2Neuron()
+def grab_image(t, camera, shuffle_status_sub, sensors):
+    resolution = nrp.config.brain_root.resolution
+
+    # Take the image from the robot's left eye
+    image_msg = camera.value
+    if image_msg is not None:
+        cvBridge = CvBridge()
+
+        img = cvBridge.imgmsg_to_cv2(image_msg, "rgb8")
+        img_height, img_width, color_dim = img.shape
+
+        detect_red = shuffle_status_sub.value.data if shuffle_status_sub.value is not None else False
+
+        if not detect_red:
+            # Detect green in the whole image
+            col_width = img_width // resolution
+            row_height = img_height // resolution
+            green_threshold = 0.5
+            amp_scaling_factor = 32.
+            
+            # Split the image into regions of same size
+            # Sensor neurons are addressed in row_major order, top left to bottom right
+            # Loop over the neurons in the retina...
+            for row_idx in range(resolution):
+                for col_idx in range(resolution):
+                    x_start = col_idx * col_width
+                    x_end = x_start + col_width
+                    y_start = row_idx * row_height
+                    y_end = y_start + row_height
+                    mean_red = np.mean(img[y_start:y_end,x_start:x_end,0])
+                    mean_green = np.mean(img[y_start:y_end,x_start:x_end,1])
+                    mean_blue = np.mean(img[y_start:y_end,x_start:x_end,2])
+
+                    green_proportion = mean_green / float(mean_red + mean_green + mean_blue)
+
+                    idx = row_idx * resolution + col_idx
+                    amp = amp_scaling_factor * green_proportion if green_proportion > green_threshold else 0
+
+                    sensors[idx].amplitude = amp
+        else:
+          # Detect red in the center of the image
+          # ...
+~~~
+
+[detect_object.py](https://github.com/Scaatis/hbpprak_perception/blob/master/detect_object.py) is a `Robot2Neuron` transfer function, meaning that information is sent from the robot (or the environment) to the brain. The inputs of the transfer function are defined using the NRP's [decorator syntax](https://developer.humanbrainproject.eu/docs/projects/HBP%20Neurorobotics%20Platform/1.2/nrp/user_manual/simulation_setup/transfer_functions.html)  and consist of a subscriber to the camera's ROS topic, the sensor population and a subscriber to the topic published by the experiment state machine which announces the current state of the experiment (`true` if shuffling, `false` otherwise). This is required because during shuffling, the object to be tracked is the red cup concealing the ball, while during the reveal in the beginning, the green ball must be tracked. 
+
+In the central loop, we iterate over all neurons in the retina, compute this neuron's rectangular area of the field of view and compute the mean for each RGB channel over this region. The neuron's amplitude (proportional to its firing rate) is set in proportion to the "amount" of green in the region relative to the other primary colors. This has the effect that neurons which "see" green fire more frequently than others. Because the sensor neurons are iterated using a nested loop, like for a 2D array, the sensor neuron activity spatially encodes the positions of green things in the image - and because of the wiring defined in the brain, the `down`, `up`, `left` and `right` motor populations are excited according to these positions: `left` fires frequently if there is a lot of green in the left side of the image, etc.
+
+The code for tracking red objects has been omitted for brevity but works similarly with the only exception that not the entire image is considered, but a rectangular area around the center of the image, causing the margins to be ignored. This is necessary because three cups may be in the image at any given time, but we only want to track the one we centered on when the green ball was revealed.
+
+### Object following
+
+The last remaining component of our solution is the transfer function for following the moving object (depending on the stage of the experiment either the ball or the cup) with iCub's left eye. To that end, the outputs of the `down`,`up`, `left` and `right` motor populations must be connected to the two actuators for moving the eye.
+
+~~~ python
+# follow_object.py
+
+import numpy as np
+@nrp.MapSpikeSink("motors_down", nrp.brain.down, nrp.leaky_integrator_alpha)
+@nrp.MapSpikeSink("motors_left", nrp.brain.left, nrp.leaky_integrator_alpha)
+@nrp.MapSpikeSink("motors_up", nrp.brain.up, nrp.leaky_integrator_alpha)
+@nrp.MapSpikeSink("motors_right", nrp.brain.right, nrp.leaky_integrator_alpha)
+@nrp.MapRobotPublisher('eye_tilt_pos', Topic('/robot/eye_tilt/pos', std_msgs.msg.Float64))
+@nrp.MapRobotPublisher('eye_pan_pos', Topic('/robot/left_eye_pan/pos', std_msgs.msg.Float64))
+@nrp.MapRobotPublisher('eye_tilt_vel', Topic('/robot/eye_tilt/vel', std_msgs.msg.Float64))
+@nrp.MapRobotPublisher('eye_pan_vel', Topic('/robot/left_eye_pan/vel', std_msgs.msg.Float64))
+@nrp.MapRobotSubscriber("joint_state_sub", Topic("/robot/joints", sensor_msgs.msg.JointState))
+@nrp.MapRobotSubscriber("shuffle_status_sub", Topic("/group_3/shuffling", std_msgs.msg.Bool))
+@nrp.Neuron2Robot()
+def center_on_green(t, motors_down, motors_left, motors_up, motors_right, eye_tilt_pos, eye_pan_pos, eye_tilt_vel, eye_pan_vel, joint_state_sub, shuffle_status_sub):
+
+    stage_two = shuffle_status_sub.value.data if shuffle_status_sub.value is not None else False
+
+    if not stage_two:
+        # Stage one: Velocity-controlled motion to green ball
+        scaling_factor = 3
+        tilt = scaling_factor * (motors_up.voltage - motors_down.voltage)
+        pan = scaling_factor * ( motors_left.voltage - motors_right.voltage)
+        eye_tilt_vel.send_message(std_msgs.msg.Float64(tilt))
+        eye_pan_vel.send_message(std_msgs.msg.Float64(pan))
+
+    else:
+        # Stage two: Position-controlled motion to red cup
+        scaling_factor = 0.03
+        joint_names = joint_state_sub.value.name
+        joint_positions = joint_state_sub.value.position
+        current_tilt = joint_positions[joint_names.index("eye_tilt")]
+        current_pan = joint_positions[joint_names.index("left_eye_pan")]
+
+        tilt = current_tilt + scaling_factor * (motors_up_stage_two.voltage - motors_down_stage_two.voltage)
+        pan = current_pan + scaling_factor * ( motors_left_stage_two.voltage - motors_right_stage_two.voltage)
+
+        eye_tilt_pos.send_message(std_msgs.msg.Float64(tilt))
+        eye_pan_pos.send_message(std_msgs.msg.Float64(pan))
+~~~
+
+[follow_object.py](https://github.com/Scaatis/hbpprak_perception/blob/master/follow_object.py) is a `Neuron2Robot` transfer function for mapping brain activity to robot motion. `eye_tilt_pos`, `eye_pan_pos`, `eye_tilt_vel` and `eye_pan_vel` are handles to the ROS topics for writing to the simulated robot's velocity and position controllers for the left eye's tilt and pan joints. In the first stage of the experiment, when centering on the green ball, we use the difference between `up` and `down`or `left` and `right` as inputs for the *velocity controllers* of the corresponding joints. We chose to use the velocity controllers for smoother control, as writing directly to the position controllers can cause very quick and jerky motion.
+
+In the second stage of the experiment, when tracking a fast-moving red cup, we write directly to the position controllers, mainly for speed and for avoiding the oscillations which can occur when the input to a velocity controllers changes quickly.
+
+## Results
+
+The resulting control scheme turned out to be surprisingly stable with hardly any oscillations. Because the voltages used for writing to the robot controllers are computed by integrating over the spike train, noise is reliably smoothed out and erratic motions are avoided. Only when the cups are shuffled extremely quickly is the controller too slow to follow. Our approach shows that spiking neural networks are well suited for the implementation of closed control loops, particularly when coupling sensor input with motion, and illustrates how architectural features of the NRP such as the closed loop engine can be leveraged to concisely implement object tracking using closed-loop control. 
+
 
 ---
 

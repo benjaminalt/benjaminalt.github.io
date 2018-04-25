@@ -2,8 +2,10 @@
 layout: post
 title:  "Object Tracking With Spiking Neural Networks"
 date:   2018-04-25 01:00:00
+key: 10001
 categories: [Neural Networks, Human Brain Project]
 tags: [Neural Networks, Human Brain Project]
+comment: true
 ---
 
 Last semester, I had the fortune of doing some work with the [Human Brain Project](https://www.humanbrainproject.eu/en/), an EU-funded research project with the aim of understanding, mapping and partly reconstructing the human brain through computer simulations and actual hardware. Using the [Neurorobotics Platform (NRP)](https://neurorobotics.net/), an environment for developing and running experiments with spiking neural networks and simulated robots, I implemented a closed loop control-based solution for tracking an object in space using spiking neural networks. In this post, I am outlining spiking neural networks, the Neurorobotics platform and how one can implement simple control loops for solving tracking tasks using spiking neural networks and the NRP toolset. The code for the corresponding NRP experiment can be found [on GitHub](https://github.com/Scaatis/hbpprak_perception).

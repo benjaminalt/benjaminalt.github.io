@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Object Tracking Using Spiking Neural Networks"
-date:   2018-04-09 16:16:01
+title:  "Object Tracking With Spiking Neural Networks"
+date:   2018-04-25 01:00:00
 categories: [Neural Networks, Human Brain Project]
+tags: [Neural Networks, Human Brain Project]
 ---
 
 Last semester, I had the fortune of doing some work with the [Human Brain Project](https://www.humanbrainproject.eu/en/), an EU-funded research project with the aim of understanding, mapping and partly reconstructing the human brain through computer simulations and actual hardware. Using the [Neurorobotics Platform (NRP)](https://neurorobotics.net/), an environment for developing and running experiments with spiking neural networks and simulated robots, I implemented a closed loop control-based solution for tracking an object in space using spiking neural networks. In this post, I am outlining spiking neural networks, the Neurorobotics platform and how one can implement simple control loops for solving tracking tasks using spiking neural networks and the NRP toolset. The code for the corresponding NRP experiment can be found [on GitHub](https://github.com/Scaatis/hbpprak_perception).
@@ -79,7 +80,6 @@ pro_left = sim.Projection(left_half, left, sim.AllToAllConnector(), sim.StaticSy
 pro_right = sim.Projection(right_half, right, sim.AllToAllConnector(), sim.StaticSynapse(weight=ones))
 
 circuit = sensors + down + up + left + right
-
 ~~~
 
 The `sensors` population contains the sensor neurons whose spike train correlates with the position of the tracked object. Each neuron is responsible for a small rectangular part of the field of view and spikes when a part of the tracked object is inside this rectangle. For our retina, we chose a resolution of 17x17 neurons, so `sensors` is a population of 289 neurons.

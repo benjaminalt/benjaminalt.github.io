@@ -3,6 +3,10 @@ source 'https://rubygems.org/'
 
 gemspec
 
+group :jekyll_plugins do
+  gem 'jekyll-timeago', '~> 0.13.1'
+end
+
 # For dev under windows, I know that yikes....
 
  gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]

@@ -21,8 +21,11 @@ description: > #this means to ignore newlines until "nav_lists:"
 
 nav_lists:
   - titles:
-      en: About
-    url: /about.html
+      en: Bio
+    url: /pages/bio.html
+  - titles:
+      en: Publications
+    url: /pages/publications.html
 
 # paths:
 #   base: /

@@ -1,6 +1,3 @@
-# faster gems source for China
-#source 'http://gems.ruby-china.org/'
-
 # gems source for the rest
 source 'https://rubygems.org/'
 

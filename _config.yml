@@ -41,14 +41,14 @@ timezone: Europe/Berlin #see https://en.wikipedia.org/wiki/List_of_tz_database_t
 ## Author & social ##
 author:
   name: Benjamin Alt
-  # email:  #your Email address e.g. someone@site.com
+  email:  benjamin.alt@uni-bremen.de
   # facebook:  #your Facebook username
   # twitter:  #your Twitter username
   github:  benjaminalt
   # googleplus:  #your Google+ username
   # weibo:  #your Weibo username
   # douban:  #your Douban username
-  # linkedin:  #your Linkedin username
+  linkedin:  benjamin-alt
 
 ## TOC
 toc:

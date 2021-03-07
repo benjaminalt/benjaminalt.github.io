@@ -5,6 +5,9 @@ layout: base
   <article class="main">
     {%- include snippets/page-title.html -%}
     <div class="main-header"><h1>{{ __return }}</h1></div>
+    {% if page.authors %}
+    <div class="main-authors"><span style="font-style:italic;">{{ page.authors }}</span></div>
+    {% endif %}
     <div class="m-article-content" itemprop="articleBody">{{ content }}</div>
     {%- if jekyll.environment != "development" and page.comment != false -%}
       <section>{%- include components/comment-disqus.html -%}</section>

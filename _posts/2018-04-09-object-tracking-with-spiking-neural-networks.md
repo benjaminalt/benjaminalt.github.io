@@ -3,9 +3,9 @@ layout: post
 title:  "Object Tracking With Spiking Neural Networks"
 date:   2018-04-25 01:00:00
 key: 10001
-categories: [Neural Networks, Human Brain Project]
+categories: [blog]
 tags: [Neural Networks, Human Brain Project]
-comment: true
+comment: false
 ---
 
 Last semester, I had the fortune of doing some work with the [Human Brain Project](https://www.humanbrainproject.eu/en/), an EU-funded research project with the aim of understanding, mapping and partly reconstructing the human brain through computer simulations and actual hardware. Using the [Neurorobotics Platform (NRP)](https://neurorobotics.net/), an environment for developing and running experiments with spiking neural networks and simulated robots, I implemented a closed loop control-based solution for tracking an object in space using spiking neural networks. In this post, I am outlining spiking neural networks, the Neurorobotics platform and how one can implement simple control loops for solving tracking tasks using spiking neural networks and the NRP toolset. The code for the corresponding NRP experiment can be found [on GitHub](https://github.com/Scaatis/hbpprak_perception).
@@ -215,9 +215,11 @@ In the second stage of the experiment, when tracking a fast-moving red cup, we w
 
 The resulting control scheme turned out to be surprisingly stable with hardly any oscillations. Because the voltages used for writing to the robot controllers are computed by integrating over the spike train, noise is reliably smoothed out and erratic motions are avoided. Only when the cups are shuffled extremely quickly is the controller too slow to follow. Our approach shows that spiking neural networks are well suited for the implementation of closed control loops, particularly when coupling sensor input with motion, and illustrates how architectural features of the NRP such as the closed loop engine can be leveraged to concisely implement object tracking using closed-loop control. 
 
-<figure class="video_container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/7fiBUZ9i9GQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</figure>
+<div style="text-align: center;">
+    <figure class="video_container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7fiBUZ9i9GQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </figure>
+</div>
 
 
 [^1]: At least with the [Bullet](http://bulletphysics.org/wordpress/) physics engine used in the NRP, the robot started oscillating and sometimes toppled over if the neck was moved too quickly. For quick-moving objects like the cups in our experiment, these oscillations in turn caused the input to our closed-loop controller (the image) to oscillate and made stable control very difficult.

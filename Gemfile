@@ -4,7 +4,7 @@ source 'https://rubygems.org/'
 gemspec
 
 group :jekyll_plugins do
-  gem 'jekyll-timeago', '~> 0.13.1'
+  gem 'jekyll-scholar'
 end
 
 # For dev under windows, I know that yikes....

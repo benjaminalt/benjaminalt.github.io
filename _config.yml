@@ -101,6 +101,31 @@ markdown: kramdown
 highlighter: rouge
 permalink: date
 
+## Scholar ##
+scholar:
+  style: ieee-with-url
+  locale: en
+
+  sort_by: year
+  order: descending
+  bibliography_list_tag: ul
+
+  source: _bibliography
+  repository: pdf
+  bibliography: publications
+  bibliography_template: bib
+
+  replace_strings: true
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  # first_name: Benjamin
+  # last_name: Alt
+
+  query: "@*"
+
 exclude:
   - CHANGELOG.md
   - CHECKLIST.md
@@ -125,6 +150,8 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jemoji
+  - jekyll-scholar
+
 
 ## Server ##
 server_url: "0.0.0.0"

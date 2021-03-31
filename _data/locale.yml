@@ -7,7 +7,7 @@ NAV:
     en:      "RSS"
 
 READMORE:
-  en:      "Click to read more ..."
+  en:      "Read more ..."
 
 VIEWS:
   en:      "views"
@@ -31,18 +31,18 @@ STATISTICS:
   en:      "[POST_COUNT] post articles, [PAGE_COUNT] pages."
 
 LICENSE_ANNOUNCE:
-  en:      "This work is licensed under a [LICENSE] license."
+  en:      "This work is licensed under the [LICENSE] license."
 
 LICENSE_INTRO:
   en:
 
 POST_ON_GITHUB:
-  en:      "View this post on Github."
+  en:      "View this post on Github"
 
 FOLLOW_ME:
-  en:      "Follow me on [NAME]."
+  en:      "Follow me on [NAME]"
 
 EMAIL_ME:
-  en:      "Send me Email."
+  en:      "Email"
 
 COPYRIGHT_DATES: 2018-2021

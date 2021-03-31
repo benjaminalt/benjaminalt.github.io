@@ -9,7 +9,7 @@ date:   2021-03-06 01:00:00
 
 Accepted at the [2021 IEEE International Conference on Robotics and Automation (ICRA)](http://www.icra2021.org/).
 
-Full text: [PDF](/assets/pdf/spi_ICRA21.pdf)\
+Full text: [PDF](/assets/pdf/spi_ICRA21.pdf) [ArXiv](https://arxiv.org/abs/2103.14452)\
 Implementation & experiments: [GitHub](https://github.com/benjaminalt/shadow-program-inversion)
 
 ### Abstract

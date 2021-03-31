@@ -215,11 +215,7 @@ In the second stage of the experiment, when tracking a fast-moving red cup, we w
 
 The resulting control scheme turned out to be surprisingly stable with hardly any oscillations. Because the voltages used for writing to the robot controllers are computed by integrating over the spike train, noise is reliably smoothed out and erratic motions are avoided. Only when the cups are shuffled extremely quickly is the controller too slow to follow. Our approach shows that spiking neural networks are well suited for the implementation of closed control loops, particularly when coupling sensor input with motion, and illustrates how architectural features of the NRP such as the closed loop engine can be leveraged to concisely implement object tracking using closed-loop control. 
 
-<div style="text-align: center;">
-    <figure class="video_container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/7fiBUZ9i9GQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </figure>
-</div>
+{% include video.html url="https://www.youtube.com/embed/7fiBUZ9i9GQ?rel=0" %}
 
 
 [^1]: At least with the [Bullet](http://bulletphysics.org/wordpress/) physics engine used in the NRP, the robot started oscillating and sometimes toppled over if the neck was moved too quickly. For quick-moving objects like the cups in our experiment, these oscillations in turn caused the input to our closed-loop controller (the image) to oscillate and made stable control very difficult.

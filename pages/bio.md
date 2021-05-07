@@ -16,4 +16,4 @@ My areas of interest include
 * Informed machine learning
 * Subsymbolic reasoning
 
-You can find my CV here: [English]() [German](/assets/pdf/cv.pdf)
+You can find my CV here: [English](/assets/pdf/cv.pdf) [German](/assets/pdf/lebenslauf.pdf)

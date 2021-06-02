@@ -9,3 +9,19 @@
 .abstract.btn {
   cursor: pointer;
 }
+
+ol.bibliography li {
+  list-style-type:none;
+
+}
+ol.bibliography li + li { /* 10px between each two adjacent li's */
+  margin-top: 10px;
+}
+body { counter-reset: item }
+ol.bibliography li:before { 
+  content: "[" counter(item) "] "; 
+  counter-increment: item; 
+  width:3em;
+  position:absolute;
+  text-indent:-2em;
+}

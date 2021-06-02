@@ -103,12 +103,12 @@ permalink: date
 
 ## Scholar ##
 scholar:
-  style: ieee-with-url
+  style: ieee
   locale: en
 
   sort_by: year
   order: descending
-  bibliography_list_tag: ul
+  bibliography_list_tag: ol
 
   source: _bibliography
   repository: pdf
@@ -151,6 +151,7 @@ plugins:
   - jekyll-paginate
   - jemoji
   - jekyll-scholar
+  - jekyll-regex-replace
 
 
 ## Server ##

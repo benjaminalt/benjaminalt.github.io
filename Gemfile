@@ -5,6 +5,7 @@ gemspec
 
 group :jekyll_plugins do
   gem 'jekyll-scholar'
+  gem 'jekyll-regex-replace'
 end
 
 # For dev under windows, I know that yikes....

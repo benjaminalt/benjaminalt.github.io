@@ -25,7 +25,7 @@ function expand_abstract(k) {
   </div>
 
   <div id="{{entry.key}}" class="col-sm-8">
-    {% if entry.type == "thesis" %}
+    <!-- {% if entry.type == "thesis" %}
       {{reference}}
     {% else %}
       <div class="title">{{entry.title}}</div>
@@ -67,7 +67,7 @@ function expand_abstract(k) {
             {% else %}
               {% if author_is_self %}
                 and <em>{{author.first}} {{author.last}}</em>
-              {% else %}
+              {% else %}  
                 {% if coauthor_url %}
                   and <a href="{{coauthor_url}}" target="_blank">{{author.first}} {{author.last}}</a>
                 {% else %}
@@ -76,10 +76,11 @@ function expand_abstract(k) {
               {% endif %}
             {% endunless %}
           {% endif %}
-        {% endfor %}
-      </div>
+        {% endfor %} -->
+        {{ reference | regex_replace_once: '\[\d+\]', ''}}
+      <!-- </div> -->
 
-      <div class="periodical">
+      <!-- <div class="periodical">
       {% if entry.type == "article" %}
         <em>{{entry.journal}}</em>
       {% elsif entry.type == "inproceedings" %}
@@ -89,7 +90,7 @@ function expand_abstract(k) {
         {{entry.year}}
       {% endif %}
       </div>
-    {% endif %}
+    {% endif %} -->
 
     <div class="links">
     {% if entry.abstract %}

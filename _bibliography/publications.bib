@@ -1,3 +1,37 @@
+@inproceedings{alt_robot_2021,
+	address = {Xi'an, China},
+	title = {Robot {Program} {Parameter} {Inference} via {Differentiable} {Shadow} {Program} {Inversion}},
+	url = {https://benjaminalt.github.io/assets/pdf/spi_ICRA21.pdf},
+	abstract = {Challenging manipulation tasks can be solved effectively by combining individual robot skills, which must be parameterized for the concrete physical environment and task at hand. This is time-consuming and difﬁcult for human programmers, particularly for force-controlled skills. To this end, we present Shadow Program Inversion (SPI), a novel approach to infer optimal skill parameters directly from data. SPI leverages unsupervised learning to train an auxiliary differentiable program representation (“shadow program”) and realizes parameter inference via gradient-based model inversion. Our method enables the use of efﬁcient ﬁrst-order optimizers to infer optimal parameters for originally non-differentiable skills, including many skill variants currently used in production. SPI zero-shot generalizes across task objectives, meaning that shadow programs do not need to be retrained to infer parameters for different task variants. We evaluate our methods on three different robots and skill frameworks in industrial and household scenarios. Code and examples are available at https://innolab.artiminds.com/icra2021.},
+	blog = {/blog/2021/03/06/shadow-program-inversion.html},
+	language = {en},
+	booktitle = {2021 {IEEE} {International} {Conference} on {Robotics} and {Automation} ({ICRA})},
+	publisher = {IEEE},
+	author = {Alt, Benjamin and Katic, Darko and Jäkel, Rainer and Bozcuoglu, Asil Kaan and Beetz, Michael},
+	year = {2021},
+	pdf={spi_ICRA21.pdf},
+	code={https://github.com/benjaminalt/shadow-program-inversion},
+	website={https://innolab.artiminds.com/icra2021},
+	arxiv={2103.14452}
+}
+
+@inproceedings{dittus_localization_2021,
+	address = {Xi'an, China},
+	title = {Localization and {Tracking} of {User}-{Defined} {Points} on {Deformable} {Objects} for {Robotic} {Manipulation}},
+	url = {http://arxiv.org/abs/2105.09067},
+	abstract = {This paper introduces an efficient procedure to localize user-defined points on the surface of deformable objects and track their positions in 3D space over time. To cope with a deformable object's infinite number of DOF, we propose a discretized deformation field, which is estimated during runtime using a multi-step non-linear solver pipeline. The resulting high-dimensional energy minimization problem describes the deviation between an offline-defined reference model and a pre-processed camera image. An additional regularization term allows for assumptions about the object's hidden areas and increases the solver's numerical stability. Our approach is capable of solving the localization problem online in a data-parallel manner, making it ideally suitable for the perception of non-rigid objects in industrial manufacturing processes.},
+	urldate = {2021-06-02},
+	booktitle = {IEEE ICRA Workshop on Representing and Manipulating Deformable Objects},
+	publisher = {IEEE},
+	author = {Dittus, Sven and Alt, Benjamin and Hermann, Andreas and Katic, Darko and Jäkel, Rainer and Fleischer, Jürgen},
+	month = may,
+	year = {2021},
+	note = {arXiv: 2105.09067},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition, Computer Science - Robotics},
+	arxiv = {2105.09067},
+	pdf={deformable_ICRA21.pdf}
+}
+
 @inproceedings{alt_modulare_2020,
 	address = {Berlin},
 	title = {Modulare, datengetriebene {Roboterprogrammierung} für die {Lösung} komplexer {Handhabungsaufgaben} in {Alltagsumgebungen}},

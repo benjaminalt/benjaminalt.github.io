@@ -1,0 +1,483 @@
+
+@article{kulak_active_2021,
+	title = {Active {Learning} of {Bayesian} {Probabilistic} {Movement} {Primitives}},
+	volume = {6},
+	issn = {2377-3766},
+	doi = {10.1109/LRA.2021.3060414},
+	abstract = {Learning from Demonstration permits non-expert users to easily and intuitively reprogram robots. Among approaches embracing this paradigm, probabilistic movement primitives (ProMPs) are a well-established and widely used method to learn trajectory distributions. However, providing or requesting useful demonstrations is not easy, as quantifying what constitutes a good demonstration in terms of generalization capabilities is not trivial. In this letter, we propose an active learning method for contextual ProMPs for addressing this problem. More specifically, we learn the trajectory distributions using a Bayesian Gaussian mixture model (BGMM) and then leverage the notion of epistemic uncertainties to iteratively choose new context query points for demonstrations. We show that this approach reduces the required number of human demonstrations. We demonstrate the effectiveness of the approach on a pouring task, both in simulation and on a real 7-DoF Franka Emika robot.},
+	number = {2},
+	journal = {IEEE Robotics and Automation Letters},
+	author = {Kulak, Thibaut and Girgin, Hakan and Odobez, Jean-Marc and Calinon, Sylvain},
+	month = apr,
+	year = {2021},
+	note = {recommend},
+	keywords = {Bayes methods, Gaussian mixture model, Imitation learning, incremental learning, learning from demonstration, Learning systems, Robots, Task analysis, Trajectory, Uncertainty},
+	pages = {2163--2170},
+	file = {IEEE Xplore Abstract Record:/home/bal/Zotero/storage/H5ZBZ5IF/9357895.html:text/html}
+}
+
+@article{du_auto-tuned_2021,
+	title = {Auto-{Tuned} {Sim}-to-{Real} {Transfer}},
+	url = {http://arxiv.org/abs/2104.07662},
+	abstract = {Policies trained in simulation often fail when transferred to the real world due to the `reality gap' where the simulator is unable to accurately capture the dynamics and visual properties of the real world. Current approaches to tackle this problem, such as domain randomization, require prior knowledge and engineering to determine how much to randomize system parameters in order to learn a policy that is robust to sim-to-real transfer while also not being too conservative. We propose a method for automatically tuning simulator system parameters to match the real world using only raw RGB images of the real world without the need to define rewards or estimate state. Our key insight is to reframe the auto-tuning of parameters as a search problem where we iteratively shift the simulation system parameters to approach the real-world system parameters. We propose a Search Param Model (SPM) that, given a sequence of observations and actions and a set of system parameters, predicts whether the given parameters are higher or lower than the true parameters used to generate the observations. We evaluate our method on multiple robotic control tasks in both sim-to-sim and sim-to-real transfer, demonstrating significant improvement over naive domain randomization. Project videos and code at https://yuqingd.github.io/autotuned-sim2real/},
+	urldate = {2021-06-01},
+	journal = {arXiv:2104.07662 [cs]},
+	author = {Du, Yuqing and Watkins, Olivia and Darrell, Trevor and Abbeel, Pieter and Pathak, Deepak},
+	month = may,
+	year = {2021},
+	note = {arXiv: 2104.07662},
+	keywords = {Computer Science - Machine Learning, Computer Science - Robotics, Computer Science - Artificial Intelligence, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Human-Computer Interaction},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/Z9IIQA6K/2104.html:text/html}
+}
+
+@article{haidu_automated_2020,
+	title = {Automated acquisition of structured, semantic models of manipulation activities from human {VR} demonstration},
+	url = {http://arxiv.org/abs/2011.13689},
+	abstract = {In this paper we present a system capable of collecting and annotating, human performed, robot understandable, everyday activities from virtual environments. The human movements are mapped in the simulated world using off-the-shelf virtual reality devices with full body, and eye tracking capabilities. All the interactions in the virtual world are physically simulated, thus movements and their effects are closely relatable to the real world. During the activity execution, a subsymbolic data logger is recording the environment and the human gaze on a per-frame basis, enabling offline scene reproduction and replays. Coupled with the physics engine, online monitors (symbolic data loggers) are parsing (using various grammars) and recording events, actions, and their effects in the simulated world.},
+	urldate = {2021-05-20},
+	journal = {arXiv:2011.13689 [cs]},
+	author = {Haidu, Andrei and Beetz, Michael},
+	month = nov,
+	year = {2020},
+	note = {recommend},
+	keywords = {Computer Science - Artificial Intelligence},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/52EBN56S/2011.html:text/html}
+}
+
+@article{driess_learning_nodate,
+	title = {Learning {Geometric} {Reasoning} and {Control} for {Long}-{Horizon} {Tasks} from {Visual} {Input}},
+	abstract = {Long-horizon manipulation tasks require joint reasoning over a sequence of discrete actions and their associated continuous control parameters. While Task and Motion Planning (TAMP) approaches are capable of generating motion plans that account for this joint reasoning, they usually assume full knowledge about the environment (e.g. in terms of shapes, poses of objects) and often require computation times not suitable for real-time control.},
+	language = {en},
+	author = {Driess, Danny and Ha, Jung-Su and Tedrake, Russ and Toussaint, Marc},
+	note = {recommend},
+	pages = {8},
+	file = {Driess et al. - Learning Geometric Reasoning and Control for Long-.pdf:/home/bal/Zotero/storage/M96HSTXG/Driess et al. - Learning Geometric Reasoning and Control for Long-.pdf:application/pdf}
+}
+
+@article{li_reactive_2021,
+	title = {Reactive {Task} and {Motion} {Planning} under {Temporal} {Logic} {Specifications}},
+	url = {http://arxiv.org/abs/2103.14464},
+	abstract = {We present a task-and-motion planning (TAMP) algorithm robust against a human operator's cooperative or adversarial interventions. Interventions often invalidate the current plan and require replanning on the fly. Replanning can be computationally expensive and often interrupts seamless task execution. We introduce a dynamically reconfigurable planning methodology with behavior tree-based control strategies toward reactive TAMP, which takes the advantage of previous plans and incremental graph search during temporal logic-based reactive synthesis. Our algorithm also shows efficient recovery functionalities that minimize the number of replanning steps. Finally, our algorithm produces a robust, efficient, and complete TAMP solution. Our experimental results show the algorithm results in superior manipulation performance in both simulated and real-world tasks.},
+	urldate = {2021-06-03},
+	journal = {arXiv:2103.14464 [cs]},
+	author = {Li, Shen and Park, Daehyung and Sung, Yoonchang and Shah, Julie A. and Roy, Nicholas},
+	month = mar,
+	year = {2021},
+	note = {recommend},
+	keywords = {Computer Science - Robotics},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/LF97I6ZK/2103.html:text/html}
+}
+
+@article{ho_retinagan_2020,
+	title = {{RetinaGAN}: {An} {Object}-aware {Approach} to {Sim}-to-{Real} {Transfer}},
+	shorttitle = {{RetinaGAN}},
+	url = {http://arxiv.org/abs/2011.03148},
+	abstract = {The success of deep reinforcement learning (RL) and imitation learning (IL) in vision-based robotic manipulation typically hinges on the expense of large scale data collection. With simulation, data to train a policy can be collected efficiently at scale, but the visual gap between sim and real makes deployment in the real world difficult. We introduce RetinaGAN, a generative adversarial network (GAN) approach to adapt simulated images to realistic ones with object-detection consistency. RetinaGAN is trained in an unsupervised manner without task loss dependencies, and preserves general object structure and texture in adapted images. We evaluate our method on three real world tasks: grasping, pushing, and door opening. RetinaGAN improves upon the performance of prior sim-to-real methods for RL-based object instance grasping and continues to be effective even in the limited data regime. When applied to a pushing task in a similar visual domain, RetinaGAN demonstrates transfer with no additional real data requirements. We also show our method bridges the visual gap for a novel door opening task using imitation learning in a new visual domain. Visit the project website at https://retinagan.github.io/},
+	urldate = {2021-06-03},
+	journal = {arXiv:2011.03148 [cs]},
+	author = {Ho, Daniel and Rao, Kanishka and Xu, Zhuo and Jang, Eric and Khansari, Mohi and Bai, Yunfei},
+	month = nov,
+	year = {2020},
+	note = {arXiv: 2011.03148},
+	keywords = {Computer Science - Robotics, I.2.9},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/5GEC792R/2011.html:text/html}
+}
+
+@article{meyer_laserflow_2020,
+	title = {{LaserFlow}: {Efficient} and {Probabilistic} {Object} {Detection} and {Motion} {Forecasting}},
+	shorttitle = {{LaserFlow}},
+	url = {http://arxiv.org/abs/2003.05982},
+	abstract = {In this work, we present LaserFlow, an efficient method for 3D object detection and motion forecasting from LiDAR. Unlike the previous work, our approach utilizes the native range view representation of the LiDAR, which enables our method to operate at the full range of the sensor in real-time without voxelization or compression of the data. We propose a new multi-sweep fusion architecture, which extracts and merges temporal features directly from the range images. Furthermore, we propose a novel technique for learning a probability distribution over future trajectories inspired by curriculum learning. We evaluate LaserFlow on two autonomous driving datasets and demonstrate competitive results when compared to the existing state-of-the-art methods.},
+	urldate = {2021-06-03},
+	journal = {arXiv:2003.05982 [cs]},
+	author = {Meyer, Gregory P. and Charland, Jake and Pandey, Shreyash and Laddha, Ankit and Gautam, Shivam and Vallespi-Gonzalez, Carlos and Wellington, Carl K.},
+	month = oct,
+	year = {2020},
+	note = {arXiv: 2003.05982},
+	keywords = {Computer Science - Machine Learning, Computer Science - Robotics, Computer Science - Computer Vision and Pattern Recognition},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/ILVH5EQI/2003.html:text/html}
+}
+
+@article{malla_social-stage_2021,
+	title = {Social-{STAGE}: {Spatio}-{Temporal} {Multi}-{Modal} {Future} {Trajectory} {Forecast}},
+	shorttitle = {Social-{STAGE}},
+	url = {http://arxiv.org/abs/2011.04853},
+	abstract = {This paper considers the problem of multi-modal future trajectory forecast with ranking. Here, multi-modality and ranking refer to the multiple plausible path predictions and the confidence in those predictions, respectively. We propose Social-STAGE, Social interaction-aware Spatio-Temporal multi-Attention Graph convolution network with novel Evaluation for multi-modality. Our main contributions include analysis and formulation of multi-modality with ranking using interaction and multi-attention, and introduction of new metrics to evaluate the diversity and associated confidence of multi-modal predictions. We evaluate our approach on existing public datasets ETH and UCY and show that the proposed algorithm outperforms the state of the arts on these datasets.},
+	urldate = {2021-06-03},
+	journal = {arXiv:2011.04853 [cs]},
+	author = {Malla, Srikanth and Choi, Chiho and Dariush, Behzad},
+	month = mar,
+	year = {2021},
+	note = {arXiv: 2011.04853},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computer Vision and Pattern Recognition},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/PZ4XXU6N/2011.html:text/html}
+}
+
+@article{tosatto_contextual_2021,
+	title = {Contextual {Latent}-{Movements} {Off}-{Policy} {Optimization} for {Robotic} {Manipulation} {Skills}},
+	url = {http://arxiv.org/abs/2010.13766},
+	abstract = {Parameterized movement primitives have been extensively used for imitation learning of robotic tasks. However, the high-dimensionality of the parameter space hinders the improvement of such primitives in the reinforcement learning (RL) setting, especially for learning with physical robots. In this paper we propose a novel view on handling the demonstrated trajectories for acquiring low-dimensional, non-linear latent dynamics, using mixtures of probabilistic principal component analyzers (MPPCA) on the movements' parameter space. Moreover, we introduce a new contextual off-policy RL algorithm, named LAtent-Movements Policy Optimization (LAMPO). LAMPO can provide gradient estimates from previous experience using self-normalized importance sampling, hence, making full use of samples collected in previous learning iterations. These advantages combined provide a complete framework for sample-efficient off-policy optimization of movement primitives for robot learning of high-dimensional manipulation skills. Our experimental results conducted both in simulation and on a real robot show that LAMPO provides sample-efficient policies against common approaches in literature.},
+	urldate = {2021-06-03},
+	journal = {arXiv:2010.13766 [cs]},
+	author = {Tosatto, Samuele and Chalvatzaki, Georgia and Peters, Jan},
+	month = may,
+	year = {2021},
+	note = {recommend},
+	keywords = {Computer Science - Machine Learning, Computer Science - Robotics},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/F66UQ6Z4/2010.html:text/html}
+}
+
+@article{akbulut_reward_2020,
+	title = {Reward {Conditioned} {Neural} {Movement} {Primitives} for {Population} {Based} {Variational} {Policy} {Optimization}},
+	url = {http://arxiv.org/abs/2011.04282},
+	abstract = {The aim of this paper is to study the reward based policy exploration problem in a supervised learning approach and enable robots to form complex movement trajectories in challenging reward settings and search spaces. For this, the experience of the robot, which can be bootstrapped from demonstrated trajectories, is used to train a novel Neural Processes-based deep network that samples from its latent space and generates the required trajectories given desired rewards. Our framework can generate progressively improved trajectories by sampling them from high reward landscapes, increasing the reward gradually. Variational inference is used to create a stochastic latent space to sample varying trajectories in generating population of trajectories given target rewards. We benefit from Evolutionary Strategies and propose a novel crossover operation, which is applied in the self-organized latent space of the individual policies, allowing blending of the individuals that might address different factors in the reward function. Using a number of tasks that require sequential reaching to multiple points or passing through gaps between objects, we showed that our method provides stable learning progress and significant sample efficiency compared to a number of state-of-the-art robotic reinforcement learning methods. Finally, we show the real-world suitability of our method through real robot execution involving obstacle avoidance.},
+	urldate = {2021-06-03},
+	journal = {arXiv:2011.04282 [cs]},
+	author = {Akbulut, M. Tuluhan and Bozdogan, Utku and Tekden, Ahmet and Ugur, Emre},
+	month = nov,
+	year = {2020},
+	note = {arXiv: 2011.04282},
+	keywords = {Computer Science - Machine Learning, Computer Science - Robotics, Computer Science - Artificial Intelligence},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/PUUIJ4XY/2011.html:text/html}
+}
+
+@article{sundermeyer_contact-graspnet_2021,
+	title = {Contact-{GraspNet}: {Efficient} 6-{DoF} {Grasp} {Generation} in {Cluttered} {Scenes}},
+	shorttitle = {Contact-{GraspNet}},
+	url = {http://arxiv.org/abs/2103.14127},
+	abstract = {Grasping unseen objects in unconstrained, cluttered environments is an essential skill for autonomous robotic manipulation. Despite recent progress in full 6-DoF grasp learning, existing approaches often consist of complex sequential pipelines that possess several potential failure points and run-times unsuitable for closed-loop grasping. Therefore, we propose an end-to-end network that efficiently generates a distribution of 6-DoF parallel-jaw grasps directly from a depth recording of a scene. Our novel grasp representation treats 3D points of the recorded point cloud as potential grasp contacts. By rooting the full 6-DoF grasp pose and width in the observed point cloud, we can reduce the dimensionality of our grasp representation to 4-DoF which greatly facilitates the learning process. Our class-agnostic approach is trained on 17 million simulated grasps and generalizes well to real world sensor data. In a robotic grasping study of unseen objects in structured clutter we achieve over 90\% success rate, cutting the failure rate in half compared to a recent state-of-the-art method.},
+	urldate = {2021-06-03},
+	journal = {arXiv:2103.14127 [cs]},
+	author = {Sundermeyer, Martin and Mousavian, Arsalan and Triebel, Rudolph and Fox, Dieter},
+	month = mar,
+	year = {2021},
+	note = {arXiv: 2103.14127},
+	keywords = {Computer Science - Robotics, Computer Science - Computer Vision and Pattern Recognition},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/S74FFLYS/2103.html:text/html}
+}
+
+@article{cioflan_ms-ranas_2020,
+	title = {{MS}-{RANAS}: {Multi}-{Scale} {Resource}-{Aware} {Neural} {Architecture} {Search}},
+	shorttitle = {{MS}-{RANAS}},
+	url = {http://arxiv.org/abs/2009.13940},
+	abstract = {Neural Architecture Search (NAS) has proved effective in offering outperforming alternatives to handcrafted neural networks. In this paper we analyse the benefits of NAS for image classification tasks under strict computational constraints. Our aim is to automate the design of highly efficient deep neural networks, capable of offering fast and accurate predictions and that could be deployed on a low-memory, low-power system-on-chip. The task thus becomes a three-party trade-off between accuracy, computational complexity, and memory requirements. To address this concern, we propose Multi-Scale Resource-Aware Neural Architecture Search (MS-RANAS). We employ a one-shot architecture search approach in order to obtain a reduced search cost and we focus on an anytime prediction setting. Through the usage of multiple-scaled features and early classifiers, we achieved state-of-the-art results in terms of accuracy-speed trade-off.},
+	urldate = {2021-06-03},
+	journal = {arXiv:2009.13940 [cs]},
+	author = {Cioflan, Cristian and Timofte, Radu},
+	month = sep,
+	year = {2020},
+	note = {arXiv: 2009.13940},
+	keywords = {Computer Science - Machine Learning, Computer Science - Computer Vision and Pattern Recognition, I.4.9, I.5.4},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/H6LT5DIK/2009.html:text/html}
+}
+
+@article{lee_ikea_2019,
+	title = {{IKEA} {Furniture} {Assembly} {Environment} for {Long}-{Horizon} {Complex} {Manipulation} {Tasks}},
+	url = {http://arxiv.org/abs/1911.07246},
+	abstract = {The IKEA Furniture Assembly Environment is one of the first benchmarks for testing and accelerating the automation of complex manipulation tasks. The environment is designed to advance reinforcement learning from simple toy tasks to complex tasks requiring both long-term planning and sophisticated low-level control. Our environment supports over 80 different furniture models, Sawyer and Baxter robot simulation, and domain randomization. The IKEA Furniture Assembly Environment is a testbed for methods aiming to solve complex manipulation tasks. The environment is publicly available at https://clvrai.com/furniture},
+	urldate = {2021-06-03},
+	journal = {arXiv:1911.07246 [cs]},
+	author = {Lee, Youngwoon and Hu, Edward S. and Yang, Zhengyu and Yin, Alex and Lim, Joseph J.},
+	month = nov,
+	year = {2019},
+	note = {arXiv: 1911.07246},
+	keywords = {Computer Science - Machine Learning, Computer Science - Robotics, Computer Science - Artificial Intelligence, Computer Science - Computer Vision and Pattern Recognition},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/GE8X87P4/1911.html:text/html}
+}
+
+@article{dinev_sparsity-inducing_2021,
+	title = {Sparsity-{Inducing} {Optimal} {Control} via {Differential} {Dynamic} {Programming}},
+	url = {http://arxiv.org/abs/2011.07325},
+	abstract = {Optimal control is a popular approach to synthesize highly dynamic motion. Commonly, \$L\_2\$ regularization is used on the control inputs in order to minimize energy used and to ensure smoothness of the control inputs. However, for some systems, such as satellites, the control needs to be applied in sparse bursts due to how the propulsion system operates. In this paper, we study approaches to induce sparsity in optimal control solutions -- namely via smooth \$L\_1\$ and Huber regularization penalties. We apply these loss terms to state-of-the-art DDP-based solvers to create a family of sparsity-inducing optimal control methods. We analyze and compare the effect of the different losses on inducing sparsity, their numerical conditioning, their impact on convergence, and discuss hyperparameter settings. We demonstrate our method in simulation and hardware experiments on canonical dynamics systems, control of satellites, and the NASA Valkyrie humanoid robot. We provide an implementation of our method and all examples for reproducibility on GitHub.},
+	urldate = {2021-06-03},
+	journal = {arXiv:2011.07325 [cs]},
+	author = {Dinev, Traiko and Merkt, Wolfgang and Ivan, Vladimir and Havoutis, Ioannis and Vijayakumar, Sethu},
+	month = mar,
+	year = {2021},
+	note = {arXiv: 2011.07325},
+	keywords = {Computer Science - Robotics},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/NH9GVE63/2011.html:text/html}
+}
+
+@article{luo_self-imitation_2021,
+	title = {Self-{Imitation} {Learning} by {Planning}},
+	url = {http://arxiv.org/abs/2103.13834},
+	abstract = {Imitation learning (IL) enables robots to acquire skills quickly by transferring expert knowledge, which is widely adopted in reinforcement learning (RL) to initialize exploration. However, in long-horizon motion planning tasks, a challenging problem in deploying IL and RL methods is how to generate and collect massive, broadly distributed data such that these methods can generalize effectively. In this work, we solve this problem using our proposed approach called \{self-imitation learning by planning (SILP)\}, where demonstration data are collected automatically by planning on the visited states from the current policy. SILP is inspired by the observation that successfully visited states in the early reinforcement learning stage are collision-free nodes in the graph-search based motion planner, so we can plan and relabel robot's own trials as demonstrations for policy learning. Due to these self-generated demonstrations, we relieve the human operator from the laborious data preparation process required by IL and RL methods in solving complex motion planning tasks. The evaluation results show that our SILP method achieves higher success rates and enhances sample efficiency compared to selected baselines, and the policy learned in simulation performs well in a real-world placement task with changing goals and obstacles.},
+	urldate = {2021-06-03},
+	journal = {arXiv:2103.13834 [cs]},
+	author = {Luo, Sha and Kasaei, Hamidreza and Schomaker, Lambert},
+	month = mar,
+	year = {2021},
+	note = {arXiv: 2103.13834},
+	keywords = {Computer Science - Robotics, Computer Science - Artificial Intelligence},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/KAPVP6MH/2103.html:text/html}
+}
+
+@article{pairet_path_2021,
+	title = {Path {Planning} for {Manipulation} using {Experience}-driven {Random} {Trees}},
+	volume = {6},
+	issn = {2377-3766, 2377-3774},
+	url = {http://arxiv.org/abs/2103.00448},
+	doi = {10.1109/LRA.2021.3063063},
+	abstract = {Robotic systems may frequently come across similar manipulation planning problems that result in similar motion plans. Instead of planning each problem from scratch, it is preferable to leverage previously computed motion plans, i.e., experiences, to ease the planning. Different approaches have been proposed to exploit prior information on novel task instances. These methods, however, rely on a vast repertoire of experiences and fail when none relates closely to the current problem. Thus, an open challenge is the ability to generalise prior experiences to task instances that do not necessarily resemble the prior. This work tackles the above challenge with the proposition that experiences are "decomposable" and "malleable", i.e., parts of an experience are suitable to relevantly explore the connectivity of the robot-task space even in non-experienced regions. Two new planners result from this insight: experience-driven random trees (ERT) and its bi-directional version ERTConnect. These planners adopt a tree sampling-based strategy that incrementally extracts and modulates parts of a single path experience to compose a valid motion plan. We demonstrate our method on task instances that significantly differ from the prior experiences, and compare with related state-of-the-art experience-based planners. While their repairing strategies fail to generalise priors of tens of experiences, our planner, with a single experience, significantly outperforms them in both success rate and planning time. Our planners are implemented and freely available in the Open Motion Planning Library.},
+	number = {2},
+	urldate = {2021-06-03},
+	journal = {IEEE Robot. Autom. Lett.},
+	author = {Pairet, Èric and Chamzas, Constantinos and Petillot, Yvan and Kavraki, Lydia E.},
+	month = apr,
+	year = {2021},
+	note = {recommend},
+	keywords = {Computer Science - Robotics},
+	pages = {3295--3302},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/H4VZMMC8/2103.html:text/html}
+}
+
+@article{wen_end--end_2021,
+	title = {End-{To}-{End} {Semi}-supervised {Learning} for {Differentiable} {Particle} {Filters}},
+	url = {http://arxiv.org/abs/2011.05748},
+	abstract = {Recent advances in incorporating neural networks into particle filters provide the desired flexibility to apply particle filters in large-scale real-world applications. The dynamic and measurement models in this framework are learnable through the differentiable implementation of particle filters. Past efforts in optimising such models often require the knowledge of true states which can be expensive to obtain or even unavailable in practice. In this paper, in order to reduce the demand for annotated data, we present an end-to-end learning objective based upon the maximisation of a pseudo-likelihood function which can improve the estimation of states when large portion of true states are unknown. We assess performance of the proposed method in state estimation tasks in robotics with simulated and real-world datasets.},
+	urldate = {2021-06-03},
+	journal = {arXiv:2011.05748 [cs, stat]},
+	author = {Wen, Hao and Chen, Xiongjie and Papagiannis, Georgios and Hu, Conghui and Li, Yunpeng},
+	month = mar,
+	year = {2021},
+	note = {arXiv: 2011.05748},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/AUEB2IZY/2011.html:text/html}
+}
+
+@article{wulfmeier_representation_2021,
+	title = {Representation {Matters}: {Improving} {Perception} and {Exploration} for {Robotics}},
+	shorttitle = {Representation {Matters}},
+	url = {http://arxiv.org/abs/2011.01758},
+	abstract = {Projecting high-dimensional environment observations into lower-dimensional structured representations can considerably improve data-efficiency for reinforcement learning in domains with limited data such as robotics. Can a single generally useful representation be found? In order to answer this question, it is important to understand how the representation will be used by the agent and what properties such a 'good' representation should have. In this paper we systematically evaluate a number of common learnt and hand-engineered representations in the context of three robotics tasks: lifting, stacking and pushing of 3D blocks. The representations are evaluated in two use-cases: as input to the agent, or as a source of auxiliary tasks. Furthermore, the value of each representation is evaluated in terms of three properties: dimensionality, observability and disentanglement. We can significantly improve performance in both use-cases and demonstrate that some representations can perform commensurate to simulator states as agent inputs. Finally, our results challenge common intuitions by demonstrating that: 1) dimensionality strongly matters for task generation, but is negligible for inputs, 2) observability of task-relevant aspects mostly affects the input representation use-case, and 3) disentanglement leads to better auxiliary tasks, but has only limited benefits for input representations. This work serves as a step towards a more systematic understanding of what makes a 'good' representation for control in robotics, enabling practitioners to make more informed choices for developing new learned or hand-engineered representations.},
+	urldate = {2021-06-03},
+	journal = {arXiv:2011.01758 [cs, stat]},
+	author = {Wulfmeier, Markus and Byravan, Arunkumar and Hertweck, Tim and Higgins, Irina and Gupta, Ankush and Kulkarni, Tejas and Reynolds, Malcolm and Teplyashin, Denis and Hafner, Roland and Lampe, Thomas and Riedmiller, Martin},
+	month = mar,
+	year = {2021},
+	note = {arXiv: 2011.01758},
+	keywords = {Computer Science - Machine Learning, Computer Science - Robotics, Computer Science - Artificial Intelligence, Statistics - Machine Learning},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/SSWH38WQ/2011.html:text/html}
+}
+
+@article{bechtle_leveraging_2020,
+	title = {Leveraging {Forward} {Model} {Prediction} {Error} for {Learning} {Control}},
+	url = {http://arxiv.org/abs/2011.03859},
+	abstract = {Learning for model based control can be sample-efficient and generalize well, however successfully learning models and controllers that represent the problem at hand can be challenging for complex tasks. Using inaccurate models for learning can lead to sub-optimal solutions, that are unlikely to perform well in practice. In this work, we present a learning approach which iterates between model learning and data collection and leverages forward model prediction error for learning control. We show how using the controller's prediction as input to a forward model can create a differentiable connection between the controller and the model, allowing us to formulate a loss in the state space. This lets us include forward model prediction error during controller learning and we show that this creates a loss objective that significantly improves learning on different motor control tasks. We provide empirical and theoretical results that show the benefits of our method and present evaluations in simulation for learning control on a 7 DoF manipulator and an underactuated 12 DoF quadruped. We show that our approach successfully learns controllers for challenging motor control tasks involving contact switching.},
+	urldate = {2021-06-03},
+	journal = {arXiv:2011.03859 [cs]},
+	author = {Bechtle, Sarah and Hammoud, Bilal and Rai, Akshara and Meier, Franziska and Righetti, Ludovic},
+	month = nov,
+	year = {2020},
+	note = {recommend},
+	keywords = {Computer Science - Robotics},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/4M8B8MI4/2011.html:text/html}
+}
+
+@article{liu_deep_2021,
+	title = {Deep {Structured} {Reactive} {Planning}},
+	url = {http://arxiv.org/abs/2101.06832},
+	abstract = {An intelligent agent operating in the real-world must balance achieving its goal with maintaining the safety and comfort of not only itself, but also other participants within the surrounding scene. This requires jointly reasoning about the behavior of other actors while deciding its own actions as these two processes are inherently intertwined - a vehicle will yield to us if we decide to proceed first at the intersection but will proceed first if we decide to yield. However, this is not captured in most self-driving pipelines, where planning follows prediction. In this paper we propose a novel data-driven, reactive planning objective which allows a self-driving vehicle to jointly reason about its own plans as well as how other actors will react to them. We formulate the problem as an energy-based deep structured model that is learned from observational data and encodes both the planning and prediction problems. Through simulations based on both real-world driving and synthetically generated dense traffic, we demonstrate that our reactive model outperforms a non-reactive variant in successfully completing highly complex maneuvers (lane merges/turns in traffic) faster, without trading off collision rate.},
+	urldate = {2021-06-03},
+	journal = {arXiv:2101.06832 [cs]},
+	author = {Liu, Jerry and Zeng, Wenyuan and Urtasun, Raquel and Yumer, Ersin},
+	month = apr,
+	year = {2021},
+	note = {arXiv: 2101.06832},
+	keywords = {Computer Science - Machine Learning, Computer Science - Robotics, Computer Science - Artificial Intelligence, Computer Science - Computer Vision and Pattern Recognition},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/ZDC7T7CD/2101.html:text/html}
+}
+
+@article{chen_batch_2021,
+	title = {Batch {Exploration} with {Examples} for {Scalable} {Robotic} {Reinforcement} {Learning}},
+	volume = {6},
+	issn = {2377-3766, 2377-3774},
+	url = {http://arxiv.org/abs/2010.11917},
+	doi = {10.1109/LRA.2021.3068655},
+	abstract = {Learning from diverse offline datasets is a promising path towards learning general purpose robotic agents. However, a core challenge in this paradigm lies in collecting large amounts of meaningful data, while not depending on a human in the loop for data collection. One way to address this challenge is through task-agnostic exploration, where an agent attempts to explore without a task-specific reward function, and collect data that can be useful for any downstream task. While these approaches have shown some promise in simple domains, they often struggle to explore the relevant regions of the state space in more challenging settings, such as vision based robotic manipulation. This challenge stems from an objective that encourages exploring everything in a potentially vast state space. To mitigate this challenge, we propose to focus exploration on the important parts of the state space using weak human supervision. Concretely, we propose an exploration technique, Batch Exploration with Examples (BEE), that explores relevant regions of the state-space, guided by a modest number of human provided images of important states. These human provided images only need to be collected once at the beginning of data collection and can be collected in a matter of minutes, allowing us to scalably collect diverse datasets, which can then be combined with any batch RL algorithm. We find that BEE is able to tackle challenging vision-based manipulation tasks both in simulation and on a real Franka robot, and observe that compared to task-agnostic and weakly-supervised exploration techniques, it (1) interacts more than twice as often with relevant objects, and (2) improves downstream task performance when used in conjunction with offline RL.},
+	number = {3},
+	urldate = {2021-06-03},
+	journal = {IEEE Robot. Autom. Lett.},
+	author = {Chen, Annie S. and Nam, HyunJi and Nair, Suraj and Finn, Chelsea},
+	month = jul,
+	year = {2021},
+	note = {arXiv: 2010.11917},
+	keywords = {Computer Science - Machine Learning, Computer Science - Robotics, Computer Science - Artificial Intelligence},
+	pages = {4401--4408},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/49893QB7/2010.html:text/html}
+}
+
+@article{morgan_model_2021,
+	title = {Model {Predictive} {Actor}-{Critic}: {Accelerating} {Robot} {Skill} {Acquisition} with {Deep} {Reinforcement} {Learning}},
+	shorttitle = {Model {Predictive} {Actor}-{Critic}},
+	url = {http://arxiv.org/abs/2103.13842},
+	abstract = {Substantial advancements to model-based reinforcement learning algorithms have been impeded by the model-bias induced by the collected data, which generally hurts performance. Meanwhile, their inherent sample efficiency warrants utility for most robot applications, limiting potential damage to the robot and its environment during training. Inspired by information theoretic model predictive control and advances in deep reinforcement learning, we introduce Model Predictive Actor-Critic (MoPAC), a hybrid model-based/model-free method that combines model predictive rollouts with policy optimization as to mitigate model bias. MoPAC leverages optimal trajectories to guide policy learning, but explores via its model-free method, allowing the algorithm to learn more expressive dynamics models. This combination guarantees optimal skill learning up to an approximation error and reduces necessary physical interaction with the environment, making it suitable for real-robot training. We provide extensive results showcasing how our proposed method generally outperforms current state-of-the-art and conclude by evaluating MoPAC for learning on a physical robotic hand performing valve rotation and finger gaiting--a task that requires grasping, manipulation, and then regrasping of an object.},
+	urldate = {2021-06-03},
+	journal = {arXiv:2103.13842 [cs]},
+	author = {Morgan, Andrew S. and Nandha, Daljeet and Chalvatzaki, Georgia and D'Eramo, Carlo and Dollar, Aaron M. and Peters, Jan},
+	month = mar,
+	year = {2021},
+	note = {arXiv: 2103.13842},
+	keywords = {Computer Science - Machine Learning, Computer Science - Robotics},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/IDTN8524/2103.html:text/html}
+}
+
+@article{lee_causal_2021,
+	title = {Causal {Reasoning} in {Simulation} for {Structure} and {Transfer} {Learning} of {Robot} {Manipulation} {Policies}},
+	url = {http://arxiv.org/abs/2103.16772},
+	abstract = {We present CREST, an approach for causal reasoning in simulation to learn the relevant state space for a robot manipulation policy. Our approach conducts interventions using internal models, which are simulations with approximate dynamics and simplified assumptions. These interventions elicit the structure between the state and action spaces, enabling construction of neural network policies with only relevant states as input. These policies are pretrained using the internal model with domain randomization over the relevant states. The policy network weights are then transferred to the target domain (e.g., the real world) for fine tuning. We perform extensive policy transfer experiments in simulation for two representative manipulation tasks: block stacking and crate opening. Our policies are shown to be more robust to domain shifts, more sample efficient to learn, and scale to more complex settings with larger state spaces. We also show improved zero-shot sim-to-real transfer of our policies for the block stacking task.},
+	urldate = {2021-06-03},
+	journal = {arXiv:2103.16772 [cs]},
+	author = {Lee, Timothy E. and Zhao, Jialiang and Sawhney, Amrita S. and Girdhar, Siddharth and Kroemer, Oliver},
+	month = mar,
+	year = {2021},
+	note = {arXiv: 2103.16772},
+	keywords = {Computer Science - Robotics},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/DERUTHKJ/2103.html:text/html}
+}
+
+@article{allshire_laser_2021,
+	title = {{LASER}: {Learning} a {Latent} {Action} {Space} for {Efficient} {Reinforcement} {Learning}},
+	shorttitle = {{LASER}},
+	url = {http://arxiv.org/abs/2103.15793},
+	abstract = {The process of learning a manipulation task depends strongly on the action space used for exploration: posed in the incorrect action space, solving a task with reinforcement learning can be drastically inefficient. Additionally, similar tasks or instances of the same task family impose latent manifold constraints on the most effective action space: the task family can be best solved with actions in a manifold of the entire action space of the robot. Combining these insights we present LASER, a method to learn latent action spaces for efficient reinforcement learning. LASER factorizes the learning problem into two sub-problems, namely action space learning and policy learning in the new action space. It leverages data from similar manipulation task instances, either from an offline expert or online during policy learning, and learns from these trajectories a mapping from the original to a latent action space. LASER is trained as a variational encoder-decoder model to map raw actions into a disentangled latent action space while maintaining action reconstruction and latent space dynamic consistency. We evaluate LASER on two contact-rich robotic tasks in simulation, and analyze the benefit of policy learning in the generated latent action space. We show improved sample efficiency compared to the original action space from better alignment of the action space to the task space, as we observe with visualizations of the learned action space manifold. Additional details: https://www.pair.toronto.edu/laser},
+	urldate = {2021-06-03},
+	journal = {arXiv:2103.15793 [cs]},
+	author = {Allshire, Arthur and Martín-Martín, Roberto and Lin, Charles and Manuel, Shawn and Savarese, Silvio and Garg, Animesh},
+	month = mar,
+	year = {2021},
+	note = {arXiv: 2103.15793},
+	keywords = {Computer Science - Robotics, Computer Science - Artificial Intelligence},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/2WSPED4K/2103.html:text/html}
+}
+
+@article{wu_shaping_2020,
+	title = {Shaping {Rewards} for {Reinforcement} {Learning} with {Imperfect} {Demonstrations} using {Generative} {Models}},
+	url = {http://arxiv.org/abs/2011.01298},
+	abstract = {The potential benefits of model-free reinforcement learning to real robotics systems are limited by its uninformed exploration that leads to slow convergence, lack of data-efficiency, and unnecessary interactions with the environment. To address these drawbacks we propose a method that combines reinforcement and imitation learning by shaping the reward function with a state-and-action-dependent potential that is trained from demonstration data, using a generative model. We show that this accelerates policy learning by specifying high-value areas of the state and action space that are worth exploring first. Unlike the majority of existing methods that assume optimal demonstrations and incorporate the demonstration data as hard constraints on policy optimization, we instead incorporate demonstration data as advice in the form of a reward shaping potential trained as a generative model of states and actions. In particular, we examine both normalizing flows and Generative Adversarial Networks to represent these potentials. We show that, unlike many existing approaches that incorporate demonstrations as hard constraints, our approach is unbiased even in the case of suboptimal and noisy demonstrations. We present an extensive range of simulations, as well as experiments on the Franka Emika 7DOF arm, to demonstrate the practicality of our method.},
+	urldate = {2021-06-03},
+	journal = {arXiv:2011.01298 [cs]},
+	author = {Wu, Yuchen and Mozifian, Melissa and Shkurti, Florian},
+	month = nov,
+	year = {2020},
+	note = {arXiv: 2011.01298},
+	keywords = {Computer Science - Machine Learning, Computer Science - Robotics},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/6JX4AZPZ/2011.html:text/html}
+}
+
+@article{power_keep_2021,
+	title = {Keep it {Simple}: {Data}-efficient {Learning} for {Controlling} {Complex} {Systems} with {Simple} {Models}},
+	shorttitle = {Keep it {Simple}},
+	url = {http://arxiv.org/abs/2102.02493},
+	abstract = {When manipulating a novel object with complex dynamics, a state representation is not always available, for example for deformable objects. Learning both a representation and dynamics from observations requires large amounts of data. We propose Learned Visual Similarity Predictive Control (LVSPC), a novel method for data-efficient learning to control systems with complex dynamics and high-dimensional state spaces from images. LVSPC leverages a given simple model approximation from which image observations can be generated. We use these images to train a perception model that estimates the simple model state from observations of the complex system online. We then use data from the complex system to fit the parameters of the simple model and learn where this model is inaccurate, also online. Finally, we use Model Predictive Control and bias the controller away from regions where the simple model is inaccurate and thus where the controller is less reliable. We evaluate LVSPC on two tasks; manipulating a tethered mass and a rope. We find that our method performs comparably to state-of-the-art reinforcement learning methods with an order of magnitude less data. LVSPC also completes the rope manipulation task on a real robot with 80\% success rate after only 10 trials, despite using a perception system trained only on images from simulation.},
+	urldate = {2021-06-03},
+	journal = {arXiv:2102.02493 [cs]},
+	author = {Power, Thomas and Berenson, Dmitry},
+	month = feb,
+	year = {2021},
+	note = {recommend},
+	keywords = {Computer Science - Machine Learning, Computer Science - Robotics},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/GJI9PSTF/2102.html:text/html}
+}
+
+@article{boggess_towards_2021,
+	title = {Towards {Personalized} {Explanation} of {Robot} {Path} {Planning} via {User} {Feedback}},
+	url = {http://arxiv.org/abs/2011.00524},
+	abstract = {Prior studies have found that explaining robot decisions and actions helps to increase system transparency, improve user understanding, and enable effective human-robot collaboration. In this paper, we present a system for generating personalized explanations of robot path planning via user feedback. We consider a robot navigating in an environment modeled as a Markov decision process (MDP), and develop an algorithm to automatically generate a personalized explanation of an optimal MDP policy, based on the user preference regarding four elements (i.e., objective, locality, specificity, and corpus). In addition, we design the system to interact with users via answering users' further questions about the generated explanations. Users have the option to update their preferences to view different explanations. The system is capable of detecting and resolving any preference conflict via user interaction. The results of an online user study show that the generated personalized explanations improve user satisfaction, while the majority of users liked the system's capabilities of question-answering and conflict detection/resolution.},
+	urldate = {2021-06-03},
+	journal = {arXiv:2011.00524 [cs]},
+	author = {Boggess, Kayla and Chen, Shenghui and Feng, Lu},
+	month = mar,
+	year = {2021},
+	note = {arXiv: 2011.00524},
+	keywords = {Computer Science - Robotics, Computer Science - Artificial Intelligence},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/ES673CNY/2011.html:text/html}
+}
+
+@article{johns_coarse--fine_2021,
+	title = {Coarse-to-{Fine} {Imitation} {Learning}: {Robot} {Manipulation} from a {Single} {Demonstration}},
+	shorttitle = {Coarse-to-{Fine} {Imitation} {Learning}},
+	url = {http://arxiv.org/abs/2105.06411},
+	abstract = {We introduce a simple new method for visual imitation learning, which allows a novel robot manipulation task to be learned from a single human demonstration, without requiring any prior knowledge of the object being interacted with. Our method models imitation learning as a state estimation problem, with the state defined as the end-effector's pose at the point where object interaction begins, as observed from the demonstration. By modelling a manipulation task as a coarse, approach trajectory followed by a fine, interaction trajectory, this state estimator can be trained in a self-supervised manner, by automatically moving the end-effector's camera around the object. At test time, the end-effector is moved to the estimated state through a linear path, at which point the demonstration's end-effector velocities are simply repeated, enabling convenient acquisition of a complex interaction trajectory without actually needing to explicitly learn a policy. Real-world experiments on 8 everyday tasks show that our method can learn a diverse range of skills from just a single human demonstration, whilst also yielding a stable and interpretable controller.},
+	urldate = {2021-06-03},
+	journal = {arXiv:2105.06411 [cs]},
+	author = {Johns, Edward},
+	month = may,
+	year = {2021},
+	note = {arXiv: 2105.06411},
+	keywords = {Computer Science - Robotics},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/V9PIZ9NF/2105.html:text/html}
+}
+
+@article{sathya_weighted_2021,
+	title = {A {Weighted} {Method} for {Fast} {Resolution} of {Strictly} {Hierarchical} {Robot} {Task} {Specifications} {Using} {Exact} {Penalty} {Functions}},
+	volume = {6},
+	issn = {2377-3766},
+	doi = {10.1109/LRA.2021.3063026},
+	abstract = {Extensive work has been done on efficiently resolving hierarchical robot task specifications that minimize the \${\textbackslash}ell\$-2 norm of linear constraint violations, but not for \${\textbackslash}ell\$-1 norm, in which there has recently been growing interest for sparse control. Both approaches require solving a cascade of quadratic programs (QP) or linear programs (LP). In this letter, we introduce alternate and more efficient approaches to hierarchical \${\textbackslash}ell\$-1 norm minimization by formulating it as a single LP that can be solved by any off-the-shelf solver. The first approach is a recursive method that transforms the lexicographic LP (LLP) into a single objective problem using Lagrangian duality. The second approach, which forms the main focus of this letter, is a weighted method based on the exact penalty method, that is equivalent to the original LLP for a well chosen set of weights. We propose methods to compute and adapt these weights. The algorithms were applied on an interesting dual arm robot task. We discuss and benchmark the computational efficiency of these methods. Simplicity of the weighted method makes it a promising approach for tackling challenging prioritized robot control problems involving a control horizon or nonlinear constraints. Within this letter, we take the first step towards that goal by demonstrating the efficacy of the weighted method on a simpler instantaneous robot control problem with linear constraints.},
+	number = {2},
+	journal = {IEEE Robotics and Automation Letters},
+	author = {Sathya, Ajay Suresha and Pipeleers, Goele and Decré, Wilm and Swevers, Jan},
+	month = apr,
+	year = {2021},
+	note = {Conference Name: IEEE Robotics and Automation Letters},
+	keywords = {Robots, Manipulators, Task analysis, redundant robots, Jacobian matrices, Linear programming, Optimal control, Optimization, Optimization and optimal control, whole-body motion planning and control},
+	pages = {3057--3064}
+}
+
+@article{sidiropoulos_human-robot_2021,
+	title = {Human-robot collaborative object transfer using human motion prediction based on {Cartesian} pose {Dynamic} {Movement} {Primitives}},
+	url = {http://arxiv.org/abs/2104.03155},
+	abstract = {In this work, the problem of human-robot collaborative object transfer to unknown target poses is addressed. The desired pattern of the end-effector pose trajectory to a known target pose is encoded using DMPs (Dynamic Movement Primitives). During transportation of the object to new unknown targets, a DMP-based reference model and an EKF (Extended Kalman Filter) for estimating the target pose and time duration of the human's intended motion is proposed. A stability analysis of the overall scheme is provided. Experiments using a Kuka LWR4+ robot equipped with an ATI sensor at its end-effector validate its efficacy with respect to the required human effort and compare it with an admittance control scheme.},
+	urldate = {2021-06-03},
+	journal = {arXiv:2104.03155 [cs]},
+	author = {Sidiropoulos, Antonis and Karayiannidis, Yiannis and Doulgeri, Zoe},
+	month = apr,
+	year = {2021},
+	note = {arXiv: 2104.03155},
+	keywords = {Computer Science - Robotics},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/IY4ZN5L9/2104.html:text/html}
+}
+
+@article{lechner_adversarial_2021,
+	title = {Adversarial {Training} is {Not} {Ready} for {Robot} {Learning}},
+	url = {http://arxiv.org/abs/2103.08187},
+	abstract = {Adversarial training is an effective method to train deep learning models that are resilient to norm-bounded perturbations, with the cost of nominal performance drop. While adversarial training appears to enhance the robustness and safety of a deep model deployed in open-world decision-critical applications, counterintuitively, it induces undesired behaviors in robot learning settings. In this paper, we show theoretically and experimentally that neural controllers obtained via adversarial training are subjected to three types of defects, namely transient, systematic, and conditional errors. We first generalize adversarial training to a safety-domain optimization scheme allowing for more generic specifications. We then prove that such a learning process tends to cause certain error profiles. We support our theoretical results by a thorough experimental safety analysis in a robot-learning task. Our results suggest that adversarial training is not yet ready for robot learning.},
+	urldate = {2021-06-03},
+	journal = {arXiv:2103.08187 [cs]},
+	author = {Lechner, Mathias and Hasani, Ramin and Grosu, Radu and Rus, Daniela and Henzinger, Thomas A.},
+	month = mar,
+	year = {2021},
+	note = {arXiv: 2103.08187},
+	keywords = {Computer Science - Machine Learning},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/T5857YBR/2103.html:text/html}
+}
+
+@article{lutter_differentiable_2020,
+	title = {Differentiable {Physics} {Models} for {Real}-world {Offline} {Model}-based {Reinforcement} {Learning}},
+	url = {http://arxiv.org/abs/2011.01734},
+	abstract = {A limitation of model-based reinforcement learning (MBRL) is the exploitation of errors in the learned models. Black-box models can fit complex dynamics with high fidelity, but their behavior is undefined outside of the data distribution.Physics-based models are better at extrapolating, due to the general validity of their informed structure, but underfit in the real world due to the presence of unmodeled phenomena. In this work, we demonstrate experimentally that for the offline model-based reinforcement learning setting, physics-based models can be beneficial compared to high-capacity function approximators if the mechanical structure is known. Physics-based models can learn to perform the ball in a cup (BiC) task on a physical manipulator using only 4 minutes of sampled data using offline MBRL. We find that black-box models consistently produce unviable policies for BiC as all predicted trajectories diverge to physically impossible state, despite having access to more data than the physics-based model. In addition, we generalize the approach of physics parameter identification from modeling holonomic multi-body systems to systems with nonholonomic dynamics using end-to-end automatic differentiation. Videos: https://sites.google.com/view/ball-in-a-cup-in-4-minutes/},
+	urldate = {2021-06-03},
+	journal = {arXiv:2011.01734 [cs]},
+	author = {Lutter, Michael and Silberbauer, Johannes and Watson, Joe and Peters, Jan},
+	month = nov,
+	year = {2020},
+	note = {arXiv: 2011.01734},
+	keywords = {Computer Science - Machine Learning, Computer Science - Robotics},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/QT9YETI9/2011.html:text/html}
+}
+
+@article{ha_distilling_2021,
+	title = {Distilling a {Hierarchical} {Policy} for {Planning} and {Control} via {Representation} and {Reinforcement} {Learning}},
+	url = {http://arxiv.org/abs/2011.08345},
+	abstract = {We present a hierarchical planning and control framework that enables an agent to perform various tasks and adapt to a new task flexibly. Rather than learning an individual policy for each particular task, the proposed framework, DISH, distills a hierarchical policy from a set of tasks by representation and reinforcement learning. The framework is based on the idea of latent variable models that represent high-dimensional observations using low-dimensional latent variables. The resulting policy consists of two levels of hierarchy: (i) a planning module that reasons a sequence of latent intentions that would lead to an optimistic future and (ii) a feedback control policy, shared across the tasks, that executes the inferred intention. Because the planning is performed in low-dimensional latent space, the learned policy can immediately be used to solve or adapt to new tasks without additional training. We demonstrate the proposed framework can learn compact representations (3- and 1-dimensional latent states and commands for a humanoid with 197- and 36-dimensional state features and actions) while solving a small number of imitation tasks, and the resulting policy is directly applicable to other types of tasks, i.e., navigation in cluttered environments. Video: https://youtu.be/HQsQysUWOhg},
+	urldate = {2021-06-03},
+	journal = {arXiv:2011.08345 [cs]},
+	author = {Ha, Jung-Su and Park, Young-Jin and Chae, Hyeok-Joo and Park, Soon-Seo and Choi, Han-Lim},
+	month = apr,
+	year = {2021},
+	note = {arXiv: 2011.08345},
+	keywords = {Computer Science - Machine Learning, Computer Science - Robotics},
+	file = {arXiv.org Snapshot:/home/bal/Zotero/storage/43H6BGJ4/2011.html:text/html}
+}

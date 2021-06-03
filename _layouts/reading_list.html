@@ -1,0 +1,1 @@
+<span{% if entry.note contains "recommend" %} style="font-weight: bold;"{% endif %}>{{reference | regex_replace_once: '\[\d+\]', ''}}</span>{% if entry.url %}&nbsp;<a href="{{entry.url}}">Link</a>{% endif %}

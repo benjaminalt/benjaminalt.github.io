@@ -103,7 +103,7 @@ permalink: date
 
 ## Scholar ##
 scholar:
-  style: ieee
+  style: _bibliography/my_ieee.cls
   locale: en
 
   sort_by: year

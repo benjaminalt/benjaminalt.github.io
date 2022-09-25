@@ -17,7 +17,7 @@ text_color_theme: default #eg: default | dark | forest | ocean | chocolate | ora
 baseurl: /
 title: Benjamin Alt
 description: > #this means to ignore newlines until "nav_lists:"
-  Dev Blog
+  Personal Website
 
 nav_lists:
   - titles:

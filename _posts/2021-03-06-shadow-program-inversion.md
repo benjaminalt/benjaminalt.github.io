@@ -8,6 +8,7 @@ categories: [blog]
 tags: [Differentiable Programming, Robot Self-Learning]
 published: true
 comment: false
+excerpt: A companion blog post to our 2021 ICRA paper on data-driven robot program parameter optimization.
 ---
 
 This is the companion blog post to our 2021 ICRA paper. You can find more on the paper (including a full-text version) [here](/spi).

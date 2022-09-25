@@ -7,6 +7,7 @@ categories: [blog]
 tags: [Reading List]
 published: true
 comment: false
+excerpt: My personal post-ICRA 2021 reading list with papers I came across while attending the conference and which I particularly want to read. It is also intended as a resource for my colleagues who did not attend ICRA this year.
 ---
 
 This is my personal post-ICRA 2021 reading list with papers I came across while attending the conference and which I particularly want to read. It is also intended as a resource for my colleagues who did not attend ICRA this year.

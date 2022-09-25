@@ -7,6 +7,7 @@ categories: [blog]
 tags: [Science Communication]
 comment: true
 published: true
+excerpt: Why researchers should care about science communication, and how to use symbols and slogans to make a talk memorable.
 ---
 
 {:zebra_fish: style="text-align: center;"}

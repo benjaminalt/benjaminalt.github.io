@@ -1,4 +1,9 @@
 <table class="image">
-<caption align="bottom" style="font-style: italic;">{{ include.description }}</caption>
-<tr><td style="border: none; text-align: center;"><img src="{{ include.url }}" width="{{ include.width_percent | default=100}}%" alt="{{ include.description }}"/></td></tr>
+  <tr>
+    <td>
+      <img src="{{ include.url }}"
+          width="{{ include.width_percent | default=100}}%" alt="{{ include.description }}" />
+    </td>
+  </tr>
 </table>
+<div class="image_caption">{{ include.description }}</div>

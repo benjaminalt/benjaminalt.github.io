@@ -67,6 +67,7 @@
   .footnotes {
     @include split-line();
     margin-top: map-get($base, vertical-space-large) * 2;
+    font-size: smaller
   }
   code {
     @include round-rect(default, .2rem .5rem);
@@ -201,5 +202,34 @@
     th {
       font-weight: map-get($base, font-weight-bold);
     }
+  }
+  .image {
+    text-align: center;
+    display: block;
+  }
+  .image * {
+    padding: 0;
+    margin: 0;
+  }
+  .image tbody {
+    display: block;
+    width: 100%;
+  }
+  .image tr {
+    display: block;
+    width: 100%;
+  }
+  .image td {
+    width: 100%;
+    display: block;
+    text-align: center;
+    border: none;
+  }
+  .image img {
+    position: relative;
+  }
+  .image_caption {
+    font-style: italic;
+    margin-top: -10pt;
   }
 }

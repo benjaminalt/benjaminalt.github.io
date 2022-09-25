@@ -50,7 +50,9 @@ To meet these requirements, we designed a hybrid robot skill architecture which 
 
 To the outside, every shadow skill provides the same interface: All skills accept a parameter vector **$x$** containing the skill parameters (which we want to optimize) and a state vector **$s_{in}$** describing the current state of the robot and the environment, and produce an expected trajectory **$\hat{Y}$** and a final state **$s_{out}$**. Because both the differentiable motion planner and the neural network are differentiable computational graphs, a shadow skill is also a differentiable computational graph whose outputs $\hat{Y}$ and $s_{out}$ are differentiable w.r.t. its inputs $x$, conditional on the initial state $s_{in}$.
 
-{% include image.html url="/assets/images/spi/shadow_skill.png" description="A Shadow Skill as part of a larger Shadow Program." width_percent="75"%}
+{:shadow_skill: style="text-align: center;"}
+{% include image.html url="/assets/images/spi/shadow_skill.png" description="A Shadow Skill as part of a larger Shadow Program." width_percent="75" %}
+{:shadow_skill}
 
 **This skill architecture can be used to learn new skills from scratch (e.g. from human demonstrations), but its most useful application is modeling existing skills from different frameworks.** There are many existing, highly expressive robot program representations which are used in production. Some of them are highly domain-specific (e.g. optimized for welding applications), others are hardware-specific (e.g. the KRL or URScript textual programming languages), and yet others are based on differential equations (DMPs, ProMPs and variants). Our architecture is designed with the aim of being capable of learning to model skills from any such framework or language. Instead of forcing robot programmers to program their robots a priori in a differentiable language, we designed our skill architecture to be sufficiently flexible to learn the *execution semantics* (input-output relationships, "what happens when the skill is executed") of any existing skill from any skill framework or robot programming language.
 

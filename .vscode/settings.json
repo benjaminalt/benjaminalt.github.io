@@ -5,6 +5,7 @@
   },
   "files.associations": {
     "*.html": "html"
-  }
+  },
+  "python.analysis.typeCheckingMode": "basic"
 }
 

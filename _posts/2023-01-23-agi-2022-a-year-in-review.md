@@ -2,7 +2,7 @@
 layout: post
 title:  "A(G)I 2022: A Year in Review"
 date:   2023-01-23 01:00:00
-key: 10003
+key: 10006
 categories: [blog]
 tags: [Artificial Intelligence, AI Alignment, Talk]
 comment: true

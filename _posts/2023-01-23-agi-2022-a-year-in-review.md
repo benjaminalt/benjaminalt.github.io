@@ -7,7 +7,7 @@ categories: [blog]
 tags: [Artificial Intelligence, AI Alignment, Talk]
 comment: true
 published: true
-excerpt: A talk I gave at the 2022 Effective Altruism Retreat in Sigmaringen, Germany, outlining how pivotal AI technologies shifted narratives around AI and its impacts on society.
+excerpt: A talk I gave at the 2023 Effective Altruism Retreat in Sigmaringen, Germany, outlining how pivotal AI technologies shifted narratives around AI and its impacts on society.
 ---
 
 {% include video.html url="https://www.youtube.com/embed/GLgjKpQbaSg" %}

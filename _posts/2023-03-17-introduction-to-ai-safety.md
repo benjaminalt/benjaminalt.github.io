@@ -6,7 +6,7 @@ key: 10007
 categories: [blog]
 tags: [Artificial Intelligence, AI Safety, AI Alignment, Talk]
 comment: true
-published: true
+published: false
 excerpt: A talk I gave at a LessWrong Meetup in Freiburg, Germany, covering the basics of technical AI safety.
 ---
 

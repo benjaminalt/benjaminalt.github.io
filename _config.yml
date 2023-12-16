@@ -103,7 +103,8 @@ permalink: date
 
 ## Scholar ##
 scholar:
-  style: _bibliography/my_ieee.cls
+  # style: _bibliography/my_ieee.cls
+  style: apa
   locale: en
 
   sort_by: year
@@ -121,8 +122,8 @@ scholar:
   details_layout: bibtex.html
   details_link:   Details
 
-  # first_name: Benjamin
-  # last_name: Alt
+  first_name: Benjamin
+  last_name: Alt
 
   query: "@*"
 

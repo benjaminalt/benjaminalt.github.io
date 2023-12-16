@@ -40,6 +40,10 @@
         {%- include scripts/components/toc.js -%}
         {%- include scripts/post.js -%}
       </script>
+    {%- elsif page.layout == "bib" -%}
+      <script>
+        {%- include scripts/components/toc.js -%}
+      </script>
     {%- elsif page.layout == "all" -%}
       <script>
         {%- include scripts/all.js -%}

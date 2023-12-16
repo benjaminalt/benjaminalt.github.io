@@ -32,6 +32,12 @@ function expand_abstract(k) {
     {% if entry.abstract %}
       <a class="abstract btn btn-sm z-depth-0" role="button" onclick="expand_abstract('{{entry.key}}')">Abstract</a>
     {% endif %}
+    {% if entry.xplore %}
+      <a href="{{ entry.xplore }}" class="btn btn-sm z-depth-0" role="button" target="_blank">IEEE Xplore</a>
+    {% endif %}
+    {% if entry.depatisnet %}
+      <a href="{{ entry.depatisnet }}" class="btn btn-sm z-depth-0" role="button" target="_blank">DEPATISnet</a>
+    {% endif %}
     {% if entry.arxiv %}
       <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button" target="_blank">ArXiv</a>
     {% endif %}
@@ -47,6 +53,9 @@ function expand_abstract(k) {
       {% else %}
       <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
       {% endif %}
+    {% endif %}
+    {% if entry.customurl %}
+      <a href="{{ entry.customurl }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Link</a>
     {% endif %}
     {% if entry.supp %}
       {% if entry.supp contains '://' %}

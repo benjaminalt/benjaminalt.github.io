@@ -7,7 +7,7 @@ categories: [blog]
 tags: [Artificial Intelligence, AI Safety, AI Alignment, Talk]
 comment: true
 published: true
-excerpt: A talk I gave at an online [LessWrong](https://www.lesswrong.com) Meetup in Karlsruhe, Germany, covering the basics of technical AI safety.
+excerpt: A talk I gave at an online <a href="https://www.lesswrong.com">LessWrong</a> Meetup in Karlsruhe, Germany, covering the basics of technical AI safety.
 ---
 
 {% include video.html url="https://www.youtube.com/embed/9MUrQ1yJGCo" %}

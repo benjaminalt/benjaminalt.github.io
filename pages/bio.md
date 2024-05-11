@@ -4,9 +4,9 @@ key: page-about
 ---
 
 
-I am a Research Scientist at [ArtiMinds Robotics](https://www.artiminds.com/) and a PhD student in Michael Beetz' group at the [Institute for Artificial Intelligence (IAI)](https://ai.uni-bremen.de/) at the University of Bremen.
+I am Senior Research Scientist at [ArtiMinds Robotics](https://www.artiminds.com/) and a PhD candidate with Michael Beetz at the [Institute for Artificial Intelligence (IAI)](https://ai.uni-bremen.de/) at the University of Bremen.
 
-In my research, I try to teach industrial robots how to reason about their tasks, generate their own programs and optimize and refine them as they gain more experience.
+In my research, I develop machine learning methods that enable robots to reason about their tasks, plan actions to achieve them in real-world environments, and learn from experience. I research cognitive methods and representations of knowledge that enable autonomous robot learning without sacrificing safety or interpretability of robot behavior.
 
 My areas of interest include
 
@@ -14,6 +14,6 @@ My areas of interest include
 * Deep Learning, particularly unsupervised and meta-learning
 * Differentiable programming
 * Informed machine learning
-* Subsymbolic reasoning
+* AI safety
 
 You can find my CV [here](/assets/pdf/cv.pdf).

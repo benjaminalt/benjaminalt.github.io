@@ -1,0 +1,12 @@
+github_users:
+  - benjaminalt
+
+repo_description_lines_max: 2
+
+github_repos:
+  - benjaminalt/dgpmp2-nd
+  - benjaminalt/knowrob
+  - benjaminalt/pycram
+  - benjaminalt/neem-interface
+  - benjaminalt/shadow-program-inversion
+

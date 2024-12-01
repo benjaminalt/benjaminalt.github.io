@@ -16,6 +16,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of
 ---
 
-In my research, I teach industrial robots how to reason about their tasks, generate their own programs and optimize and refine them as they gain more experience - and how to deploy advanced AI models to solve real-world engineering problems. I lead the corporate research lab at ArtiMinds, collaborating with academic and industrial partners to bring about a future in which humans can intuitively program robots and ensure that their behavior is both task-oriented and safe.
+In my research, I develop advanced AI models to solve real-world engineering problems with robots. I lead the [corporate research lab](https://innolab.artiminds.com/) at ArtiMinds, collaborating with academic and industrial partners to bring about a future in which humans can intuitively program robots and ensure that their behavior is both task-oriented and safe.
 
 My areas of interest include robot self-learning, unsupervised and meta-learning, differentiable programming, mechanistic interpretability and AI safety.

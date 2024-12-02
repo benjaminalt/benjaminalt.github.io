@@ -1,0 +1,3 @@
+[submodule "cv"]
+	path = submodules/cv
+	url = git@github.com:benjaminalt/cv.git

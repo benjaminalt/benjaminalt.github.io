@@ -65,6 +65,24 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: submodules/cv/academic_cv/cv.tex
+      
+      - name: Copy CV into assets
+        run: |
+          cp submodules/cv/academic_cv/cv.pdf assets/pdf
+
+      # - name: Upload PDF file
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: PDF
+      #     path: main.pdf
         
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1

@@ -79,6 +79,16 @@ jobs:
         run: |
           cp submodules/cv/academic_cv/cv.pdf assets/pdf
 
+      - name: Compile resume
+        uses: xu-cheng/latex-action@v3
+        with:
+          working_directory: submodules/cv/english
+          root_file: resume.tex
+        
+      - name: Copy resume into assets
+        run: |
+          cp submodules/cv/english/resume.pdf assets/pdf
+
       # - name: Upload PDF file
       #   uses: actions/upload-artifact@v4
       #   with:

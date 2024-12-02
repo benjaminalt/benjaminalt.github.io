@@ -68,13 +68,14 @@ jobs:
         with:
           submodules: recursive
           token: ${{ secrets.PAT_TOKEN }}
-
-      - name: Compile LaTeX document
+      
+      - name: Compile academic CV
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: submodules/cv/academic_cv/cv.tex
+          working_directory: submodules/cv/academic_cv
+          root_file: cv.tex
       
-      - name: Copy CV into assets
+      - name: Copy academic CV into assets
         run: |
           cp submodules/cv/academic_cv/cv.pdf assets/pdf
 

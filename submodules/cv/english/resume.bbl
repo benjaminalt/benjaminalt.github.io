@@ -1,0 +1,1988 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{ydnt/global//global/global/global}
+  \entry{alt_bansai_2024}{inproceedings}{}{}
+    \name{author}{6}{}{%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Dvorak},
+         familyi={D\bibinitperiod},
+         given={Julia},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={J{\"a}kel},
+         familyi={J\bibinitperiod},
+         given={Rainer},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Beetz},
+         familyi={B\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LG}{%
+         family={Lanza},
+         familyi={L\bibinitperiod},
+         given={Gisela},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{arXiv}}%
+    }
+    \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science -
+  Computational Engineering Finance and Science,Computer Science - Machine
+  Learning,Computer Science - Robotics,I.2.1,I.2.2,I.2.9,J.6,J.7,my}
+    \strng{namehash}{AB+1}
+    \strng{fullhash}{ABDJKDJRBMLG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    Over the past decade, deep learning helped solve manipulation problems
+  across all domains of robotics. At the same time, industrial robots continue
+  to be programmed overwhelmingly using traditional program representations and
+  interfaces. This paper undertakes an analysis of this "AI adoption gap" from
+  an industry practitioner's perspective. In response, we propose the BANSAI
+  approach (Bridging the AI Adoption Gap via Neurosymbolic AI). It
+  systematically leverages principles of neurosymbolic AI to establish
+  data-driven, subsymbolic program synthesis and optimization in modern
+  industrial robot programming workflow. BANSAI conceptually unites several
+  lines of prior research and proposes a path toward practical, real-world
+  validation.%
+    }
+    \field{booktitle}{57th {{CIRP Conference}} on {{Manufacturing Systems}}
+  2024}
+    \verb{doi}
+    \verb 10.48550/arXiv.2404.13652
+    \endverb
+    \verb{eprint}
+    \verb 2404.13652
+    \endverb
+    \field{shorttitle}{{{BANSAI}}}
+    \field{title}{{{BANSAI}}: {{Towards Bridging}} the {{AI Adoption Gap}} in
+  {{Industrial Robotics}} with {{Neurosymbolic Programming}}}
+    \list{location}{1}{%
+      {{P{\'o}voa de Varzim, Portugal}}%
+    }
+    \verb{file}
+    \verb /home/bal/Zotero/storage/WJ3VL9EH/2404.html
+    \endverb
+    \field{eprinttype}{arxiv}
+    \field{eprintclass}{cs}
+    \field{month}{05}
+    \field{year}{2024}
+    \field{urlday}{30}
+    \field{urlmonth}{04}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{alt_shadow_2024}{misc}{}{}
+    \name{author}{5}{}{%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=KC}{%
+         family={Kienle},
+         familyi={K\bibinitperiod},
+         given={Claudius},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={J{\"a}kel},
+         familyi={J\bibinitperiod},
+         given={Rainer},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Beetz},
+         familyi={B\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{arXiv}}%
+    }
+    \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science -
+  Robotics,D.1,I.2}
+    \strng{namehash}{AB+1}
+    \strng{fullhash}{ABKCKDJRBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    This paper presents SPI-DP, a novel first-order optimizer capable of
+  optimizing robot programs with respect to both high-level task objectives and
+  motion-level constraints. To that end, we introduce DGPMP2-ND, a
+  differentiable collision-free motion planner for serial N-DoF kinematics, and
+  integrate it into an iterative, gradient-based optimization approach for
+  generic, parameterized robot program representations. SPI-DP allows
+  first-order optimization of planned trajectories and program parameters with
+  respect to objectives such as cycle time or smoothness subject to e.g.
+  collision constraints, while enabling humans to understand, modify or even
+  certify the optimized programs. We provide a comprehensive evaluation on two
+  practical household and industrial applications.%
+    }
+    \verb{doi}
+    \verb 10.48550/arXiv.2409.08678
+    \endverb
+    \verb{eprint}
+    \verb 2409.08678
+    \endverb
+    \field{number}{arXiv:2409.08678}
+    \field{shorttitle}{Shadow {{Program Inversion}} with {{Differentiable
+  Planning}}}
+    \field{title}{Shadow {{Program Inversion}} with {{Differentiable
+  Planning}}: {{A Framework}} for {{Unified Robot Program Parameter}} and
+  {{Trajectory Optimization}}}
+    \verb{file}
+    \verb /home/bal/Zotero/storage/JPCMCRKQ/Alt et al. - 2024 - Shadow Program
+    \verb Inversion with Differentiable Planning A Framework for Unified Robot
+    \verb Program Paramet.pdf;/home/bal/Zotero/storage/6IP3PMQM/2409.html
+    \endverb
+    \field{eprinttype}{arxiv}
+    \field{eprintclass}{cs}
+    \field{month}{09}
+    \field{year}{2024}
+    \field{urlday}{23}
+    \field{urlmonth}{09}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{alt_domain-specific_2024}{inproceedings}{}{}
+    \name{author}{7}{}{%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=KU}{%
+         family={Ke{\ss}ner},
+         familyi={K\bibinitperiod},
+         given={Urs},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Taranovic},
+         familyi={T\bibinitperiod},
+         given={Aleksandar},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Hermann},
+         familyi={H\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={J{\"a}kel},
+         familyi={J\bibinitperiod},
+         given={Rainer},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=NG}{%
+         family={Neumann},
+         familyi={N\bibinitperiod},
+         given={Gerhard},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Nature}%
+    }
+    \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science -
+  Computation and Language,Computer Science - Human-Computer
+  Interaction,Computer Science - Machine Learning,Computer Science -
+  Robotics,I.2.5,I.2.6,I.2.7,I.2.9,my,relevant}
+    \strng{namehash}{AB+1}
+    \strng{fullhash}{ABKUTAKDHAJRNG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    Industrial robots are applied in a widening range of industries, but robot
+  programming mostly remains a task limited to programming experts. We propose
+  a natural language-based assistant for programming of advanced, industrial
+  robotic applications and investigate strategies for domain-specific
+  fine-tuning of foundation models with limited data and compute.%
+    }
+    \field{booktitle}{European {{Robotics Forum}} 2024}
+    \verb{eprint}
+    \verb 2312.13905
+    \endverb
+    \field{isbn}{978-3-031-76428-8}
+    \field{series}{Springer {{Proceedings}} in {{Advanced Robotics}}}
+    \field{title}{Domain-{{Specific Fine-Tuning}} of {{Large Language Models}}
+  for {{Interactive Robot Programming}}}
+    \list{location}{1}{%
+      {Rimini, Italy}%
+    }
+    \verb{file}
+    \verb C:\Users\alt\Zotero\storage\L4YRMDV3\2312.html
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs}
+    \field{month}{03}
+    \field{year}{2024}
+    \field{urlday}{22}
+    \field{urlmonth}{12}
+    \field{urlyear}{2023}
+  \endentry
+
+  \entry{alt_human-ai_2024}{inproceedings}{}{}
+    \name{author}{10}{}{%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=ZJ}{%
+         family={Zahn},
+         familyi={Z\bibinitperiod},
+         given={Johannes},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KC}{%
+         family={Kienle},
+         familyi={K\bibinitperiod},
+         given={Claudius},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Dvorak},
+         familyi={D\bibinitperiod},
+         given={Julia},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={May},
+         familyi={M\bibinitperiod},
+         given={Marvin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={J{\"a}kel},
+         familyi={J\bibinitperiod},
+         given={Rainer},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Kopp},
+         familyi={K\bibinitperiod},
+         given={Tobias},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Beetz},
+         familyi={B\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LG}{%
+         family={Lanza},
+         familyi={L\bibinitperiod},
+         given={Gisela},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{arXiv}}%
+    }
+    \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science -
+  Computational Engineering Finance and Science,Computer Science -
+  Human-Computer Interaction,Computer Science - Machine Learning,Computer
+  Science - Robotics,I.2.1,I.2.2,I.2.9,J.6,J.7,my}
+    \strng{namehash}{AB+1}
+    \strng{fullhash}{ABZJKCDJMMKDJRKTBMLG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    While recent advances in deep learning have demonstrated its transformative
+  potential, its adoption for real-world manufacturing applications remains
+  limited. We present an Explanation User Interface (XUI) for a
+  state-of-the-art deep learning-based robot program optimizer which provides
+  both naive and expert users with different user experiences depending on
+  their skill level, as well as Explainable AI (XAI) features to facilitate the
+  application of deep learning methods in real-world applications. To evaluate
+  the impact of the XUI on task performance, user satisfaction and cognitive
+  load, we present the results of a preliminary user survey and propose a study
+  design for a large-scale follow-up study.%
+    }
+    \field{booktitle}{57th {{CIRP Conference}} on {{Manufacturing Systems}}
+  2024}
+    \verb{doi}
+    \verb 10.48550/arXiv.2404.19349
+    \endverb
+    \verb{eprint}
+    \verb 2404.19349
+    \endverb
+    \field{shorttitle}{Human-{{AI Interaction}} in {{Industrial Robotics}}}
+    \field{title}{Human-{{AI Interaction}} in {{Industrial Robotics}}:
+  {{Design}} and {{Empirical Evaluation}} of a {{User Interface}} for
+  {{Explainable AI-Based Robot Program Optimization}}}
+    \list{location}{1}{%
+      {{P{\'o}voa de Varzim, Portugal}}%
+    }
+    \verb{file}
+    \verb /home/bal/Zotero/storage/ERH4U8FW/2404.html
+    \endverb
+    \field{eprinttype}{arxiv}
+    \field{eprintclass}{cs}
+    \field{month}{04}
+    \field{year}{2024}
+    \field{urlday}{10}
+    \field{urlmonth}{05}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{alt_robogrind_2024}{inproceedings}{}{}
+    \name{author}{13}{}{%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={St{\"o}ckl},
+         familyi={S\bibinitperiod},
+         given={Florian},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={M{\"u}ller},
+         familyi={M\bibinitperiod},
+         given={Silvan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Braun},
+         familyi={B\bibinitperiod},
+         given={Christopher},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Raible},
+         familyi={R\bibinitperiod},
+         given={Julian},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={Alhasan},
+         familyi={A\bibinitperiod},
+         given={Saad},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=RO}{%
+         family={Rettig},
+         familyi={R\bibinitperiod},
+         given={Oliver},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=RL}{%
+         family={Ringle},
+         familyi={R\bibinitperiod},
+         given={Lukas},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={J{\"a}kel},
+         familyi={J\bibinitperiod},
+         given={Rainer},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Beetz},
+         familyi={B\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Strand},
+         familyi={S\bibinitperiod},
+         given={Marcus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HMF}{%
+         family={Huber},
+         familyi={H\bibinitperiod},
+         given={Marco\bibnamedelima F.},
+         giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{IEEE}}%
+    }
+    \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science -
+  Robotics,I.2.2,I.2.6,I.2.9,my,relevant}
+    \strng{namehash}{AB+1}
+    \strng{fullhash}{ABSFMSBCRJASRORLKDJRBMSMHMF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    Surface treatment tasks such as grinding, sanding or polishing are a vital
+  step of the value chain in many industries, but are notoriously challenging
+  to automate. We present RoboGrind, an integrated system for the intuitive,
+  interactive automation of surface treatment tasks with industrial robots. It
+  combines a sophisticated 3D perception pipeline for surface scanning and
+  automatic defect identification, an interactive voice-controlled wizard
+  system for the AI-assisted bootstrapping and parameterization of robot
+  programs, and an automatic planning and execution pipeline for
+  force-controlled robotic surface treatment. RoboGrind is evaluated both under
+  laboratory and real-world conditions in the context of refabricating
+  fiberglass wind turbine blades.%
+    }
+    \field{booktitle}{2024 {{IEEE International Conference}} on {{Robotics}}
+  and {{Automation}} ({{ICRA}})}
+    \verb{doi}
+    \verb 10.1109/ICRA57147.2024.10611143
+    \endverb
+    \verb{eprint}
+    \verb 2402.16542
+    \endverb
+    \field{isbn}{979-8-3503-8457-4}
+    \field{shorttitle}{{{RoboGrind}}}
+    \field{title}{{{RoboGrind}}: {{Intuitive}} and {{Interactive Surface
+  Treatment}} with {{Industrial Robots}}}
+    \list{location}{1}{%
+      {{Yokohama, Japan}}%
+    }
+    \verb{file}
+    \verb /home/bal/Zotero/storage/MII54EVS/2402.html
+    \endverb
+    \field{eprinttype}{arxiv}
+    \field{eprintclass}{cs}
+    \field{month}{05}
+    \field{year}{2024}
+    \field{urlday}{05}
+    \field{urlmonth}{03}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{kienle_querycad_2024}{misc}{}{}
+    \name{author}{4}{}{%
+      {{hash=KC}{%
+         family={Kienle},
+         familyi={K\bibinitperiod},
+         given={Claudius},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={J{\"a}kel},
+         familyi={J\bibinitperiod},
+         given={Rainer},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{arXiv}}%
+    }
+    \keyw{Computer Science - Robotics,my}
+    \strng{namehash}{KC+1}
+    \strng{fullhash}{KCABKDJR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    CAD models are widely used in industry and are essential for robotic
+  automation processes. However, these models are rarely considered in novel
+  AI-based approaches, such as the automatic synthesis of robot programs, as
+  there are no readily available methods that would allow CAD models to be
+  incorporated for the analysis, interpretation, or extraction of information.
+  To address these limitations, we propose QueryCAD, the first system designed
+  for CAD question answering, enabling the extraction of precise information
+  from CAD models using natural language queries. QueryCAD incorporates SegCAD,
+  an open-vocabulary instance segmentation model we developed to identify and
+  select specific parts of the CAD model based on part descriptions. We further
+  propose a CAD question answering benchmark to evaluate QueryCAD and establish
+  a foundation for future research. Lastly, we integrate QueryCAD within an
+  automatic robot program synthesis framework, validating its ability to
+  enhance deep-learning solutions for robotics by enabling them to process CAD
+  models (https://claudius-kienle.github.com/querycad).%
+    }
+    \verb{doi}
+    \verb 10.48550/arXiv.2409.08704
+    \endverb
+    \verb{eprint}
+    \verb 2409.08704
+    \endverb
+    \field{number}{arXiv:2409.08704}
+    \field{shorttitle}{{{QueryCAD}}}
+    \field{title}{{{QueryCAD}}: {{Grounded Question Answering}} for {{CAD
+  Models}}}
+    \verb{file}
+    \verb /home/bal/Zotero/storage/I2YH4CEC/Kienle et al. - 2024 - QueryCAD Gro
+    \verb unded Question Answering for CAD Models.pdf;/home/bal/Zotero/storage/
+    \verb 5EC2KGEA/2409.html
+    \endverb
+    \field{eprinttype}{arxiv}
+    \field{eprintclass}{cs}
+    \field{month}{09}
+    \field{year}{2024}
+    \field{urlday}{27}
+    \field{urlmonth}{09}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{kienle_mutt_2024}{inproceedings}{}{}
+    \name{author}{7}{}{%
+      {{hash=KC}{%
+         family={Kienle},
+         familyi={K\bibinitperiod},
+         given={Claudius},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=CO}{%
+         family={Celik},
+         familyi={C\bibinitperiod},
+         given={Onur},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Becker},
+         familyi={B\bibinitperiod},
+         given={Philipp},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={J{\"a}kel},
+         familyi={J\bibinitperiod},
+         given={Rainer},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=NG}{%
+         family={Neumann},
+         familyi={N\bibinitperiod},
+         given={Gerhard},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{IEEE}}%
+    }
+    \keyw{Computer Science - Machine Learning,Computer Science - Robotics}
+    \strng{namehash}{KC+1}
+    \strng{fullhash}{KCABCOBPKDJRNG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    High-level robot skills represent an increasingly popular paradigm in robot
+  programming. However, configuring the skills' parameters for a specific task
+  remains a manual and time-consuming endeavor. Existing approaches for
+  learning or optimizing these parameters often require numerous real-world
+  executions or do not work in dynamic environments. To address these
+  challenges, we propose MuTT, a novel encoder-decoder transformer architecture
+  designed to predict environment-aware executions of robot skills by
+  integrating vision, trajectory, and robot skill parameters. Notably, we
+  pioneer the fusion of vision and trajectory, introducing a novel trajectory
+  projection. Furthermore, we illustrate MuTT's efficacy as a predictor when
+  combined with a model-based robot skill optimizer. This approach facilitates
+  the optimization of robot skill parameters for the current environment,
+  without the need for real-world executions during optimization. Designed for
+  compatibility with any representation of robot skills, MuTT demonstrates its
+  versatility across three comprehensive experiments, showcasing superior
+  performance across two different skill representations.%
+    }
+    \field{booktitle}{{{IEEE}}/{{RSJ International Conference}} on
+  {{Intelligent Robots}} and {{Systems}} ({{IROS}})}
+    \verb{doi}
+    \verb 10.48550/arXiv.2407.15660
+    \endverb
+    \verb{eprint}
+    \verb 2407.15660
+    \endverb
+    \field{shorttitle}{{{MuTT}}}
+    \field{title}{{{MuTT}}: {{A Multimodal Trajectory Transformer}} for {{Robot
+  Skills}}}
+    \list{location}{1}{%
+      {{Abu Dhabi}}%
+    }
+    \verb{file}
+    \verb /home/bal/Zotero/storage/5R53CYV4/Kienle et al. - 2024 - MuTT A Multi
+    \verb modal Trajectory Transformer for Robot Skills.pdf;/home/bal/Zotero/st
+    \verb orage/N4J4XCHV/2407.html
+    \endverb
+    \field{eprinttype}{arxiv}
+    \field{eprintclass}{cs}
+    \field{month}{08}
+    \field{year}{2024}
+    \field{urlday}{19}
+    \field{urlmonth}{09}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{schultheis_easy_2024}{article}{}{}
+    \name{author}{17}{}{%
+      {{hash=SA}{%
+         family={Schultheis},
+         familyi={S\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bast},
+         familyi={B\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Guldner},
+         familyi={G\bibinitperiod},
+         given={Achim},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=JD}{%
+         family={Jilg},
+         familyi={J\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Mundorf},
+         familyi={M\bibinitperiod},
+         given={Johannes},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Schlagenhauf},
+         familyi={S\bibinitperiod},
+         given={Tobias},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=WS}{%
+         family={Weber},
+         familyi={W\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Bergmann},
+         familyi={B\bibinitperiod},
+         given={Ralph},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bergweiler},
+         familyi={B\bibinitperiod},
+         given={Simon},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={Creutz},
+         familyi={C\bibinitperiod},
+         given={Lars},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=DG}{%
+         family={Dartmann},
+         familyi={D\bibinitperiod},
+         given={Guido},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=ML}{%
+         family={Malburg},
+         familyi={M\bibinitperiod},
+         given={Lukas},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=NS}{%
+         family={Naumann},
+         familyi={N\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Rezapour},
+         familyi={R\bibinitperiod},
+         given={Mahdi},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Ruskowski},
+         familyi={R\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Analysis and Control Processes,Artificial Intelligence,Edge-Cloud
+  Continuum,Energy- and Resource-Efficiency,my}
+    \strng{namehash}{SA+1}
+    \strng{fullhash}{SAABBSGAJDKDMJSTWSBRBSCLDGMLNSRMRM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    According to the guiding principles of Industry~4.0, edge computing enables
+  the data-sovereign and near-real-time processing of data directly at the
+  point of origin. Using these edge devices in manufacturing organization will
+  drive the use of industrial analysis, control, and Artificial Intelligence
+  (AI) applications close to production. The goal of the EASY project is to
+  make the added value of edge computing available by providing an easily
+  usable Edge-Cloud Continuum with a runtime environment and services for the
+  execution of AI-based Analysis and Control processes. Within this continuum,
+  a dynamic, distributed, and optimized execution of services is automated
+  across the entire spectrum from centralized cloud to decentralized edge
+  instances to increase productivity and resource efficiency.%
+    }
+    \verb{doi}
+    \verb 10.1007/s13218-024-00868-3
+    \endverb
+    \field{issn}{1610-1987}
+    \field{shorttitle}{{{EASY}}}
+    \field{title}{{{EASY}}: {{Energy-Efficient Analysis}} and {{Control
+  Processes}} in the {{Dynamic Edge-Cloud Continuum}} for {{Industrial
+  Manufacturing}}}
+    \field{langid}{english}
+    \verb{file}
+    \verb /home/bal/Zotero/storage/FGUCJREM/Schultheis et al. - 2024 - EASY Ene
+    \verb rgy-Efficient Analysis and Control Processes in the Dynamic Edge-Clou
+    \verb d Continuum for Indust.pdf
+    \endverb
+    \field{journaltitle}{KI - K{\"u}nstliche Intelligenz}
+    \field{month}{09}
+    \field{year}{2024}
+    \field{urlday}{05}
+    \field{urlmonth}{09}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{alt_knowledge-driven_2023}{inproceedings}{}{}
+    \name{author}{6}{}{%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=KFK}{%
+         family={Kenfack},
+         familyi={K\bibinitperiod},
+         given={Franklin\bibnamedelima Kenghagho},
+         giveni={F\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Haidu},
+         familyi={H\bibinitperiod},
+         given={Andrei},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={J{\"a}kel},
+         familyi={J\bibinitperiod},
+         given={Rainer},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Beetz},
+         familyi={B\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{IJCAI}}%
+    }
+    \keyw{68T30,Computer Science - Artificial Intelligence,Computer Science -
+  Robotics,D.1,F.3,I.2,my,relevant}
+    \strng{namehash}{AB+1}
+    \strng{fullhash}{ABKFKHAKDJRBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    Aging societies, labor shortages and increasing wage costs call for
+  assistance robots capable of autonomously performing a wide array of
+  real-world tasks. Such open-ended robotic manipulation requires not only
+  powerful knowledge representations and reasoning (KR\&R) algorithms, but also
+  methods for humans to instruct robots what tasks to perform and how to
+  perform them. In this paper, we present a system for automatically generating
+  executable robot control programs from human task demonstrations in virtual
+  reality (VR). We leverage common-sense knowledge and game engine-based
+  physics to semantically interpret human VR demonstrations, as well as an
+  expressive and general task representation and automatic path planning and
+  code generation, embedded into a state-of-the-art cognitive architecture. We
+  demonstrate our approach in the context of force-sensitive fetch-and-place
+  for a robotic shopping assistant. The source code is available at
+  https://github.com/ease-crc/vr-program-synthesis.%
+    }
+    \field{booktitle}{Proceedings of the 20th {{International Conference}} on
+  {{Principles}} of {{Knowledge Representation}} and {{Reasoning}}}
+    \field{isbn}{978-1-956792-02-7}
+    \field{pages}{34\bibrangedash 43}
+    \field{title}{Knowledge-{{Driven Robot Program Synthesis}} from {{Human VR
+  Demonstrations}}}
+    \list{location}{1}{%
+      {{Rhodes, Greece}}%
+    }
+    \verb{file}
+    \verb /home/bal/Zotero/storage/9PHHGSAD/2306.html
+    \endverb
+    \field{month}{09}
+    \field{year}{2023}
+  \endentry
+
+  \entry{alt_efficientpps_2023}{inproceedings}{}{}
+    \name{author}{7}{}{%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=NMD}{%
+         family={Nguyen},
+         familyi={N\bibinitperiod},
+         given={Minh\bibnamedelima Dang},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Hermann},
+         familyi={H\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={J{\"a}kel},
+         familyi={J\bibinitperiod},
+         given={Rainer},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=DR}{%
+         family={Dillmann},
+         familyi={D\bibinitperiod},
+         given={R{\"u}diger},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SE}{%
+         family={Sax},
+         familyi={S\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{VDE Verlag}}%
+    }
+    \keyw{my}
+    \strng{namehash}{AB+1}
+    \strng{fullhash}{ABNMDHAKDJRDRSE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    The use of autonomous robots for assistance tasks in hospitals has the
+  potential to free up qualified staff and improve patient care. However, the
+  ubiquity of deformable and transparent objects in hospital settings poses
+  significant challenges to vision-based perception systems. We present
+  EfficientPPS, a neural architecture for part-aware panoptic segmentation that
+  provides robots with semantically rich visual information for grasping and
+  manipulation tasks. We also present an unsupervised data collection and
+  labelling method to reduce the need for human involvement in the training
+  process. EfficientPPS is evaluated on a dataset containing real-world
+  hospital objects and demonstrated to be robust and efficient in grasping
+  transparent transfusion bags with a collaborative robot arm.%
+    }
+    \field{booktitle}{{{ISR Europe}} 2023}
+    \field{isbn}{978-3-8007-6140-1}
+    \field{title}{{{EfficientPPS}}: {{Part-aware Panoptic Segmentation}} of
+  {{Transparent Objects}} for {{Robotic Manipulation}}}
+    \list{location}{1}{%
+      {{Stuttgart, Germany}}%
+    }
+    \field{month}{09}
+    \field{year}{2023}
+  \endentry
+
+  \entry{raible_artificial_2023}{inproceedings}{}{}
+    \name{author}{10}{}{%
+      {{hash=RJ}{%
+         family={Raible},
+         familyi={R\bibinitperiod},
+         given={Julian},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=RO}{%
+         family={Rettig},
+         familyi={R\bibinitperiod},
+         given={Oliver},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=YA}{%
+         family={Yaman},
+         familyi={Y\bibinitperiod},
+         given={Alper},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GI}{%
+         family={Gauger},
+         familyi={G\bibinitperiod},
+         given={Isabelle},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={Biasi},
+         familyi={B\bibinitperiod},
+         given={Lorenzo},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={M{\"u}ller},
+         familyi={M\bibinitperiod},
+         given={Silvan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Strand},
+         familyi={S\bibinitperiod},
+         given={Marcus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HMF}{%
+         family={Huber},
+         familyi={H\bibinitperiod},
+         given={Marco\bibnamedelima F.},
+         giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \keyw{my}
+    \strng{namehash}{RJ+1}
+    \strng{fullhash}{RJROABYAGIBLMSKDSMHMF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    The absolute accuracy of industrial robots is influ-enced by numerous
+  geometric and non-geometric errors. Most state-of-the-art calibration and
+  compensation methods consider only the geometric errors and neglect the
+  non-geometric ones. In this paper, a hybrid compensation approach is proposed
+  that combines well-known kinematic models with a model-free data-driven
+  component using a neural network. This allows the use of established
+  calibration methods for the geometric influences captured in the kinematic
+  model to improve the non-geometric error compensation by the neural network.
+  The proposed approach is applied in two use cases: payload and wear
+  compensation. Simulations and real experiments show the improved absolute
+  accuracy of the hybrid compensation approach compared to classical
+  calibration methods.%
+    }
+    \field{booktitle}{2023 {{IEEE}} 19th {{International Conference}} on
+  {{Automation Science}} and {{Engineering}} ({{CASE}})}
+    \verb{doi}
+    \verb 10.1109/CASE56687.2023.10260559
+    \endverb
+    \field{issn}{2161-8089}
+    \field{pages}{1\bibrangedash 8}
+    \field{title}{Artificial {{Neural Network Guided Compensation}} of
+  {{Nonlinear Payload}} and {{Wear Effects}} for {{Industrial Robots}}}
+    \verb{file}
+    \verb /home/bal/Zotero/storage/WMG6FWY4/10260559.html
+    \endverb
+    \field{month}{08}
+    \field{year}{2023}
+    \field{urlday}{16}
+    \field{urlmonth}{12}
+    \field{urlyear}{2023}
+  \endentry
+
+  \entry{stockl_autonomous_2023-1}{inproceedings}{}{}
+    \name{author}{9}{}{%
+      {{hash=SF}{%
+         family={St{\"o}ckl},
+         familyi={S\bibinitperiod},
+         given={Florian},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Strand},
+         familyi={S\bibinitperiod},
+         given={Marcus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={M{\"u}ller},
+         familyi={M\bibinitperiod},
+         given={Silvan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Huber},
+         familyi={H\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Raible},
+         familyi={R\bibinitperiod},
+         given={Julian},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Braun},
+         familyi={B\bibinitperiod},
+         given={Christopher},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=MH}{%
+         family={Merkt},
+         familyi={M\bibinitperiod},
+         given={Holger},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \name{editor}{5}{}{%
+      {{hash=LSG}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Soon-Geul},
+         giveni={S\bibinithyphendelim G\bibinitperiod},
+      }}%
+      {{hash=AJ}{%
+         family={An},
+         familyi={A\bibinitperiod},
+         given={Jinung},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CNY}{%
+         family={Chong},
+         familyi={C\bibinitperiod},
+         given={Nak\bibnamedelima Young},
+         giveni={N\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Strand},
+         familyi={S\bibinitperiod},
+         given={Marcus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KJH}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Joo\bibnamedelima H.},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Springer Nature Switzerland}}%
+    }
+    \keyw{Autonomous grinding,Hybrid AI,my,Remanufacturing}
+    \strng{namehash}{SF+1}
+    \strng{fullhash}{SFSMMSHMRJBCKDABMH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    Discarded wind turbine blades generate a considerable amount of waste that
+  could be reduced by remanufacturing. Manual remanufacturing is too costly,
+  which is why research is being conducted into automation techniques. The main
+  problem is the individuality of work pieces due to damages. This work
+  presents a workflow that includes damage analysis based on scans of the
+  blade, subsequent path planning, control engineering with an AI controller
+  for grinding and automatic review of the grinding process. Current problems
+  are the inaccuracy of the robot used for scanning and the colour sensitivity
+  of the used laser scanner. Our next steps besides solving the mentioned
+  problems are to train a supervised machine learning algorithm with damage
+  examples and to implement a specific and multi-step path planning algorithm.%
+    }
+    \field{booktitle}{Intelligent {{Autonomous Systems}} 18}
+    \verb{doi}
+    \verb 10.1007/978-3-031-44981-9_38
+    \endverb
+    \field{isbn}{978-3-031-44981-9}
+    \field{pages}{451\bibrangedash 457}
+    \field{title}{Autonomous {{Surface Grinding}} of {{Wind Turbine Blades}}}
+    \field{langid}{english}
+    \list{location}{1}{%
+      {{Cham}}%
+    }
+    \field{month}{07}
+    \field{year}{2023}
+  \endentry
+
+  \entry{alt_method_2022}{patent}{}{}
+    \name{author}{3}{}{%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={J{\"a}kel},
+         familyi={J\bibinitperiod},
+         given={Rainer},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \keyw{my,relevant}
+    \strng{namehash}{AB+1}
+    \strng{fullhash}{ABJRKD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{number}{WO2022022784A1}
+    \field{title}{Method and {{System}} for {{Determining Optimized Program
+  Parameters}} for a {{Robot Program}}}
+    \list{location}{1}{%
+      {{Karlsruhe}}%
+    }
+    \field{type}{patent}
+    \field{annotation}{%
+    IPC:%
+    }
+    \field{month}{02}
+    \field{year}{2022}
+    \field{urlday}{28}
+    \field{urlmonth}{01}
+    \field{urlyear}{2023}
+  \endentry
+
+  \entry{alt_heuristic-free_2022}{inproceedings}{}{}
+    \name{author}{4}{}{%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={J{\"a}kel},
+         familyi={J\bibinitperiod},
+         given={Rainer},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Beetz},
+         familyi={B\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Adaptation models,my,relevant,Runtime,Search problems,Service
+  robots,Spirals,Stochastic processes,Training}
+    \strng{namehash}{AB+1}
+    \strng{fullhash}{ABKDJRBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    In both industrial and service domains, a central benefit of the use of
+  robots is their ability to quickly and reliably execute repetitive tasks.
+  However, even relatively simple peg-in-hole tasks are typically subject to
+  stochastic variations, requiring search motions to find relevant features
+  such as holes. While search improves robustness, it comes at the cost of
+  increased runtime: More exhaustive search will maximize the probability of
+  successfully executing a given task, but will significantly delay any
+  downstream tasks. This trade-off is typically resolved by human experts
+  according to simple heuristics, which are rarely optimal. This paper
+  introduces an automatic, data-driven and heuristic-free approach to optimize
+  robot search strategies. By training a neural model of the search strategy on
+  a large set of simulated stochastic environments, conditioning it on few
+  real-world examples and inverting the model, we can infer search strategies
+  which adapt to the time-variant characteristics of the underlying probability
+  distributions, while requiring very few real-world measurements. We evaluate
+  our approach on two different industrial robots in the context of spiral and
+  probe search for THT electronics assembly.**See github.com/benjaminalt/dpse
+  for code and data.%
+    }
+    \field{booktitle}{2022 {{IEEE}}/{{RSJ International Conference}} on
+  {{Intelligent Robots}} and {{Systems}} ({{IROS}})}
+    \verb{doi}
+    \verb 10.1109/IROS47612.2022.9982093
+    \endverb
+    \field{issn}{2153-0866}
+    \field{pages}{8887\bibrangedash 8893}
+    \field{title}{Heuristic-{{Free Optimization}} of {{Force-Controlled Robot
+  Search Strategies}} in {{Stochastic Environments}}}
+    \verb{file}
+    \verb /home/bal/Zotero/storage/SACZMZRB/Alt et al. - 2022 - Heuristic-free
+    \verb Optimization of Force-Controlled Ro.pdf;/home/bal/Zotero/storage/B4WT
+    \verb VLJP/9982093.html
+    \endverb
+    \field{month}{10}
+    \field{year}{2022}
+  \endentry
+
+  \entry{alt_lapseg3d_2022}{inproceedings}{}{}
+    \name{author}{8}{}{%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=KC}{%
+         family={Kunz},
+         familyi={K\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=YR}{%
+         family={Younis},
+         familyi={Y\bibinitperiod},
+         given={Rayan},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={J{\"a}kel},
+         familyi={J\bibinitperiod},
+         given={Rainer},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MBP}{%
+         family={{M{\"u}ller-Stich}},
+         familyi={M\bibinitperiod},
+         given={Beat\bibnamedelima Peter},
+         giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Wagner},
+         familyi={W\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MF}{%
+         family={{Mathis-Ullrich}},
+         familyi={M\bibinitperiod},
+         given={Franziska},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \keyw{Annotations,Laparoscopes,my,Pipelines,Point cloud compression,Robot
+  vision systems,Semantic segmentation,Training data}
+    \strng{namehash}{AB+1}
+    \strng{fullhash}{ABKCKDYRJRMBPWMMF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    The semantic segmentation of surgical scenes is a prerequisite for task
+  automation in robot assisted interventions. We propose LapSeg3D, a novel
+  DNN-based approach for the voxel-wise annotation of point clouds representing
+  surgical scenes. As the manual annotation of training data is highly time
+  consuming, we introduce a semi-autonomous clustering-based pipeline for the
+  annotation of the gallbladder, which is used to generate segmented labels for
+  the DNN. When evaluated against manually annotated data, LapSeg3D achieves an
+  F1 score of 0.94 for gallbladder segmentation on various datasets of ex-vivo
+  porcine livers. We show LapSeg3D to generalize accurately across different
+  gallbladders and datasets recorded with different RGB-D camera systems.%
+    }
+    \field{booktitle}{2022 {{IEEE}}/{{RSJ International Conference}} on
+  {{Intelligent Robots}} and {{Systems}} ({{IROS}})}
+    \verb{doi}
+    \verb 10.1109/IROS47612.2022.9981178
+    \endverb
+    \field{issn}{2153-0866}
+    \field{pages}{5265\bibrangedash 5270}
+    \field{shorttitle}{{{LapSeg3D}}}
+    \field{title}{{{LapSeg3D}}: {{Weakly Supervised Semantic Segmentation}} of
+  {{Point Clouds Representing Laparoscopic Scenes}}}
+    \verb{file}
+    \verb /home/bal/Zotero/storage/RBQVYHM8/Alt et al. - 2022 - LapSeg3D Weakly
+    \verb  Supervised Semantic Segmentation .pdf;/home/bal/Zotero/storage/5C3SR
+    \verb M9T/9981178.html
+    \endverb
+    \field{month}{10}
+    \field{year}{2022}
+  \endentry
+
+  \entry{kluy_mensch-roboter-kollaboration_2022}{incollection}{}{}
+    \name{author}{14}{}{%
+      {{hash=KL}{%
+         family={Kluy},
+         familyi={K\bibinitperiod},
+         given={Lina},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KL}{%
+         family={K{\"o}lmel},
+         familyi={K\bibinitperiod},
+         given={Lena},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Baumgartner},
+         familyi={B\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DB}{%
+         family={Deml},
+         familyi={D\bibinitperiod},
+         given={Barbara},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=HL}{%
+         family={Hornung},
+         familyi={H\bibinitperiod},
+         given={Luisa},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kinkel},
+         familyi={K\bibinitperiod},
+         given={Steffen},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Kopp},
+         familyi={K\bibinitperiod},
+         given={Tobias},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Lorenz},
+         familyi={L\bibinitperiod},
+         given={Maureen},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=NP}{%
+         family={Nicolai},
+         familyi={N\bibinitperiod},
+         given={Philip},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=RN}{%
+         family={Riedel},
+         familyi={R\bibinitperiod},
+         given={Norman},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Sch{\"a}fer},
+         familyi={S\bibinitperiod},
+         given={Arndt},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WC}{%
+         family={Wurll},
+         familyi={W\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \name{editor}{6}{}{%
+      {{hash=NV}{%
+         family={Nitsch},
+         familyi={N\bibinitperiod},
+         given={Verena},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Brandl},
+         familyi={B\bibinitperiod},
+         given={Christopher},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=HR}{%
+         family={H{\"a}u{\ss}ling},
+         familyi={H\bibinitperiod},
+         given={Roger},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Lemm},
+         familyi={L\bibinitperiod},
+         given={Jacqueline},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Gries},
+         familyi={G\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Schmenk},
+         familyi={S\bibinitperiod},
+         given={Bernhard},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Springer}}%
+    }
+    \keyw{my}
+    \strng{namehash}{KL+1}
+    \strng{fullhash}{KLKLABBMDBHLKDKSKTLMNPRNSAWC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    Die Einf{\"u}hrung von kollaborativen Robotern (Cobots) verspricht eine aus
+  arbeitswissenschaftlicher Sichtweise sinnvolle Zusammenarbeit zwischen Mensch
+  und Roboter. Gerade kleinen und mittleren Unternehmen (KMU) gelingt es
+  allerdings h{\"a}ufig nicht oder nur teilweise, die damit verbundenen
+  Potenziale zu erschlie{\ss}en. Das vorliegende Kapitel beschreibt zum einen
+  die Identifizierung, Analyse und Realisierung von Cobot-Potenzialen im
+  Projekt ProBot (,,Proaktive Diagnose und Gestaltung des CoBot-Einsatzes in
+  kleinen und mittleren Unternehmen``). Zum anderen wird die Entwicklung und
+  der Aufbau einer interaktiven Einf{\"u}hrungsunterst{\"u}tzung zur
+  niederschwelligen Planung und Umsetzung von
+  Mensch-Cobot-ArbeitssystemenMensch-Cobot-Arbeitssystem (MCA) (MCA) skizziert,
+  wobei einige der enthaltenen Methoden vertieft vorgestellt werden.
+  Dar{\"u}ber hinaus werden anhand realer Fallbeispiele von KMU die
+  M{\"o}glichkeiten und Grenzen von Mensch-Roboter-Kollaborationen (MRK)
+  anschaulich dargestellt. Die interaktive Einf{\"u}hrungsunterst{\"u}tzung
+  (KMU Cobot Coach) wird interessierten KMU unter folgender Adresse zur freien
+  Verf{\"u}gung online bereitgestellt: https://www.kmu-cobot-coach.de/.%
+    }
+    \field{booktitle}{{Digitalisierung der Arbeitswelt im Mittelstand 1:
+  Ergebnisse und Best Practice des BMBF-Forschungsschwerpunkts "Zukunft der
+  Arbeit: Mittelstand -- innovativ und sozial"}}
+    \verb{doi}
+    \verb 10.1007/978-3-662-64803-2_3
+    \endverb
+    \field{isbn}{978-3-662-64803-2}
+    \field{pages}{55\bibrangedash 97}
+    \field{title}{{Mensch-Roboter-Kollaboration in KMU -- Potenziale
+  identifizieren, analysieren und realisieren}}
+    \field{langid}{ngerman}
+    \list{location}{1}{%
+      {{Berlin, Heidelberg}}%
+    }
+    \field{year}{2022}
+    \field{urlday}{01}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{alt_robot_2021}{inproceedings}{}{}
+    \name{author}{5}{}{%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={J{\"a}kel},
+         familyi={J\bibinitperiod},
+         given={Rainer},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BAK}{%
+         family={Bozcuoglu},
+         familyi={B\bibinitperiod},
+         given={Asil\bibnamedelima Kaan},
+         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Beetz},
+         familyi={B\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Automation,Codes,Conferences,my,Production,relevant,Service
+  robots,Task analysis,Unsupervised learning}
+    \strng{namehash}{AB+1}
+    \strng{fullhash}{ABKDJRBAKBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    Challenging manipulation tasks can be solved effectively by combining
+  individual robot skills, which must be parameterized for the concrete
+  physical environment and task at hand. This is time-consuming and difficult
+  for human programmers, particularly for force-controlled skills. To this end,
+  we present Shadow Program Inversion (SPI), a novel approach to infer optimal
+  skill parameters directly from data. SPI leverages unsupervised learning to
+  train an auxiliary differentiable program representation ("shadow program")
+  and realizes parameter inference via gradient-based model inversion. Our
+  method enables the use of efficient first-order optimizers to infer optimal
+  parameters for originally non-differentiable skills, including many skill
+  variants currently used in production. SPI zero-shot generalizes across task
+  objectives, meaning that shadow programs do not need to be retrained to infer
+  parameters for different task variants. We evaluate our methods on three
+  different robots and skill frameworks in industrial and household scenarios.
+  Code and examples are available at https://innolab.artiminds.com/icra2021.%
+    }
+    \field{booktitle}{2021 {{IEEE International Conference}} on {{Robotics}}
+  and {{Automation}} ({{ICRA}})}
+    \verb{doi}
+    \verb 10.1109/ICRA48506.2021.9561206
+    \endverb
+    \field{issn}{2577-087X}
+    \field{pages}{4672\bibrangedash 4678}
+    \field{title}{Robot {{Program Parameter Inference}} via {{Differentiable
+  Shadow Program Inversion}}}
+    \verb{file}
+    \verb /home/bal/Zotero/storage/UD5WY2M9/9561206.html
+    \endverb
+    \field{month}{05}
+    \field{year}{2021}
+  \endentry
+
+  \entry{dittus_localization_2021}{inproceedings}{}{}
+    \name{author}{6}{}{%
+      {{hash=DS}{%
+         family={Dittus},
+         familyi={D\bibinitperiod},
+         given={Sven},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Hermann},
+         familyi={H\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={J{\"a}kel},
+         familyi={J\bibinitperiod},
+         given={Rainer},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=FJ}{%
+         family={Fleischer},
+         familyi={F\bibinitperiod},
+         given={J{\"u}rgen},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{IEEE}}%
+    }
+    \keyw{Computer Science - Computer Vision and Pattern Recognition,Computer
+  Science - Robotics,my,workshop}
+    \strng{namehash}{DS+1}
+    \strng{fullhash}{DSABHAKDJRFJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    This paper introduces an efficient procedure to localize user-defined
+  points on the surface of deformable objects and track their positions in 3D
+  space over time. To cope with a deformable object's infinite number of DOF,
+  we propose a discretized deformation field, which is estimated during runtime
+  using a multi-step non-linear solver pipeline. The resulting high-dimensional
+  energy minimization problem describes the deviation between an
+  offline-defined reference model and a pre-processed camera image. An
+  additional regularization term allows for assumptions about the object's
+  hidden areas and increases the solver's numerical stability. Our approach is
+  capable of solving the localization problem online in a data-parallel manner,
+  making it ideally suitable for the perception of non-rigid objects in
+  industrial manufacturing processes.%
+    }
+    \field{booktitle}{{{IEEE ICRA Workshop}} on {{Representing}} and
+  {{Manipulating Deformable Objects}}}
+    \verb{eprint}
+    \verb 2105.09067
+    \endverb
+    \field{title}{Localization and {{Tracking}} of {{User-Defined Points}} on
+  {{Deformable Objects}} for {{Robotic Manipulation}}}
+    \list{location}{1}{%
+      {{Xi'an, China}}%
+    }
+    \verb{file}
+    \verb /home/bal/Zotero/storage/LJ2NYCCB/Dittus et al. - 2021 - Localization
+    \verb  and Tracking of User-Defined Points o.pdf;/home/bal/Zotero/storage/F
+    \verb KPUV3WL/2105.html
+    \endverb
+    \field{eprinttype}{arxiv}
+    \field{month}{05}
+    \field{year}{2021}
+    \field{urlday}{02}
+    \field{urlmonth}{06}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{alt_modulare_2020}{inproceedings}{}{}
+    \name{author}{7}{}{%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=AF}{%
+         family={Aumann},
+         familyi={A\bibinitperiod},
+         given={Florian},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=GL}{%
+         family={Gienger},
+         familyi={G\bibinitperiod},
+         given={Lennart},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=JF}{%
+         family={Jordan},
+         familyi={J\bibinitperiod},
+         given={Florian},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={J{\"a}kel},
+         familyi={J\bibinitperiod},
+         given={Rainer},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GB}{%
+         family={Graf},
+         familyi={G\bibinitperiod},
+         given={Birgit},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{VDE Verlag}}%
+    }
+    \keyw{my}
+    \strng{namehash}{AB+1}
+    \strng{fullhash}{ABAFGLJFKDJRGB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    Increasing demand for high-standard elderly care and stagnant availability
+  of qualified labor makes the need for partially autonomous robotic ambient
+  assisted living (AAL) solutions increasingly urgent. The preparation and
+  serving of food and beverages is an important subdomain of care robotics,
+  which is rendered challenging by unstructured environments, a large variety
+  of manipulated objects and the need to interact with human users. This work
+  presents a modular, hardware agnostic approach for programming robots to
+  perform complex assistance functions in unstructured environments. We propose
+  a robot-agnostic library of parameterized robot skills which encapsulate
+  primitive tasks central to food preparation and serving, from which
+  hierarchical manipulation sequences can be constructed. We further propose an
+  approach for the automatic adaption of generated motions based on 3D point
+  clouds of the environment to manipulate objects of different dimensions and
+  shapes. We evaluate our solution on two 6-DOF robotic manipulators as well as
+  a bimanual humanoid assistance robot.%
+    }
+    \field{booktitle}{{{AAL-Kongress}} 2020}
+    \field{isbn}{978-3-8007-5342-0}
+    \field{pages}{17\bibrangedash 22}
+    \field{title}{Modulare, Datengetriebene {{Roboterprogrammierung}} F{\"u}r
+  Die {{L{\"o}sung}} Komplexer {{Handhabungsaufgaben}} in
+  {{Alltagsumgebungen}}}
+    \list{location}{1}{%
+      {{Berlin}}%
+    }
+    \verb{file}
+    \verb /home/bal/Zotero/storage/LT5KQM5A/N-608626.html
+    \endverb
+    \field{year}{2020}
+  \endentry
+
+  \entry{graf_ropha_2020}{incollection}{}{}
+    \name{author}{11}{}{%
+      {{hash=GB}{%
+         family={Graf},
+         familyi={G\bibinitperiod},
+         given={Birgit},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=JF}{%
+         family={Jordan},
+         familyi={J\bibinitperiod},
+         given={Florian},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=BG}{%
+         family={Blume},
+         familyi={B\bibinitperiod},
+         given={Gabriele},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Martin},
+         familyi={M\bibinitperiod},
+         given={Ronny},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=AM}{%
+         family={{Abdel-Keream}},
+         familyi={A\bibinitperiod},
+         given={Mona},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={Mania},
+         familyi={M\bibinitperiod},
+         given={Patrick},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GF}{%
+         family={Gronbach},
+         familyi={G\bibinitperiod},
+         given={Fabian},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=EC}{%
+         family={Emmerich},
+         familyi={E\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Schaller},
+         familyi={S\bibinitperiod},
+         given={Raphael},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Bundesanstalt f{\"u}r Arbeitsschutz und Arbeitsmedizin}}%
+    }
+    \keyw{my}
+    \strng{namehash}{GB+1}
+    \strng{fullhash}{GBJFBGMRAMMPGFECSRKDAB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    Ziel des RoPHa-Projekts war es, Grundfunktionen f{\"u}r die
+  Unterst{\"u}tzung {\"a}lterer und pfleged{\"u}rftiger Menschen bei der
+  Handhabung typischer Alltagsobjekte zu entwickeln. Als Use Case f{\"u}r die
+  beispielhafte Umsetzung und Integration der entwickelten Grundfunktionen
+  wurde die mundgerechte Bereitstellung von Nahrung betrachtet. Daf{\"u}r
+  wurden zun{\"a}chst eine systematische Anforderungsanalyse inklusive der
+  Betrachtung von ELS-Aspekten und eine Risikobetrachtung durchgef{\"u}hrt.
+  Danach wurde ein Interaktionskonzept basierend auf einer tabletgest{\"u}tzten
+  GUI und Sprachausgaben entwickelt. Im Bereich der Perzeption wurden
+  Funktionen f{\"u}r die Objekterkennung, die Lokalisierung und Klassifizierung
+  von Speisen, die Wahrnehmung des Menschen und f{\"u}r die aufgabenspezifische
+  Auswahl und Parametrierung von Perzeptionsfunktionen entwickelt und in ein
+  Gesamtsystem integriert. F{\"u}r die sichere Manipulation wurden
+  unterschiedliche elementare Handhabungsfertigkeiten, bspw. f{\"u}r das
+  Schneiden, Bestreuen, Aufnehmen und Anreichen von Speisen entwickelt. Im
+  Rahmen von zwei Testreihen mit Mitarbeitern aus der Pflege wurden die
+  entwickelten Szenarien evaluiert.%
+    }
+    \field{booktitle}{Autonome {{Roboter}} F{\"u}r {{Assistenz}}\-funktionen}
+    \field{pages}{118\bibrangedash 133}
+    \field{title}{{{RoPHa}} - {{Robuste Wahrnehmungsf{\"a}higkeiten}} F{\"u}r
+  {{Roboter}} Zur {{Unterst{\"u}tzung}} {\"A}lterer {{Nutzer}} Im
+  H{\"a}uslichen {{Umfeld}}}
+    \list{location}{1}{%
+      {{Dortmund}}%
+    }
+    \verb{file}
+    \verb /home/bal/Zotero/storage/DTA2TDQH/servlet.html
+    \endverb
+    \field{year}{2020}
+  \endentry
+\enddatalist
+\endinput

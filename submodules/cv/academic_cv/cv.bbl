@@ -1,0 +1,1641 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{alt_bansai_2024}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
+           family={Alt},
+           familyi={A\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b2e6233e9bfcab7d279cd45e4ddeffcf}{%
+           family={Dvorak},
+           familyi={D\bibinitperiod},
+           given={Julia},
+           giveni={J\bibinitperiod}}}%
+        {{hash=dbf991db0c3d71237f4d7d53d421a67f}{%
+           family={Katic},
+           familyi={K\bibinitperiod},
+           given={Darko},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6a57f73cf18c8f060581c1d8923ee21c}{%
+           family={Jäkel},
+           familyi={J\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3dd53ac30b09d0130d3ee99f06833a82}{%
+           family={Beetz},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d021a2f34cc0e2db17db9e20de92f8cc}{%
+           family={Lanza},
+           familyi={L\bibinitperiod},
+           given={Gisela},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Póvoa de Varzim, Portugal}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{d0b99cb35b8a5ed433a714ef060794ec}
+      \strng{fullhash}{d0b99cb35b8a5ed433a714ef060794ec}
+      \strng{fullhashraw}{d0b99cb35b8a5ed433a714ef060794ec}
+      \strng{bibnamehash}{d0b99cb35b8a5ed433a714ef060794ec}
+      \strng{authorbibnamehash}{d0b99cb35b8a5ed433a714ef060794ec}
+      \strng{authornamehash}{d0b99cb35b8a5ed433a714ef060794ec}
+      \strng{authorfullhash}{d0b99cb35b8a5ed433a714ef060794ec}
+      \strng{authorfullhashraw}{d0b99cb35b8a5ed433a714ef060794ec}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Over the past decade, deep learning helped solve manipulation problems across all domains of robotics. At the same time, industrial robots continue to be programmed overwhelmingly using traditional program representations and interfaces. This paper undertakes an analysis of this "AI adoption gap" from an industry practitioner's perspective. In response, we propose the BANSAI approach (Bridging the AI Adoption Gap via Neurosymbolic AI). It systematically leverages principles of neurosymbolic AI to establish data-driven, subsymbolic program synthesis and optimization in modern industrial robot programming workflow. BANSAI conceptually unites several lines of prior research and proposes a path toward practical, real-world validation.}
+      \field{booktitle}{57th {{CIRP Conference}} on {{Manufacturing Systems}} 2024}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arxiv}
+      \field{month}{5}
+      \field{shorttitle}{{{BANSAI}}}
+      \field{title}{{{BANSAI}}: {{Towards Bridging}} the {{AI Adoption Gap}} in {{Industrial Robotics}} with {{Neurosymbolic Programming}}}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.48550/arXiv.2404.13652
+      \endverb
+      \verb{eprint}
+      \verb 2404.13652
+      \endverb
+      \verb{file}
+      \verb /home/bal/Zotero/storage/WJ3VL9EH/2404.html
+      \endverb
+      \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science - Computational Engineering Finance and Science,Computer Science - Machine Learning,Computer Science - Robotics,I.2.1,I.2.2,I.2.9,J.6,J.7,my}
+    \endentry
+    \entry{alt_domain-specific_2024}{inproceedings}{}{}
+      \name{author}{7}{}{%
+        {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
+           family={Alt},
+           familyi={A\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=0693cccde8336f934cba8df2af7354e9}{%
+           family={Ke{ß}ner},
+           familyi={K\bibinitperiod},
+           given={Urs},
+           giveni={U\bibinitperiod}}}%
+        {{hash=4744e4e2076218b8ac2216f74c38e346}{%
+           family={Taranovic},
+           familyi={T\bibinitperiod},
+           given={Aleksandar},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dbf991db0c3d71237f4d7d53d421a67f}{%
+           family={Katic},
+           familyi={K\bibinitperiod},
+           given={Darko},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f605b4edcc43958eb014030ae71d4677}{%
+           family={Hermann},
+           familyi={H\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6a57f73cf18c8f060581c1d8923ee21c}{%
+           family={Jäkel},
+           familyi={J\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1896ab7f5b0b179c9ff54fbf39b31106}{%
+           family={Neumann},
+           familyi={N\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Rimini, Italy}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature}%
+      }
+      \strng{namehash}{eeba3f3953863cb6174aa470f49edb33}
+      \strng{fullhash}{eeba3f3953863cb6174aa470f49edb33}
+      \strng{fullhashraw}{eeba3f3953863cb6174aa470f49edb33}
+      \strng{bibnamehash}{eeba3f3953863cb6174aa470f49edb33}
+      \strng{authorbibnamehash}{eeba3f3953863cb6174aa470f49edb33}
+      \strng{authornamehash}{eeba3f3953863cb6174aa470f49edb33}
+      \strng{authorfullhash}{eeba3f3953863cb6174aa470f49edb33}
+      \strng{authorfullhashraw}{eeba3f3953863cb6174aa470f49edb33}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Industrial robots are applied in a widening range of industries, but robot programming mostly remains a task limited to programming experts. We propose a natural language-based assistant for programming of advanced, industrial robotic applications and investigate strategies for domain-specific fine-tuning of foundation models with limited data and compute.}
+      \field{booktitle}{European {{Robotics Forum}} 2024}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{isbn}{978-3-031-76428-8}
+      \field{month}{3}
+      \field{series}{Springer {{Proceedings}} in {{Advanced Robotics}}}
+      \field{title}{Domain-{{Specific Fine-Tuning}} of {{Large Language Models}} for {{Interactive Robot Programming}}}
+      \field{urlday}{22}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2312.13905
+      \endverb
+      \verb{file}
+      \verb C:\Users\alt\Zotero\storage\L4YRMDV3\2312.html
+      \endverb
+      \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Human-Computer Interaction,Computer Science - Machine Learning,Computer Science - Robotics,I.2.5,I.2.6,I.2.7,I.2.9,my,relevant}
+    \endentry
+    \entry{alt_efficientpps_2023}{inproceedings}{}{}
+      \name{author}{7}{}{%
+        {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
+           family={Alt},
+           familyi={A\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=014cb872056d3370bdabc898958d596c}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Minh\bibnamedelima Dang},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=f605b4edcc43958eb014030ae71d4677}{%
+           family={Hermann},
+           familyi={H\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dbf991db0c3d71237f4d7d53d421a67f}{%
+           family={Katic},
+           familyi={K\bibinitperiod},
+           given={Darko},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6a57f73cf18c8f060581c1d8923ee21c}{%
+           family={Jäkel},
+           familyi={J\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod}}}%
+        {{hash=4f51b188bf5e37c030c926d14f424d0e}{%
+           family={Dillmann},
+           familyi={D\bibinitperiod},
+           given={Rüdiger},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f6edc406efe2f0b7f0ce15869e359764}{%
+           family={Sax},
+           familyi={S\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Stuttgart, Germany}%
+      }
+      \list{publisher}{1}{%
+        {VDE Verlag}%
+      }
+      \strng{namehash}{2c1e4ee79effc674b32d79610cfad2a3}
+      \strng{fullhash}{2c1e4ee79effc674b32d79610cfad2a3}
+      \strng{fullhashraw}{2c1e4ee79effc674b32d79610cfad2a3}
+      \strng{bibnamehash}{2c1e4ee79effc674b32d79610cfad2a3}
+      \strng{authorbibnamehash}{2c1e4ee79effc674b32d79610cfad2a3}
+      \strng{authornamehash}{2c1e4ee79effc674b32d79610cfad2a3}
+      \strng{authorfullhash}{2c1e4ee79effc674b32d79610cfad2a3}
+      \strng{authorfullhashraw}{2c1e4ee79effc674b32d79610cfad2a3}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The use of autonomous robots for assistance tasks in hospitals has the potential to free up qualified staff and improve patient care. However, the ubiquity of deformable and transparent objects in hospital settings poses significant challenges to vision-based perception systems. We present EfficientPPS, a neural architecture for part-aware panoptic segmentation that provides robots with semantically rich visual information for grasping and manipulation tasks. We also present an unsupervised data collection and labelling method to reduce the need for human involvement in the training process. EfficientPPS is evaluated on a dataset containing real-world hospital objects and demonstrated to be robust and efficient in grasping transparent transfusion bags with a collaborative robot arm.}
+      \field{booktitle}{{{ISR Europe}} 2023}
+      \field{isbn}{978-3-8007-6140-1}
+      \field{month}{9}
+      \field{title}{{{EfficientPPS}}: {{Part-aware Panoptic Segmentation}} of {{Transparent Objects}} for {{Robotic Manipulation}}}
+      \field{year}{2023}
+      \true{nocite}
+      \keyw{my}
+    \endentry
+    \entry{alt_heuristic-free_2022}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
+           family={Alt},
+           familyi={A\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=dbf991db0c3d71237f4d7d53d421a67f}{%
+           family={Katic},
+           familyi={K\bibinitperiod},
+           given={Darko},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6a57f73cf18c8f060581c1d8923ee21c}{%
+           family={Jäkel},
+           familyi={J\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3dd53ac30b09d0130d3ee99f06833a82}{%
+           family={Beetz},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b2f66e59e0c294f16a0ebf647fb6310}
+      \strng{fullhash}{7b2f66e59e0c294f16a0ebf647fb6310}
+      \strng{fullhashraw}{7b2f66e59e0c294f16a0ebf647fb6310}
+      \strng{bibnamehash}{7b2f66e59e0c294f16a0ebf647fb6310}
+      \strng{authorbibnamehash}{7b2f66e59e0c294f16a0ebf647fb6310}
+      \strng{authornamehash}{7b2f66e59e0c294f16a0ebf647fb6310}
+      \strng{authorfullhash}{7b2f66e59e0c294f16a0ebf647fb6310}
+      \strng{authorfullhashraw}{7b2f66e59e0c294f16a0ebf647fb6310}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In both industrial and service domains, a central benefit of the use of robots is their ability to quickly and reliably execute repetitive tasks. However, even relatively simple peg-in-hole tasks are typically subject to stochastic variations, requiring search motions to find relevant features such as holes. While search improves robustness, it comes at the cost of increased runtime: More exhaustive search will maximize the probability of successfully executing a given task, but will significantly delay any downstream tasks. This trade-off is typically resolved by human experts according to simple heuristics, which are rarely optimal. This paper introduces an automatic, data-driven and heuristic-free approach to optimize robot search strategies. By training a neural model of the search strategy on a large set of simulated stochastic environments, conditioning it on few real-world examples and inverting the model, we can infer search strategies which adapt to the time-variant characteristics of the underlying probability distributions, while requiring very few real-world measurements. We evaluate our approach on two different industrial robots in the context of spiral and probe search for THT electronics assembly.**See github.com/benjaminalt/dpse for code and data.}
+      \field{booktitle}{2022 {{IEEE}}/{{RSJ International Conference}} on {{Intelligent Robots}} and {{Systems}} ({{IROS}})}
+      \field{issn}{2153-0866}
+      \field{month}{10}
+      \field{title}{Heuristic-{{Free Optimization}} of {{Force-Controlled Robot Search Strategies}} in {{Stochastic Environments}}}
+      \field{year}{2022}
+      \true{nocite}
+      \field{pages}{8887\bibrangedash 8893}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/IROS47612.2022.9982093
+      \endverb
+      \verb{file}
+      \verb /home/bal/Zotero/storage/SACZMZRB/Alt et al. - 2022 - Heuristic-free Optimization of Force-Controlled Ro.pdf;/home/bal/Zotero/storage/B4WTVLJP/9982093.html
+      \endverb
+      \keyw{Adaptation models,my,relevant,Runtime,Search problems,Service robots,Spirals,Stochastic processes,Training}
+    \endentry
+    \entry{alt_human-ai_2024}{inproceedings}{}{}
+      \name{author}{10}{}{%
+        {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
+           family={Alt},
+           familyi={A\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=856bad92c6ab82302f3069c36f8e4bf6}{%
+           family={Zahn},
+           familyi={Z\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2458d19a6ea472fa97732bf7885a0b2f}{%
+           family={Kienle},
+           familyi={K\bibinitperiod},
+           given={Claudius},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b2e6233e9bfcab7d279cd45e4ddeffcf}{%
+           family={Dvorak},
+           familyi={D\bibinitperiod},
+           given={Julia},
+           giveni={J\bibinitperiod}}}%
+        {{hash=38da35a89852d4a0448450bc61f29958}{%
+           family={May},
+           familyi={M\bibinitperiod},
+           given={Marvin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=dbf991db0c3d71237f4d7d53d421a67f}{%
+           family={Katic},
+           familyi={K\bibinitperiod},
+           given={Darko},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6a57f73cf18c8f060581c1d8923ee21c}{%
+           family={Jäkel},
+           familyi={J\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod}}}%
+        {{hash=8b50812ed0d997b1a8be1478d126aa48}{%
+           family={Kopp},
+           familyi={K\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+        {{hash=3dd53ac30b09d0130d3ee99f06833a82}{%
+           family={Beetz},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d021a2f34cc0e2db17db9e20de92f8cc}{%
+           family={Lanza},
+           familyi={L\bibinitperiod},
+           given={Gisela},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Póvoa de Varzim, Portugal}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{46adb424d289d89b851df74c8f52bf0e}
+      \strng{fullhash}{46adb424d289d89b851df74c8f52bf0e}
+      \strng{fullhashraw}{46adb424d289d89b851df74c8f52bf0e}
+      \strng{bibnamehash}{46adb424d289d89b851df74c8f52bf0e}
+      \strng{authorbibnamehash}{46adb424d289d89b851df74c8f52bf0e}
+      \strng{authornamehash}{46adb424d289d89b851df74c8f52bf0e}
+      \strng{authorfullhash}{46adb424d289d89b851df74c8f52bf0e}
+      \strng{authorfullhashraw}{46adb424d289d89b851df74c8f52bf0e}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{While recent advances in deep learning have demonstrated its transformative potential, its adoption for real-world manufacturing applications remains limited. We present an Explanation User Interface (XUI) for a state-of-the-art deep learning-based robot program optimizer which provides both naive and expert users with different user experiences depending on their skill level, as well as Explainable AI (XAI) features to facilitate the application of deep learning methods in real-world applications. To evaluate the impact of the XUI on task performance, user satisfaction and cognitive load, we present the results of a preliminary user survey and propose a study design for a large-scale follow-up study.}
+      \field{booktitle}{57th {{CIRP Conference}} on {{Manufacturing Systems}} 2024}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arxiv}
+      \field{month}{4}
+      \field{shorttitle}{Human-{{AI Interaction}} in {{Industrial Robotics}}}
+      \field{title}{Human-{{AI Interaction}} in {{Industrial Robotics}}: {{Design}} and {{Empirical Evaluation}} of a {{User Interface}} for {{Explainable AI-Based Robot Program Optimization}}}
+      \field{urlday}{10}
+      \field{urlmonth}{5}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.48550/arXiv.2404.19349
+      \endverb
+      \verb{eprint}
+      \verb 2404.19349
+      \endverb
+      \verb{file}
+      \verb /home/bal/Zotero/storage/ERH4U8FW/2404.html
+      \endverb
+      \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science - Computational Engineering Finance and Science,Computer Science - Human-Computer Interaction,Computer Science - Machine Learning,Computer Science - Robotics,I.2.1,I.2.2,I.2.9,J.6,J.7,my}
+    \endentry
+    \entry{alt_knowledge-driven_2023}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
+           family={Alt},
+           familyi={A\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=036ce1087179e0153c5ad4b7cb0a8d5f}{%
+           family={Kenfack},
+           familyi={K\bibinitperiod},
+           given={Franklin\bibnamedelima Kenghagho},
+           giveni={F\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=bcc4fab43b1699cf3e54e158cfadc4a5}{%
+           family={Haidu},
+           familyi={H\bibinitperiod},
+           given={Andrei},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dbf991db0c3d71237f4d7d53d421a67f}{%
+           family={Katic},
+           familyi={K\bibinitperiod},
+           given={Darko},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6a57f73cf18c8f060581c1d8923ee21c}{%
+           family={Jäkel},
+           familyi={J\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3dd53ac30b09d0130d3ee99f06833a82}{%
+           family={Beetz},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Rhodes, Greece}%
+      }
+      \list{publisher}{1}{%
+        {IJCAI}%
+      }
+      \strng{namehash}{5d1bbee8038415336374ccdf0a9106f3}
+      \strng{fullhash}{5d1bbee8038415336374ccdf0a9106f3}
+      \strng{fullhashraw}{5d1bbee8038415336374ccdf0a9106f3}
+      \strng{bibnamehash}{5d1bbee8038415336374ccdf0a9106f3}
+      \strng{authorbibnamehash}{5d1bbee8038415336374ccdf0a9106f3}
+      \strng{authornamehash}{5d1bbee8038415336374ccdf0a9106f3}
+      \strng{authorfullhash}{5d1bbee8038415336374ccdf0a9106f3}
+      \strng{authorfullhashraw}{5d1bbee8038415336374ccdf0a9106f3}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Aging societies, labor shortages and increasing wage costs call for assistance robots capable of autonomously performing a wide array of real-world tasks. Such open-ended robotic manipulation requires not only powerful knowledge representations and reasoning (KR\&R) algorithms, but also methods for humans to instruct robots what tasks to perform and how to perform them. In this paper, we present a system for automatically generating executable robot control programs from human task demonstrations in virtual reality (VR). We leverage common-sense knowledge and game engine-based physics to semantically interpret human VR demonstrations, as well as an expressive and general task representation and automatic path planning and code generation, embedded into a state-of-the-art cognitive architecture. We demonstrate our approach in the context of force-sensitive fetch-and-place for a robotic shopping assistant. The source code is available at https://github.com/ease-crc/vr-program-synthesis.}
+      \field{booktitle}{Proceedings of the 20th {{International Conference}} on {{Principles}} of {{Knowledge Representation}} and {{Reasoning}}}
+      \field{isbn}{978-1-956792-02-7}
+      \field{month}{9}
+      \field{title}{Knowledge-{{Driven Robot Program Synthesis}} from {{Human VR Demonstrations}}}
+      \field{year}{2023}
+      \true{nocite}
+      \field{pages}{34\bibrangedash 43}
+      \range{pages}{10}
+      \verb{file}
+      \verb /home/bal/Zotero/storage/9PHHGSAD/2306.html
+      \endverb
+      \keyw{68T30,Computer Science - Artificial Intelligence,Computer Science - Robotics,D.1,F.3,I.2,my,relevant}
+    \endentry
+    \entry{alt_lapseg3d_2022}{inproceedings}{}{}
+      \name{author}{8}{}{%
+        {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
+           family={Alt},
+           familyi={A\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e0e13ead12020bc2c44684c321615ecc}{%
+           family={Kunz},
+           familyi={K\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=dbf991db0c3d71237f4d7d53d421a67f}{%
+           family={Katic},
+           familyi={K\bibinitperiod},
+           given={Darko},
+           giveni={D\bibinitperiod}}}%
+        {{hash=3d142d59f40f34d46158b151b0962b4e}{%
+           family={Younis},
+           familyi={Y\bibinitperiod},
+           given={Rayan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6a57f73cf18c8f060581c1d8923ee21c}{%
+           family={Jäkel},
+           familyi={J\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod}}}%
+        {{hash=4c7814ce0f062515d5f2fbb61822c390}{%
+           family={{Müller-Stich}},
+           familyi={M\bibinitperiod},
+           given={Beat\bibnamedelima Peter},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=e2092c5534460b82c3fd4a53add60ecd}{%
+           family={Wagner},
+           familyi={W\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=23f452553fe1a43d3384389d00bc840e}{%
+           family={{Mathis-Ullrich}},
+           familyi={M\bibinitperiod},
+           given={Franziska},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d2e017635f515272a7833e05816c302}
+      \strng{fullhash}{3d2e017635f515272a7833e05816c302}
+      \strng{fullhashraw}{3d2e017635f515272a7833e05816c302}
+      \strng{bibnamehash}{3d2e017635f515272a7833e05816c302}
+      \strng{authorbibnamehash}{3d2e017635f515272a7833e05816c302}
+      \strng{authornamehash}{3d2e017635f515272a7833e05816c302}
+      \strng{authorfullhash}{3d2e017635f515272a7833e05816c302}
+      \strng{authorfullhashraw}{3d2e017635f515272a7833e05816c302}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The semantic segmentation of surgical scenes is a prerequisite for task automation in robot assisted interventions. We propose LapSeg3D, a novel DNN-based approach for the voxel-wise annotation of point clouds representing surgical scenes. As the manual annotation of training data is highly time consuming, we introduce a semi-autonomous clustering-based pipeline for the annotation of the gallbladder, which is used to generate segmented labels for the DNN. When evaluated against manually annotated data, LapSeg3D achieves an F1 score of 0.94 for gallbladder segmentation on various datasets of ex-vivo porcine livers. We show LapSeg3D to generalize accurately across different gallbladders and datasets recorded with different RGB-D camera systems.}
+      \field{booktitle}{2022 {{IEEE}}/{{RSJ International Conference}} on {{Intelligent Robots}} and {{Systems}} ({{IROS}})}
+      \field{issn}{2153-0866}
+      \field{month}{10}
+      \field{shorttitle}{{{LapSeg3D}}}
+      \field{title}{{{LapSeg3D}}: {{Weakly Supervised Semantic Segmentation}} of {{Point Clouds Representing Laparoscopic Scenes}}}
+      \field{year}{2022}
+      \true{nocite}
+      \field{pages}{5265\bibrangedash 5270}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/IROS47612.2022.9981178
+      \endverb
+      \verb{file}
+      \verb /home/bal/Zotero/storage/RBQVYHM8/Alt et al. - 2022 - LapSeg3D Weakly Supervised Semantic Segmentation .pdf;/home/bal/Zotero/storage/5C3SRM9T/9981178.html
+      \endverb
+      \keyw{Annotations,Laparoscopes,my,Pipelines,Point cloud compression,Robot vision systems,Semantic segmentation,Training data}
+    \endentry
+    \entry{alt_method_2022}{patent}{}{}
+      \name{author}{3}{}{%
+        {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
+           family={Alt},
+           familyi={A\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=6a57f73cf18c8f060581c1d8923ee21c}{%
+           family={Jäkel},
+           familyi={J\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod}}}%
+        {{hash=dbf991db0c3d71237f4d7d53d421a67f}{%
+           family={Katic},
+           familyi={K\bibinitperiod},
+           given={Darko},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Karlsruhe}%
+      }
+      \strng{namehash}{f11cc708769b44a0f45d8d1db3272c8f}
+      \strng{fullhash}{f11cc708769b44a0f45d8d1db3272c8f}
+      \strng{fullhashraw}{f11cc708769b44a0f45d8d1db3272c8f}
+      \strng{bibnamehash}{f11cc708769b44a0f45d8d1db3272c8f}
+      \strng{authorbibnamehash}{f11cc708769b44a0f45d8d1db3272c8f}
+      \strng{authornamehash}{f11cc708769b44a0f45d8d1db3272c8f}
+      \strng{authorfullhash}{f11cc708769b44a0f45d8d1db3272c8f}
+      \strng{authorfullhashraw}{f11cc708769b44a0f45d8d1db3272c8f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{IPC:}
+      \field{month}{2}
+      \field{number}{WO2022022784A1}
+      \field{title}{Method and {{System}} for {{Determining Optimized Program Parameters}} for a {{Robot Program}}}
+      \field{urlday}{28}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \keyw{my,relevant}
+    \endentry
+    \entry{alt_modulare_2020}{inproceedings}{}{}
+      \name{author}{7}{}{%
+        {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
+           family={Alt},
+           familyi={A\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=46492b6c836822c1d5e06f1c3e39131e}{%
+           family={Aumann},
+           familyi={A\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=ef74b5f2c692aa05952968c33361033d}{%
+           family={Gienger},
+           familyi={G\bibinitperiod},
+           given={Lennart},
+           giveni={L\bibinitperiod}}}%
+        {{hash=128f5b4864125fc4df183e604c537ca2}{%
+           family={Jordan},
+           familyi={J\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=dbf991db0c3d71237f4d7d53d421a67f}{%
+           family={Katic},
+           familyi={K\bibinitperiod},
+           given={Darko},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6a57f73cf18c8f060581c1d8923ee21c}{%
+           family={Jäkel},
+           familyi={J\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3a84696423909dc84c98b30370306d1d}{%
+           family={Graf},
+           familyi={G\bibinitperiod},
+           given={Birgit},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {VDE Verlag}%
+      }
+      \strng{namehash}{e24c5a379a4277de5e6d475160d1c211}
+      \strng{fullhash}{e24c5a379a4277de5e6d475160d1c211}
+      \strng{fullhashraw}{e24c5a379a4277de5e6d475160d1c211}
+      \strng{bibnamehash}{e24c5a379a4277de5e6d475160d1c211}
+      \strng{authorbibnamehash}{e24c5a379a4277de5e6d475160d1c211}
+      \strng{authornamehash}{e24c5a379a4277de5e6d475160d1c211}
+      \strng{authorfullhash}{e24c5a379a4277de5e6d475160d1c211}
+      \strng{authorfullhashraw}{e24c5a379a4277de5e6d475160d1c211}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Increasing demand for high-standard elderly care and stagnant availability of qualified labor makes the need for partially autonomous robotic ambient assisted living (AAL) solutions increasingly urgent. The preparation and serving of food and beverages is an important subdomain of care robotics, which is rendered challenging by unstructured environments, a large variety of manipulated objects and the need to interact with human users. This work presents a modular, hardware agnostic approach for programming robots to perform complex assistance functions in unstructured environments. We propose a robot-agnostic library of parameterized robot skills which encapsulate primitive tasks central to food preparation and serving, from which hierarchical manipulation sequences can be constructed. We further propose an approach for the automatic adaption of generated motions based on 3D point clouds of the environment to manipulate objects of different dimensions and shapes. We evaluate our solution on two 6-DOF robotic manipulators as well as a bimanual humanoid assistance robot.}
+      \field{booktitle}{{{AAL-Kongress}} 2020}
+      \field{isbn}{978-3-8007-5342-0}
+      \field{title}{Modulare, Datengetriebene {{Roboterprogrammierung}} Für Die {{Lösung}} Komplexer {{Handhabungsaufgaben}} in {{Alltagsumgebungen}}}
+      \field{year}{2020}
+      \true{nocite}
+      \field{pages}{17\bibrangedash 22}
+      \range{pages}{6}
+      \verb{file}
+      \verb /home/bal/Zotero/storage/LT5KQM5A/N-608626.html
+      \endverb
+      \keyw{my}
+    \endentry
+    \entry{alt_robogrind_2024}{inproceedings}{}{}
+      \name{author}{13}{}{%
+        {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
+           family={Alt},
+           familyi={A\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b615ccec78ccce87526ffae3239a90f6}{%
+           family={Stöckl},
+           familyi={S\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=b8f1de82f48f2adf073412927295de53}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Silvan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d2f1778f2b2ef63b11623dd75c032b1f}{%
+           family={Braun},
+           familyi={B\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fc57ec5834758109b3fdbfdea28446a5}{%
+           family={Raible},
+           familyi={R\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3e4dd996e4a7f9388fa3507bb92761ea}{%
+           family={Alhasan},
+           familyi={A\bibinitperiod},
+           given={Saad},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fcec48f070c3007e7e9f57ad1fe1be86}{%
+           family={Rettig},
+           familyi={R\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod}}}%
+        {{hash=5ed80260adb2b88a3cdd4beba773bae2}{%
+           family={Ringle},
+           familyi={R\bibinitperiod},
+           given={Lukas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=dbf991db0c3d71237f4d7d53d421a67f}{%
+           family={Katic},
+           familyi={K\bibinitperiod},
+           given={Darko},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6a57f73cf18c8f060581c1d8923ee21c}{%
+           family={Jäkel},
+           familyi={J\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3dd53ac30b09d0130d3ee99f06833a82}{%
+           family={Beetz},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5dd3bccdfa4d543ceace22454ab3548f}{%
+           family={Strand},
+           familyi={S\bibinitperiod},
+           given={Marcus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d71df99b7075b53c123b8d5d3e1ffce1}{%
+           family={Huber},
+           familyi={H\bibinitperiod},
+           given={Marco\bibnamedelima F.},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Yokohama, Japan}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{af0d41e4f5c1798d7668f89f130f6168}
+      \strng{fullhash}{af0d41e4f5c1798d7668f89f130f6168}
+      \strng{fullhashraw}{af0d41e4f5c1798d7668f89f130f6168}
+      \strng{bibnamehash}{af0d41e4f5c1798d7668f89f130f6168}
+      \strng{authorbibnamehash}{af0d41e4f5c1798d7668f89f130f6168}
+      \strng{authornamehash}{af0d41e4f5c1798d7668f89f130f6168}
+      \strng{authorfullhash}{af0d41e4f5c1798d7668f89f130f6168}
+      \strng{authorfullhashraw}{af0d41e4f5c1798d7668f89f130f6168}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Surface treatment tasks such as grinding, sanding or polishing are a vital step of the value chain in many industries, but are notoriously challenging to automate. We present RoboGrind, an integrated system for the intuitive, interactive automation of surface treatment tasks with industrial robots. It combines a sophisticated 3D perception pipeline for surface scanning and automatic defect identification, an interactive voice-controlled wizard system for the AI-assisted bootstrapping and parameterization of robot programs, and an automatic planning and execution pipeline for force-controlled robotic surface treatment. RoboGrind is evaluated both under laboratory and real-world conditions in the context of refabricating fiberglass wind turbine blades.}
+      \field{booktitle}{2024 {{IEEE International Conference}} on {{Robotics}} and {{Automation}} ({{ICRA}})}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arxiv}
+      \field{isbn}{979-8-3503-8457-4}
+      \field{month}{5}
+      \field{shorttitle}{{{RoboGrind}}}
+      \field{title}{{{RoboGrind}}: {{Intuitive}} and {{Interactive Surface Treatment}} with {{Industrial Robots}}}
+      \field{urlday}{5}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1109/ICRA57147.2024.10611143
+      \endverb
+      \verb{eprint}
+      \verb 2402.16542
+      \endverb
+      \verb{file}
+      \verb /home/bal/Zotero/storage/MII54EVS/2402.html
+      \endverb
+      \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science - Robotics,I.2.2,I.2.6,I.2.9,my,relevant}
+    \endentry
+    \entry{alt_robot_2021}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
+           family={Alt},
+           familyi={A\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=dbf991db0c3d71237f4d7d53d421a67f}{%
+           family={Katic},
+           familyi={K\bibinitperiod},
+           given={Darko},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6a57f73cf18c8f060581c1d8923ee21c}{%
+           family={Jäkel},
+           familyi={J\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod}}}%
+        {{hash=07e4adae9ae27498fa827dedbd5740a3}{%
+           family={Bozcuoglu},
+           familyi={B\bibinitperiod},
+           given={Asil\bibnamedelima Kaan},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=3dd53ac30b09d0130d3ee99f06833a82}{%
+           family={Beetz},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{efb4896318b6631f12a8c03e7cfe3aa4}
+      \strng{fullhash}{efb4896318b6631f12a8c03e7cfe3aa4}
+      \strng{fullhashraw}{efb4896318b6631f12a8c03e7cfe3aa4}
+      \strng{bibnamehash}{efb4896318b6631f12a8c03e7cfe3aa4}
+      \strng{authorbibnamehash}{efb4896318b6631f12a8c03e7cfe3aa4}
+      \strng{authornamehash}{efb4896318b6631f12a8c03e7cfe3aa4}
+      \strng{authorfullhash}{efb4896318b6631f12a8c03e7cfe3aa4}
+      \strng{authorfullhashraw}{efb4896318b6631f12a8c03e7cfe3aa4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Challenging manipulation tasks can be solved effectively by combining individual robot skills, which must be parameterized for the concrete physical environment and task at hand. This is time-consuming and difficult for human programmers, particularly for force-controlled skills. To this end, we present Shadow Program Inversion (SPI), a novel approach to infer optimal skill parameters directly from data. SPI leverages unsupervised learning to train an auxiliary differentiable program representation ("shadow program") and realizes parameter inference via gradient-based model inversion. Our method enables the use of efficient first-order optimizers to infer optimal parameters for originally non-differentiable skills, including many skill variants currently used in production. SPI zero-shot generalizes across task objectives, meaning that shadow programs do not need to be retrained to infer parameters for different task variants. We evaluate our methods on three different robots and skill frameworks in industrial and household scenarios. Code and examples are available at https://innolab.artiminds.com/icra2021.}
+      \field{booktitle}{2021 {{IEEE International Conference}} on {{Robotics}} and {{Automation}} ({{ICRA}})}
+      \field{issn}{2577-087X}
+      \field{month}{5}
+      \field{title}{Robot {{Program Parameter Inference}} via {{Differentiable Shadow Program Inversion}}}
+      \field{year}{2021}
+      \true{nocite}
+      \field{pages}{4672\bibrangedash 4678}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/ICRA48506.2021.9561206
+      \endverb
+      \verb{file}
+      \verb /home/bal/Zotero/storage/UD5WY2M9/9561206.html
+      \endverb
+      \keyw{Automation,Codes,Conferences,my,Production,relevant,Service robots,Task analysis,Unsupervised learning}
+    \endentry
+    \entry{alt_shadow_2024}{misc}{}{}
+      \name{author}{5}{}{%
+        {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
+           family={Alt},
+           familyi={A\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=2458d19a6ea472fa97732bf7885a0b2f}{%
+           family={Kienle},
+           familyi={K\bibinitperiod},
+           given={Claudius},
+           giveni={C\bibinitperiod}}}%
+        {{hash=dbf991db0c3d71237f4d7d53d421a67f}{%
+           family={Katic},
+           familyi={K\bibinitperiod},
+           given={Darko},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6a57f73cf18c8f060581c1d8923ee21c}{%
+           family={Jäkel},
+           familyi={J\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3dd53ac30b09d0130d3ee99f06833a82}{%
+           family={Beetz},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{5659b8076ecba9d41ccba19f4194d1f6}
+      \strng{fullhash}{5659b8076ecba9d41ccba19f4194d1f6}
+      \strng{fullhashraw}{5659b8076ecba9d41ccba19f4194d1f6}
+      \strng{bibnamehash}{5659b8076ecba9d41ccba19f4194d1f6}
+      \strng{authorbibnamehash}{5659b8076ecba9d41ccba19f4194d1f6}
+      \strng{authornamehash}{5659b8076ecba9d41ccba19f4194d1f6}
+      \strng{authorfullhash}{5659b8076ecba9d41ccba19f4194d1f6}
+      \strng{authorfullhashraw}{5659b8076ecba9d41ccba19f4194d1f6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This paper presents SPI-DP, a novel first-order optimizer capable of optimizing robot programs with respect to both high-level task objectives and motion-level constraints. To that end, we introduce DGPMP2-ND, a differentiable collision-free motion planner for serial N-DoF kinematics, and integrate it into an iterative, gradient-based optimization approach for generic, parameterized robot program representations. SPI-DP allows first-order optimization of planned trajectories and program parameters with respect to objectives such as cycle time or smoothness subject to e.g. collision constraints, while enabling humans to understand, modify or even certify the optimized programs. We provide a comprehensive evaluation on two practical household and industrial applications.}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arxiv}
+      \field{month}{9}
+      \field{number}{arXiv:2409.08678}
+      \field{shorttitle}{Shadow {{Program Inversion}} with {{Differentiable Planning}}}
+      \field{title}{Shadow {{Program Inversion}} with {{Differentiable Planning}}: {{A Framework}} for {{Unified Robot Program Parameter}} and {{Trajectory Optimization}}}
+      \field{urlday}{23}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.48550/arXiv.2409.08678
+      \endverb
+      \verb{eprint}
+      \verb 2409.08678
+      \endverb
+      \verb{file}
+      \verb /home/bal/Zotero/storage/JPCMCRKQ/Alt et al. - 2024 - Shadow Program Inversion with Differentiable Planning A Framework for Unified Robot Program Paramet.pdf;/home/bal/Zotero/storage/6IP3PMQM/2409.html
+      \endverb
+      \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science - Robotics,D.1,I.2}
+    \endentry
+    \entry{dittus_localization_2021}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=4e157a351b67bb51d4273793f84d39a0}{%
+           family={Dittus},
+           familyi={D\bibinitperiod},
+           given={Sven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
+           family={Alt},
+           familyi={A\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=f605b4edcc43958eb014030ae71d4677}{%
+           family={Hermann},
+           familyi={H\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dbf991db0c3d71237f4d7d53d421a67f}{%
+           family={Katic},
+           familyi={K\bibinitperiod},
+           given={Darko},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6a57f73cf18c8f060581c1d8923ee21c}{%
+           family={Jäkel},
+           familyi={J\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod}}}%
+        {{hash=bd3a118d192a01a1787cd9f4e565219c}{%
+           family={Fleischer},
+           familyi={F\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Xi'an, China}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{cc715bbde95abe60f9b5695ee22f979c}
+      \strng{fullhash}{cc715bbde95abe60f9b5695ee22f979c}
+      \strng{fullhashraw}{cc715bbde95abe60f9b5695ee22f979c}
+      \strng{bibnamehash}{cc715bbde95abe60f9b5695ee22f979c}
+      \strng{authorbibnamehash}{cc715bbde95abe60f9b5695ee22f979c}
+      \strng{authornamehash}{cc715bbde95abe60f9b5695ee22f979c}
+      \strng{authorfullhash}{cc715bbde95abe60f9b5695ee22f979c}
+      \strng{authorfullhashraw}{cc715bbde95abe60f9b5695ee22f979c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper introduces an efficient procedure to localize user-defined points on the surface of deformable objects and track their positions in 3D space over time. To cope with a deformable object's infinite number of DOF, we propose a discretized deformation field, which is estimated during runtime using a multi-step non-linear solver pipeline. The resulting high-dimensional energy minimization problem describes the deviation between an offline-defined reference model and a pre-processed camera image. An additional regularization term allows for assumptions about the object's hidden areas and increases the solver's numerical stability. Our approach is capable of solving the localization problem online in a data-parallel manner, making it ideally suitable for the perception of non-rigid objects in industrial manufacturing processes.}
+      \field{booktitle}{{{IEEE ICRA Workshop}} on {{Representing}} and {{Manipulating Deformable Objects}}}
+      \field{eprinttype}{arxiv}
+      \field{month}{5}
+      \field{title}{Localization and {{Tracking}} of {{User-Defined Points}} on {{Deformable Objects}} for {{Robotic Manipulation}}}
+      \field{urlday}{2}
+      \field{urlmonth}{6}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2105.09067
+      \endverb
+      \verb{file}
+      \verb /home/bal/Zotero/storage/LJ2NYCCB/Dittus et al. - 2021 - Localization and Tracking of User-Defined Points o.pdf;/home/bal/Zotero/storage/FKPUV3WL/2105.html
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition,Computer Science - Robotics,my,workshop}
+    \endentry
+    \entry{graf_ropha_2020}{incollection}{}{}
+      \name{author}{11}{}{%
+        {{hash=3a84696423909dc84c98b30370306d1d}{%
+           family={Graf},
+           familyi={G\bibinitperiod},
+           given={Birgit},
+           giveni={B\bibinitperiod}}}%
+        {{hash=128f5b4864125fc4df183e604c537ca2}{%
+           family={Jordan},
+           familyi={J\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=e3c6cc7fd8fa07e8aead2c00af1befef}{%
+           family={Blume},
+           familyi={B\bibinitperiod},
+           given={Gabriele},
+           giveni={G\bibinitperiod}}}%
+        {{hash=44e35eb806ce529419555ac6cf6e0d54}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Ronny},
+           giveni={R\bibinitperiod}}}%
+        {{hash=71968ca393151530c2bf469706661a8e}{%
+           family={{Abdel-Keream}},
+           familyi={A\bibinitperiod},
+           given={Mona},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0800ad24edaaa4f70851bb2e12f3c1c6}{%
+           family={Mania},
+           familyi={M\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=fbe7955a83420134b5709f0fc374876a}{%
+           family={Gronbach},
+           familyi={G\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=3aa1cd704069ebbafb11663b4e05241e}{%
+           family={Emmerich},
+           familyi={E\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d22e525b83708d1b43b6f0455b8ce7f7}{%
+           family={Schaller},
+           familyi={S\bibinitperiod},
+           given={Raphael},
+           giveni={R\bibinitperiod}}}%
+        {{hash=dbf991db0c3d71237f4d7d53d421a67f}{%
+           family={Katic},
+           familyi={K\bibinitperiod},
+           given={Darko},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
+           family={Alt},
+           familyi={A\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Dortmund}%
+      }
+      \list{publisher}{1}{%
+        {Bundesanstalt für Arbeitsschutz und Arbeitsmedizin}%
+      }
+      \strng{namehash}{0e59893128a25c288c50fbfde8a79242}
+      \strng{fullhash}{0e59893128a25c288c50fbfde8a79242}
+      \strng{fullhashraw}{0e59893128a25c288c50fbfde8a79242}
+      \strng{bibnamehash}{0e59893128a25c288c50fbfde8a79242}
+      \strng{authorbibnamehash}{0e59893128a25c288c50fbfde8a79242}
+      \strng{authornamehash}{0e59893128a25c288c50fbfde8a79242}
+      \strng{authorfullhash}{0e59893128a25c288c50fbfde8a79242}
+      \strng{authorfullhashraw}{0e59893128a25c288c50fbfde8a79242}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Ziel des RoPHa-Projekts war es, Grundfunktionen für die Unterstützung älterer und pflegedürftiger Menschen bei der Handhabung typischer Alltagsobjekte zu entwickeln. Als Use Case für die beispielhafte Umsetzung und Integration der entwickelten Grundfunktionen wurde die mundgerechte Bereitstellung von Nahrung betrachtet. Dafür wurden zunächst eine systematische Anforderungsanalyse inklusive der Betrachtung von ELS-Aspekten und eine Risikobetrachtung durchgeführt. Danach wurde ein Interaktionskonzept basierend auf einer tabletgestützten GUI und Sprachausgaben entwickelt. Im Bereich der Perzeption wurden Funktionen für die Objekterkennung, die Lokalisierung und Klassifizierung von Speisen, die Wahrnehmung des Menschen und für die aufgabenspezifische Auswahl und Parametrierung von Perzeptionsfunktionen entwickelt und in ein Gesamtsystem integriert. Für die sichere Manipulation wurden unterschiedliche elementare Handhabungsfertigkeiten, bspw. für das Schneiden, Bestreuen, Aufnehmen und Anreichen von Speisen entwickelt. Im Rahmen von zwei Testreihen mit Mitarbeitern aus der Pflege wurden die entwickelten Szenarien evaluiert.}
+      \field{booktitle}{Autonome {{Roboter}} Für {{Assistenz}}\-funktionen}
+      \field{title}{{{RoPHa}} - {{Robuste Wahrnehmungsfähigkeiten}} Für {{Roboter}} Zur {{Unterstützung}} Älterer {{Nutzer}} Im Häuslichen {{Umfeld}}}
+      \field{year}{2020}
+      \true{nocite}
+      \field{pages}{118\bibrangedash 133}
+      \range{pages}{16}
+      \verb{file}
+      \verb /home/bal/Zotero/storage/DTA2TDQH/servlet.html
+      \endverb
+      \keyw{my}
+    \endentry
+    \entry{kienle_mutt_2024}{inproceedings}{}{}
+      \name{author}{7}{}{%
+        {{hash=2458d19a6ea472fa97732bf7885a0b2f}{%
+           family={Kienle},
+           familyi={K\bibinitperiod},
+           given={Claudius},
+           giveni={C\bibinitperiod}}}%
+        {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
+           family={Alt},
+           familyi={A\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=76af6b40ce4ce1a5a5a75b5632dc5715}{%
+           family={Celik},
+           familyi={C\bibinitperiod},
+           given={Onur},
+           giveni={O\bibinitperiod}}}%
+        {{hash=559728cb1bf5c4f61e7d535d86a4ac1a}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod}}}%
+        {{hash=dbf991db0c3d71237f4d7d53d421a67f}{%
+           family={Katic},
+           familyi={K\bibinitperiod},
+           given={Darko},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6a57f73cf18c8f060581c1d8923ee21c}{%
+           family={Jäkel},
+           familyi={J\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1896ab7f5b0b179c9ff54fbf39b31106}{%
+           family={Neumann},
+           familyi={N\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Abu Dhabi}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{e2d253030be73d3adf729637f17be608}
+      \strng{fullhash}{e2d253030be73d3adf729637f17be608}
+      \strng{fullhashraw}{e2d253030be73d3adf729637f17be608}
+      \strng{bibnamehash}{e2d253030be73d3adf729637f17be608}
+      \strng{authorbibnamehash}{e2d253030be73d3adf729637f17be608}
+      \strng{authornamehash}{e2d253030be73d3adf729637f17be608}
+      \strng{authorfullhash}{e2d253030be73d3adf729637f17be608}
+      \strng{authorfullhashraw}{e2d253030be73d3adf729637f17be608}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{High-level robot skills represent an increasingly popular paradigm in robot programming. However, configuring the skills' parameters for a specific task remains a manual and time-consuming endeavor. Existing approaches for learning or optimizing these parameters often require numerous real-world executions or do not work in dynamic environments. To address these challenges, we propose MuTT, a novel encoder-decoder transformer architecture designed to predict environment-aware executions of robot skills by integrating vision, trajectory, and robot skill parameters. Notably, we pioneer the fusion of vision and trajectory, introducing a novel trajectory projection. Furthermore, we illustrate MuTT's efficacy as a predictor when combined with a model-based robot skill optimizer. This approach facilitates the optimization of robot skill parameters for the current environment, without the need for real-world executions during optimization. Designed for compatibility with any representation of robot skills, MuTT demonstrates its versatility across three comprehensive experiments, showcasing superior performance across two different skill representations.}
+      \field{booktitle}{{{IEEE}}/{{RSJ International Conference}} on {{Intelligent Robots}} and {{Systems}} ({{IROS}})}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arxiv}
+      \field{month}{8}
+      \field{shorttitle}{{{MuTT}}}
+      \field{title}{{{MuTT}}: {{A Multimodal Trajectory Transformer}} for {{Robot Skills}}}
+      \field{urlday}{19}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.48550/arXiv.2407.15660
+      \endverb
+      \verb{eprint}
+      \verb 2407.15660
+      \endverb
+      \verb{file}
+      \verb /home/bal/Zotero/storage/5R53CYV4/Kienle et al. - 2024 - MuTT A Multimodal Trajectory Transformer for Robot Skills.pdf;/home/bal/Zotero/storage/N4J4XCHV/2407.html
+      \endverb
+      \keyw{Computer Science - Machine Learning,Computer Science - Robotics}
+    \endentry
+    \entry{kienle_querycad_2024}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=2458d19a6ea472fa97732bf7885a0b2f}{%
+           family={Kienle},
+           familyi={K\bibinitperiod},
+           given={Claudius},
+           giveni={C\bibinitperiod}}}%
+        {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
+           family={Alt},
+           familyi={A\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=dbf991db0c3d71237f4d7d53d421a67f}{%
+           family={Katic},
+           familyi={K\bibinitperiod},
+           given={Darko},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6a57f73cf18c8f060581c1d8923ee21c}{%
+           family={Jäkel},
+           familyi={J\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{b96362008ba679bed4552b7b3b214251}
+      \strng{fullhash}{b96362008ba679bed4552b7b3b214251}
+      \strng{fullhashraw}{b96362008ba679bed4552b7b3b214251}
+      \strng{bibnamehash}{b96362008ba679bed4552b7b3b214251}
+      \strng{authorbibnamehash}{b96362008ba679bed4552b7b3b214251}
+      \strng{authornamehash}{b96362008ba679bed4552b7b3b214251}
+      \strng{authorfullhash}{b96362008ba679bed4552b7b3b214251}
+      \strng{authorfullhashraw}{b96362008ba679bed4552b7b3b214251}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{CAD models are widely used in industry and are essential for robotic automation processes. However, these models are rarely considered in novel AI-based approaches, such as the automatic synthesis of robot programs, as there are no readily available methods that would allow CAD models to be incorporated for the analysis, interpretation, or extraction of information. To address these limitations, we propose QueryCAD, the first system designed for CAD question answering, enabling the extraction of precise information from CAD models using natural language queries. QueryCAD incorporates SegCAD, an open-vocabulary instance segmentation model we developed to identify and select specific parts of the CAD model based on part descriptions. We further propose a CAD question answering benchmark to evaluate QueryCAD and establish a foundation for future research. Lastly, we integrate QueryCAD within an automatic robot program synthesis framework, validating its ability to enhance deep-learning solutions for robotics by enabling them to process CAD models (https://claudius-kienle.github.com/querycad).}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arxiv}
+      \field{month}{9}
+      \field{number}{arXiv:2409.08704}
+      \field{shorttitle}{{{QueryCAD}}}
+      \field{title}{{{QueryCAD}}: {{Grounded Question Answering}} for {{CAD Models}}}
+      \field{urlday}{27}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.48550/arXiv.2409.08704
+      \endverb
+      \verb{eprint}
+      \verb 2409.08704
+      \endverb
+      \verb{file}
+      \verb /home/bal/Zotero/storage/I2YH4CEC/Kienle et al. - 2024 - QueryCAD Grounded Question Answering for CAD Models.pdf;/home/bal/Zotero/storage/5EC2KGEA/2409.html
+      \endverb
+      \keyw{Computer Science - Robotics,my}
+    \endentry
+    \entry{kluy_mensch-roboter-kollaboration_2022}{incollection}{}{}
+      \name{author}{14}{}{%
+        {{hash=aa7dda19ae7a92103ec4b57bac0ea9ce}{%
+           family={Kluy},
+           familyi={K\bibinitperiod},
+           given={Lina},
+           giveni={L\bibinitperiod}}}%
+        {{hash=925f74bd06246fd1692f2465f0dcfdd0}{%
+           family={Kölmel},
+           familyi={K\bibinitperiod},
+           given={Lena},
+           giveni={L\bibinitperiod}}}%
+        {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
+           family={Alt},
+           familyi={A\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=64bfcd473ca01a79a1abdb0ab6d244a5}{%
+           family={Baumgartner},
+           familyi={B\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=074ca911ba86c03def95e28e80049532}{%
+           family={Deml},
+           familyi={D\bibinitperiod},
+           given={Barbara},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a65e5884d184c3694a8bdbfda19f8b22}{%
+           family={Hornung},
+           familyi={H\bibinitperiod},
+           given={Luisa},
+           giveni={L\bibinitperiod}}}%
+        {{hash=dbf991db0c3d71237f4d7d53d421a67f}{%
+           family={Katic},
+           familyi={K\bibinitperiod},
+           given={Darko},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c9395ac8a73faec127c7e3ae4f75b2d0}{%
+           family={Kinkel},
+           familyi={K\bibinitperiod},
+           given={Steffen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8b50812ed0d997b1a8be1478d126aa48}{%
+           family={Kopp},
+           familyi={K\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+        {{hash=2db5b3cc33a69396ee48462204a79adb}{%
+           family={Lorenz},
+           familyi={L\bibinitperiod},
+           given={Maureen},
+           giveni={M\bibinitperiod}}}%
+        {{hash=34b9b18abe60d268d5c69e1f77772ada}{%
+           family={Nicolai},
+           familyi={N\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3a83d8b9ce078a5bfd7f9b00b8202ad9}{%
+           family={Riedel},
+           familyi={R\bibinitperiod},
+           given={Norman},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9926699aaec3de2b1abe8586521e1ac6}{%
+           family={Schäfer},
+           familyi={S\bibinitperiod},
+           given={Arndt},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4b7f52511897aabefed7206d76d50a58}{%
+           family={Wurll},
+           familyi={W\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{editor}{6}{}{%
+        {{hash=0a349b8f700c8a4ff781a8d4ed3ef57f}{%
+           family={Nitsch},
+           familyi={N\bibinitperiod},
+           given={Verena},
+           giveni={V\bibinitperiod}}}%
+        {{hash=c1d71a13e0e754f2610a389452d57ede}{%
+           family={Brandl},
+           familyi={B\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=39a1fa6a17a4187089c361e82ad5572a}{%
+           family={Häu{ß}ling},
+           familyi={H\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1e07416d25212e077d66439c3d15b549}{%
+           family={Lemm},
+           familyi={L\bibinitperiod},
+           given={Jacqueline},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a798125a7273de9f56d1e4da32c5fc09}{%
+           family={Gries},
+           familyi={G\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=51f99369bcaedc7402c833c532f57f98}{%
+           family={Schmenk},
+           familyi={S\bibinitperiod},
+           given={Bernhard},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{3d83048dc5560afff7a3d27263c2d446}
+      \strng{fullhash}{3d83048dc5560afff7a3d27263c2d446}
+      \strng{fullhashraw}{3d83048dc5560afff7a3d27263c2d446}
+      \strng{bibnamehash}{3d83048dc5560afff7a3d27263c2d446}
+      \strng{authorbibnamehash}{3d83048dc5560afff7a3d27263c2d446}
+      \strng{authornamehash}{3d83048dc5560afff7a3d27263c2d446}
+      \strng{authorfullhash}{3d83048dc5560afff7a3d27263c2d446}
+      \strng{authorfullhashraw}{3d83048dc5560afff7a3d27263c2d446}
+      \strng{editorbibnamehash}{fda91c1a7354e717ad96e8235a9019c4}
+      \strng{editornamehash}{fda91c1a7354e717ad96e8235a9019c4}
+      \strng{editorfullhash}{fda91c1a7354e717ad96e8235a9019c4}
+      \strng{editorfullhashraw}{fda91c1a7354e717ad96e8235a9019c4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Die Einführung von kollaborativen Robotern (Cobots) verspricht eine aus arbeitswissenschaftlicher Sichtweise sinnvolle Zusammenarbeit zwischen Mensch und Roboter. Gerade kleinen und mittleren Unternehmen (KMU) gelingt es allerdings häufig nicht oder nur teilweise, die damit verbundenen Potenziale zu erschlie{ß}en. Das vorliegende Kapitel beschreibt zum einen die Identifizierung, Analyse und Realisierung von Cobot-Potenzialen im Projekt ProBot (,,Proaktive Diagnose und Gestaltung des CoBot-Einsatzes in kleinen und mittleren Unternehmen``). Zum anderen wird die Entwicklung und der Aufbau einer interaktiven Einführungsunterstützung zur niederschwelligen Planung und Umsetzung von Mensch-Cobot-ArbeitssystemenMensch-Cobot-Arbeitssystem (MCA) (MCA) skizziert, wobei einige der enthaltenen Methoden vertieft vorgestellt werden. Darüber hinaus werden anhand realer Fallbeispiele von KMU die Möglichkeiten und Grenzen von Mensch-Roboter-Kollaborationen (MRK) anschaulich dargestellt. Die interaktive Einführungsunterstützung (KMU Cobot Coach) wird interessierten KMU unter folgender Adresse zur freien Verfügung online bereitgestellt: https://www.kmu-cobot-coach.de/.}
+      \field{booktitle}{{Digitalisierung der Arbeitswelt im Mittelstand 1: Ergebnisse und Best Practice des BMBF-Forschungsschwerpunkts "Zukunft der Arbeit: Mittelstand -- innovativ und sozial"}}
+      \field{isbn}{978-3-662-64803-2}
+      \field{langid}{ngerman}
+      \field{title}{{Mensch-Roboter-Kollaboration in KMU -- Potenziale identifizieren, analysieren und realisieren}}
+      \field{urlday}{1}
+      \field{urlmonth}{8}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{55\bibrangedash 97}
+      \range{pages}{43}
+      \verb{doi}
+      \verb 10.1007/978-3-662-64803-2_3
+      \endverb
+      \keyw{my}
+    \endentry
+    \entry{raible_artificial_2023}{inproceedings}{}{}
+      \name{author}{10}{}{%
+        {{hash=fc57ec5834758109b3fdbfdea28446a5}{%
+           family={Raible},
+           familyi={R\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fcec48f070c3007e7e9f57ad1fe1be86}{%
+           family={Rettig},
+           familyi={R\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod}}}%
+        {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
+           family={Alt},
+           familyi={A\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=3bbc965074f0aaaec32e8fde26df8918}{%
+           family={Yaman},
+           familyi={Y\bibinitperiod},
+           given={Alper},
+           giveni={A\bibinitperiod}}}%
+        {{hash=99da869d38ca503d9676b474a9adb1b9}{%
+           family={Gauger},
+           familyi={G\bibinitperiod},
+           given={Isabelle},
+           giveni={I\bibinitperiod}}}%
+        {{hash=66cbcf65a4cec025f2850d98f70d30f6}{%
+           family={Biasi},
+           familyi={B\bibinitperiod},
+           given={Lorenzo},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b8f1de82f48f2adf073412927295de53}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Silvan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=dbf991db0c3d71237f4d7d53d421a67f}{%
+           family={Katic},
+           familyi={K\bibinitperiod},
+           given={Darko},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5dd3bccdfa4d543ceace22454ab3548f}{%
+           family={Strand},
+           familyi={S\bibinitperiod},
+           given={Marcus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d71df99b7075b53c123b8d5d3e1ffce1}{%
+           family={Huber},
+           familyi={H\bibinitperiod},
+           given={Marco\bibnamedelima F.},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{74d0f25b42b0bd77768ca58284db31ad}
+      \strng{fullhash}{74d0f25b42b0bd77768ca58284db31ad}
+      \strng{fullhashraw}{74d0f25b42b0bd77768ca58284db31ad}
+      \strng{bibnamehash}{74d0f25b42b0bd77768ca58284db31ad}
+      \strng{authorbibnamehash}{74d0f25b42b0bd77768ca58284db31ad}
+      \strng{authornamehash}{74d0f25b42b0bd77768ca58284db31ad}
+      \strng{authorfullhash}{74d0f25b42b0bd77768ca58284db31ad}
+      \strng{authorfullhashraw}{74d0f25b42b0bd77768ca58284db31ad}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The absolute accuracy of industrial robots is influ-enced by numerous geometric and non-geometric errors. Most state-of-the-art calibration and compensation methods consider only the geometric errors and neglect the non-geometric ones. In this paper, a hybrid compensation approach is proposed that combines well-known kinematic models with a model-free data-driven component using a neural network. This allows the use of established calibration methods for the geometric influences captured in the kinematic model to improve the non-geometric error compensation by the neural network. The proposed approach is applied in two use cases: payload and wear compensation. Simulations and real experiments show the improved absolute accuracy of the hybrid compensation approach compared to classical calibration methods.}
+      \field{booktitle}{2023 {{IEEE}} 19th {{International Conference}} on {{Automation Science}} and {{Engineering}} ({{CASE}})}
+      \field{issn}{2161-8089}
+      \field{month}{8}
+      \field{title}{Artificial {{Neural Network Guided Compensation}} of {{Nonlinear Payload}} and {{Wear Effects}} for {{Industrial Robots}}}
+      \field{urlday}{16}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/CASE56687.2023.10260559
+      \endverb
+      \verb{file}
+      \verb /home/bal/Zotero/storage/WMG6FWY4/10260559.html
+      \endverb
+      \keyw{my}
+    \endentry
+    \entry{schultheis_easy_2024}{article}{}{}
+      \name{author}{17}{}{%
+        {{hash=eeef27385f70bb05b349f1a731dfdacf}{%
+           family={Schultheis},
+           familyi={S\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
+           family={Alt},
+           familyi={A\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=19b00c3922a91f9aab761d6575f5fa74}{%
+           family={Bast},
+           familyi={B\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0924f9b40cde421338497c2d220bc034}{%
+           family={Guldner},
+           familyi={G\bibinitperiod},
+           given={Achim},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8bc44fc238dea6999f0b3b5d5651fb9f}{%
+           family={Jilg},
+           familyi={J\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=dbf991db0c3d71237f4d7d53d421a67f}{%
+           family={Katic},
+           familyi={K\bibinitperiod},
+           given={Darko},
+           giveni={D\bibinitperiod}}}%
+        {{hash=90fac7067ae5a6c250c00ff560996377}{%
+           family={Mundorf},
+           familyi={M\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3d97edfa6798df061d0ca841cbdcda4c}{%
+           family={Schlagenhauf},
+           familyi={S\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+        {{hash=9055123837f45aad779cada993974809}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a2e495d50e94ada17180d82fabe0ee92}{%
+           family={Bergmann},
+           familyi={B\bibinitperiod},
+           given={Ralph},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ec6e4cde11eaa8eac62550a2bb3cdbcf}{%
+           family={Bergweiler},
+           familyi={B\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7249abdb8ee95991c374e08e70f98ef8}{%
+           family={Creutz},
+           familyi={C\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod}}}%
+        {{hash=30a0e6022df5158faa33672a996fa079}{%
+           family={Dartmann},
+           familyi={D\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a2a1d859c2a77b9890dee3c8da0f0ece}{%
+           family={Malburg},
+           familyi={M\bibinitperiod},
+           given={Lukas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=ead4a77a577c64dd28ec5f29f4d8c34e}{%
+           family={Naumann},
+           familyi={N\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5f6161626d959175f09f5c208c310843}{%
+           family={Rezapour},
+           familyi={R\bibinitperiod},
+           given={Mahdi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9856a16fa83cbd6a590fa889b8f2a823}{%
+           family={Ruskowski},
+           familyi={R\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{9be84c19519f242eeb7b2ef6d95a2d2d}
+      \strng{fullhash}{9be84c19519f242eeb7b2ef6d95a2d2d}
+      \strng{fullhashraw}{9be84c19519f242eeb7b2ef6d95a2d2d}
+      \strng{bibnamehash}{9be84c19519f242eeb7b2ef6d95a2d2d}
+      \strng{authorbibnamehash}{9be84c19519f242eeb7b2ef6d95a2d2d}
+      \strng{authornamehash}{9be84c19519f242eeb7b2ef6d95a2d2d}
+      \strng{authorfullhash}{9be84c19519f242eeb7b2ef6d95a2d2d}
+      \strng{authorfullhashraw}{9be84c19519f242eeb7b2ef6d95a2d2d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{According to the guiding principles of Industry~4.0, edge computing enables the data-sovereign and near-real-time processing of data directly at the point of origin. Using these edge devices in manufacturing organization will drive the use of industrial analysis, control, and Artificial Intelligence (AI) applications close to production. The goal of the EASY project is to make the added value of edge computing available by providing an easily usable Edge-Cloud Continuum with a runtime environment and services for the execution of AI-based Analysis and Control processes. Within this continuum, a dynamic, distributed, and optimized execution of services is automated across the entire spectrum from centralized cloud to decentralized edge instances to increase productivity and resource efficiency.}
+      \field{issn}{1610-1987}
+      \field{journaltitle}{KI - Künstliche Intelligenz}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{shorttitle}{{{EASY}}}
+      \field{title}{{{EASY}}: {{Energy-Efficient Analysis}} and {{Control Processes}} in the {{Dynamic Edge-Cloud Continuum}} for {{Industrial Manufacturing}}}
+      \field{urlday}{5}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1007/s13218-024-00868-3
+      \endverb
+      \verb{file}
+      \verb /home/bal/Zotero/storage/FGUCJREM/Schultheis et al. - 2024 - EASY Energy-Efficient Analysis and Control Processes in the Dynamic Edge-Cloud Continuum for Indust.pdf
+      \endverb
+      \keyw{Analysis and Control Processes,Artificial Intelligence,Edge-Cloud Continuum,Energy- and Resource-Efficiency,my}
+    \endentry
+    \entry{stockl_autonomous_2023-1}{inproceedings}{}{}
+      \name{author}{9}{}{%
+        {{hash=b615ccec78ccce87526ffae3239a90f6}{%
+           family={Stöckl},
+           familyi={S\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=5dd3bccdfa4d543ceace22454ab3548f}{%
+           family={Strand},
+           familyi={S\bibinitperiod},
+           given={Marcus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b8f1de82f48f2adf073412927295de53}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Silvan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=246f87411e8d9c569ea0114aa1022be0}{%
+           family={Huber},
+           familyi={H\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fc57ec5834758109b3fdbfdea28446a5}{%
+           family={Raible},
+           familyi={R\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d2f1778f2b2ef63b11623dd75c032b1f}{%
+           family={Braun},
+           familyi={B\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=dbf991db0c3d71237f4d7d53d421a67f}{%
+           family={Katic},
+           familyi={K\bibinitperiod},
+           given={Darko},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
+           family={Alt},
+           familyi={A\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e3fb0ae2b00b2854454d8a80a82f7478}{%
+           family={Merkt},
+           familyi={M\bibinitperiod},
+           given={Holger},
+           giveni={H\bibinitperiod}}}%
+      }
+      \name{editor}{5}{}{%
+        {{hash=ca61f73cdc621e4f2d85453a575149e1}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Soon-Geul},
+           giveni={S\bibinithyphendelim G\bibinitperiod}}}%
+        {{hash=8835e5d84cfd403c499a1831e3c132ca}{%
+           family={An},
+           familyi={A\bibinitperiod},
+           given={Jinung},
+           giveni={J\bibinitperiod}}}%
+        {{hash=71378bf5999d11664e8a6b5a2a2252fd}{%
+           family={Chong},
+           familyi={C\bibinitperiod},
+           given={Nak\bibnamedelima Young},
+           giveni={N\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=5dd3bccdfa4d543ceace22454ab3548f}{%
+           family={Strand},
+           familyi={S\bibinitperiod},
+           given={Marcus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=309c31648b2d1126d5c1e0676b028c31}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Joo\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature Switzerland}%
+      }
+      \strng{namehash}{8b7e125d4b115e4592da8a053800fae1}
+      \strng{fullhash}{8b7e125d4b115e4592da8a053800fae1}
+      \strng{fullhashraw}{8b7e125d4b115e4592da8a053800fae1}
+      \strng{bibnamehash}{8b7e125d4b115e4592da8a053800fae1}
+      \strng{authorbibnamehash}{8b7e125d4b115e4592da8a053800fae1}
+      \strng{authornamehash}{8b7e125d4b115e4592da8a053800fae1}
+      \strng{authorfullhash}{8b7e125d4b115e4592da8a053800fae1}
+      \strng{authorfullhashraw}{8b7e125d4b115e4592da8a053800fae1}
+      \strng{editorbibnamehash}{db2e4f458fb4bb35cf5061efe79e34c2}
+      \strng{editornamehash}{db2e4f458fb4bb35cf5061efe79e34c2}
+      \strng{editorfullhash}{db2e4f458fb4bb35cf5061efe79e34c2}
+      \strng{editorfullhashraw}{db2e4f458fb4bb35cf5061efe79e34c2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Discarded wind turbine blades generate a considerable amount of waste that could be reduced by remanufacturing. Manual remanufacturing is too costly, which is why research is being conducted into automation techniques. The main problem is the individuality of work pieces due to damages. This work presents a workflow that includes damage analysis based on scans of the blade, subsequent path planning, control engineering with an AI controller for grinding and automatic review of the grinding process. Current problems are the inaccuracy of the robot used for scanning and the colour sensitivity of the used laser scanner. Our next steps besides solving the mentioned problems are to train a supervised machine learning algorithm with damage examples and to implement a specific and multi-step path planning algorithm.}
+      \field{booktitle}{Intelligent {{Autonomous Systems}} 18}
+      \field{isbn}{978-3-031-44981-9}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{title}{Autonomous {{Surface Grinding}} of {{Wind Turbine Blades}}}
+      \field{year}{2023}
+      \true{nocite}
+      \field{pages}{451\bibrangedash 457}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1007/978-3-031-44981-9_38
+      \endverb
+      \keyw{Autonomous grinding,Hybrid AI,my,Remanufacturing}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,396 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compact Academic CV
+% LaTeX Template
+% Version 2.0 (6/7/2019)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Dario Taraborelli (http://nitens.org/taraborelli/home)
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article} % Default document font size
+\usepackage{comment}
+\usepackage{currfile}
+
+\usepackage[style=ieee,maxnames=20,backend=biber]{biblatex}
+\AtEveryBibitem{\clearfield{urldate}}
+\DeclareFieldFormat{labelnumber}{}
+\setlength{\biblabelsep}{0pt}
+\defbibenvironment{bibliography}
+  {\list{}{\setlength{\leftmargin}{0pt}}}
+  {\endlist}
+  {\item}
+
+\addbibresource{../publications.bib}
+\DeclareFieldFormat{urldate}{}
+\renewbibmacro*{url+urldate}{%
+  \printfield{url}}
+
+\input{\currfiledir structure.tex} % Include the file specifying the document structure and styling
+
+% Set PDF meta-information
+\hypersetup{
+	pdftitle={Benjamin Alt - Curriculum vitae},
+	pdfauthor={Benjamin Alt}
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	CONTACT AND GENERAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+{\LARGE\bfseries Benjamin Alt}
+
+\bigskip
+
+Curriculum Vitae
+
+\bigskip\medskip % Whitespace
+
+\begin{minipage}{.5\textwidth}
+Albert-Nestler-Str. 11\\
+76131 Karlsruhe, Germany\\
++49 721 509998-66\\
+\href{mailto:benjamin.alt@artiminds.com}{benjamin.alt@artiminds.com}
+\end{minipage}%
+% \begin{minipage}{.5\textwidth}
+% \begin{flushright}
+% Welfenstr. 1\\
+% 76137 Karlsruhe, Germany\\
+% +49 1608548454\\
+% \href{mailto:benjamin.alt@uni-bremen.de}{benjamin.alt@uni-bremen.de}
+% \end{flushright}
+% \end{minipage}
+
+\medskip % Whitespace
+
+Personal website: \href{https://benjaminalt.github.io}{benjaminalt.github.io} % Academic/personal website
+
+\medskip % Whitespace
+
+Born: September 16, 1993---Karlsruhe, Germany\\ % Date of birth
+Nationality: German % Nationality
+
+%------------------------------------------------
+
+\section*{Current Position}
+
+\emph{Senior Team Lead Research}, ArtiMinds Robotics, Karlsruhe, Germany % Current or most recent employment position
+
+%------------------------------------------------
+
+\section*{Areas of Specialisation}
+
+Artificial Intelligence, Cognitive Robotics, AI Safety, Human-AI Interaction % Primary areas of research interest
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section*{Education}
+
+\years{2020-2025}\textsc{Ph.D.} Computer Science\\
+Institute for Artificial Intelligence, University of Bremen, Germany\\
+Dissertation: \textit{Neurosymbolic Robot Programming: A Framework for AI-Enabled Programming of Robot Manipulation Tasks}
+
+\medskip
+
+\years{2017-2019}\textsc{M.Sc.} Computer Science\\
+Institute for Anthropomatics and Robotics, Karlsruhe Institute of Technology, Germany
+
+\medskip
+
+\years{2015-2017}\textsc{B.Sc.} Computer Science\\
+Institute for Anthropomatics and Robotics, Karlsruhe Institute of Technology, Germany
+
+\medskip
+
+\years{2012-2015}\textsc{B.A.} Political Science\\
+Institut d'Études Politiques de Paris, France and Princeton University, NJ, USA
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section*{Professional Experience}
+
+\years{2024-}Senior Team Lead Research, ArtiMinds Robotics, Karlsruhe, Germany
+
+\medskip
+
+\years{2023-2024}Senior Research Scientist, ArtiMinds Robotics, Karlsruhe, Germany
+
+\medskip
+
+\years{2019-2022}Research Scientist, ArtiMinds Robotics, Karlsruhe, Germany
+
+\medskip
+
+\years{2017-2019}Junior Software Engineer, ArtiMinds Robotics, Karlsruhe, Germany
+
+\medskip
+
+\years{2016-2017}Student Engineer, ArtiMinds Robotics, Karlsruhe, Germany
+
+\medskip
+
+\years{2015-2016}Student Engineer, WIBU Systems AG, Karlsruhe, Germany
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS AND TALKS
+%----------------------------------------------------------------------------------------
+
+\nocite{*}
+\setlength{\bibitemsep}{0pt} % Remove spacing between bibliography items
+\setlength{\bibparsep}{0pt} % Remove spacing within bibliography blocks
+\setlength{\bibhang}{0pt}   % No hanging indentation for bibliography items
+
+\newcommand{\firstpubentries}[2]{%
+  \defbibcheck{#1}{\iffieldequalstr{year}{#1}{}{\skipentry}}%
+  \years{#1}\vspace{0pt}\printbibliography[type=#2,heading=none,check=#1]
+}
+
+\newcommand{\pubentries}[2]{%
+  \defbibcheck{#1}{\iffieldequalstr{year}{#1}{}{\skipentry}}%
+  \years{#1}\vspace{-10pt}\printbibliography[type=#2,heading=none,check=#1]
+}
+
+
+\section*{Publications}
+
+% Books, Edited Volumes, Refereed Journal Articles, Book Chapters, Conference Proceedings, Encyclopedia Entries, Book Reviews, Manuscripts in Submission (give journal title), Manuscripts in Preparation
+
+\subsection*{Book Chapters}
+
+\firstpubentries{2022}{incollection}%
+\pubentries{2020}{incollection}
+
+\subsection*{Refereed Journal Articles}
+\firstpubentries{2024}{article}
+
+\subsection*{Conference Proceedings}
+
+\firstpubentries{2024}{inproceedings}
+\pubentries{2023}{inproceedings}
+\pubentries{2022}{inproceedings}
+\pubentries{2021}{inproceedings}
+\pubentries{2020}{inproceedings}
+
+\subsection*{Manuscripts in Submission}
+\firstpubentries{2024}{misc}
+
+%----------------------------------------------------------------------------------------
+%	GRANTS, HONOURS AND AWARDS
+%----------------------------------------------------------------------------------------
+
+\section*{Awards \& Honors}
+
+\years{2018-2019}Merit scholarship of the German Acad. Scholarship Foundation (Studienstiftung des deutschen Volkes)\\
+\years{2012-2019}e-fellows Merit Scholarship (Deutsche Telekom, Georg v. Holtzbrinck \& McKinsey)
+
+\section*{Grants}
+
+\years{2024-2026}German Ministry of Education and Research grant \#16KIS2236\\
+Resilient, Intelligent Time-Sensitive Networks (RESI-TSN)\\
+Co-PI\\
+\years{2024-2026}German Ministry of Education and Research grant \#13GW0735C\\
+Automated Workflow for the Patient-Specific Carbon-Reinforced Orthopedic Products (AutoKOOP)\\
+Co-PI\\
+\years{2023-2026}German Ministry of Education and Research grant \#03LB3097A\\
+Continuous Fiber-Reinforced Low-Density Thermoplastic Additive Manuf. (ConfidentAM)\\
+Co-PI (from 10/2024)\\
+\years{2023-2025}German Ministry of Economic Affairs and Climate Action grant \#13IK017A\\
+Networked Ditigal Assistant for the Data-Driven Engineering of Robot Workcells (VADER)\\
+PI (from 10/2024), Collaborator\\
+\years{2023-2025}German Ministry of Economic Affairs and Climate Action grant \#13IK026A\\
+A Digital and Automated Value Chain for Wiring Harness Manufacturing (Next2OEM)\\
+Co-PI (from 10/2024), Collaborator\\
+\years{2023-2025}German Ministry of Economic Affairs and Climate Action grant \#01MD22002B\\
+Efficient Analysis and Control in a Dyn. Edge-Cloud-Continuum for Industr. Production (EASY)\\
+Co-PI (from 10/2024), Collaborator\\
+\years{2022-2025}German Ministry of Economic Affairs and Climate Action grant \#01MJ22003B\\
+GANs and Semantics for Resilient, Flexible Robotic Production (GANResilRob)\\
+Co-PI (from 10/2024), Collaborator\\
+\years{2021-2025}German Ministry of Education and Research grant \#02L19C255\\
+Competency Center Artificial Intelligence for Working and Living in the Karlsruhe Region (KARL)\\
+Co-PI (from 10/2024), Collaborator\\
+\years{2021-2024}German Ministry of Education and Research grant \#13GW0471B\\
+Cognitively Assisted Laparoscopy: A Learning Robotic Assistance System for Surgical Grasping and Holding Tasks (Koala-Grasp)\\
+Collaborator\\
+\years{2021-2023}Baden-Württemberg Ministry for the Economy, Labor and Tourism, InvestBW grant \#BW1\_0079\\
+Hybrid AI for Flexible Robotic Surface Treatment (RoboGrind)\\
+Collaborator\\
+\years{2020-2023}German Ministry of Education and Research grant \#16SV8406\\
+A Multifunctional Service Robot to Support Care Professionals in the Hospital (HoLLiECares)\\
+Collaborator\\
+\years{2021-2024}German Ministry of Education and Research grant \#01IS20008C\\
+AI-based Robot Calibration (KIRK)\\
+Collaborator\\
+\years{2019-2022}German Ministry of Education and Research grant \#01DR19001B\\
+Imitation Learning from Human Demonstrations in Virtual Reality for Physical Human-Robot Interaction in Assistance Tasks (ILIAS)\\
+Collaborator\\
+\years{2017-2018}German Ministry of Economic Affairs and Energy, ZIM grant \#ZF4337302LF7\\
+Frameworks and Technologies for the Monitoring, Analysis and Online Adaption of Industrial Robotic Production Processes (MonRob)\\
+Collaborator\\
+\years{2017-2020}German Ministry of Education and Research grant \#16SV7836\\
+Robust Perception Skills for Robotic Household Assistance in the Context of Elderly Care (RoPHa)\\
+Collaborator\\
+\years{2019-2022}German Ministry of Education and Research grant \#02L17C556\\
+Proactive Diagnosis and Conception of Collaborative Robot Deployment in Small and Medium-Sized Enterprises (ProBot)\\
+Collaborator\\
+
+\section*{Invited Talks}
+
+\years{2024}
+``GPUs sind das neue Öl: Die KI-Revolution im deutschen Mittelstand erfordert ein Umdenken bei der Bereitstellung kritischer Rechenkapazitäten''\\
+Tag der digitalen Technologien, Fachforum ``Generative KI als Schlüssel zur Innovation!? Erfahrungen aus der (Arbeits-)Praxis''\\
+German Ministry for Economic Affairs and Climate Action, Berlin, 8.10.2024
+
+\medskip
+
+``Verständlich, Sicher, Beherrschbar: Hybride KI für industrielle Anwendungen''
+Innovative Arbeitswelten im Mittelstand\\
+Projektträger Karlsruhe (PTKA) at Karlsruhe Institute of Technology (KIT), Karlsruhe, 20.09.2024
+
+\medskip
+
+``Ein interaktiver KI-Assistent für die Refabrikation mit Robotern: Datensparsam und flexibel dank hybrider KI''\\
+KI-Showroom-Insight: KI und Produktion\\
+FZI Research Center for Information Technology, Karlsruhe, 27.06.2024
+
+\medskip
+
+``What's in Your Head? Neurosymbolic AI for Intelligent Robots that we Understand''\\
+e-fellows IT Day\\
+ZEIT Verlagsgruppe, McKinsey \& Company Inc, Stuttgart, 26.04.2024
+
+\medskip
+
+\years{2023}
+``Intelligente Programmierassistenten für die industrielle Robotik''\\
+Revolution der Robotik: Lösungen aus Baden-Württemberg\\
+German Chamber of Commerce and Industry (IHK), Karlsruhe, 13.07.2023
+
+\section*{Conference Activity}
+
+\subsection*{Papers Presented}
+
+\years{2024}
+``RoboGrind: Intuitive and Interactive Surface Treatment with Industrial Robots'', IEEE International Conference on Robotics and Automation (ICRA), May 13-17
+
+\medskip
+
+``Human-AI Interaction in Industrial Robotics: Design and Empirical Evaluation of a User Interface for Explainable AI-Based Robot Program Optimization'', 57th CIRP Conference on Manufacturing Systems (CMS), May 29-31
+
+\medskip
+
+``BANSAI: Towards Bridging the AI Adoption Gap in Industrial Robotics with Neurosymbolic Programming'', 57th CIRP Conference on Manufacturing Systems (CMS), May 29-31
+
+\medskip
+
+``Domain-Specific Fine-Tuning of Large Language Models for Interactive Robot Programming'', European Robotics Forum (ERF), March 13-15
+
+\medskip
+
+\years{2023}
+
+``EfficientPPS: Part-aware Panoptic Segmentation of Transparent Objects for Robotic Manipulation'', 56th International Symposium on Robotics (ISR Europe), September 26-27
+
+\medskip
+
+``Knowledge-Driven Robot Program Synthesis from Human VR Demonstrations'', 20th International Conference on Principles of Knowledge Representation and Reasoning (KR), September 2-8
+
+\medskip
+
+\years{2022}
+
+``LapSeg3D: Weakly Supervised Semantic Segmentation of Point Clouds Representing Laparoscopic Scenes'', IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), October 23-27
+
+\medskip
+
+``Heuristic-Free Optimization of Force-Controlled Robot Search Strategies in Stochastic Environments'', IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), October 23-27
+
+\medskip
+
+``Localization and Tracking of User-Defined Points on Deformable Objects for Robotic Manipulation'', IEEE ICRA Workshop on Representing and Manipulating Deformable Objects, May 19
+
+\medskip
+
+``Robot Program Parameter Inference via Differentiable Shadow Program Inversion'', IEEE International Conference on Robotics and Automation (ICRA), May 30 - Jun 5
+
+\medskip
+
+\years{2020}
+
+``Modulare, datengetriebene Roboterprogrammierung für die Lösung komplexer Handhabungsaufgaben in Alltagsumgebungen'', AAL-Kongress, September 29 - October 1
+
+\section*{Departmental Talks}
+
+\years{2024}
+``Neurosymbolic Robot Programming: Bridging the Gap between Safe and Capable Robot Intelligence''\\
+2024 EASE Fall School\\
+University of Bremen/University of Michigan, Bremen, 13.11.2024
+
+\medskip
+
+\years{2022}
+``Knowledge Representation and Reasoning in Industrial Robotics''\\
+2022 EASE Fall School\\
+University of Bremen, 23.09.2022
+
+%----------------------------------------------------------------------------------------
+%	TEACHING
+%----------------------------------------------------------------------------------------
+
+% \section*{Teaching}
+
+% \ldots
+
+%------------------------------------------------
+
+\section*{Research Experience}
+
+\years{2020-2025}
+Model-based first-order robot program optimization with neural digital twins\\
+Led research endeavor spanning 6 publicly funded research projects to develop the foundations
+of learned, modular, differentiable forward models of robot and environment dynamics, and their
+use in model-based robot program optimization.
+
+\years{2022-2025}
+Interactive, natural-language robot program synthesis\\
+Led research endeavor spanning 4 publicly funded research projects to develop an AI assistant
+capable of synthesizing robot programs for complex, long-horizon tasks through natural-language dialogue
+with human users.
+
+% \section*{Service to the Profession}
+
+\vfill % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+
+% Any final footer text such as a URL to the latest version of this CV, last updated date, compiled in XeTeX, etc
+\begin{center}
+	\scriptsize
+	Last updated: \today
+\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

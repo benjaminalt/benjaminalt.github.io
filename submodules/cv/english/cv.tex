@@ -1,0 +1,135 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.3, 30 April 2017) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options.
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+\documentclass[10pt,a4paper,normalphoto]{../template/altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=1cm,marginparwidth=-1.2cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage[english]{babel}
+\usepackage{hyperref}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{Blue}{HTML}{707070}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{Blue}
+\colorlet{accent}{Blue}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{../publications.bib}
+
+\AtEveryBibitem{% Clean up the bibtex rather than editing it
+ \clearlist{address}
+ \clearfield{date}
+%  \clearfield{eprint}
+ \clearfield{isbn}
+ \clearfield{issn}
+ \clearlist{location}
+ \clearfield{month}
+ \clearfield{series}
+ \clearfield{url}
+ \clearfield{urldate}
+ \clearfield{urlyear}
+ \clearfield{urlmonth}
+ \clearfield{urlday}
+
+ 
+%  \ifentrytype{book}{}{% Remove publisher and editor except for books
+%   \clearlist{publisher}
+%   \clearname{editor}
+%  }
+}
+
+\begin{document}
+\name{Benjamin Alt}
+\tagline{Senior Team Lead Research at ArtiMinds Robotics / PhD Candidate at the University of Bremen}
+% \photo{3.2cm}{bewerbungsfoto_cropped}
+\personalinfo{%
+  % Not all ofs these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  % \mailaddress{Welfenstraße 1, 76137 Karlsruhe}
+  % \location{Karlsruhe, Germany}
+  \phone{+49 160 8548454}
+  \email{benjamin.alt@uni-bremen.de}
+  \homepage{benjaminalt.github.io}
+  \github{github.com/benjaminalt}
+  \linkedin{linkedin.com/in/benjamin-alt}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+\vspace{-5pt}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\input{sections/education.tex}
+
+\input{sections/professional_experience.tex}
+
+\input{sections/publications.tex}
+
+\input{sections/projects_grants.tex}
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+\input{sections/scholarships_awards.tex}
+
+\input{sections/skills.tex}
+
+\medskip
+Karlsruhe, {\today} \hspace{30mm} %$\vcenter{\hbox{\includegraphics[height=13mm]{signature}}}$
+\end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.1)  2 DEC 2024 21:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.1)  5 DEC 2024 10:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1140,10 +1140,10 @@ Package logreq Info: Writing requests to 'cv.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18428 strings out of 473330
- 329093 string characters out of 5721821
+ 18432 strings out of 473330
+ 329216 string characters out of 5721821
  1156483 words of memory out of 5000000
- 41294 multiletter control sequences out of 15000+600000
+ 41298 multiletter control sequences out of 15000+600000
  635513 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,9n,83p,1403b,1530s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1152,10 +1152,10 @@ ic.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond
 -Regular.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/public/ebgaramond/EBGa
 ramond-SemiBold.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/public/cm-super
 /sftt1095.pfb>
-Output written on cv.pdf (7 pages, 130087 bytes).
+Output written on cv.pdf (7 pages, 130779 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
+ 143 PDF objects out of 1000 (max. 8388607)
+ 123 compressed objects within 2 object streams
  43 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

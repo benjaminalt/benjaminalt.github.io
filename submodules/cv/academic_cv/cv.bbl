@@ -56,7 +56,7 @@
         {Póvoa de Varzim, Portugal}%
       }
       \list{publisher}{1}{%
-        {arXiv}%
+        {Elsevier B.V.}%
       }
       \strng{namehash}{d0b99cb35b8a5ed433a714ef060794ec}
       \strng{fullhash}{d0b99cb35b8a5ed433a714ef060794ec}
@@ -70,29 +70,32 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Over the past decade, deep learning helped solve manipulation problems across all domains of robotics. At the same time, industrial robots continue to be programmed overwhelmingly using traditional program representations and interfaces. This paper undertakes an analysis of this "AI adoption gap" from an industry practitioner's perspective. In response, we propose the BANSAI approach (Bridging the AI Adoption Gap via Neurosymbolic AI). It systematically leverages principles of neurosymbolic AI to establish data-driven, subsymbolic program synthesis and optimization in modern industrial robot programming workflow. BANSAI conceptually unites several lines of prior research and proposes a path toward practical, real-world validation.}
-      \field{booktitle}{57th {{CIRP Conference}} on {{Manufacturing Systems}} 2024}
+      \field{abstract}{Over the past decade, deep learning helped solve manipulation problems across all domains of robotics. At the same time, industrial robots continue to be programmed overwhelmingly using traditional program representations and interfaces. This paper undertakes an analysis of this ``AI adoption gap'' from an industry practitioner's perspective. In response, we propose the BANSAI approach (Bridging the AI Adoption Gap via Neurosymbolic AI). It systematically leverages principles of neurosymbolic AI to establish data-driven, subsymbolic program synthesis and optimization in modern industrial robot programming workflow. BANSAI conceptually unites several lines of prior research and proposes a path toward practical, real-world validation.}
+      \field{booktitle}{Procedia {{CIRP}}}
       \field{eprintclass}{cs}
-      \field{eprinttype}{arxiv}
-      \field{month}{5}
+      \field{eprinttype}{arXiv}
+      \field{month}{1}
       \field{shorttitle}{{{BANSAI}}}
       \field{title}{{{BANSAI}}: {{Towards Bridging}} the {{AI Adoption Gap}} in {{Industrial Robotics}} with {{Neurosymbolic Programming}}}
-      \field{urlday}{30}
-      \field{urlmonth}{4}
+      \field{urlday}{2}
+      \field{urlmonth}{12}
       \field{urlyear}{2024}
+      \field{volume}{130}
       \field{year}{2024}
       \field{urldateera}{ce}
       \true{nocite}
+      \field{pages}{532\bibrangedash 537}
+      \range{pages}{6}
       \verb{doi}
-      \verb 10.48550/arXiv.2404.13652
+      \verb 10.1016/j.procir.2024.10.125
       \endverb
       \verb{eprint}
       \verb 2404.13652
       \endverb
       \verb{file}
-      \verb /home/bal/Zotero/storage/WJ3VL9EH/2404.html
+      \verb C:\Users\alt\Zotero\storage\9EJ58Y6K\S2212827124012824.html
       \endverb
-      \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science - Computational Engineering Finance and Science,Computer Science - Machine Learning,Computer Science - Robotics,I.2.1,I.2.2,I.2.9,J.6,J.7,my}
+      \keyw{Industrial Robotics,my,Neurosymbolic Artificial Intelligence,Optimization,Program Synthesis}
     \endentry
     \entry{alt_domain-specific_2024}{inproceedings}{}{}
       \name{author}{7}{}{%
@@ -285,7 +288,7 @@
       \verb 10.1109/IROS47612.2022.9982093
       \endverb
       \verb{file}
-      \verb /home/bal/Zotero/storage/SACZMZRB/Alt et al. - 2022 - Heuristic-free Optimization of Force-Controlled Ro.pdf;/home/bal/Zotero/storage/B4WTVLJP/9982093.html
+      \verb C\:\\Users\\alt\\Zotero\\storage\\SACZMZRB\\Alt et al. - 2022 - Heuristic-free Optimization of Force-Controlled Ro.pdf;C\:\\Users\\alt\\Zotero\\storage\\B4WTVLJP\\9982093.html
       \endverb
       \keyw{Adaptation models,my,relevant,Runtime,Search problems,Service robots,Spirals,Stochastic processes,Training}
     \endentry
@@ -346,7 +349,7 @@
         {Póvoa de Varzim, Portugal}%
       }
       \list{publisher}{1}{%
-        {arXiv}%
+        {Elsevier B.V.}%
       }
       \strng{namehash}{46adb424d289d89b851df74c8f52bf0e}
       \strng{fullhash}{46adb424d289d89b851df74c8f52bf0e}
@@ -361,26 +364,29 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{While recent advances in deep learning have demonstrated its transformative potential, its adoption for real-world manufacturing applications remains limited. We present an Explanation User Interface (XUI) for a state-of-the-art deep learning-based robot program optimizer which provides both naive and expert users with different user experiences depending on their skill level, as well as Explainable AI (XAI) features to facilitate the application of deep learning methods in real-world applications. To evaluate the impact of the XUI on task performance, user satisfaction and cognitive load, we present the results of a preliminary user survey and propose a study design for a large-scale follow-up study.}
-      \field{booktitle}{57th {{CIRP Conference}} on {{Manufacturing Systems}} 2024}
+      \field{booktitle}{Procedia {{CIRP}}}
       \field{eprintclass}{cs}
-      \field{eprinttype}{arxiv}
+      \field{eprinttype}{arXiv}
       \field{month}{4}
       \field{shorttitle}{Human-{{AI Interaction}} in {{Industrial Robotics}}}
       \field{title}{Human-{{AI Interaction}} in {{Industrial Robotics}}: {{Design}} and {{Empirical Evaluation}} of a {{User Interface}} for {{Explainable AI-Based Robot Program Optimization}}}
       \field{urlday}{10}
       \field{urlmonth}{5}
       \field{urlyear}{2024}
+      \field{volume}{130}
       \field{year}{2024}
       \field{urldateera}{ce}
       \true{nocite}
+      \field{pages}{591\bibrangedash 596}
+      \range{pages}{6}
       \verb{doi}
-      \verb 10.48550/arXiv.2404.19349
+      \verb 10.1016/j.procir.2024.10.134
       \endverb
       \verb{eprint}
       \verb 2404.19349
       \endverb
       \verb{file}
-      \verb /home/bal/Zotero/storage/ERH4U8FW/2404.html
+      \verb C:\Users\alt\Zotero\storage\ERH4U8FW\2404.html
       \endverb
       \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science - Computational Engineering Finance and Science,Computer Science - Human-Computer Interaction,Computer Science - Machine Learning,Computer Science - Robotics,I.2.1,I.2.2,I.2.9,J.6,J.7,my}
     \endentry
@@ -444,8 +450,11 @@
       \true{nocite}
       \field{pages}{34\bibrangedash 43}
       \range{pages}{10}
+      \verb{doi}
+      \verb 10.24963/kr.2023/4
+      \endverb
       \verb{file}
-      \verb /home/bal/Zotero/storage/9PHHGSAD/2306.html
+      \verb C:\Users\alt\Zotero\storage\9PHHGSAD\2306.html
       \endverb
       \keyw{68T30,Computer Science - Artificial Intelligence,Computer Science - Robotics,D.1,F.3,I.2,my,relevant}
     \endentry
@@ -518,11 +527,11 @@
       \verb 10.1109/IROS47612.2022.9981178
       \endverb
       \verb{file}
-      \verb /home/bal/Zotero/storage/RBQVYHM8/Alt et al. - 2022 - LapSeg3D Weakly Supervised Semantic Segmentation .pdf;/home/bal/Zotero/storage/5C3SRM9T/9981178.html
+      \verb C\:\\Users\\alt\\Zotero\\storage\\RBQVYHM8\\Alt et al. - 2022 - LapSeg3D Weakly Supervised Semantic Segmentation .pdf;C\:\\Users\\alt\\Zotero\\storage\\5C3SRM9T\\9981178.html
       \endverb
       \keyw{Annotations,Laparoscopes,my,Pipelines,Point cloud compression,Robot vision systems,Semantic segmentation,Training data}
     \endentry
-    \entry{alt_method_2022}{patent}{}{}
+    \entry{alt_method_2022-1}{patent}{}{}
       \name{author}{3}{}{%
         {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
            family={Alt},
@@ -632,7 +641,7 @@
       \field{pages}{17\bibrangedash 22}
       \range{pages}{6}
       \verb{file}
-      \verb /home/bal/Zotero/storage/LT5KQM5A/N-608626.html
+      \verb C:\Users\alt\Zotero\storage\LT5KQM5A\N-608626.html
       \endverb
       \keyw{my}
     \endentry
@@ -725,7 +734,7 @@
       \field{abstract}{Surface treatment tasks such as grinding, sanding or polishing are a vital step of the value chain in many industries, but are notoriously challenging to automate. We present RoboGrind, an integrated system for the intuitive, interactive automation of surface treatment tasks with industrial robots. It combines a sophisticated 3D perception pipeline for surface scanning and automatic defect identification, an interactive voice-controlled wizard system for the AI-assisted bootstrapping and parameterization of robot programs, and an automatic planning and execution pipeline for force-controlled robotic surface treatment. RoboGrind is evaluated both under laboratory and real-world conditions in the context of refabricating fiberglass wind turbine blades.}
       \field{booktitle}{2024 {{IEEE International Conference}} on {{Robotics}} and {{Automation}} ({{ICRA}})}
       \field{eprintclass}{cs}
-      \field{eprinttype}{arxiv}
+      \field{eprinttype}{arXiv}
       \field{isbn}{979-8-3503-8457-4}
       \field{month}{5}
       \field{shorttitle}{{{RoboGrind}}}
@@ -743,7 +752,7 @@
       \verb 2402.16542
       \endverb
       \verb{file}
-      \verb /home/bal/Zotero/storage/MII54EVS/2402.html
+      \verb C:\Users\alt\Zotero\storage\MII54EVS\2402.html
       \endverb
       \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science - Robotics,I.2.2,I.2.6,I.2.9,my,relevant}
     \endentry
@@ -800,7 +809,7 @@
       \verb 10.1109/ICRA48506.2021.9561206
       \endverb
       \verb{file}
-      \verb /home/bal/Zotero/storage/UD5WY2M9/9561206.html
+      \verb C:\Users\alt\Zotero\storage\UD5WY2M9\9561206.html
       \endverb
       \keyw{Automation,Codes,Conferences,my,Production,relevant,Service robots,Task analysis,Unsupervised learning}
     \endentry
@@ -849,7 +858,7 @@
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{This paper presents SPI-DP, a novel first-order optimizer capable of optimizing robot programs with respect to both high-level task objectives and motion-level constraints. To that end, we introduce DGPMP2-ND, a differentiable collision-free motion planner for serial N-DoF kinematics, and integrate it into an iterative, gradient-based optimization approach for generic, parameterized robot program representations. SPI-DP allows first-order optimization of planned trajectories and program parameters with respect to objectives such as cycle time or smoothness subject to e.g. collision constraints, while enabling humans to understand, modify or even certify the optimized programs. We provide a comprehensive evaluation on two practical household and industrial applications.}
       \field{eprintclass}{cs}
-      \field{eprinttype}{arxiv}
+      \field{eprinttype}{arXiv}
       \field{month}{9}
       \field{number}{arXiv:2409.08678}
       \field{shorttitle}{Shadow {{Program Inversion}} with {{Differentiable Planning}}}
@@ -867,7 +876,7 @@
       \verb 2409.08678
       \endverb
       \verb{file}
-      \verb /home/bal/Zotero/storage/JPCMCRKQ/Alt et al. - 2024 - Shadow Program Inversion with Differentiable Planning A Framework for Unified Robot Program Paramet.pdf;/home/bal/Zotero/storage/6IP3PMQM/2409.html
+      \verb C\:\\Users\\alt\\Zotero\\storage\\JPCMCRKQ\\Alt et al. - 2024 - Shadow Program Inversion with Differentiable Planning A Framework for Unified Robot Program Paramet.pdf;C\:\\Users\\alt\\Zotero\\storage\\6IP3PMQM\\2409.html
       \endverb
       \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science - Robotics,D.1,I.2}
     \endentry
@@ -924,7 +933,7 @@
       \field{labeltitlesource}{title}
       \field{abstract}{This paper introduces an efficient procedure to localize user-defined points on the surface of deformable objects and track their positions in 3D space over time. To cope with a deformable object's infinite number of DOF, we propose a discretized deformation field, which is estimated during runtime using a multi-step non-linear solver pipeline. The resulting high-dimensional energy minimization problem describes the deviation between an offline-defined reference model and a pre-processed camera image. An additional regularization term allows for assumptions about the object's hidden areas and increases the solver's numerical stability. Our approach is capable of solving the localization problem online in a data-parallel manner, making it ideally suitable for the perception of non-rigid objects in industrial manufacturing processes.}
       \field{booktitle}{{{IEEE ICRA Workshop}} on {{Representing}} and {{Manipulating Deformable Objects}}}
-      \field{eprinttype}{arxiv}
+      \field{eprinttype}{arXiv}
       \field{month}{5}
       \field{title}{Localization and {{Tracking}} of {{User-Defined Points}} on {{Deformable Objects}} for {{Robotic Manipulation}}}
       \field{urlday}{2}
@@ -937,7 +946,7 @@
       \verb 2105.09067
       \endverb
       \verb{file}
-      \verb /home/bal/Zotero/storage/LJ2NYCCB/Dittus et al. - 2021 - Localization and Tracking of User-Defined Points o.pdf;/home/bal/Zotero/storage/FKPUV3WL/2105.html
+      \verb C\:\\Users\\alt\\Zotero\\storage\\LJ2NYCCB\\Dittus et al. - 2021 - Localization and Tracking of User-Defined Points o.pdf;C\:\\Users\\alt\\Zotero\\storage\\FKPUV3WL\\2105.html
       \endverb
       \keyw{Computer Science - Computer Vision and Pattern Recognition,Computer Science - Robotics,my,workshop}
     \endentry
@@ -1025,7 +1034,7 @@
       \field{pages}{118\bibrangedash 133}
       \range{pages}{16}
       \verb{file}
-      \verb /home/bal/Zotero/storage/DTA2TDQH/servlet.html
+      \verb C:\Users\alt\Zotero\storage\DTA2TDQH\servlet.html
       \endverb
       \keyw{my}
     \endentry
@@ -1088,7 +1097,7 @@
       \field{abstract}{High-level robot skills represent an increasingly popular paradigm in robot programming. However, configuring the skills' parameters for a specific task remains a manual and time-consuming endeavor. Existing approaches for learning or optimizing these parameters often require numerous real-world executions or do not work in dynamic environments. To address these challenges, we propose MuTT, a novel encoder-decoder transformer architecture designed to predict environment-aware executions of robot skills by integrating vision, trajectory, and robot skill parameters. Notably, we pioneer the fusion of vision and trajectory, introducing a novel trajectory projection. Furthermore, we illustrate MuTT's efficacy as a predictor when combined with a model-based robot skill optimizer. This approach facilitates the optimization of robot skill parameters for the current environment, without the need for real-world executions during optimization. Designed for compatibility with any representation of robot skills, MuTT demonstrates its versatility across three comprehensive experiments, showcasing superior performance across two different skill representations.}
       \field{booktitle}{{{IEEE}}/{{RSJ International Conference}} on {{Intelligent Robots}} and {{Systems}} ({{IROS}})}
       \field{eprintclass}{cs}
-      \field{eprinttype}{arxiv}
+      \field{eprinttype}{arXiv}
       \field{month}{8}
       \field{shorttitle}{{{MuTT}}}
       \field{title}{{{MuTT}}: {{A Multimodal Trajectory Transformer}} for {{Robot Skills}}}
@@ -1105,7 +1114,7 @@
       \verb 2407.15660
       \endverb
       \verb{file}
-      \verb /home/bal/Zotero/storage/5R53CYV4/Kienle et al. - 2024 - MuTT A Multimodal Trajectory Transformer for Robot Skills.pdf;/home/bal/Zotero/storage/N4J4XCHV/2407.html
+      \verb C\:\\Users\\alt\\Zotero\\storage\\5R53CYV4\\Kienle et al. - 2024 - MuTT A Multimodal Trajectory Transformer for Robot Skills.pdf;C\:\\Users\\alt\\Zotero\\storage\\N4J4XCHV\\2407.html
       \endverb
       \keyw{Computer Science - Machine Learning,Computer Science - Robotics}
     \endentry
@@ -1149,7 +1158,7 @@
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{CAD models are widely used in industry and are essential for robotic automation processes. However, these models are rarely considered in novel AI-based approaches, such as the automatic synthesis of robot programs, as there are no readily available methods that would allow CAD models to be incorporated for the analysis, interpretation, or extraction of information. To address these limitations, we propose QueryCAD, the first system designed for CAD question answering, enabling the extraction of precise information from CAD models using natural language queries. QueryCAD incorporates SegCAD, an open-vocabulary instance segmentation model we developed to identify and select specific parts of the CAD model based on part descriptions. We further propose a CAD question answering benchmark to evaluate QueryCAD and establish a foundation for future research. Lastly, we integrate QueryCAD within an automatic robot program synthesis framework, validating its ability to enhance deep-learning solutions for robotics by enabling them to process CAD models (https://claudius-kienle.github.com/querycad).}
       \field{eprintclass}{cs}
-      \field{eprinttype}{arxiv}
+      \field{eprinttype}{arXiv}
       \field{month}{9}
       \field{number}{arXiv:2409.08704}
       \field{shorttitle}{{{QueryCAD}}}
@@ -1167,7 +1176,7 @@
       \verb 2409.08704
       \endverb
       \verb{file}
-      \verb /home/bal/Zotero/storage/I2YH4CEC/Kienle et al. - 2024 - QueryCAD Grounded Question Answering for CAD Models.pdf;/home/bal/Zotero/storage/5EC2KGEA/2409.html
+      \verb C\:\\Users\\alt\\Zotero\\storage\\I2YH4CEC\\Kienle et al. - 2024 - QueryCAD Grounded Question Answering for CAD Models.pdf;C\:\\Users\\alt\\Zotero\\storage\\5EC2KGEA\\2409.html
       \endverb
       \keyw{Computer Science - Robotics,my}
     \endentry
@@ -1398,7 +1407,7 @@
       \verb 10.1109/CASE56687.2023.10260559
       \endverb
       \verb{file}
-      \verb /home/bal/Zotero/storage/WMG6FWY4/10260559.html
+      \verb C:\Users\alt\Zotero\storage\WMG6FWY4\10260559.html
       \endverb
       \keyw{my}
     \endentry
@@ -1519,11 +1528,11 @@
       \verb 10.1007/s13218-024-00868-3
       \endverb
       \verb{file}
-      \verb /home/bal/Zotero/storage/FGUCJREM/Schultheis et al. - 2024 - EASY Energy-Efficient Analysis and Control Processes in the Dynamic Edge-Cloud Continuum for Indust.pdf
+      \verb C:\Users\alt\Zotero\storage\FGUCJREM\Schultheis et al. - 2024 - EASY Energy-Efficient Analysis and Control Processes in the Dynamic Edge-Cloud Continuum for Indust.pdf
       \endverb
       \keyw{Analysis and Control Processes,Artificial Intelligence,Edge-Cloud Continuum,Energy- and Resource-Efficiency,my}
     \endentry
-    \entry{stockl_autonomous_2023-1}{inproceedings}{}{}
+    \entry{stockl_autonomous_2023}{inproceedings}{}{}
       \name{author}{9}{}{%
         {{hash=b615ccec78ccce87526ffae3239a90f6}{%
            family={Stöckl},

@@ -57,11 +57,10 @@
       }}%
     }
     \list{publisher}{1}{%
-      {{arXiv}}%
+      {Elsevier B.V.}%
     }
-    \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science -
-  Computational Engineering Finance and Science,Computer Science - Machine
-  Learning,Computer Science - Robotics,I.2.1,I.2.2,I.2.9,J.6,J.7,my}
+    \keyw{Industrial Robotics,my,Neurosymbolic Artificial
+  Intelligence,Optimization,Program Synthesis}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABDJKDJRBMLG1}
     \field{labelnamesource}{author}
@@ -72,38 +71,39 @@
     Over the past decade, deep learning helped solve manipulation problems
   across all domains of robotics. At the same time, industrial robots continue
   to be programmed overwhelmingly using traditional program representations and
-  interfaces. This paper undertakes an analysis of this "AI adoption gap" from
-  an industry practitioner's perspective. In response, we propose the BANSAI
-  approach (Bridging the AI Adoption Gap via Neurosymbolic AI). It
+  interfaces. This paper undertakes an analysis of this ``AI adoption gap''
+  from an industry practitioner's perspective. In response, we propose the
+  BANSAI approach (Bridging the AI Adoption Gap via Neurosymbolic AI). It
   systematically leverages principles of neurosymbolic AI to establish
   data-driven, subsymbolic program synthesis and optimization in modern
   industrial robot programming workflow. BANSAI conceptually unites several
   lines of prior research and proposes a path toward practical, real-world
   validation.%
     }
-    \field{booktitle}{57th {{CIRP Conference}} on {{Manufacturing Systems}}
-  2024}
+    \field{booktitle}{Procedia {{CIRP}}}
     \verb{doi}
-    \verb 10.48550/arXiv.2404.13652
+    \verb 10.1016/j.procir.2024.10.125
     \endverb
     \verb{eprint}
     \verb 2404.13652
     \endverb
+    \field{pages}{532\bibrangedash 537}
     \field{shorttitle}{{{BANSAI}}}
     \field{title}{{{BANSAI}}: {{Towards Bridging}} the {{AI Adoption Gap}} in
   {{Industrial Robotics}} with {{Neurosymbolic Programming}}}
+    \field{volume}{130}
     \list{location}{1}{%
-      {{P{\'o}voa de Varzim, Portugal}}%
+      {P{\'o}voa de Varzim, Portugal}%
     }
     \verb{file}
-    \verb /home/bal/Zotero/storage/WJ3VL9EH/2404.html
+    \verb C:\Users\alt\Zotero\storage\9EJ58Y6K\S2212827124012824.html
     \endverb
-    \field{eprinttype}{arxiv}
+    \field{eprinttype}{arXiv}
     \field{eprintclass}{cs}
-    \field{month}{05}
+    \field{month}{01}
     \field{year}{2024}
-    \field{urlday}{30}
-    \field{urlmonth}{04}
+    \field{urlday}{02}
+    \field{urlmonth}{12}
     \field{urlyear}{2024}
   \endentry
 
@@ -141,7 +141,7 @@
       }}%
     }
     \list{publisher}{1}{%
-      {{arXiv}}%
+      {arXiv}%
     }
     \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science -
   Robotics,D.1,I.2}
@@ -177,11 +177,12 @@
   Planning}}: {{A Framework}} for {{Unified Robot Program Parameter}} and
   {{Trajectory Optimization}}}
     \verb{file}
-    \verb /home/bal/Zotero/storage/JPCMCRKQ/Alt et al. - 2024 - Shadow Program
-    \verb Inversion with Differentiable Planning A Framework for Unified Robot
-    \verb Program Paramet.pdf;/home/bal/Zotero/storage/6IP3PMQM/2409.html
+    \verb C\:\\Users\\alt\\Zotero\\storage\\JPCMCRKQ\\Alt et al. - 2024 - Shado
+    \verb w Program Inversion with Differentiable Planning A Framework for Unif
+    \verb ied Robot Program Paramet.pdf;C\:\\Users\\alt\\Zotero\\storage\\6IP3P
+    \verb MQM\\2409.html
     \endverb
-    \field{eprinttype}{arxiv}
+    \field{eprinttype}{arXiv}
     \field{eprintclass}{cs}
     \field{month}{09}
     \field{year}{2024}
@@ -342,7 +343,7 @@
       }}%
     }
     \list{publisher}{1}{%
-      {{arXiv}}%
+      {Elsevier B.V.}%
     }
     \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science -
   Computational Engineering Finance and Science,Computer Science -
@@ -366,25 +367,26 @@
   load, we present the results of a preliminary user survey and propose a study
   design for a large-scale follow-up study.%
     }
-    \field{booktitle}{57th {{CIRP Conference}} on {{Manufacturing Systems}}
-  2024}
+    \field{booktitle}{Procedia {{CIRP}}}
     \verb{doi}
-    \verb 10.48550/arXiv.2404.19349
+    \verb 10.1016/j.procir.2024.10.134
     \endverb
     \verb{eprint}
     \verb 2404.19349
     \endverb
+    \field{pages}{591\bibrangedash 596}
     \field{shorttitle}{Human-{{AI Interaction}} in {{Industrial Robotics}}}
     \field{title}{Human-{{AI Interaction}} in {{Industrial Robotics}}:
   {{Design}} and {{Empirical Evaluation}} of a {{User Interface}} for
   {{Explainable AI-Based Robot Program Optimization}}}
+    \field{volume}{130}
     \list{location}{1}{%
-      {{P{\'o}voa de Varzim, Portugal}}%
+      {P{\'o}voa de Varzim, Portugal}%
     }
     \verb{file}
-    \verb /home/bal/Zotero/storage/ERH4U8FW/2404.html
+    \verb C:\Users\alt\Zotero\storage\ERH4U8FW\2404.html
     \endverb
-    \field{eprinttype}{arxiv}
+    \field{eprinttype}{arXiv}
     \field{eprintclass}{cs}
     \field{month}{04}
     \field{year}{2024}
@@ -475,7 +477,7 @@
       }}%
     }
     \list{publisher}{1}{%
-      {{IEEE}}%
+      {IEEE}%
     }
     \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science -
   Robotics,I.2.2,I.2.6,I.2.9,my,relevant}
@@ -511,12 +513,12 @@
     \field{title}{{{RoboGrind}}: {{Intuitive}} and {{Interactive Surface
   Treatment}} with {{Industrial Robots}}}
     \list{location}{1}{%
-      {{Yokohama, Japan}}%
+      {Yokohama, Japan}%
     }
     \verb{file}
-    \verb /home/bal/Zotero/storage/MII54EVS/2402.html
+    \verb C:\Users\alt\Zotero\storage\MII54EVS\2402.html
     \endverb
-    \field{eprinttype}{arxiv}
+    \field{eprinttype}{arXiv}
     \field{eprintclass}{cs}
     \field{month}{05}
     \field{year}{2024}
@@ -553,7 +555,7 @@
       }}%
     }
     \list{publisher}{1}{%
-      {{arXiv}}%
+      {arXiv}%
     }
     \keyw{Computer Science - Robotics,my}
     \strng{namehash}{KC+1}
@@ -590,11 +592,11 @@
     \field{title}{{{QueryCAD}}: {{Grounded Question Answering}} for {{CAD
   Models}}}
     \verb{file}
-    \verb /home/bal/Zotero/storage/I2YH4CEC/Kienle et al. - 2024 - QueryCAD Gro
-    \verb unded Question Answering for CAD Models.pdf;/home/bal/Zotero/storage/
-    \verb 5EC2KGEA/2409.html
+    \verb C\:\\Users\\alt\\Zotero\\storage\\I2YH4CEC\\Kienle et al. - 2024 - Qu
+    \verb eryCAD Grounded Question Answering for CAD Models.pdf;C\:\\Users\\alt
+    \verb \\Zotero\\storage\\5EC2KGEA\\2409.html
     \endverb
-    \field{eprinttype}{arxiv}
+    \field{eprinttype}{arXiv}
     \field{eprintclass}{cs}
     \field{month}{09}
     \field{year}{2024}
@@ -649,7 +651,7 @@
       }}%
     }
     \list{publisher}{1}{%
-      {{IEEE}}%
+      {IEEE}%
     }
     \keyw{Computer Science - Machine Learning,Computer Science - Robotics}
     \strng{namehash}{KC+1}
@@ -688,14 +690,14 @@
     \field{title}{{{MuTT}}: {{A Multimodal Trajectory Transformer}} for {{Robot
   Skills}}}
     \list{location}{1}{%
-      {{Abu Dhabi}}%
+      {Abu Dhabi}%
     }
     \verb{file}
-    \verb /home/bal/Zotero/storage/5R53CYV4/Kienle et al. - 2024 - MuTT A Multi
-    \verb modal Trajectory Transformer for Robot Skills.pdf;/home/bal/Zotero/st
-    \verb orage/N4J4XCHV/2407.html
+    \verb C\:\\Users\\alt\\Zotero\\storage\\5R53CYV4\\Kienle et al. - 2024 - Mu
+    \verb TT A Multimodal Trajectory Transformer for Robot Skills.pdf;C\:\\User
+    \verb s\\alt\\Zotero\\storage\\N4J4XCHV\\2407.html
     \endverb
-    \field{eprinttype}{arxiv}
+    \field{eprinttype}{arXiv}
     \field{eprintclass}{cs}
     \field{month}{08}
     \field{year}{2024}
@@ -840,9 +842,9 @@
   Manufacturing}}}
     \field{langid}{english}
     \verb{file}
-    \verb /home/bal/Zotero/storage/FGUCJREM/Schultheis et al. - 2024 - EASY Ene
-    \verb rgy-Efficient Analysis and Control Processes in the Dynamic Edge-Clou
-    \verb d Continuum for Indust.pdf
+    \verb C:\Users\alt\Zotero\storage\FGUCJREM\Schultheis et al. - 2024 - EASY
+    \verb Energy-Efficient Analysis and Control Processes in the Dynamic Edge-C
+    \verb loud Continuum for Indust.pdf
     \endverb
     \field{journaltitle}{KI - K{\"u}nstliche Intelligenz}
     \field{month}{09}
@@ -892,7 +894,7 @@
       }}%
     }
     \list{publisher}{1}{%
-      {{IJCAI}}%
+      {IJCAI}%
     }
     \keyw{68T30,Computer Science - Artificial Intelligence,Computer Science -
   Robotics,D.1,F.3,I.2,my,relevant}
@@ -920,15 +922,18 @@
     }
     \field{booktitle}{Proceedings of the 20th {{International Conference}} on
   {{Principles}} of {{Knowledge Representation}} and {{Reasoning}}}
+    \verb{doi}
+    \verb 10.24963/kr.2023/4
+    \endverb
     \field{isbn}{978-1-956792-02-7}
     \field{pages}{34\bibrangedash 43}
     \field{title}{Knowledge-{{Driven Robot Program Synthesis}} from {{Human VR
   Demonstrations}}}
     \list{location}{1}{%
-      {{Rhodes, Greece}}%
+      {Rhodes, Greece}%
     }
     \verb{file}
-    \verb /home/bal/Zotero/storage/9PHHGSAD/2306.html
+    \verb C:\Users\alt\Zotero\storage\9PHHGSAD\2306.html
     \endverb
     \field{month}{09}
     \field{year}{2023}
@@ -980,7 +985,7 @@
       }}%
     }
     \list{publisher}{1}{%
-      {{VDE Verlag}}%
+      {VDE Verlag}%
     }
     \keyw{my}
     \strng{namehash}{AB+1}
@@ -1007,7 +1012,7 @@
     \field{title}{{{EfficientPPS}}: {{Part-aware Panoptic Segmentation}} of
   {{Transparent Objects}} for {{Robotic Manipulation}}}
     \list{location}{1}{%
-      {{Stuttgart, Germany}}%
+      {Stuttgart, Germany}%
     }
     \field{month}{09}
     \field{year}{2023}
@@ -1107,7 +1112,7 @@
     \field{title}{Artificial {{Neural Network Guided Compensation}} of
   {{Nonlinear Payload}} and {{Wear Effects}} for {{Industrial Robots}}}
     \verb{file}
-    \verb /home/bal/Zotero/storage/WMG6FWY4/10260559.html
+    \verb C:\Users\alt\Zotero\storage\WMG6FWY4\10260559.html
     \endverb
     \field{month}{08}
     \field{year}{2023}
@@ -1116,7 +1121,7 @@
     \field{urlyear}{2023}
   \endentry
 
-  \entry{stockl_autonomous_2023-1}{inproceedings}{}{}
+  \entry{stockl_autonomous_2023}{inproceedings}{}{}
     \name{author}{9}{}{%
       {{hash=SF}{%
          family={St{\"o}ckl},
@@ -1206,7 +1211,7 @@
       }}%
     }
     \list{publisher}{1}{%
-      {{Springer Nature Switzerland}}%
+      {Springer Nature Switzerland}%
     }
     \keyw{Autonomous grinding,Hybrid AI,my,Remanufacturing}
     \strng{namehash}{SF+1}
@@ -1237,13 +1242,13 @@
     \field{title}{Autonomous {{Surface Grinding}} of {{Wind Turbine Blades}}}
     \field{langid}{english}
     \list{location}{1}{%
-      {{Cham}}%
+      {Cham}%
     }
     \field{month}{07}
     \field{year}{2023}
   \endentry
 
-  \entry{alt_method_2022}{patent}{}{}
+  \entry{alt_method_2022-1}{patent}{}{}
     \name{author}{3}{}{%
       {{hash=AB}{%
          family={Alt},
@@ -1275,7 +1280,7 @@
     \field{title}{Method and {{System}} for {{Determining Optimized Program
   Parameters}} for a {{Robot Program}}}
     \list{location}{1}{%
-      {{Karlsruhe}}%
+      {Karlsruhe}%
     }
     \field{type}{patent}
     \field{annotation}{%
@@ -1353,9 +1358,9 @@
     \field{title}{Heuristic-{{Free Optimization}} of {{Force-Controlled Robot
   Search Strategies}} in {{Stochastic Environments}}}
     \verb{file}
-    \verb /home/bal/Zotero/storage/SACZMZRB/Alt et al. - 2022 - Heuristic-free
-    \verb Optimization of Force-Controlled Ro.pdf;/home/bal/Zotero/storage/B4WT
-    \verb VLJP/9982093.html
+    \verb C\:\\Users\\alt\\Zotero\\storage\\SACZMZRB\\Alt et al. - 2022 - Heuri
+    \verb stic-free Optimization of Force-Controlled Ro.pdf;C\:\\Users\\alt\\Zo
+    \verb tero\\storage\\B4WTVLJP\\9982093.html
     \endverb
     \field{month}{10}
     \field{year}{2022}
@@ -1443,9 +1448,9 @@
     \field{title}{{{LapSeg3D}}: {{Weakly Supervised Semantic Segmentation}} of
   {{Point Clouds Representing Laparoscopic Scenes}}}
     \verb{file}
-    \verb /home/bal/Zotero/storage/RBQVYHM8/Alt et al. - 2022 - LapSeg3D Weakly
-    \verb  Supervised Semantic Segmentation .pdf;/home/bal/Zotero/storage/5C3SR
-    \verb M9T/9981178.html
+    \verb C\:\\Users\\alt\\Zotero\\storage\\RBQVYHM8\\Alt et al. - 2022 - LapSe
+    \verb g3D Weakly Supervised Semantic Segmentation .pdf;C\:\\Users\\alt\\Zot
+    \verb ero\\storage\\5C3SRM9T\\9981178.html
     \endverb
     \field{month}{10}
     \field{year}{2022}
@@ -1577,7 +1582,7 @@
       }}%
     }
     \list{publisher}{1}{%
-      {{Springer}}%
+      {Springer}%
     }
     \keyw{my}
     \strng{namehash}{KL+1}
@@ -1617,7 +1622,7 @@
   identifizieren, analysieren und realisieren}}
     \field{langid}{ngerman}
     \list{location}{1}{%
-      {{Berlin, Heidelberg}}%
+      {Berlin, Heidelberg}%
     }
     \field{year}{2022}
     \field{urlday}{01}
@@ -1693,7 +1698,7 @@
     \field{title}{Robot {{Program Parameter Inference}} via {{Differentiable
   Shadow Program Inversion}}}
     \verb{file}
-    \verb /home/bal/Zotero/storage/UD5WY2M9/9561206.html
+    \verb C:\Users\alt\Zotero\storage\UD5WY2M9\9561206.html
     \endverb
     \field{month}{05}
     \field{year}{2021}
@@ -1739,7 +1744,7 @@
       }}%
     }
     \list{publisher}{1}{%
-      {{IEEE}}%
+      {IEEE}%
     }
     \keyw{Computer Science - Computer Vision and Pattern Recognition,Computer
   Science - Robotics,my,workshop}
@@ -1771,14 +1776,14 @@
     \field{title}{Localization and {{Tracking}} of {{User-Defined Points}} on
   {{Deformable Objects}} for {{Robotic Manipulation}}}
     \list{location}{1}{%
-      {{Xi'an, China}}%
+      {Xi'an, China}%
     }
     \verb{file}
-    \verb /home/bal/Zotero/storage/LJ2NYCCB/Dittus et al. - 2021 - Localization
-    \verb  and Tracking of User-Defined Points o.pdf;/home/bal/Zotero/storage/F
-    \verb KPUV3WL/2105.html
+    \verb C\:\\Users\\alt\\Zotero\\storage\\LJ2NYCCB\\Dittus et al. - 2021 - Lo
+    \verb calization and Tracking of User-Defined Points o.pdf;C\:\\Users\\alt\
+    \verb \Zotero\\storage\\FKPUV3WL\\2105.html
     \endverb
-    \field{eprinttype}{arxiv}
+    \field{eprinttype}{arXiv}
     \field{month}{05}
     \field{year}{2021}
     \field{urlday}{02}
@@ -1832,7 +1837,7 @@
       }}%
     }
     \list{publisher}{1}{%
-      {{VDE Verlag}}%
+      {VDE Verlag}%
     }
     \keyw{my}
     \strng{namehash}{AB+1}
@@ -1865,10 +1870,10 @@
   Die {{L{\"o}sung}} Komplexer {{Handhabungsaufgaben}} in
   {{Alltagsumgebungen}}}
     \list{location}{1}{%
-      {{Berlin}}%
+      {Berlin}%
     }
     \verb{file}
-    \verb /home/bal/Zotero/storage/LT5KQM5A/N-608626.html
+    \verb C:\Users\alt\Zotero\storage\LT5KQM5A\N-608626.html
     \endverb
     \field{year}{2020}
   \endentry
@@ -1943,7 +1948,7 @@
       }}%
     }
     \list{publisher}{1}{%
-      {{Bundesanstalt f{\"u}r Arbeitsschutz und Arbeitsmedizin}}%
+      {Bundesanstalt f{\"u}r Arbeitsschutz und Arbeitsmedizin}%
     }
     \keyw{my}
     \strng{namehash}{GB+1}
@@ -1977,10 +1982,10 @@
   {{Roboter}} Zur {{Unterst{\"u}tzung}} {\"A}lterer {{Nutzer}} Im
   H{\"a}uslichen {{Umfeld}}}
     \list{location}{1}{%
-      {{Dortmund}}%
+      {Dortmund}%
     }
     \verb{file}
-    \verb /home/bal/Zotero/storage/DTA2TDQH/servlet.html
+    \verb C:\Users\alt\Zotero\storage\DTA2TDQH\servlet.html
     \endverb
     \field{year}{2020}
   \endentry

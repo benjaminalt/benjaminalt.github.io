@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.1)  3 JAN 2025 09:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.1)  20 FEB 2025 22:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **cv.tex
 (./cv.tex
-LaTeX2e <2024-11-01> patch level 1
-L3 programming layer <2024-12-09>
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/size11.clo
@@ -141,7 +141,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibhang=\skip58
 \blx@bcfin=\read2
 \blx@bcfout=\write4
-\blx@langwohyphens=\language89
+\blx@langwohyphens=\language90
 \c@mincomprange=\count316
 \c@maxcomprange=\count317
 \c@mincompwidth=\count318
@@ -266,7 +266,7 @@ Package biblatex Info: Trying to load bibliography style 'ieee'...
 Package biblatex Info: ... file 'ieee.bbx' found.
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/biblatex-ieee/ieee.bbx
-File: ieee.bbx 2024-11-20 v1.4b biblatex bibliography style
+File: ieee.bbx 2025-01-15 v1.4c biblatex bibliography style
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
 
@@ -289,7 +289,7 @@ Package biblatex Info: Trying to load citation style 'ieee'...
 Package biblatex Info: ... file 'ieee.cbx' found.
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/biblatex-ieee/ieee.cbx
-File: ieee.cbx 2024-11-20 v1.4b biblatex citation style
+File: ieee.cbx 2025-01-15 v1.4c biblatex citation style
 Package biblatex Info: Trying to load citation style 'numeric-verb'...
 Package biblatex Info: ... file 'numeric-verb.cbx' found.
 
@@ -315,8 +315,8 @@ File: biblatex.cfg
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
 
-(/opt/texlive/texdir/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-12-09 L3 programming layer (loader) 
+(/opt/texlive/texdir/texmf-dist/tex/latex-dev/l3kernel/expl3.sty
+Package: expl3 2025-01-18 L3 programming layer (loader) 
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
@@ -324,7 +324,7 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__pdf_internal_box=\box52
 ))
 Package biblatex Info: ... and expl3
-(biblatex)             2024-12-09 L3 programming layer (loader) 
+(biblatex)             2025-01-18 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 
@@ -839,21 +839,28 @@ Package biblatex Warning: Split bibliography detected.
 (biblatex)                This warning can be suppressed with
 (biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
 
-
-Overfull \hbox (0.1272pt too wide) in paragraph at lines 188--188
-\T1/EBGaramond-OsF/m/it/10.95 pean Robotics Fo-rum 2024\T1/EBGaramond-OsF/m/n/1
-0.95 , ser. Springer Pro-ceed-ings in Ad-vanced Robotics, Ri-m-ini, Italy: Spri
-nger
- []
-
-
-
-[2{/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-Package marginnote Info: Margin note 3.1 is on absolute page 3 on input line 18
+Package marginnote Info: Margin note 2.4 is on absolute page 2 on input line 18
 9.
 Package marginnote Info: right page because not two side mode on input line 189
 .
 Package marginnote Info: xpos seems to be 99.58464pt on input line 189.
+
+Package biblatex Warning: Split bibliography detected.
+(biblatex)                Many simple split bibliography setups with
+(biblatex)                non-overlapping bibliographies benefit from
+(biblatex)                setting 'defernumbers=true'.
+(biblatex)                See the documentation for details.
+(biblatex)                This warning can be suppressed with
+(biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
+
+
+
+[2{/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+Package marginnote Info: Margin note 3.1 is on absolute page 3 on input line 19
+0.
+Package marginnote Info: right page because not two side mode on input line 190
+.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 190.
 
 
 Package biblatex Warning: Split bibliography detected.
@@ -865,20 +872,6 @@ Package biblatex Warning: Split bibliography detected.
 (biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
 
 Package marginnote Info: Margin note 3.2 is on absolute page 3 on input line 19
-0.
-Package marginnote Info: right page because not two side mode on input line 190
-.
-Package marginnote Info: xpos seems to be 99.58464pt on input line 190.
-
-Package biblatex Warning: Split bibliography detected.
-(biblatex)                Many simple split bibliography setups with
-(biblatex)                non-overlapping bibliographies benefit from
-(biblatex)                setting 'defernumbers=true'.
-(biblatex)                See the documentation for details.
-(biblatex)                This warning can be suppressed with
-(biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
-
-Package marginnote Info: Margin note 3.3 is on absolute page 3 on input line 19
 1.
 Package marginnote Info: right page because not two side mode on input line 191
 .
@@ -892,14 +885,7 @@ Package biblatex Warning: Split bibliography detected.
 (biblatex)                This warning can be suppressed with
 (biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
 
-
-Overfull \hbox (0.35725pt too wide) in paragraph at lines 191--191
-\T1/EBGaramond-OsF/m/it/10.95 shop on Rep-re-sent-ing and Ma-nip-u-lat-ing De-f
-ormable Ob-jects\T1/EBGaramond-OsF/m/n/10.95 , Xi'an, China: IEEE, May 2021. ar
-Xiv:
- []
-
-Package marginnote Info: Margin note 3.4 is on absolute page 3 on input line 19
+Package marginnote Info: Margin note 3.3 is on absolute page 3 on input line 19
 2.
 Package marginnote Info: right page because not two side mode on input line 192
 .
@@ -914,16 +900,21 @@ Package biblatex Warning: Split bibliography detected.
 (biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
 
 
-Overfull \hbox (12.39874pt too wide) in paragraph at lines 192--192
-[]\T1/EBGaramond-OsF/m/n/10.95 B. Alt, F. Au-mann, L. Gien-ger, F. Jor-dan, D. 
-Katic, R. Jäkel, and B. Graf, ``Mod-u-lare, datengetriebene
+Overfull \hbox (0.35725pt too wide) in paragraph at lines 192--192
+\T1/EBGaramond-OsF/m/it/10.95 shop on Rep-re-sent-ing and Ma-nip-u-lat-ing De-f
+ormable Ob-jects\T1/EBGaramond-OsF/m/n/10.95 , Xi'an, China: IEEE, May 2021. ar
+Xiv:
  []
 
-Package marginnote Info: Margin note 3.5 is on absolute page 4 on input line 19
-5.
-Package marginnote Info: right page because not two side mode on input line 195
+
+
+[3]
+Package marginnote Info: Margin note 4.1 is on absolute page 4 on input line 19
+3.
+Package marginnote Info: right page because not two side mode on input line 193
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 195.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 193.
+
 
 Package biblatex Warning: Split bibliography detected.
 (biblatex)                Many simple split bibliography setups with
@@ -934,124 +925,127 @@ Package biblatex Warning: Split bibliography detected.
 (biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
 
 
+Overfull \hbox (12.39874pt too wide) in paragraph at lines 193--193
+[]\T1/EBGaramond-OsF/m/n/10.95 B. Alt, F. Au-mann, L. Gien-ger, F. Jor-dan, D. 
+Katic, R. Jäkel, and B. Graf, ``Mod-u-lare, datengetriebene
+ []
 
-[3]
-Package marginnote Info: Margin note 4.1 is on absolute page 4 on input line 20
-3.
-Package marginnote Info: right page because not two side mode on input line 203
-.
-Package marginnote Info: xpos seems to be 99.58464pt on input line 203.
 Package marginnote Info: Margin note 4.2 is on absolute page 4 on input line 20
 4.
 Package marginnote Info: right page because not two side mode on input line 204
 .
 Package marginnote Info: xpos seems to be 99.58464pt on input line 204.
 Package marginnote Info: Margin note 4.3 is on absolute page 4 on input line 20
-8.
-Package marginnote Info: right page because not two side mode on input line 208
+5.
+Package marginnote Info: right page because not two side mode on input line 205
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 208.
-Package marginnote Info: Margin note 4.4 is on absolute page 4 on input line 21
-1.
-Package marginnote Info: right page because not two side mode on input line 211
+Package marginnote Info: xpos seems to be 99.58464pt on input line 205.
+Package marginnote Info: Margin note 4.4 is on absolute page 4 on input line 20
+9.
+Package marginnote Info: right page because not two side mode on input line 209
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 211.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 209.
 Package marginnote Info: Margin note 4.5 is on absolute page 4 on input line 21
-4.
-Package marginnote Info: right page because not two side mode on input line 214
+2.
+Package marginnote Info: right page because not two side mode on input line 212
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 214.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 212.
 Package marginnote Info: Margin note 4.6 is on absolute page 4 on input line 21
-7.
-Package marginnote Info: right page because not two side mode on input line 217
+5.
+Package marginnote Info: right page because not two side mode on input line 215
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 217.
-Package marginnote Info: Margin note 4.7 is on absolute page 4 on input line 22
-0.
-Package marginnote Info: right page because not two side mode on input line 220
+Package marginnote Info: xpos seems to be 99.58464pt on input line 215.
+Package marginnote Info: Margin note 4.7 is on absolute page 4 on input line 21
+8.
+Package marginnote Info: right page because not two side mode on input line 218
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 220.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 218.
 Package marginnote Info: Margin note 4.8 is on absolute page 4 on input line 22
-3.
-Package marginnote Info: right page because not two side mode on input line 223
+1.
+Package marginnote Info: right page because not two side mode on input line 221
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 223.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 221.
 Package marginnote Info: Margin note 4.9 is on absolute page 4 on input line 22
-6.
-Package marginnote Info: right page because not two side mode on input line 226
+4.
+Package marginnote Info: right page because not two side mode on input line 224
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 226.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 224.
 Package marginnote Info: Margin note 4.10 is on absolute page 4 on input line 2
-29.
-Package marginnote Info: right page because not two side mode on input line 229
+27.
+Package marginnote Info: right page because not two side mode on input line 227
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 229.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 227.
 Package marginnote Info: Margin note 4.11 is on absolute page 4 on input line 2
-32.
-Package marginnote Info: right page because not two side mode on input line 232
+30.
+Package marginnote Info: right page because not two side mode on input line 230
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 232.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 230.
 Package marginnote Info: Margin note 4.12 is on absolute page 4 on input line 2
-35.
-Package marginnote Info: right page because not two side mode on input line 235
+33.
+Package marginnote Info: right page because not two side mode on input line 233
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 235.
-Package marginnote Info: Margin note 4.13 is on absolute page 5 on input line 2
-38.
-Package marginnote Info: right page because not two side mode on input line 238
+Package marginnote Info: xpos seems to be 99.58464pt on input line 233.
+Package marginnote Info: Margin note 4.13 is on absolute page 4 on input line 2
+36.
+Package marginnote Info: right page because not two side mode on input line 236
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 238.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 236.
 Package marginnote Info: Margin note 4.14 is on absolute page 5 on input line 2
-41.
-Package marginnote Info: right page because not two side mode on input line 241
+39.
+Package marginnote Info: right page because not two side mode on input line 239
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 241.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 239.
 Package marginnote Info: Margin note 4.15 is on absolute page 5 on input line 2
-44.
-Package marginnote Info: right page because not two side mode on input line 244
+42.
+Package marginnote Info: right page because not two side mode on input line 242
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 244.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 242.
 Package marginnote Info: Margin note 4.16 is on absolute page 5 on input line 2
-47.
-Package marginnote Info: right page because not two side mode on input line 247
+45.
+Package marginnote Info: right page because not two side mode on input line 245
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 247.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 245.
 Package marginnote Info: Margin note 4.17 is on absolute page 5 on input line 2
-50.
-Package marginnote Info: right page because not two side mode on input line 250
+48.
+Package marginnote Info: right page because not two side mode on input line 248
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 250.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 248.
 Package marginnote Info: Margin note 4.18 is on absolute page 5 on input line 2
-53.
-Package marginnote Info: right page because not two side mode on input line 253
+51.
+Package marginnote Info: right page because not two side mode on input line 251
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 253.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 251.
+Package marginnote Info: Margin note 4.19 is on absolute page 5 on input line 2
+54.
+Package marginnote Info: right page because not two side mode on input line 254
+.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 254.
 
-Overfull \hbox (21.95862pt too wide) in paragraph at lines 208--256
+Overfull \hbox (21.95862pt too wide) in paragraph at lines 209--257
 \T1/EBGaramond-OsF/m/n/10.95 Automated Work-flow for the Patient-Specific Carbo
 n-Reinforced Or-tho-pe-dic Prod-ucts (Au-toKOOP) 
  []
 
 
-Overfull \hbox (4.55289pt too wide) in paragraph at lines 208--256
+Overfull \hbox (4.55289pt too wide) in paragraph at lines 209--257
 \T1/EBGaramond-OsF/m/n/10.95 Efficient Anal-y-sis and Con-trol in a Dyn. Edge-C
 loud-Continuum for In-dustr. Pro-duc-tion (EASY) 
  []
 
 
-Overfull \hbox (9.31363pt too wide) in paragraph at lines 208--256
+Overfull \hbox (9.31363pt too wide) in paragraph at lines 209--257
 \T1/EBGaramond-OsF/m/n/10.95 Competency Cen-ter Ar-ti-fi-cial In-tel-li-gence f
 or Work-ing and Liv-ing in the Karl-sruhe Re-gion (KARL) 
  []
 
 
-Overfull \hbox (10.4995pt too wide) in paragraph at lines 208--256
+Overfull \hbox (10.4995pt too wide) in paragraph at lines 209--257
 \T1/EBGaramond-OsF/m/n/10.95 Robust Per-cep-tion Skills for Robotic House-hold 
 As-sis-tance in the Con-text of El-derly Care (RoPHa) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--256
+Underfull \hbox (badness 10000) in paragraph at lines 209--257
 
  []
 
@@ -1059,79 +1053,84 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--256
 
 [4]
 Package marginnote Info: Margin note 5.1 is on absolute page 5 on input line 26
-0.
-Package marginnote Info: right page because not two side mode on input line 260
+1.
+Package marginnote Info: right page because not two side mode on input line 261
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 260.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 261.
 
-Overfull \hbox (8.13846pt too wide) in paragraph at lines 266--269
+Overfull \hbox (8.13846pt too wide) in paragraph at lines 268--271
 \T1/EBGaramond-OsF/m/n/10.95 Projektträger Karl-sruhe (PTKA) at Karl-sruhe In-s
 ti-tute of Tech-nol-ogy (KIT), Karl-sruhe, 20.09.2024 
  []
 
 Package marginnote Info: Margin note 5.2 is on absolute page 5 on input line 28
-5.
-Package marginnote Info: right page because not two side mode on input line 285
+7.
+Package marginnote Info: right page because not two side mode on input line 287
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 285.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 287.
 Package marginnote Info: Margin note 5.3 is on absolute page 6 on input line 29
-4.
-Package marginnote Info: right page because not two side mode on input line 294
+6.
+Package marginnote Info: right page because not two side mode on input line 296
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 294.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 296.
 
 
 [5]
 Package marginnote Info: Margin note 6.1 is on absolute page 6 on input line 31
-1.
-Package marginnote Info: right page because not two side mode on input line 311
+3.
+Package marginnote Info: right page because not two side mode on input line 313
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 311.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 313.
 Package marginnote Info: Margin note 6.2 is on absolute page 6 on input line 32
+3.
+Package marginnote Info: right page because not two side mode on input line 323
+.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 323.
+Package marginnote Info: Margin note 6.3 is on absolute page 6 on input line 34
 1.
-Package marginnote Info: right page because not two side mode on input line 321
+Package marginnote Info: right page because not two side mode on input line 341
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 321.
-Package marginnote Info: Margin note 6.3 is on absolute page 6 on input line 33
-9.
-Package marginnote Info: right page because not two side mode on input line 339
-.
-Package marginnote Info: xpos seems to be 99.58464pt on input line 339.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 341.
 
-Overfull \hbox (11.48012pt too wide) in paragraph at lines 340--341
+Overfull \hbox (11.48012pt too wide) in paragraph at lines 342--343
 []\T1/EBGaramond-OsF/m/n/10.95 ``Modulare, datengetriebene Roboter-pro-gram-mie
 rung für die Lö-sung kom-plexer Hand-habungsauf-
  []
 
 Package marginnote Info: Margin note 6.4 is on absolute page 6 on input line 34
-5.
-Package marginnote Info: right page because not two side mode on input line 345
+7.
+Package marginnote Info: right page because not two side mode on input line 347
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 345.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 347.
 Package marginnote Info: Margin note 6.5 is on absolute page 6 on input line 35
-2.
-Package marginnote Info: right page because not two side mode on input line 352
+4.
+Package marginnote Info: right page because not two side mode on input line 354
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 352.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 354.
 Package marginnote Info: Margin note 6.6 is on absolute page 7 on input line 36
-9.
-Package marginnote Info: right page because not two side mode on input line 369
+7.
+Package marginnote Info: right page because not two side mode on input line 367
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 369.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 367.
 
 
 [6]
-Package marginnote Info: Margin note 7.1 is on absolute page 7 on input line 37
-5.
-Package marginnote Info: right page because not two side mode on input line 375
+Package marginnote Info: Margin note 7.1 is on absolute page 7 on input line 38
+3.
+Package marginnote Info: right page because not two side mode on input line 383
 .
-Package marginnote Info: xpos seems to be 99.58464pt on input line 375.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 383.
+Package marginnote Info: Margin note 7.2 is on absolute page 7 on input line 38
+7.
+Package marginnote Info: right page because not two side mode on input line 387
+.
+Package marginnote Info: xpos seems to be 99.58464pt on input line 387.
 
 
 [7] (./cv.aux)
  ***********
-LaTeX2e <2024-11-01> patch level 1
-L3 programming layer <2024-12-09>
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -1140,22 +1139,22 @@ Package logreq Info: Writing requests to 'cv.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18439 strings out of 473254
- 329295 string characters out of 5720015
- 1157196 words of memory out of 5000000
- 41381 multiletter control sequences out of 15000+600000
- 635513 words of font info for 65 fonts, out of 8000000 for 9000
+ 18438 strings out of 473201
+ 329250 string characters out of 5718191
+ 1159259 words of memory out of 5000000
+ 41422 multiletter control sequences out of 15000+600000
+ 636281 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,9n,83p,1403b,1530s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 70i,9n,81p,1403b,1530s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/texlive/texdir/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond-Ital
 ic.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond
 -Regular.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/public/ebgaramond/EBGa
 ramond-SemiBold.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/public/cm-super
 /sftt1095.pfb>
-Output written on cv.pdf (7 pages, 130777 bytes).
+Output written on cv.pdf (7 pages, 130501 bytes).
 PDF statistics:
  143 PDF objects out of 1000 (max. 8388607)
  123 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
+ 44 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -17,6 +17,176 @@
 \endgroup
 
 \datalist[entry]{ydnt/global//global/global/global}
+  \entry{alt_shadow_2025}{inproceedings}{}{}
+    \name{author}{5}{}{%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=KC}{%
+         family={Kienle},
+         familyi={K\bibinitperiod},
+         given={Claudius},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={J{\"a}kel},
+         familyi={J\bibinitperiod},
+         given={Rainer},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Beetz},
+         familyi={B\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science -
+  Robotics,D.1,I.2}
+    \strng{namehash}{AB+1}
+    \strng{fullhash}{ABKCKDJRBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    This paper presents SPI-DP, a novel first-order optimizer capable of
+  optimizing robot programs with respect to both high-level task objectives and
+  motion-level constraints. To that end, we introduce DGPMP2-ND, a
+  differentiable collision-free motion planner for serial N-DoF kinematics, and
+  integrate it into an iterative, gradient-based optimization approach for
+  generic, parameterized robot program representations. SPI-DP allows
+  first-order optimization of planned trajectories and program parameters with
+  respect to objectives such as cycle time or smoothness subject to e.g.
+  collision constraints, while enabling humans to understand, modify or even
+  certify the optimized programs. We provide a comprehensive evaluation on two
+  practical household and industrial applications.%
+    }
+    \field{booktitle}{2025 {{IEEE International Conference}} on {{Robotics}}
+  and {{Automation}} ({{ICRA}})}
+    \verb{doi}
+    \verb 10.48550/arXiv.2409.08678
+    \endverb
+    \verb{eprint}
+    \verb 2409.08678
+    \endverb
+    \field{shorttitle}{Shadow {{Program Inversion}} with {{Differentiable
+  Planning}}}
+    \field{title}{Shadow {{Program Inversion}} with {{Differentiable
+  Planning}}: {{A Framework}} for {{Unified Robot Program Parameter}} and
+  {{Trajectory Optimization}}}
+    \list{location}{1}{%
+      {Atlanta, USA}%
+    }
+    \verb{file}
+    \verb C\:\\Users\\alt\\Zotero\\storage\\JPCMCRKQ\\Alt et al. - 2024 - Shado
+    \verb w Program Inversion with Differentiable Planning A Framework for Unif
+    \verb ied Robot Program Paramet.pdf;C\:\\Users\\alt\\Zotero\\storage\\6IP3P
+    \verb MQM\\2409.html
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs}
+    \field{month}{05}
+    \field{year}{2025}
+    \field{urlday}{23}
+    \field{urlmonth}{09}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{kienle_querycad_2025}{inproceedings}{}{}
+    \name{author}{4}{}{%
+      {{hash=KC}{%
+         family={Kienle},
+         familyi={K\bibinitperiod},
+         given={Claudius},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={J{\"a}kel},
+         familyi={J\bibinitperiod},
+         given={Rainer},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \keyw{Computer Science - Robotics,my}
+    \strng{namehash}{KC+1}
+    \strng{fullhash}{KCABKDJR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    CAD models are widely used in industry and are essential for robotic
+  automation processes. However, these models are rarely considered in novel
+  AI-based approaches, such as the automatic synthesis of robot programs, as
+  there are no readily available methods that would allow CAD models to be
+  incorporated for the analysis, interpretation, or extraction of information.
+  To address these limitations, we propose QueryCAD, the first system designed
+  for CAD question answering, enabling the extraction of precise information
+  from CAD models using natural language queries. QueryCAD incorporates SegCAD,
+  an open-vocabulary instance segmentation model we developed to identify and
+  select specific parts of the CAD model based on part descriptions. We further
+  propose a CAD question answering benchmark to evaluate QueryCAD and establish
+  a foundation for future research. Lastly, we integrate QueryCAD within an
+  automatic robot program synthesis framework, validating its ability to
+  enhance deep-learning solutions for robotics by enabling them to process CAD
+  models (https://claudius-kienle.github.com/querycad).%
+    }
+    \field{booktitle}{2025 {{IEEE International Conference}} on {{Robotics}}
+  and {{Automation}} ({{ICRA}})}
+    \verb{doi}
+    \verb 10.48550/arXiv.2409.08704
+    \endverb
+    \verb{eprint}
+    \verb 2409.08704
+    \endverb
+    \field{shorttitle}{{{QueryCAD}}}
+    \field{title}{{{QueryCAD}}: {{Grounded Question Answering}} for {{CAD
+  Models}}}
+    \list{location}{1}{%
+      {Atlanta, USA}%
+    }
+    \verb{file}
+    \verb C\:\\Users\\alt\\Zotero\\storage\\I2YH4CEC\\Kienle et al. - 2024 - Qu
+    \verb eryCAD Grounded Question Answering for CAD Models.pdf;C\:\\Users\\alt
+    \verb \\Zotero\\storage\\5EC2KGEA\\2409.html
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs}
+    \field{month}{05}
+    \field{year}{2025}
+    \field{urlday}{27}
+    \field{urlmonth}{09}
+    \field{urlyear}{2024}
+  \endentry
+
   \entry{alt_bansai_2024}{inproceedings}{}{}
     \name{author}{6}{}{%
       {{hash=AB}{%
@@ -107,91 +277,7 @@
     \field{urlyear}{2024}
   \endentry
 
-  \entry{alt_shadow_2024}{misc}{}{}
-    \name{author}{5}{}{%
-      {{hash=AB}{%
-         family={Alt},
-         familyi={A\bibinitperiod},
-         given={Benjamin},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=KC}{%
-         family={Kienle},
-         familyi={K\bibinitperiod},
-         given={Claudius},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=KD}{%
-         family={Katic},
-         familyi={K\bibinitperiod},
-         given={Darko},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=JR}{%
-         family={J{\"a}kel},
-         familyi={J\bibinitperiod},
-         given={Rainer},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=BM}{%
-         family={Beetz},
-         familyi={B\bibinitperiod},
-         given={Michael},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {arXiv}%
-    }
-    \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science -
-  Robotics,D.1,I.2}
-    \strng{namehash}{AB+1}
-    \strng{fullhash}{ABKCKDJRBM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{shorttitle}
-    \field{sortinit}{7}
-    \field{sortinithash}{7}
-    \field{abstract}{%
-    This paper presents SPI-DP, a novel first-order optimizer capable of
-  optimizing robot programs with respect to both high-level task objectives and
-  motion-level constraints. To that end, we introduce DGPMP2-ND, a
-  differentiable collision-free motion planner for serial N-DoF kinematics, and
-  integrate it into an iterative, gradient-based optimization approach for
-  generic, parameterized robot program representations. SPI-DP allows
-  first-order optimization of planned trajectories and program parameters with
-  respect to objectives such as cycle time or smoothness subject to e.g.
-  collision constraints, while enabling humans to understand, modify or even
-  certify the optimized programs. We provide a comprehensive evaluation on two
-  practical household and industrial applications.%
-    }
-    \verb{doi}
-    \verb 10.48550/arXiv.2409.08678
-    \endverb
-    \verb{eprint}
-    \verb 2409.08678
-    \endverb
-    \field{number}{arXiv:2409.08678}
-    \field{shorttitle}{Shadow {{Program Inversion}} with {{Differentiable
-  Planning}}}
-    \field{title}{Shadow {{Program Inversion}} with {{Differentiable
-  Planning}}: {{A Framework}} for {{Unified Robot Program Parameter}} and
-  {{Trajectory Optimization}}}
-    \verb{file}
-    \verb C\:\\Users\\alt\\Zotero\\storage\\JPCMCRKQ\\Alt et al. - 2024 - Shado
-    \verb w Program Inversion with Differentiable Planning A Framework for Unif
-    \verb ied Robot Program Paramet.pdf;C\:\\Users\\alt\\Zotero\\storage\\6IP3P
-    \verb MQM\\2409.html
-    \endverb
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs}
-    \field{month}{09}
-    \field{year}{2024}
-    \field{urlday}{23}
-    \field{urlmonth}{09}
-    \field{urlyear}{2024}
-  \endentry
-
-  \entry{alt_domain-specific_2024}{inproceedings}{}{}
+  \entry{alt_domain-specific_2024-1}{inproceedings}{}{}
     \name{author}{7}{}{%
       {{hash=AB}{%
          family={Alt},
@@ -236,13 +322,24 @@
          giveni={G\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
-      {Springer Nature}%
+    \name{editor}{2}{}{%
+      {{hash=SC}{%
+         family={Secchi},
+         familyi={S\bibinitperiod},
+         given={Cristian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=ML}{%
+         family={Marconi},
+         familyi={M\bibinitperiod},
+         given={Lorenzo},
+         giveni={L\bibinitperiod},
+      }}%
     }
-    \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science -
-  Computation and Language,Computer Science - Human-Computer
-  Interaction,Computer Science - Machine Learning,Computer Science -
-  Robotics,I.2.5,I.2.6,I.2.7,I.2.9,my,relevant}
+    \list{publisher}{1}{%
+      {Springer Nature Switzerland}%
+    }
+    \keyw{my,relevant}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABKUTAKDHAJRNG1}
     \field{labelnamesource}{author}
@@ -257,26 +354,26 @@
   fine-tuning of foundation models with limited data and compute.%
     }
     \field{booktitle}{European {{Robotics Forum}} 2024}
+    \verb{doi}
+    \verb 10.1007/978-3-031-76424-0_49
+    \endverb
     \verb{eprint}
     \verb 2312.13905
     \endverb
-    \field{isbn}{978-3-031-76428-8}
+    \field{isbn}{978-3-031-76424-0}
+    \field{pages}{274\bibrangedash 279}
     \field{series}{Springer {{Proceedings}} in {{Advanced Robotics}}}
-    \field{title}{Domain-{{Specific Fine-Tuning}} of {{Large Language Models}}
-  for {{Interactive Robot Programming}}}
+    \field{title}{Domain-{{Specific Fine-Tuning}} of~{{Large Language Models}}
+  for~{{Interactive Robot Programming}}}
+    \field{volume}{32}
+    \field{langid}{english}
     \list{location}{1}{%
       {Rimini, Italy}%
     }
-    \verb{file}
-    \verb C:\Users\alt\Zotero\storage\L4YRMDV3\2312.html
-    \endverb
     \field{eprinttype}{arXiv}
     \field{eprintclass}{cs}
     \field{month}{03}
     \field{year}{2024}
-    \field{urlday}{22}
-    \field{urlmonth}{12}
-    \field{urlyear}{2023}
   \endentry
 
   \entry{alt_human-ai_2024}{inproceedings}{}{}
@@ -509,6 +606,7 @@
     \verb 2402.16542
     \endverb
     \field{isbn}{979-8-3503-8457-4}
+    \field{pages}{1\bibrangedash 8}
     \field{shorttitle}{{{RoboGrind}}}
     \field{title}{{{RoboGrind}}: {{Intuitive}} and {{Interactive Surface
   Treatment}} with {{Industrial Robots}}}
@@ -524,84 +622,6 @@
     \field{year}{2024}
     \field{urlday}{05}
     \field{urlmonth}{03}
-    \field{urlyear}{2024}
-  \endentry
-
-  \entry{kienle_querycad_2024}{misc}{}{}
-    \name{author}{4}{}{%
-      {{hash=KC}{%
-         family={Kienle},
-         familyi={K\bibinitperiod},
-         given={Claudius},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=AB}{%
-         family={Alt},
-         familyi={A\bibinitperiod},
-         given={Benjamin},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=KD}{%
-         family={Katic},
-         familyi={K\bibinitperiod},
-         given={Darko},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=JR}{%
-         family={J{\"a}kel},
-         familyi={J\bibinitperiod},
-         given={Rainer},
-         giveni={R\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {arXiv}%
-    }
-    \keyw{Computer Science - Robotics,my}
-    \strng{namehash}{KC+1}
-    \strng{fullhash}{KCABKDJR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{shorttitle}
-    \field{sortinit}{7}
-    \field{sortinithash}{7}
-    \field{abstract}{%
-    CAD models are widely used in industry and are essential for robotic
-  automation processes. However, these models are rarely considered in novel
-  AI-based approaches, such as the automatic synthesis of robot programs, as
-  there are no readily available methods that would allow CAD models to be
-  incorporated for the analysis, interpretation, or extraction of information.
-  To address these limitations, we propose QueryCAD, the first system designed
-  for CAD question answering, enabling the extraction of precise information
-  from CAD models using natural language queries. QueryCAD incorporates SegCAD,
-  an open-vocabulary instance segmentation model we developed to identify and
-  select specific parts of the CAD model based on part descriptions. We further
-  propose a CAD question answering benchmark to evaluate QueryCAD and establish
-  a foundation for future research. Lastly, we integrate QueryCAD within an
-  automatic robot program synthesis framework, validating its ability to
-  enhance deep-learning solutions for robotics by enabling them to process CAD
-  models (https://claudius-kienle.github.com/querycad).%
-    }
-    \verb{doi}
-    \verb 10.48550/arXiv.2409.08704
-    \endverb
-    \verb{eprint}
-    \verb 2409.08704
-    \endverb
-    \field{number}{arXiv:2409.08704}
-    \field{shorttitle}{{{QueryCAD}}}
-    \field{title}{{{QueryCAD}}: {{Grounded Question Answering}} for {{CAD
-  Models}}}
-    \verb{file}
-    \verb C\:\\Users\\alt\\Zotero\\storage\\I2YH4CEC\\Kienle et al. - 2024 - Qu
-    \verb eryCAD Grounded Question Answering for CAD Models.pdf;C\:\\Users\\alt
-    \verb \\Zotero\\storage\\5EC2KGEA\\2409.html
-    \endverb
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs}
-    \field{month}{09}
-    \field{year}{2024}
-    \field{urlday}{27}
-    \field{urlmonth}{09}
     \field{urlyear}{2024}
   \endentry
 
@@ -681,16 +701,18 @@
     \field{booktitle}{{{IEEE}}/{{RSJ International Conference}} on
   {{Intelligent Robots}} and {{Systems}} ({{IROS}})}
     \verb{doi}
-    \verb 10.48550/arXiv.2407.15660
+    \verb 10.1109/IROS58592.2024.10802198
     \endverb
     \verb{eprint}
     \verb 2407.15660
     \endverb
+    \field{isbn}{979-8-3503-7770-5}
+    \field{pages}{9644\bibrangedash 9651}
     \field{shorttitle}{{{MuTT}}}
     \field{title}{{{MuTT}}: {{A Multimodal Trajectory Transformer}} for {{Robot
   Skills}}}
     \list{location}{1}{%
-      {Abu Dhabi}%
+      {Abu Dhabi, United Arab Emirates}%
     }
     \verb{file}
     \verb C\:\\Users\\alt\\Zotero\\storage\\5R53CYV4\\Kienle et al. - 2024 - Mu
@@ -1081,6 +1103,9 @@
          giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
       }}%
     }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
     \keyw{my}
     \strng{namehash}{RJ+1}
     \strng{fullhash}{RJROABYAGIBLMSKDSMHMF1}
@@ -1107,10 +1132,14 @@
     \verb{doi}
     \verb 10.1109/CASE56687.2023.10260559
     \endverb
+    \field{isbn}{979-8-3503-2069-5}
     \field{issn}{2161-8089}
     \field{pages}{1\bibrangedash 8}
     \field{title}{Artificial {{Neural Network Guided Compensation}} of
   {{Nonlinear Payload}} and {{Wear Effects}} for {{Industrial Robots}}}
+    \list{location}{1}{%
+      {Auckland, New Zealand}%
+    }
     \verb{file}
     \verb C:\Users\alt\Zotero\storage\WMG6FWY4\10260559.html
     \endverb
@@ -1320,6 +1349,9 @@
          giveni={M\bibinitperiod},
       }}%
     }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
     \keyw{Adaptation models,my,relevant,Runtime,Search problems,Service
   robots,Spirals,Stochastic processes,Training}
     \strng{namehash}{AB+1}
@@ -1353,10 +1385,14 @@
     \verb{doi}
     \verb 10.1109/IROS47612.2022.9982093
     \endverb
+    \field{isbn}{978-1-6654-7927-1}
     \field{issn}{2153-0866}
     \field{pages}{8887\bibrangedash 8893}
     \field{title}{Heuristic-{{Free Optimization}} of {{Force-Controlled Robot
   Search Strategies}} in {{Stochastic Environments}}}
+    \list{location}{1}{%
+      {Kyoto, Japan}%
+    }
     \verb{file}
     \verb C\:\\Users\\alt\\Zotero\\storage\\SACZMZRB\\Alt et al. - 2022 - Heuri
     \verb stic-free Optimization of Force-Controlled Ro.pdf;C\:\\Users\\alt\\Zo
@@ -1417,6 +1453,9 @@
          giveni={F\bibinitperiod},
       }}%
     }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
     \keyw{Annotations,Laparoscopes,my,Pipelines,Point cloud compression,Robot
   vision systems,Semantic segmentation,Training data}
     \strng{namehash}{AB+1}
@@ -1442,11 +1481,15 @@
     \verb{doi}
     \verb 10.1109/IROS47612.2022.9981178
     \endverb
+    \field{isbn}{978-1-6654-7927-1}
     \field{issn}{2153-0866}
     \field{pages}{5265\bibrangedash 5270}
     \field{shorttitle}{{{LapSeg3D}}}
     \field{title}{{{LapSeg3D}}: {{Weakly Supervised Semantic Segmentation}} of
   {{Point Clouds Representing Laparoscopic Scenes}}}
+    \list{location}{1}{%
+      {Kyoto, Japan}%
+    }
     \verb{file}
     \verb C\:\\Users\\alt\\Zotero\\storage\\RBQVYHM8\\Alt et al. - 2022 - LapSe
     \verb g3D Weakly Supervised Semantic Segmentation .pdf;C\:\\Users\\alt\\Zot
@@ -1663,6 +1706,9 @@
          giveni={M\bibinitperiod},
       }}%
     }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
     \keyw{Automation,Codes,Conferences,my,Production,relevant,Service
   robots,Task analysis,Unsupervised learning}
     \strng{namehash}{AB+1}
@@ -1693,10 +1739,14 @@
     \verb{doi}
     \verb 10.1109/ICRA48506.2021.9561206
     \endverb
+    \field{isbn}{978-1-7281-9077-8}
     \field{issn}{2577-087X}
     \field{pages}{4672\bibrangedash 4678}
     \field{title}{Robot {{Program Parameter Inference}} via {{Differentiable
   Shadow Program Inversion}}}
+    \list{location}{1}{%
+      {Xi'an, China}%
+    }
     \verb{file}
     \verb C:\Users\alt\Zotero\storage\UD5WY2M9\9561206.html
     \endverb

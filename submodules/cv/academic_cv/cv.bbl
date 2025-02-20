@@ -97,7 +97,7 @@
       \endverb
       \keyw{Industrial Robotics,my,Neurosymbolic Artificial Intelligence,Optimization,Program Synthesis}
     \endentry
-    \entry{alt_domain-specific_2024}{inproceedings}{}{}
+    \entry{alt_domain-specific_2024-1}{inproceedings}{}{}
       \name{author}{7}{}{%
         {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
            family={Alt},
@@ -135,11 +135,23 @@
            given={Gerhard},
            giveni={G\bibinitperiod}}}%
       }
+      \name{editor}{2}{}{%
+        {{hash=78cd85141c6296b4a21285ee87a49352}{%
+           family={Secchi},
+           familyi={S\bibinitperiod},
+           given={Cristian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=15bec5c2adf995a16a0702db008c5b3e}{%
+           family={Marconi},
+           familyi={M\bibinitperiod},
+           given={Lorenzo},
+           giveni={L\bibinitperiod}}}%
+      }
       \list{location}{1}{%
         {Rimini, Italy}%
       }
       \list{publisher}{1}{%
-        {Springer Nature}%
+        {Springer Nature Switzerland}%
       }
       \strng{namehash}{eeba3f3953863cb6174aa470f49edb33}
       \strng{fullhash}{eeba3f3953863cb6174aa470f49edb33}
@@ -149,6 +161,10 @@
       \strng{authornamehash}{eeba3f3953863cb6174aa470f49edb33}
       \strng{authorfullhash}{eeba3f3953863cb6174aa470f49edb33}
       \strng{authorfullhashraw}{eeba3f3953863cb6174aa470f49edb33}
+      \strng{editorbibnamehash}{92c802985544032fc4d658fd4b19389b}
+      \strng{editornamehash}{92c802985544032fc4d658fd4b19389b}
+      \strng{editorfullhash}{92c802985544032fc4d658fd4b19389b}
+      \strng{editorfullhashraw}{92c802985544032fc4d658fd4b19389b}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -157,23 +173,23 @@
       \field{booktitle}{European {{Robotics Forum}} 2024}
       \field{eprintclass}{cs}
       \field{eprinttype}{arXiv}
-      \field{isbn}{978-3-031-76428-8}
+      \field{isbn}{978-3-031-76424-0}
+      \field{langid}{english}
       \field{month}{3}
       \field{series}{Springer {{Proceedings}} in {{Advanced Robotics}}}
-      \field{title}{Domain-{{Specific Fine-Tuning}} of {{Large Language Models}} for {{Interactive Robot Programming}}}
-      \field{urlday}{22}
-      \field{urlmonth}{12}
-      \field{urlyear}{2023}
+      \field{title}{Domain-{{Specific Fine-Tuning}} of~{{Large Language Models}} for~{{Interactive Robot Programming}}}
+      \field{volume}{32}
       \field{year}{2024}
-      \field{urldateera}{ce}
       \true{nocite}
+      \field{pages}{274\bibrangedash 279}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1007/978-3-031-76424-0_49
+      \endverb
       \verb{eprint}
       \verb 2312.13905
       \endverb
-      \verb{file}
-      \verb C:\Users\alt\Zotero\storage\L4YRMDV3\2312.html
-      \endverb
-      \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Human-Computer Interaction,Computer Science - Machine Learning,Computer Science - Robotics,I.2.5,I.2.6,I.2.7,I.2.9,my,relevant}
+      \keyw{my,relevant}
     \endentry
     \entry{alt_efficientpps_2023}{inproceedings}{}{}
       \name{author}{7}{}{%
@@ -263,6 +279,12 @@
            given={Michael},
            giveni={M\bibinitperiod}}}%
       }
+      \list{location}{1}{%
+        {Kyoto, Japan}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
       \strng{namehash}{7b2f66e59e0c294f16a0ebf647fb6310}
       \strng{fullhash}{7b2f66e59e0c294f16a0ebf647fb6310}
       \strng{fullhashraw}{7b2f66e59e0c294f16a0ebf647fb6310}
@@ -277,6 +299,7 @@
       \field{labeltitlesource}{title}
       \field{abstract}{In both industrial and service domains, a central benefit of the use of robots is their ability to quickly and reliably execute repetitive tasks. However, even relatively simple peg-in-hole tasks are typically subject to stochastic variations, requiring search motions to find relevant features such as holes. While search improves robustness, it comes at the cost of increased runtime: More exhaustive search will maximize the probability of successfully executing a given task, but will significantly delay any downstream tasks. This trade-off is typically resolved by human experts according to simple heuristics, which are rarely optimal. This paper introduces an automatic, data-driven and heuristic-free approach to optimize robot search strategies. By training a neural model of the search strategy on a large set of simulated stochastic environments, conditioning it on few real-world examples and inverting the model, we can infer search strategies which adapt to the time-variant characteristics of the underlying probability distributions, while requiring very few real-world measurements. We evaluate our approach on two different industrial robots in the context of spiral and probe search for THT electronics assembly.**See github.com/benjaminalt/dpse for code and data.}
       \field{booktitle}{2022 {{IEEE}}/{{RSJ International Conference}} on {{Intelligent Robots}} and {{Systems}} ({{IROS}})}
+      \field{isbn}{978-1-6654-7927-1}
       \field{issn}{2153-0866}
       \field{month}{10}
       \field{title}{Heuristic-{{Free Optimization}} of {{Force-Controlled Robot Search Strategies}} in {{Stochastic Environments}}}
@@ -501,6 +524,12 @@
            given={Franziska},
            giveni={F\bibinitperiod}}}%
       }
+      \list{location}{1}{%
+        {Kyoto, Japan}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
       \strng{namehash}{3d2e017635f515272a7833e05816c302}
       \strng{fullhash}{3d2e017635f515272a7833e05816c302}
       \strng{fullhashraw}{3d2e017635f515272a7833e05816c302}
@@ -515,6 +544,7 @@
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{The semantic segmentation of surgical scenes is a prerequisite for task automation in robot assisted interventions. We propose LapSeg3D, a novel DNN-based approach for the voxel-wise annotation of point clouds representing surgical scenes. As the manual annotation of training data is highly time consuming, we introduce a semi-autonomous clustering-based pipeline for the annotation of the gallbladder, which is used to generate segmented labels for the DNN. When evaluated against manually annotated data, LapSeg3D achieves an F1 score of 0.94 for gallbladder segmentation on various datasets of ex-vivo porcine livers. We show LapSeg3D to generalize accurately across different gallbladders and datasets recorded with different RGB-D camera systems.}
       \field{booktitle}{2022 {{IEEE}}/{{RSJ International Conference}} on {{Intelligent Robots}} and {{Systems}} ({{IROS}})}
+      \field{isbn}{978-1-6654-7927-1}
       \field{issn}{2153-0866}
       \field{month}{10}
       \field{shorttitle}{{{LapSeg3D}}}
@@ -745,6 +775,8 @@
       \field{year}{2024}
       \field{urldateera}{ce}
       \true{nocite}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
       \verb{doi}
       \verb 10.1109/ICRA57147.2024.10611143
       \endverb
@@ -784,6 +816,12 @@
            given={Michael},
            giveni={M\bibinitperiod}}}%
       }
+      \list{location}{1}{%
+        {Xi'an, China}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
       \strng{namehash}{efb4896318b6631f12a8c03e7cfe3aa4}
       \strng{fullhash}{efb4896318b6631f12a8c03e7cfe3aa4}
       \strng{fullhashraw}{efb4896318b6631f12a8c03e7cfe3aa4}
@@ -798,6 +836,7 @@
       \field{labeltitlesource}{title}
       \field{abstract}{Challenging manipulation tasks can be solved effectively by combining individual robot skills, which must be parameterized for the concrete physical environment and task at hand. This is time-consuming and difficult for human programmers, particularly for force-controlled skills. To this end, we present Shadow Program Inversion (SPI), a novel approach to infer optimal skill parameters directly from data. SPI leverages unsupervised learning to train an auxiliary differentiable program representation ("shadow program") and realizes parameter inference via gradient-based model inversion. Our method enables the use of efficient first-order optimizers to infer optimal parameters for originally non-differentiable skills, including many skill variants currently used in production. SPI zero-shot generalizes across task objectives, meaning that shadow programs do not need to be retrained to infer parameters for different task variants. We evaluate our methods on three different robots and skill frameworks in industrial and household scenarios. Code and examples are available at https://innolab.artiminds.com/icra2021.}
       \field{booktitle}{2021 {{IEEE International Conference}} on {{Robotics}} and {{Automation}} ({{ICRA}})}
+      \field{isbn}{978-1-7281-9077-8}
       \field{issn}{2577-087X}
       \field{month}{5}
       \field{title}{Robot {{Program Parameter Inference}} via {{Differentiable Shadow Program Inversion}}}
@@ -813,7 +852,7 @@
       \endverb
       \keyw{Automation,Codes,Conferences,my,Production,relevant,Service robots,Task analysis,Unsupervised learning}
     \endentry
-    \entry{alt_shadow_2024}{misc}{}{}
+    \entry{alt_shadow_2025}{inproceedings}{}{}
       \name{author}{5}{}{%
         {{hash=7afe58f6dccaf693cd914274ce71b67d}{%
            family={Alt},
@@ -841,8 +880,11 @@
            given={Michael},
            giveni={M\bibinitperiod}}}%
       }
+      \list{location}{1}{%
+        {Atlanta, USA}%
+      }
       \list{publisher}{1}{%
-        {arXiv}%
+        {IEEE}%
       }
       \strng{namehash}{5659b8076ecba9d41ccba19f4194d1f6}
       \strng{fullhash}{5659b8076ecba9d41ccba19f4194d1f6}
@@ -857,16 +899,16 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{This paper presents SPI-DP, a novel first-order optimizer capable of optimizing robot programs with respect to both high-level task objectives and motion-level constraints. To that end, we introduce DGPMP2-ND, a differentiable collision-free motion planner for serial N-DoF kinematics, and integrate it into an iterative, gradient-based optimization approach for generic, parameterized robot program representations. SPI-DP allows first-order optimization of planned trajectories and program parameters with respect to objectives such as cycle time or smoothness subject to e.g. collision constraints, while enabling humans to understand, modify or even certify the optimized programs. We provide a comprehensive evaluation on two practical household and industrial applications.}
+      \field{booktitle}{2025 {{IEEE International Conference}} on {{Robotics}} and {{Automation}} ({{ICRA}})}
       \field{eprintclass}{cs}
       \field{eprinttype}{arXiv}
-      \field{month}{9}
-      \field{number}{arXiv:2409.08678}
+      \field{month}{5}
       \field{shorttitle}{Shadow {{Program Inversion}} with {{Differentiable Planning}}}
       \field{title}{Shadow {{Program Inversion}} with {{Differentiable Planning}}: {{A Framework}} for {{Unified Robot Program Parameter}} and {{Trajectory Optimization}}}
       \field{urlday}{23}
       \field{urlmonth}{9}
       \field{urlyear}{2024}
-      \field{year}{2024}
+      \field{year}{2025}
       \field{urldateera}{ce}
       \true{nocite}
       \verb{doi}
@@ -1077,7 +1119,7 @@
            giveni={G\bibinitperiod}}}%
       }
       \list{location}{1}{%
-        {Abu Dhabi}%
+        {Abu Dhabi, United Arab Emirates}%
       }
       \list{publisher}{1}{%
         {IEEE}%
@@ -1098,6 +1140,7 @@
       \field{booktitle}{{{IEEE}}/{{RSJ International Conference}} on {{Intelligent Robots}} and {{Systems}} ({{IROS}})}
       \field{eprintclass}{cs}
       \field{eprinttype}{arXiv}
+      \field{isbn}{979-8-3503-7770-5}
       \field{month}{8}
       \field{shorttitle}{{{MuTT}}}
       \field{title}{{{MuTT}}: {{A Multimodal Trajectory Transformer}} for {{Robot Skills}}}
@@ -1107,8 +1150,10 @@
       \field{year}{2024}
       \field{urldateera}{ce}
       \true{nocite}
+      \field{pages}{9644\bibrangedash 9651}
+      \range{pages}{8}
       \verb{doi}
-      \verb 10.48550/arXiv.2407.15660
+      \verb 10.1109/IROS58592.2024.10802198
       \endverb
       \verb{eprint}
       \verb 2407.15660
@@ -1118,7 +1163,7 @@
       \endverb
       \keyw{Computer Science - Machine Learning,Computer Science - Robotics}
     \endentry
-    \entry{kienle_querycad_2024}{misc}{}{}
+    \entry{kienle_querycad_2025}{inproceedings}{}{}
       \name{author}{4}{}{%
         {{hash=2458d19a6ea472fa97732bf7885a0b2f}{%
            family={Kienle},
@@ -1141,8 +1186,11 @@
            given={Rainer},
            giveni={R\bibinitperiod}}}%
       }
+      \list{location}{1}{%
+        {Atlanta, USA}%
+      }
       \list{publisher}{1}{%
-        {arXiv}%
+        {IEEE}%
       }
       \strng{namehash}{b96362008ba679bed4552b7b3b214251}
       \strng{fullhash}{b96362008ba679bed4552b7b3b214251}
@@ -1157,16 +1205,16 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{CAD models are widely used in industry and are essential for robotic automation processes. However, these models are rarely considered in novel AI-based approaches, such as the automatic synthesis of robot programs, as there are no readily available methods that would allow CAD models to be incorporated for the analysis, interpretation, or extraction of information. To address these limitations, we propose QueryCAD, the first system designed for CAD question answering, enabling the extraction of precise information from CAD models using natural language queries. QueryCAD incorporates SegCAD, an open-vocabulary instance segmentation model we developed to identify and select specific parts of the CAD model based on part descriptions. We further propose a CAD question answering benchmark to evaluate QueryCAD and establish a foundation for future research. Lastly, we integrate QueryCAD within an automatic robot program synthesis framework, validating its ability to enhance deep-learning solutions for robotics by enabling them to process CAD models (https://claudius-kienle.github.com/querycad).}
+      \field{booktitle}{2025 {{IEEE International Conference}} on {{Robotics}} and {{Automation}} ({{ICRA}})}
       \field{eprintclass}{cs}
       \field{eprinttype}{arXiv}
-      \field{month}{9}
-      \field{number}{arXiv:2409.08704}
+      \field{month}{5}
       \field{shorttitle}{{{QueryCAD}}}
       \field{title}{{{QueryCAD}}: {{Grounded Question Answering}} for {{CAD Models}}}
       \field{urlday}{27}
       \field{urlmonth}{9}
       \field{urlyear}{2024}
-      \field{year}{2024}
+      \field{year}{2025}
       \field{urldateera}{ce}
       \true{nocite}
       \verb{doi}
@@ -1378,6 +1426,12 @@
            given={Marco\bibnamedelima F.},
            giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
       }
+      \list{location}{1}{%
+        {Auckland, New Zealand}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
       \strng{namehash}{74d0f25b42b0bd77768ca58284db31ad}
       \strng{fullhash}{74d0f25b42b0bd77768ca58284db31ad}
       \strng{fullhashraw}{74d0f25b42b0bd77768ca58284db31ad}
@@ -1392,6 +1446,7 @@
       \field{labeltitlesource}{title}
       \field{abstract}{The absolute accuracy of industrial robots is influ-enced by numerous geometric and non-geometric errors. Most state-of-the-art calibration and compensation methods consider only the geometric errors and neglect the non-geometric ones. In this paper, a hybrid compensation approach is proposed that combines well-known kinematic models with a model-free data-driven component using a neural network. This allows the use of established calibration methods for the geometric influences captured in the kinematic model to improve the non-geometric error compensation by the neural network. The proposed approach is applied in two use cases: payload and wear compensation. Simulations and real experiments show the improved absolute accuracy of the hybrid compensation approach compared to classical calibration methods.}
       \field{booktitle}{2023 {{IEEE}} 19th {{International Conference}} on {{Automation Science}} and {{Engineering}} ({{CASE}})}
+      \field{isbn}{979-8-3503-2069-5}
       \field{issn}{2161-8089}
       \field{month}{8}
       \field{title}{Artificial {{Neural Network Guided Compensation}} of {{Nonlinear Payload}} and {{Wear Effects}} for {{Industrial Robots}}}

@@ -1,3 +1,44 @@
+@inproceedings{kienle_querycad_2025,
+  title = {{{QueryCAD}}: {{Grounded Question Answering}} for {{CAD Models}}},
+  shorttitle = {{{QueryCAD}}},
+  booktitle = {2025 {{IEEE International Conference}} on {{Robotics}} and {{Automation}} ({{ICRA}})},
+  author = {Kienle, Claudius and Alt, Benjamin and Katic, Darko and J{\"a}kel, Rainer},
+  year = {2025},
+  month = may,
+  eprint = {2409.08704},
+  primaryclass = {cs},
+  publisher = {IEEE},
+  address = {Atlanta, USA},
+  doi = {10.48550/arXiv.2409.08704},
+  urldate = {2024-09-27},
+  abstract = {CAD models are widely used in industry and are essential for robotic automation processes. However, these models are rarely considered in novel AI-based approaches, such as the automatic synthesis of robot programs, as there are no readily available methods that would allow CAD models to be incorporated for the analysis, interpretation, or extraction of information. To address these limitations, we propose QueryCAD, the first system designed for CAD question answering, enabling the extraction of precise information from CAD models using natural language queries. QueryCAD incorporates SegCAD, an open-vocabulary instance segmentation model we developed to identify and select specific parts of the CAD model based on part descriptions. We further propose a CAD question answering benchmark to evaluate QueryCAD and establish a foundation for future research. Lastly, we integrate QueryCAD within an automatic robot program synthesis framework, validating its ability to enhance deep-learning solutions for robotics by enabling them to process CAD models (https://claudius-kienle.github.com/querycad).},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Robotics,my},
+  pdf = {querycad.pdf},
+  arxiv = {2409.08704}
+}
+
+@inproceedings{alt_shadow_2025,
+  title = {Shadow {{Program Inversion}} with {{Differentiable Planning}}: {{A Framework}} for {{Unified Robot Program Parameter}} and {{Trajectory Optimization}}},
+  shorttitle = {Shadow {{Program Inversion}} with {{Differentiable Planning}}},
+  booktitle = {2025 {{IEEE International Conference}} on {{Robotics}} and {{Automation}} ({{ICRA}})},
+  author = {Alt, Benjamin and Kienle, Claudius and Katic, Darko and J{\"a}kel, Rainer and Beetz, Michael},
+  year = {2025},
+  month = may,
+  eprint = {2409.08678},
+  primaryclass = {cs},
+  publisher = {IEEE},
+  address = {Atlanta, USA},
+  doi = {10.48550/arXiv.2409.08678},
+  urldate = {2024-09-23},
+  abstract = {This paper presents SPI-DP, a novel first-order optimizer capable of optimizing robot programs with respect to both high-level task objectives and motion-level constraints. To that end, we introduce DGPMP2-ND, a differentiable collision-free motion planner for serial N-DoF kinematics, and integrate it into an iterative, gradient-based optimization approach for generic, parameterized robot program representations. SPI-DP allows first-order optimization of planned trajectories and program parameters with respect to objectives such as cycle time or smoothness subject to e.g. collision constraints, while enabling humans to understand, modify or even certify the optimized programs. We provide a comprehensive evaluation on two practical household and industrial applications.},
+  archiveprefix = {arXiv},
+  keywords = {68T40,Computer Science - Artificial Intelligence,Computer Science - Robotics,D.1,I.2},
+  pdf = {spi_dp.pdf},
+  arxiv = {2409.08678},
+  selected = true
+}
+
 @inproceedings{alt_bansai_2024,
   title = {{{BANSAI}}: {{Towards Bridging}} the {{AI Adoption Gap}} in {{Industrial Robotics}} with {{Neurosymbolic Programming}}},
   shorttitle = {{{BANSAI}}},
@@ -203,26 +244,6 @@
   selected = true
 }
 
-@misc{alt_shadow_2024,
-  title = {Shadow {{Program Inversion}} with {{Differentiable Planning}}: {{A Framework}} for {{Unified Robot Program Parameter}} and {{Trajectory Optimization}}},
-  shorttitle = {Shadow {{Program Inversion}} with {{Differentiable Planning}}},
-  author = {Alt, Benjamin and Kienle, Claudius and Katic, Darko and J{\"a}kel, Rainer and Beetz, Michael},
-  year = {2024},
-  month = sep,
-  number = {arXiv:2409.08678},
-  eprint = {2409.08678},
-  primaryclass = {cs},
-  publisher = {arXiv},
-  doi = {10.48550/arXiv.2409.08678},
-  urldate = {2024-09-23},
-  abstract = {This paper presents SPI-DP, a novel first-order optimizer capable of optimizing robot programs with respect to both high-level task objectives and motion-level constraints. To that end, we introduce DGPMP2-ND, a differentiable collision-free motion planner for serial N-DoF kinematics, and integrate it into an iterative, gradient-based optimization approach for generic, parameterized robot program representations. SPI-DP allows first-order optimization of planned trajectories and program parameters with respect to objectives such as cycle time or smoothness subject to e.g. collision constraints, while enabling humans to understand, modify or even certify the optimized programs. We provide a comprehensive evaluation on two practical household and industrial applications.},
-  archiveprefix = {arXiv},
-  keywords = {68T40,Computer Science - Artificial Intelligence,Computer Science - Robotics,D.1,I.2},
-  pdf = {spi_dp.pdf},
-  arxiv = {2409.08678},
-  selected = true
-}
-
 @inproceedings{dittus_localization_2021,
   title = {Localization and {{Tracking}} of {{User-Defined Points}} on {{Deformable Objects}} for {{Robotic Manipulation}}},
   booktitle = {{{IEEE ICRA Workshop}} on {{Representing}} and {{Manipulating Deformable Objects}}},
@@ -273,25 +294,6 @@
   keywords = {Computer Science - Machine Learning,Computer Science - Robotics},
   pdf = {mutt_IROS24.pdf},
   arxiv = {2407.15660}
-}
-
-@misc{kienle_querycad_2024,
-  title = {{{QueryCAD}}: {{Grounded Question Answering}} for {{CAD Models}}},
-  shorttitle = {{{QueryCAD}}},
-  author = {Kienle, Claudius and Alt, Benjamin and Katic, Darko and J{\"a}kel, Rainer},
-  year = {2024},
-  month = sep,
-  number = {arXiv:2409.08704},
-  eprint = {2409.08704},
-  primaryclass = {cs},
-  publisher = {arXiv},
-  doi = {10.48550/arXiv.2409.08704},
-  urldate = {2024-09-27},
-  abstract = {CAD models are widely used in industry and are essential for robotic automation processes. However, these models are rarely considered in novel AI-based approaches, such as the automatic synthesis of robot programs, as there are no readily available methods that would allow CAD models to be incorporated for the analysis, interpretation, or extraction of information. To address these limitations, we propose QueryCAD, the first system designed for CAD question answering, enabling the extraction of precise information from CAD models using natural language queries. QueryCAD incorporates SegCAD, an open-vocabulary instance segmentation model we developed to identify and select specific parts of the CAD model based on part descriptions. We further propose a CAD question answering benchmark to evaluate QueryCAD and establish a foundation for future research. Lastly, we integrate QueryCAD within an automatic robot program synthesis framework, validating its ability to enhance deep-learning solutions for robotics by enabling them to process CAD models (https://claudius-kienle.github.com/querycad).},
-  archiveprefix = {arXiv},
-  keywords = {Computer Science - Robotics,my},
-  pdf = {querycad.pdf},
-  arxiv = {2409.08704}
 }
 
 @incollection{kluy_mensch-roboter-kollaboration_2022,

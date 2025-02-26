@@ -66,6 +66,7 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
         with:
+          lfs: true
           submodules: recursive
           token: ${{ secrets.PAT_TOKEN }}
       

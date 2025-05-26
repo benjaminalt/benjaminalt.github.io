@@ -2,12 +2,11 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Publications by categories in reversed chronological order.
 nav: true
 nav_order: 2
 ---
 
-PhD dissertation (preview): [Neurosymbolic Robot Programming: A Framework for AI-Enabled Programming of Robot Manipulation Tasks](https://nc.uni-bremen.de/index.php/s/soQcLeMCaY8XYgT)
+PhD dissertation: [Neurosymbolic Robot Programming: A Framework for AI-Enabled Programming of Robot Manipulation Tasks](https://doi.org/10.26092/elib/3727)
 
 <!-- Bibsearch Feature -->
 

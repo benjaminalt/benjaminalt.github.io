@@ -57,7 +57,7 @@
 \RequirePackage{dashrule}
 \RequirePackage{multirow,tabularx}
 \RequirePackage{changepage}
-% \RequirePackage{marginfix}
+\RequirePackage{orcidlink}
 
 \setlength{\parindent}{0pt}
 \newcommand{\divider}{\textcolor{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}\medskip}
@@ -73,7 +73,7 @@
 \newcommand{\linkedinsymbol}{\faLinkedin}
 \newcommand{\twittersymbol}{\faTwitter}
 \newcommand{\githubsymbol}{\faGithub}
-\newcommand{\orcidsymbol}{\aiOrcid}
+\newcommand{\orcidsymbol}{\orcidlogo}
 \newcommand{\mailsymbol}{\faEnvelope}
 
 \newcommand{\printinfo}[2]{\mbox{\textcolor{accent}{#1}\hspace{0.5em}#2\hspace{2em}}}
@@ -88,7 +88,8 @@
 \newcommand{\twitter}[1]{\printinfo{\twittersymbol}{#1}}
 \newcommand{\linkedin}[1]{\printinfo{\linkedinsymbol}{#1}}
 \newcommand{\github}[1]{\printinfo{\githubsymbol}{#1}}
-\newcommand{\orcid}[1]{\printinfo{\orcidsymbol}{#1}}
+\newcommand{\orcid}[1]{\printinfo{\orcidlink{#1}}{\href{
+  https://orcid.org/#1}{#1}}}
 \newcommand{\location}[1]{\printinfo{\locationsymbol}{#1}}
 
 \newcommand{\personalinfo}[1]{\def\@personalinfo{#1}}
@@ -97,9 +98,9 @@
   \begingroup
     \ifdef{\@photodiameter}{\begin{minipage}{\dimexpr\linewidth-\@photodiameter-2em}}{}%
     \centering\color{emphasis}%
-    {\Huge\bfseries\MakeUppercase{\@name}\par}
+    {\Huge{\@name}\par}
     \bigskip
-    {\large\bfseries\color{accent}\@tagline\par}
+    % {\large\bfseries\color{accent}\@tagline\par}
     \bigskip
     {\footnotesize\bfseries\@personalinfo\par}
     \ifdef{\@photodiameter}{%

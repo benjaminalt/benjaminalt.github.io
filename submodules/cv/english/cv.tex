@@ -41,6 +41,8 @@
 \usepackage[default]{lato}
 \usepackage[english]{babel}
 \usepackage{hyperref}
+\usepackage[sfdefault]{roboto}
+\usepackage{orcidlink}
 
 % If using xelatex or lualatex:
 % \setmainfont{Lato}
@@ -52,7 +54,7 @@
 \colorlet{heading}{Blue}
 \colorlet{accent}{Blue}
 \colorlet{emphasis}{SlateGrey}
-\colorlet{body}{LightGrey}
+\colorlet{body}{black}
 
 % Change the bullets for itemize and rating marker
 % for \cvskill if you want to
@@ -85,19 +87,21 @@
 }
 
 \begin{document}
+
 \name{Benjamin Alt}
-\tagline{Senior Team Lead Research at ArtiMinds Robotics / PhD Candidate at the University of Bremen}
+\tagline{Technical Director, AICOR Institute for Artificial Intelligence}
 % \photo{3.2cm}{bewerbungsfoto_cropped}
 \personalinfo{%
   % Not all ofs these are required!
   % You can add your own with \printinfo{symbol}{detail}
   % \mailaddress{Welfenstraße 1, 76137 Karlsruhe}
   % \location{Karlsruhe, Germany}
-  \phone{+49 160 8548454}
+  \phone{+49 421 21864016}
   \email{benjamin.alt@uni-bremen.de}
-  \homepage{benjaminalt.github.io}
-  \github{github.com/benjaminalt}
-  \linkedin{linkedin.com/in/benjamin-alt}
+  \orcid{0009-0002-8790-1671}
+  \homepage{\href{https://benjaminalt.github.io/}{benjaminalt.github.io}}
+  \github{\href{https://github.com/benjaminalt}{benjaminalt}}
+  \linkedin{\href{https://linkedin.com/in/benjamin-alt}{linkedin.com/in/benjamin-alt}}
 }
 
 %% Make the header extend all the way to the right, if you want.
@@ -107,29 +111,38 @@
 
 \vspace{-5pt}
 
-%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% Provide the f ile name containing the sidebar contents as an optional parameter to \cvsection.
 %% You can always just use \marginpar{...} if you do
 %% not need to align the top of the contents to any
 %% \cvsection title in the "main" bar.
+
+\input{sections/relevant_experience.tex}
+
 \input{sections/education.tex}
 
-\input{sections/professional_experience.tex}
-
-\input{sections/publications.tex}
+\input{sections/selected_publications.tex}
 
 \input{sections/projects_grants.tex}
 
 %% If the NEXT page doesn't start with a \cvsection but you'd
-%% still like to add a sidebar, then use this command on THIS
+%% still like to add a sidebar, thñen use this command on THIS
 %% page to add it. The optional argument lets you pull up the
 %% sidebar a bit so that it looks aligned with the top of the
 %% main column.
 % \addnextpagesidebar[-1ex]{page3sidebar}
 
-\input{sections/scholarships_awards.tex}
+% \input{sections/scholarships_awards.tex}
 
-\input{sections/skills.tex}
+% \input{sections/skills.tex}
 
-\medskip
-Karlsruhe, {\today} \hspace{30mm} %$\vcenter{\hbox{\includegraphics[height=13mm]{signature}}}$
+% \cvsection{Cultural Engagement}
+% \cvevent{Translation (English-German) and freelance work}{Golub Books Publishing}{Oct 2011 -- Sep 2021}{Karlsruhe, Germany}
+
+% \cvsection{Volunteer Work}
+% \cvevent{Selection Committee Member}{Studienstiftung des deutschen Volkes}{Nov 2022 -- today}{Karlsruhe, Germany}
+
+\bigskip
+\bigskip
+
+Bremen, {\today}\par%\hspace{30mm} $\vcenter{\hbox{\includegraphics[height=13mm]{signature}}}$
 \end{document}

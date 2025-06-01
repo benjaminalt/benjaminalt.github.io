@@ -9,7 +9,7 @@ profile:
   image: portrait.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <a href='https://ai.uni-bremen.de/'>AICOR Institute for Artificial Intelligence</a>
+    <a href='https://ai.uni-bremen.de/'>https://ai.uni-bremen.de/</a>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"

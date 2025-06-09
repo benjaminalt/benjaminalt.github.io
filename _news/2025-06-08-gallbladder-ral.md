@@ -6,9 +6,11 @@ inline: false
 related_posts: false
 ---
 
-Our paper "Semi-Autonomous Robotic Assistance for Gallbladder Retraction in Surgery" ([IEEE](https://ieeexplore.ieee.org/document/11027660), [PDF](/assets/pdf/RAL_DKMP.pdf), [blog](/blog/2025/semi-autonomous-robotic-assistance-for-gallbladder-retraction)) has been accepted for publication in IEEE Robotics and Automation Letters (RA-L).
+Our paper "Semi-Autonomous Robotic Assistance for Gallbladder Retraction in Surgery" ([<i class="fas fa-link"></i>](https://ieeexplore.ieee.org/document/11027660), [<i class="fas fa-file-pdf"></i>](/assets/pdf/RAL_DKMP.pdf)) has been accepted for publication in IEEE Robotics and Automation Letters (RA-L).
 
 In this work, we introduce a semi-autonomous robotic assistance system for minimally invasive surgery that combines domain knowledge-informed feature extraction with neural and probabilistic modeling to improve both the effectiveness and interpretability of robot behavior during gallbladder retraction tasks.
+
+Blog post: [<i class="fa-solid fa-arrow-up-right-from-square"></i>](/blog/2025/semi-autonomous-robotic-assistance-for-gallbladder-retraction)
 
 Authors:
 Alexander Schüßler[^1], Christian Kunz[^2], Rayan Younis[^3], Benjamin Alt[^4], Jamie Paik[^1], Martin Wagner[^3], Franziska Mathis-Ullrich[^2]

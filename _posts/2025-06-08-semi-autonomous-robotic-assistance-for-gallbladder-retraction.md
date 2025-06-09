@@ -16,7 +16,7 @@ Alexander Schüßler[^1], Christian Kunz[^2], Rayan Younis[^3], Benjamin Alt[^4]
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-{% include figure.liquid loading="eager" path="assets/img/gallbladder-ral/experiment_setup.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/gallbladder-ral/experiment_setup.jpg" class="img-fluid rounded z-depth-1 w-75 mx-auto d-block" %}
     </div>
 </div>
 

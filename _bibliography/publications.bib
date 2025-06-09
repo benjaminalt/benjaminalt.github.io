@@ -8,7 +8,8 @@
   doi = {10.1109/LRA.2025.3577430},
   urldate = {2025-06-08},
   keywords = {Feature extraction,Gallbladder,Imitation learning,informed machine learning,learning from demonstration,Liver,minimally invasive surgery,my,Phantoms,Point cloud compression,Robots,Surgery,surgical robotics,Three-dimensional displays,Trajectory,Vectors},
-  pdf = {RAL_DKMP.pdf}
+  pdf = {RAL_DKMP.pdf},
+  abstract = { (Semi-)autonomous robotic assistance in minimally invasive surgery has the potential to alleviate surgical staff shortage and decrease the workload of medical professionals. These robots must execute complex tasks within unpredictable and unstructured environments encountered during surgery. Although imitation learning approaches have the potential to learn complex surgical skills, the interpretation of robot behavior during safety-critical scenarios, such as surgery, remains a challenge. Through combining interpretable 3D point cloud feature vectors based on domain knowledge with feedforward neural networks and probabilistic movement primitives, domain knowledge-informed movement primitives effectively learn surgical skills while improving the interpretation of robot behavior. The evaluation on test data proves that the proposed method can effectively learn surgical skills based on a small number of demonstrations. Using the proposed imitation learning method, a semi-autonomous robotic assistance for directed gallbladder retraction is introduced and evaluated during gallbladder removal on a silicone liver phantom and ex vivo porcine livers. Achieving over 91 % and 92 % successful gallbladder retractions, the robotic assistance enables effective support for surgeons during these surgical interventions.}
 }
 
 @misc{melnikDigitalTwinGeneration2025,
@@ -18,6 +19,7 @@
   month = apr,
   number = {arXiv:2504.13159},
   eprint = {2504.13159},
+  abstract = {This survey explores recent developments in generating digital twins from videos. Such digital twins can be used for robotics application, media content creation, or design and construction works. We analyze various approaches, including 3D Gaussian Splatting, generative in-painting, semantic segmentation, and foundation models highlighting their advantages and limitations. Additionally, we discuss challenges such as occlusions, lighting variations, and scalability, as well as potential future research directions. This survey aims to provide a comprehensive overview of state-of-the-art methodologies and their implications for real-world applications. Awesome list: https://github.com/ndrwmlnk/awesome-digital-twins},
   primaryclass = {cs},
   publisher = {arXiv},
   doi = {10.48550/arXiv.2504.13159},
@@ -34,13 +36,15 @@
   month = mar,
   number = {arXiv:2503.09409},
   eprint = {2503.09409},
+  abstract = {Despite the widespread adoption of industrial robots in automotive assembly, wire harness installation remains a largely manual process, as it requires precise and flexible manipulation. To address this challenge, we design a novel AI-based framework that automates cable connector mating by integrating force control with deep visuotactile learning. Our system optimizes search-and-insertion strategies using first-order optimization over a multimodal transformer architecture trained on visual, tactile, and proprioceptive data. Additionally, we design a novel automated data collection and optimization pipeline that minimizes the need for machine learning expertise. The framework optimizes robot programs that run natively on standard industrial controllers, permitting human experts to audit and certify them. Experimental validations on a center console assembly task demonstrate significant improvements in cycle times and robustness compared to conventional robot programming approaches. Videos are available under https://claudius-kienle.github.io/AppMuTT.},
   primaryclass = {cs},
   publisher = {arXiv},
   doi = {10.48550/arXiv.2503.09409},
   urldate = {2025-03-17},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computational Engineering Finance and Science,Computer Science - Machine Learning,Computer Science - Robotics,my},
-  arxiv = {2503.09409}
+  arxiv = {2503.09409},
+  pdf = {wire_harness_CASE25.pdf}
 }
 
 @misc{kienleLODGEJointHierarchical2025,
@@ -50,6 +54,7 @@
   month = may,
   number = {arXiv:2505.13497},
   eprint = {2505.13497},
+  abstract = {Large Language Models (LLMs) enable planning from natural language instructions using implicit world knowledge, but often produce flawed plans that require refinement. Instead of directly predicting plans, recent methods aim to learn a problem domain that can be solved for different goal states using classical planners. However, these approaches require significant human feedback to obtain useful models. We address this shortcoming by learning hierarchical domains, where low-level predicates and actions are composed into higher-level counterparts, and by leveraging simulation to validate their preconditions and effects. This hierarchical approach is particularly powerful for long-horizon planning, where LLM-based planning approaches typically struggle. Furthermore, we introduce a central error reasoner to ensure consistency among the different planning levels. Evaluation on two challenging International Planning Competition (IPC) domains and a long-horizon robot manipulation task demonstrates higher planning success rates than state-of-the-art domain synthesis and LLM-modulo planning methods, while constructing high-quality models of the domain.},
   primaryclass = {cs},
   publisher = {arXiv},
   doi = {10.48550/arXiv.2505.13497},

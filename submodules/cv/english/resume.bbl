@@ -17,6 +17,34 @@
 \endgroup
 
 \datalist[entry]{ydnt/global//global/global/global}
+  \entry{alt2025neurosymbolic}{thesis}{}{}
+    \name{author}{1}{}{%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AB1}
+    \strng{fullhash}{AB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{title}{Neurosymbolic {{Robot Programming}}: {{A Framework}} for
+  {{AI-Enabled Programming}} of {{Robot Manipulation Tasks}}}
+    \list{location}{1}{%
+      {Bremen, Germany}%
+    }
+    \list{institution}{1}{%
+      {Universit{\"a}t Bremen}%
+    }
+    \field{type}{phdthesis}
+    \field{month}{02}
+    \field{year}{2025}
+  \endentry
+
   \entry{altShadowProgramInversion2025}{inproceedings}{}{}
     \name{author}{5}{}{%
       {{hash=AB}{%
@@ -53,6 +81,8 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
+    \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science -
+  Robotics,D.1,I.2,my,relevant}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABKCKDJRBM1}
     \field{labelnamesource}{author}
@@ -80,6 +110,62 @@
     \field{urlday}{23}
     \field{urlmonth}{09}
     \field{urlyear}{2024}
+  \endentry
+
+  \entry{kienleLODGEJointHierarchical2025}{misc}{}{}
+    \name{author}{4}{}{%
+      {{hash=KC}{%
+         family={Kienle},
+         familyi={K\bibinitperiod},
+         given={Claudius},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=AO}{%
+         family={Arenz},
+         familyi={A\bibinitperiod},
+         given={Oleg},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Peters},
+         familyi={P\bibinitperiod},
+         given={Jan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {arXiv}%
+    }
+    \keyw{Computer Science - Artificial Intelligence,Computer Science -
+  Robotics,my}
+    \strng{namehash}{KC+1}
+    \strng{fullhash}{KCABAOPJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \verb{doi}
+    \verb 10.48550/arXiv.2505.13497
+    \endverb
+    \verb{eprint}
+    \verb 2505.13497
+    \endverb
+    \field{number}{arXiv:2505.13497}
+    \field{title}{{{LODGE}}: {{Joint Hierarchical Task Planning}} and
+  {{Learning}} of {{Domain Models}} with {{Grounded Execution}}}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs}
+    \field{month}{05}
+    \field{year}{2025}
+    \field{urlday}{26}
+    \field{urlmonth}{05}
+    \field{urlyear}{2025}
   \endentry
 
   \entry{kienleQueryCADGroundedQuestion2025}{inproceedings}{}{}
@@ -112,6 +198,7 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
+    \keyw{Computer Science - Robotics,my}
     \strng{namehash}{KC+1}
     \strng{fullhash}{KCABKDJR1}
     \field{labelnamesource}{author}
@@ -182,6 +269,9 @@
     \list{publisher}{1}{%
       {arXiv}%
     }
+    \keyw{Computer Science - Artificial Intelligence,Computer Science -
+  Computational Engineering Finance and Science,Computer Science - Machine
+  Learning,Computer Science - Robotics,my}
     \strng{namehash}{KC+1}
     \strng{fullhash}{KCABSFPTJRRR1}
     \field{labelnamesource}{author}
@@ -272,6 +362,7 @@
     \list{publisher}{1}{%
       {arXiv}%
     }
+    \keyw{Computer Science - Computer Vision and Pattern Recognition,my}
     \strng{namehash}{MA+1}
     \strng{fullhash}{MAABNGWASMWQHSRHSMBM1}
     \field{labelnamesource}{author}
@@ -293,6 +384,75 @@
     \field{year}{2025}
     \field{urlday}{11}
     \field{urlmonth}{05}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{schusslerSemiAutonomousRoboticAssistance2025}{article}{}{}
+    \name{author}{7}{}{%
+      {{hash=SA}{%
+         family={Sch{\"u}{\ss}ler},
+         familyi={S\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KC}{%
+         family={Kunz},
+         familyi={K\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=YR}{%
+         family={Younis},
+         familyi={Y\bibinitperiod},
+         given={Rayan},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Paik},
+         familyi={P\bibinitperiod},
+         given={Jamie},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Wagner},
+         familyi={W\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MF}{%
+         family={{Mathis-Ullrich}},
+         familyi={M\bibinitperiod},
+         given={Franziska},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \keyw{Feature extraction,Gallbladder,Imitation learning,informed machine
+  learning,learning from demonstration,Liver,minimally invasive
+  surgery,my,Phantoms,Point cloud compression,Robots,Surgery,surgical
+  robotics,Three-dimensional displays,Trajectory,Vectors}
+    \strng{namehash}{SA+2}
+    \strng{fullhash}{SAKCYRABPJWMMF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \verb{doi}
+    \verb 10.1109/LRA.2025.3577430
+    \endverb
+    \field{issn}{2377-3766}
+    \field{pages}{1\bibrangedash 8}
+    \field{title}{Semi-{{Autonomous Robotic Assistance}} for {{Gallbladder
+  Retraction}} in {{Surgery}}}
+    \field{journaltitle}{IEEE Robotics and Automation Letters}
+    \field{year}{2025}
+    \field{urlday}{08}
+    \field{urlmonth}{06}
     \field{urlyear}{2025}
   \endentry
 
@@ -338,6 +498,8 @@
     \list{publisher}{1}{%
       {Elsevier B.V.}%
     }
+    \keyw{Industrial Robotics,my,Neurosymbolic Artificial
+  Intelligence,Optimization,Program Synthesis}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABDJKDJRBMLG1}
     \field{labelnamesource}{author}
@@ -429,6 +591,7 @@
     \list{publisher}{1}{%
       {Springer Nature Switzerland}%
     }
+    \keyw{my,relevant}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABKUTAKDHAJRNG1}
     \field{labelnamesource}{author}
@@ -523,6 +686,10 @@
     \list{publisher}{1}{%
       {Elsevier B.V.}%
     }
+    \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science -
+  Computational Engineering Finance and Science,Computer Science -
+  Human-Computer Interaction,Computer Science - Machine Learning,Computer
+  Science - Robotics,I.2.1,I.2.2,I.2.9,J.6,J.7,my}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABZJKCDJMMKDJRKTBMLG1}
     \field{labelnamesource}{author}
@@ -637,6 +804,8 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
+    \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science -
+  Robotics,I.2.2,I.2.6,I.2.9,my,relevant}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABSFMSBCRJASRORLKDJRBMSMHMF1}
     \field{labelnamesource}{author}
@@ -715,6 +884,7 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
+    \keyw{Computer Science - Machine Learning,Computer Science - Robotics,my}
     \strng{namehash}{KC+1}
     \strng{fullhash}{KCABCOBPKDJRNG1}
     \field{labelnamesource}{author}
@@ -850,6 +1020,8 @@
          giveni={M\bibinitperiod},
       }}%
     }
+    \keyw{Analysis and Control Processes,Artificial Intelligence,Edge-Cloud
+  Continuum,Energy- and Resource-Efficiency,my}
     \strng{namehash}{SA+1}
     \strng{fullhash}{SAABBSGAJDKDMJSTWSBRBSCLDGMLNSRMRM1}
     \field{labelnamesource}{author}
@@ -913,6 +1085,8 @@
     \list{publisher}{1}{%
       {IJCAI}%
     }
+    \keyw{68T30,Computer Science - Artificial Intelligence,Computer Science -
+  Robotics,D.1,F.3,I.2,my,relevant}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABKFKHAKDJRBM1}
     \field{labelnamesource}{author}
@@ -983,6 +1157,7 @@
     \list{publisher}{1}{%
       {VDE Verlag}%
     }
+    \keyw{my}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABNMDHAKDJRDRSE1}
     \field{labelnamesource}{author}
@@ -1066,6 +1241,7 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
+    \keyw{my}
     \strng{namehash}{RJ+1}
     \strng{fullhash}{RJROABYAGIBLMSKDSMHMF1}
     \field{labelnamesource}{author}
@@ -1184,6 +1360,7 @@
     \list{publisher}{1}{%
       {Springer Nature Switzerland}%
     }
+    \keyw{Autonomous grinding,Hybrid AI,my,Remanufacturing}
     \strng{namehash}{SF+1}
     \strng{fullhash}{SFSMMSHMRJBCKDABMH1}
     \field{labelnamesource}{author}
@@ -1225,6 +1402,7 @@
          giveni={D\bibinitperiod},
       }}%
     }
+    \keyw{my,relevant}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABJRKD1}
     \field{labelnamesource}{author}
@@ -1278,6 +1456,8 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
+    \keyw{Adaptation models,my,relevant,Runtime,Search problems,Service
+  robots,Spirals,Stochastic processes,Training}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABKDJRBM1}
     \field{labelnamesource}{author}
@@ -1355,6 +1535,8 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
+    \keyw{Annotations,Laparoscopes,my,Pipelines,Point cloud compression,Robot
+  vision systems,Semantic segmentation,Training data}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABKCKDYRJRMBPWMMF1}
     \field{labelnamesource}{author}
@@ -1506,6 +1688,7 @@
     \list{publisher}{1}{%
       {Springer}%
     }
+    \keyw{my}
     \strng{namehash}{KL+1}
     \strng{fullhash}{KLKLABBMDBHLKDKSKTLMNPRNSAWC1}
     \field{labelnamesource}{author}
@@ -1567,6 +1750,8 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
+    \keyw{Automation,Codes,Conferences,my,Production,relevant,Service
+  robots,Task analysis,Unsupervised learning}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABKDJRBAKBM1}
     \field{labelnamesource}{author}
@@ -1632,6 +1817,8 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
+    \keyw{Computer Science - Computer Vision and Pattern Recognition,Computer
+  Science - Robotics,my,workshop}
     \strng{namehash}{DS+1}
     \strng{fullhash}{DSABHAKDJRFJ1}
     \field{labelnamesource}{author}
@@ -1704,6 +1891,7 @@
     \list{publisher}{1}{%
       {VDE Verlag}%
     }
+    \keyw{my}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABAFGLJFKDJRGB1}
     \field{labelnamesource}{author}
@@ -1794,6 +1982,7 @@
     \list{publisher}{1}{%
       {Bundesanstalt f{\"u}r Arbeitsschutz und Arbeitsmedizin}%
     }
+    \keyw{my}
     \strng{namehash}{GB+1}
     \strng{fullhash}{GBJFBGMRAMMPGFECSRKDAB1}
     \field{labelnamesource}{author}

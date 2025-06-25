@@ -4,7 +4,7 @@ title: Semi-Autonomous Robotic Assistance for Gallbladder Retraction in Surgery
 date: 2025-06-08 01:00:00-0400
 categories: blog
 tags: robot-surgery robot-learning learning-from-demonstration paper 
-description: A semi-autonomous robotic assistance system for minimally invasive surgery that allows surgeons to demonstrate retraction tasks while ensuring the interpretability of resulting behavior.
+description: A summary of our recent paper on a semi-autonomous robotic assistance system for minimally invasive surgery that allows surgeons to demonstrate retraction tasks while ensuring the interpretability of resulting behavior.
 ---
 
 In our recent work "Semi-Autonomous Robotic Assistance for Gallbladder Retraction in Surgery", my coauthors and I introduce a novel framework for robot learning of gallbladder retraction motions in the context of laparoscopic gallbladder surgery. The paper is to appear in the IEEE Robotics and Automation Letters (RA-L).

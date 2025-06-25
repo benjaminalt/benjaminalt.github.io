@@ -4,7 +4,7 @@ title: AI-based Framework for Robust Model-Based Connector Mating in Robotic Wir
 date: 2025-06-09 01:00:00-0400
 categories: blog
 tags: robot-assembly robot-learning visuotactile-learning optimization paper 
-description: A novel AI-based framework for robust, data-driven connector mating in robotic wire harness installation, combining visuotactile learning with model-based optimization.
+description: At CASE 2025, my colleagues and I are presenting a novel AI-based framework for robust, data-driven connector mating in robotic wire harness installation, combining visuotactile learning with model-based optimization.
 ---
 
 In our recent work "AI-based Framework for Robust Model-Based Connector Mating in Robotic Wire Harness Installation", my coauthors and I present an AI-driven approach to automate connector mating in automotive wire harness installation. The paper has been accepted for presentation at the IEEE International Conference on Automation Science and Engineering (CASE) 2025.

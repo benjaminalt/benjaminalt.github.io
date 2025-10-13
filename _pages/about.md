@@ -16,7 +16,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of
 ---
 
-I am interested in developing advanced cognitive architectures to solve real-world engineering problems with robots. As Technical Director of the [AICOR Institute for Artificial Intelligence](https://ai.uni-bremen.de/) at the University of Bremen, my team and I collaborate with academic and industrial partners to bring about a future in which humans can intuitively program robots and ensure that their behavior is both task-oriented and safe.
+I am interested in developing advanced cognitive architectures to solve real-world engineering problems with robots. As Technical Director of the [AICOR Institute for Artificial Intelligence](https://ai.uni-bremen.de/) at the University of Bremen, I work with a team of researchers, academic and industrial partners to bring about a future in which humans can intuitively program robots and ensure that their behavior is both task-oriented and safe.
 
 Areas of interest:
 

@@ -15,7 +15,7 @@ What is true for robotics as a scientific discipline is doubly true when robots 
 
 In our new paper, “Open, Reproducible and Trustworthy Robot-Based Experiments with Virtual Labs and Digital-Twin-Based Execution Tracing”, accepted to the AIR4S Workshop at IROS 2025, we explore how autonomous robots can help address this problem.
 
-You can find the paper on [ArXiv](https://arxiv.org/abs/2508.11406) and as a PDF [here <i class="fas fa-file-pdf"></i>](/assets/vrb_scientific_discovery_IROS25_AIR4S.pdf).
+You can find the paper on [ArXiv](https://arxiv.org/abs/2508.11406) and as a PDF [here <i class="fas fa-file-pdf"></i>](/assets/pdf/vrb_scientific_discovery_IROS25_AIR4S.pdf).
 
 Authors:  
 Benjamin Alt[^1], Mareike Picklum[^1], Sorin Arion[^1], Franklin Kenghagho Kenfack[^1], Michael Beetz[^1]

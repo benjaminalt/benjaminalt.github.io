@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Roboticist
+subtitle: Roboticist & AI Researcher
 
 profile:
   align: right

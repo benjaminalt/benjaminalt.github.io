@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.2)  22 DEC 2025 22:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.1)  29 JAN 2026 11:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **cv.tex
 (./cv.tex
-LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-09-02>
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-29>
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/size11.clo
@@ -71,7 +71,7 @@ Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count284
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/logreq/logreq.sty
@@ -316,20 +316,20 @@ Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-09-02 L3 programming layer (loader) 
+Package: expl3 2025-12-29 L3 programming layer (loader) 
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count411
 ))
 Package biblatex Info: ... and expl3
-(biblatex)             2025-09-02 L3 programming layer (loader) 
+(biblatex)             2025-12-29 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 (/opt/texlive/texdir/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2024-08-16 L3 Experimental document command parser
+Package: xparse 2025-10-09 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
 ))
@@ -379,7 +379,7 @@ Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@posthook=\toks20
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/ebgaramond/ebgaramond.sty
 Package: ebgaramond 2024/04/23 (Bob Tennent and autoinst) Style file for EB Gar
@@ -392,12 +392,13 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
 
 (/opt/texlive/texdir/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/opt/texlive/texdir/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks21
 \XKV@tempa@toks=\toks22
+\XKV@tempb@toks=\toks23
 )
 \XKV@depth=\count415
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
@@ -406,7 +407,7 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2025-05-24 v2.0.1 Font selection axes (deprecated)
@@ -614,12 +615,12 @@ Package biblatex Info: Reference segment=0 on input line 50.
 \scratchbox=\box53
 \nofMPsegments=\count431
 \nofMParguments=\count432
-\everyMPshowfont=\toks23
+\everyMPshowfont=\toks24
 \MPscratchCnt=\count433
 \MPscratchDim=\dimen164
 \MPnumerator=\count434
 \makeMPintoPDFobject=\count435
-\everyMPtoPDFconversion=\toks24
+\everyMPtoPDFconversion=\toks25
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -768,8 +769,6 @@ Package biblatex Warning: Split bibliography detected.
 (biblatex)                This warning can be suppressed with
 (biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
 
-
-
 [1
 
 {/opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/opt/texlive
@@ -859,8 +858,6 @@ Package biblatex Warning: Split bibliography detected.
 (biblatex)                This warning can be suppressed with
 (biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
 
-
-
 [2{/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
 Package marginnote Info: Margin note 3.1 is on absolute page 3 on input line 18
 6.
@@ -904,8 +901,6 @@ Package biblatex Warning: Split bibliography detected.
 (biblatex)                See the documentation for details.
 (biblatex)                This warning can be suppressed with
 (biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
-
-
 
 [3]
 Overfull \hbox (0.35725pt too wide) in paragraph at lines 188--188
@@ -1067,17 +1062,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 205--253
 
  []
 
-
-
 [4]
 Package marginnote Info: Margin note 5.1 is on absolute page 5 on input line 25
 7.
 Package marginnote Info: right page because not two side mode on input line 257
 .
 Package marginnote Info: xpos seems to be 99.58464pt on input line 257.
-
-
-[5]
+ [5]
 Package marginnote Info: Margin note 6.1 is on absolute page 6 on input line 27
 1.
 Package marginnote Info: right page because not two side mode on input line 271
@@ -1114,8 +1105,6 @@ Package marginnote Info: Margin note 6.6 is on absolute page 7 on input line 33
 Package marginnote Info: right page because not two side mode on input line 338
 .
 Package marginnote Info: xpos seems to be 99.58464pt on input line 338.
-
-
 [6]
 Package marginnote Info: Margin note 7.1 is on absolute page 7 on input line 35
 6.
@@ -1158,8 +1147,6 @@ Package marginnote Info: Margin note 7.7 is on absolute page 7 on input line 39
 Package marginnote Info: right page because not two side mode on input line 398
 .
 Package marginnote Info: xpos seems to be 99.58464pt on input line 398.
-
-
 [7]
 Package marginnote Info: Margin note 8.1 is on absolute page 8 on input line 41
 4.
@@ -1171,12 +1158,10 @@ Package marginnote Info: Margin note 8.2 is on absolute page 8 on input line 41
 Package marginnote Info: right page because not two side mode on input line 418
 .
 Package marginnote Info: xpos seems to be 99.58464pt on input line 418.
-
-
-[8] (./cv.aux)
+ [8] (./cv.aux)
  ***********
-LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-09-02>
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-29>
  ***********
 Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -1185,19 +1170,19 @@ Package logreq Info: Writing requests to 'cv.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18452 strings out of 467748
- 331638 string characters out of 5429049
- 1172079 words of memory out of 5000000
- 46873 multiletter control sequences out of 15000+600000
+ 18452 strings out of 467538
+ 331656 string characters out of 5421637
+ 1175670 words of memory out of 5000000
+ 47083 multiletter control sequences out of 15000+600000
  705165 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,9n,76p,691b,1540s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,9n,87p,691b,1546s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/texlive/texdir/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond-Ital
 ic.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond
 -Regular.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/public/ebgaramond/EBGa
 ramond-SemiBold.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/public/cm-super
 /sftt1095.pfb>
-Output written on cv.pdf (8 pages, 134442 bytes).
+Output written on cv.pdf (8 pages, 134445 bytes).
 PDF statistics:
  162 PDF objects out of 1000 (max. 8388607)
  141 compressed objects within 2 object streams

@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.2)  22 DEC 2025 22:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.1)  29 JAN 2026 11:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **resume.tex
 (./resume.tex
-LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-09-02>
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-29>
 (../template/altacv.cls
 
 LaTeX Warning: You have requested document class `../template/altacv',
@@ -20,7 +20,7 @@ Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
 File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/exscale.sty
-Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
+Package: exscale 2025/06/05 v2.1i Standard LaTeX package exscale
 LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
@@ -402,7 +402,7 @@ File: tikzlibraryarrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 File: pgflibraryarrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \arrowsize=\dimen266
 )) (/opt/texlive/texdir/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
-Package: tcolorbox 2025/09/09 version 6.8.0 text color boxes
+Package: tcolorbox 2025/11/28 version 6.9.0 text color boxes
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
@@ -419,7 +419,7 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \@envbody=\toks33
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count307
 )
 \tcb@titlebox=\box64
@@ -437,7 +437,7 @@ Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
 \tcb@temp=\box72
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
-Library (tcolorbox): 'tcbskins.code.tex' version '6.8.0'
+Library (tcolorbox): 'tcbskins.code.tex' version '6.9.0'
 (/opt/texlive/texdir/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
 Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
 
@@ -450,7 +450,7 @@ File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
 \l__tikzfill_img_box=\box73
 ))
 (/opt/texlive/texdir/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
-Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.8.0'
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.9.0'
 ))) (/opt/texlive/texdir/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip51
@@ -479,7 +479,7 @@ Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/tools/array.sty
-Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen270
 \ar@mcellbox=\box75
 \extrarowheight=\dimen271
@@ -898,20 +898,20 @@ Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-09-02 L3 programming layer (loader) 
+Package: expl3 2025-12-29 L3 programming layer (loader) 
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count458
 ))
 Package biblatex Info: ... and expl3
-(biblatex)             2025-09-02 L3 programming layer (loader) 
+(biblatex)             2025-12-29 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 (/opt/texlive/texdir/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2024-08-16 L3 Experimental document command parser
+Package: xparse 2025-10-09 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
 ))
@@ -927,7 +927,7 @@ Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@posthook=\toks39
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/lato/lato.sty
 Package: lato 2019/06/20 Style file for Lato.
@@ -939,34 +939,35 @@ Package: fontaxes 2025-05-24 v2.0.1 Font selection axes (deprecated)
 Package: figureversions 2025-04-29 v1.0.1 Figure versions
 ))
 (/opt/texlive/texdir/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
 
 (/opt/texlive/texdir/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/opt/texlive/texdir/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks40
 \XKV@tempa@toks=\toks41
+\XKV@tempb@toks=\toks42
 )
 \XKV@depth=\count459
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )))
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2025/08/03 v25.12 The multilingual framework for LuaLaTeX, pdfLa
+Package: babel 2025/12/30 v25.18 The multilingual framework for LuaLaTeX, pdfLa
 TeX and XeLaTeX
 \babel@savecnt=\count460
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
-ne 2045.
+ne 2068.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
-ne 2047.
+ne 2070.
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
-e 2049.
+e 2072.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
-e 2050.
+e 2073.
 LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
-on input line 2051.
+on input line 2074.
 LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
-on input line 2053.
+on input line 2076.
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
-on input line 2078.
+on input line 2101.
 \U@D=\dimen285
 \l@unhyphenated=\language91
 
@@ -974,20 +975,20 @@ on input line 2078.
 \bbl@readstream=\read5
 \bbl@dirlevel=\count461
 
+(/opt/texlive/texdir/texmf-dist/tex/generic/babel/locale/en/babel-english.tex)
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 4321.
+
 (/opt/texlive/texdir/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
-
-(/opt/texlive/texdir/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
-Package babel Info: Importing font and identification data for english
-(babel)             from babel-en.ini. Reported on input line 12.
-)
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
 (babel)             (\language22). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language22). Reported on input line 108.
-)) (/opt/texlive/texdir/texmf-dist/tex/latex/roboto/roboto.sty
+))
+(/opt/texlive/texdir/texmf-dist/tex/latex/roboto/roboto.sty
 Package: roboto 2022/09/10 (Bob Tennent) Supports Roboto fonts for all LaTeX en
 gines.
 
@@ -995,7 +996,7 @@ gines.
 Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+lato-TLF on input li
 ne 116.
 
@@ -1085,12 +1086,12 @@ LaTeX Font Info:    ... okay on input line 88.
 \scratchbox=\box79
 \nofMPsegments=\count465
 \nofMParguments=\count466
-\everyMPshowfont=\toks42
+\everyMPshowfont=\toks43
 \MPscratchCnt=\count467
 \MPscratchDim=\dimen287
 \MPnumerator=\count468
 \makeMPintoPDFobject=\count469
-\everyMPtoPDFconversion=\toks43
+\everyMPtoPDFconversion=\toks44
 ) (/opt/texlive/texdir/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1203,16 +1204,14 @@ LaTeX Font Info:    Font shape `T1/Roboto-LF/m/it' aliased to
 (Font)              `T1/Roboto-LF/regular/it' on input line 4.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/it' will be
 (Font)              scaled to size 10.0pt on input line 4.
-)
-
-[1
+) [1
 
 {/opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/opt/texlive
 /texdir/texmf-dist/fonts/enc/dvips/roboto/rbto_b5rac7.enc}{/opt/texlive/texdir/
 texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/opt/texlive/texdir/
 texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}{/opt/texlive/texdir/
-texmf-dist/fonts/enc/dvips/roboto/rbto_ocbbsb.enc}]
-(./sections/selected_publications.tex
+texmf-dist/fonts/enc/dvips/roboto/rbto_ocbbsb.enc}] (./sections/selected_public
+ations.tex
 
 Package biblatex Warning: Split bibliography detected.
 (biblatex)                Many simple split bibliography setups with
@@ -1325,14 +1324,12 @@ LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
 (Font)              `T1/Roboto-LF/bold/n' on input line 3.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
 (Font)              scaled to size 10.0pt on input line 3.
-)
-
-[2{/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/roboto/rbto_shbyjm.enc}{/opt/
-texlive/texdir/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-(./resume.aux)
+) [2{/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/roboto/rbto_shbyjm.enc}{/op
+t/texlive/texdir/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] (./resum
+e.aux)
  ***********
-LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-09-02>
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-29>
  ***********
 
 
@@ -1349,19 +1346,19 @@ Package logreq Info: Writing requests to 'resume.run.xml'.
 ### simple group (level 1) entered at line 25 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 35647 strings out of 467748
- 717081 string characters out of 5429049
- 1511672 words of memory out of 5000000
- 63785 multiletter control sequences out of 15000+600000
+ 35699 strings out of 467538
+ 718998 string characters out of 5421637
+ 1516211 words of memory out of 5000000
+ 64047 multiletter control sequences out of 15000+600000
  717817 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,5n,121p,1878b,1869s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,5n,121p,1878b,1871s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/texlive/texdir/texmf-dist/fonts/type1/public/fontawesome/
 FontAwesome.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/google/roboto/Robot
 o-Bold.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/google/roboto/Roboto-Ita
 lic.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/google/roboto/Roboto-Regula
 r.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on resume.pdf (2 pages, 126389 bytes).
+Output written on resume.pdf (2 pages, 126387 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream

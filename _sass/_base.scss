@@ -164,6 +164,13 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 }
 
+// Post image
+
+.post-img {
+  max-width: min(100%, 1000px);
+  height: auto;
+}
+
 // Card
 
 .card {

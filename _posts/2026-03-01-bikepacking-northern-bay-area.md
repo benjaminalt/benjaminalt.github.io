@@ -5,11 +5,14 @@ date: 2026-01-31 01:00:00
 categories: blog
 tags: bikepacking
 description: A writeup of my one-week bikepacking trip through Northern California.
+gpx_map: true
 ---
 
 Work brought me to San Francisco recently and I used the opportunity to have a bikepacking trip again. Over the last few months, I have been exposed to many new ideas, career options, and changes in my personal life. A one-week solo trip seemed perfect for me to mentally sort things out and let things settle. In the past, bikepacking always put me into a sustained state of flow, and I approached this trip like I would a meditation retreat - time I am explicitly giving myself to *not think, but experience*.  
 
 ## The Route
+
+{% include gpx-map.liquid file="sfbay.gpx" topo=true %}
 
 Before setting out, a few locals reached out to me and gave me recommendations, many of which I integrated into my (very loose) route planning. I love how helpful the international cycling and bikepacking community is, and how forthcoming everyone who heard about my plans was with tips. I'd love to pay it forward, feel free to reach out if you are planning a trip in the area!
 

@@ -1,0 +1,8 @@
+<div
+  class="gpx-map"
+  data-gpx-file="{{ include.file | prepend: '/assets/gpx/' | relative_url }}"
+  data-color="{{ include.color | default: '#e63946' }}"
+  data-weight="{{ include.weight | default: 4 }}"
+  {% if include.topo %}data-topo="true"{% endif %}
+  style="height: {{ include.height | default: '500px' }}; width: 100%; z-index: 0;"
+></div>

@@ -1,9 +1,12 @@
-{% if page.map %}
+{% if page.map or page.gpx_map %}
   <script
     src="{{ site.third_party_libraries.leaflet.url.js }}"
     integrity="{{ site.third_party_libraries.leaflet.integrity.js }}"
     crossorigin="anonymous"
   ></script>
+{% endif %}
+
+{% if page.map %}
   <script>
     /* Create leaflet map as another node and hide the code block, appending the leaflet node after it */
     document.addEventListener('readystatechange', () => {
@@ -26,6 +29,49 @@
           map.fitBounds(geoJSON.getBounds());
         });
       }
+    });
+  </script>
+{% endif %}
+
+{% if page.gpx_map %}
+  <script src="https://unpkg.com/leaflet-gpx@2.1.2/gpx.js"></script>
+  <script>
+    // Fix Leaflet default icon path when loaded from CDN
+    L.Icon.Default.imagePath = '{{ site.third_party_libraries.leaflet.url.images }}';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.gpx-map').forEach((el) => {
+        const gpxFile = el.dataset.gpxFile;
+        const color = el.dataset.color || '#e63946';
+        const weight = parseInt(el.dataset.weight, 10) || 4;
+        const useTopo = el.dataset.topo === 'true';
+
+        const map = L.map(el).setView([0, 0], 2);
+
+        const tileLayer = L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png', {
+              maxZoom: 20,
+              attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases">CyclOSM</a>',
+            });
+        tileLayer.addTo(map);
+
+        new L.GPX(gpxFile, {
+          async: true,
+          marker_options: {
+            startIcon: null,
+            endIcon: null,
+            wptIcons: {},
+          },
+          polyline_options: {
+            color: color,
+            weight: weight,
+            opacity: 0.8,
+          },
+        })
+          .on('loaded', (e) => {
+            map.fitBounds(e.target.getBounds());
+          })
+          .addTo(map);
+      });
     });
   </script>
 {% endif %}

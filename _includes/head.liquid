@@ -83,15 +83,20 @@
   </script>
 {% endif %}
 
-<!-- GeoJSON support via Leaflet -->
-{% if page.map %}
+<!-- Leaflet (GeoJSON / GPX map support) -->
+{% if page.map or page.gpx_map %}
   <link
-    defer
     rel="stylesheet"
     href="{{ site.third_party_libraries.leaflet.url.css }}"
     integrity="{{ site.third_party_libraries.leaflet.integrity.css }}"
     crossorigin="anonymous"
   >
+  <style>
+    .leaflet-container img {
+      max-width: none !important;
+      max-height: none !important;
+    }
+  </style>
 {% endif %}
 
 <!-- diff2html -->

@@ -48,12 +48,12 @@
 % \setmainfont{Lato}
 
 % Change the colours if you want to
-\definecolor{Blue}{HTML}{707070}
+\definecolor{MidGrey}{HTML}{707070}
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
-\colorlet{heading}{Blue}
-\colorlet{accent}{Blue}
-\colorlet{emphasis}{SlateGrey}
+\colorlet{heading}{black}
+\colorlet{accent}{black}
+\colorlet{emphasis}{black}
 \colorlet{body}{black}
 
 % Change the bullets for itemize and rating marker
@@ -94,14 +94,12 @@
 \personalinfo{%
   % Not all ofs these are required!
   % You can add your own with \printinfo{symbol}{detail}
-  % \mailaddress{Welfenstraße 1, 76137 Karlsruhe}
-  % \location{Karlsruhe, Germany}
-  \phone{+49 421 21864016}
+  \phone{+49 160 8548454}
   \email{benjamin.alt@uni-bremen.de}
-  \orcid{0009-0002-8790-1671}
-  \homepage{\href{https://benjaminalt.github.io/}{benjaminalt.github.io}}
-  \github{\href{https://github.com/benjaminalt}{benjaminalt}}
   \linkedin{\href{https://linkedin.com/in/benjamin-alt}{linkedin.com/in/benjamin-alt}}
+  \orcid{0009-0002-8790-1671}
+  %\homepage{\href{https://benjaminalt.github.io/}{benjaminalt.github.io}}
+  %\github{\href{https://github.com/benjaminalt}{benjaminalt}}
 }
 
 %% Make the header extend all the way to the right, if you want.
@@ -111,18 +109,30 @@
 
 \vspace{-5pt}
 
-%% Provide the f ile name containing the sidebar contents as an optional parameter to \cvsection.
+%% Profile description
+\begin{quote}
+\begin{center}
+Researcher in robot manipulation and perception, focusing on learning-based and neurosymbolic methods for visuotactile interaction, autonomous task planning and execution, and 3D scene understanding. Proven record of translating core AI research on optimization and neural representations into deployed robotic systems.
+\end{center}
+\end{quote}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
 %% You can always just use \marginpar{...} if you do
 %% not need to align the top of the contents to any
 %% \cvsection title in the "main" bar.
 
-\input{sections/relevant_experience.tex}
-
 \input{sections/education.tex}
+
+\input{sections/relevant_experience.tex}
 
 \input{sections/selected_publications.tex}
 
-\input{sections/projects_grants.tex}
+\input{sections/patents_tech_transfer.tex}
+
+\input{sections/skills.tex}
+
+
+% \input{sections/professional_service_and_memberships.tex}
 
 %% If the NEXT page doesn't start with a \cvsection but you'd
 %% still like to add a sidebar, thñen use this command on THIS
@@ -139,7 +149,7 @@
 % \cvevent{Translation (English-German) and freelance work}{Golub Books Publishing}{Oct 2011 -- Sep 2021}{Karlsruhe, Germany}
 
 % \cvsection{Volunteer Work}
-% \cvevent{Selection Committee Member}{Studienstiftung des deutschen Volkes}{Nov 2022 -- today}{Karlsruhe, Germany}
+% \cvevent{Selection Committee Member}{Studienstiftung des deutschen Volkes}{Nov 2022 -- present}{Karlsruhe, Germany}
 
 \bigskip
 \bigskip

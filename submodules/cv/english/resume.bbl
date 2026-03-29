@@ -17,6 +17,100 @@
 \endgroup
 
 \datalist[entry]{ydnt/global//global/global/global}
+  \entry{bassiounyImplementingKnowledgeRepresentation2026}{misc}{}{}
+    \name{author}{7}{}{%
+      {{hash=BA}{%
+         family={Bassiouny},
+         familyi={B\bibinitperiod},
+         given={Abdelrhman},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Schierenbeck},
+         familyi={S\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={Arion},
+         familyi={A\bibinitperiod},
+         given={Sorin},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=VN}{%
+         family={Vasantakumaar},
+         familyi={V\bibinitperiod},
+         given={Naren},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=NG}{%
+         family={Nguyen},
+         familyi={N\bibinitperiod},
+         given={Giang},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Beetz},
+         familyi={B\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {arXiv}%
+    }
+    \keyw{Computer Science - Artificial Intelligence,Computer Science -
+  Robotics,Computer Science - Software Engineering,my}
+    \strng{namehash}{BA+1}
+    \strng{fullhash}{BASTASABVNNGBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    This paper introduces KRROOD, a framework designed to bridge the
+  integration gap between modern software engineering and Knowledge
+  Representation \& Reasoning (KR\&R) systems. While Object-Oriented
+  Programming (OOP) is the standard for developing complex applications,
+  existing KR\&R frameworks often rely on external ontologies and specialized
+  languages that are difficult to integrate with imperative code. KRROOD
+  addresses this by treating knowledge as a first-class programming abstraction
+  using native class structures, bridging the gap between the logic programming
+  and OOP paradigms. We evaluate the system on the OWL2Bench benchmark and a
+  human-robot task learning scenario. Experimental results show that KRROOD
+  achieves strong performance while supporting the expressive reasoning
+  required for real-world autonomous systems.%
+    }
+    \verb{doi}
+    \verb 10.48550/arXiv.2601.14840
+    \endverb
+    \verb{eprint}
+    \verb 2601.14840
+    \endverb
+    \field{number}{arXiv:2601.14840}
+    \field{title}{Implementing {{Knowledge Representation}} and {{Reasoning}}
+  with {{Object Oriented Design}}}
+    \verb{file}
+    \verb C\:\\Users\\benja\\Zotero\\storage\\P6ZGY4HV\\Bassiouny et al. - 2026
+    \verb  - Implementing Knowledge Representation and Reasoning with Object Or
+    \verb iented Design.pdf;C\:\\Users\\benja\\Zotero\\storage\\R4CG9PJC\\2601.
+    \verb html
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs}
+    \field{month}{01}
+    \field{year}{2026}
+    \field{urlday}{24}
+    \field{urlmonth}{01}
+    \field{urlyear}{2026}
+  \endentry
+
   \entry{alt2025neurosymbolic}{thesis}{}{}
     \name{author}{1}{}{%
       {{hash=AB}{%
@@ -32,20 +126,23 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{7}
     \field{sortinithash}{7}
-    \field{title}{Neurosymbolic {{Robot Programming}}: {{A Framework}} for
-  {{AI-Enabled Programming}} of {{Robot Manipulation Tasks}}}
+    \field{title}{Neurosymbolic {Robot} {Programming}: {A} {Framework} for
+  {AI}-{Enabled} {Programming} of {Robot} {Manipulation} {Tasks}}
+    \verb{url}
+    \verb https://media.suub.uni-bremen.de/handle/elib/8846
+    \endverb
     \list{location}{1}{%
       {Bremen, Germany}%
     }
     \list{institution}{1}{%
-      {Universit{\"a}t Bremen}%
+      {Universität Bremen}%
     }
-    \field{type}{phdthesis}
+    \field{type}{{PhD} {Dissertation}}
     \field{month}{02}
     \field{year}{2025}
   \endentry
 
-  \entry{altShadowProgramInversion2025}{inproceedings}{}{}
+  \entry{alt_shadow_2025}{inproceedings}{}{}
     \name{author}{5}{}{%
       {{hash=AB}{%
          family={Alt},
@@ -66,7 +163,7 @@
          giveni={D\bibinitperiod},
       }}%
       {{hash=JR}{%
-         family={J{\"a}kel},
+         family={Jäkel},
          familyi={J\bibinitperiod},
          given={Rainer},
          giveni={R\bibinitperiod},
@@ -81,30 +178,50 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
-    \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science -
-  Robotics,D.1,I.2,my,relevant}
+    \keyw{68T40, Computer Science - Artificial Intelligence, Computer Science -
+  Robotics, my, relevant, D.1, I.2}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABKCKDJRBM1}
     \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
+    \field{labeltitlesource}{shorttitle}
     \field{sortinit}{7}
     \field{sortinithash}{7}
-    \field{booktitle}{2025 {{IEEE International Conference}} on {{Robotics}}
-  and {{Automation}} ({{ICRA}})}
+    \field{abstract}{%
+    This paper presents SPI-DP, a novel first-order optimizer capable of
+  optimizing robot programs with respect to both high-level task objectives and
+  motion-level constraints. To that end, we introduce DGPMP2-ND, a
+  differentiable collision-free motion planner for serial N-DoF kinematics, and
+  integrate it into an iterative, gradient-based optimization approach for
+  generic, parameterized robot program representations. SPI-DP allows
+  first-order optimization of planned trajectories and program parameters with
+  respect to objectives such as cycle time or smoothness subject to e.g.
+  collision constraints, while enabling humans to understand, modify or even
+  certify the optimized programs. We provide a comprehensive evaluation on two
+  practical household and industrial applications.%
+    }
+    \field{booktitle}{2025 {IEEE} {International} {Conference} on {Robotics}
+  and {Automation} ({ICRA})}
     \verb{doi}
     \verb 10.48550/arXiv.2409.08678
     \endverb
-    \verb{eprint}
-    \verb 2409.08678
-    \endverb
-    \field{title}{Shadow {{Program Inversion}} with {{Differentiable
-  Planning}}: {{A Framework}} for {{Unified Robot Program Parameter}} and
-  {{Trajectory Optimization}}}
+    \field{shorttitle}{Shadow {Program} {Inversion} with {Differentiable}
+  {Planning}}
+    \field{title}{Shadow {Program} {Inversion} with {Differentiable}
+  {Planning}: {A} {Framework} for {Unified} {Robot} {Program} {Parameter} and
+  {Trajectory} {Optimization}}
     \list{location}{1}{%
       {Atlanta, USA}%
     }
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs}
+    \verb{file}
+    \verb arXiv Fulltext PDF:/home/ben/Zotero/storage/JPCMCRKQ/Alt et al. - 202
+    \verb 4 - Shadow Program Inversion with Differentiable Planning A Framework
+    \verb  for Unified Robot Program Paramet.pdf:application/pdf;arXiv.org Snap
+    \verb shot:/home/ben/Zotero/storage/6IP3PMQM/2409.html:text/html
+    \endverb
+    \field{annotation}{%
+    Comment: 8 pages, 6 figures, submitted to the 2025 IEEE International
+  Conference on Robotics \& Automation (ICRA)%
+    }
     \field{month}{05}
     \field{year}{2025}
     \field{urlday}{23}
@@ -112,7 +229,134 @@
     \field{urlyear}{2024}
   \endentry
 
-  \entry{kienleLODGEJointHierarchical2025}{misc}{}{}
+  \entry{altOpenReproducibleTrustworthy2025}{inproceedings}{}{}
+    \name{author}{5}{}{%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Picklum},
+         familyi={P\bibinitperiod},
+         given={Mareike},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={Arion},
+         familyi={A\bibinitperiod},
+         given={Sorin},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KFK}{%
+         family={Kenfack},
+         familyi={K\bibinitperiod},
+         given={Franklin\bibnamedelima Kenghagho},
+         giveni={F\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Beetz},
+         familyi={B\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {arXiv}%
+    }
+    \keyw{Computer Science - Artificial Intelligence,Computer Science -
+  Robotics,my,workshop}
+    \strng{namehash}{AB+1}
+    \strng{fullhash}{ABPMASKFKBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{abstract}{%
+    We envision a future in which autonomous robots conduct scientific
+  experiments in ways that are not only precise and repeatable, but also open,
+  trustworthy, and transparent. To realize this vision, we present two key
+  contributions: a semantic execution tracing framework that logs sensor data
+  together with semantically annotated robot belief states, ensuring that
+  automated experimentation is transparent and replicable; and the AICOR
+  Virtual Research Building (VRB), a cloud-based platform for sharing,
+  replicating, and validating robot task executions at scale. Together, these
+  tools enable reproducible, robot-driven science by integrating deterministic
+  execution, semantic memory, and open knowledge representation, laying the
+  foundation for autonomous systems to participate in scientific discovery.%
+    }
+    \field{booktitle}{1st {{IEEE IROS}} 2025 {{Workshop}} on {{Embodied AI}}
+  and {{Robotics}} for {{Future Scientific Discovery}} ({{AIR4S}})}
+    \verb{doi}
+    \verb 10.48550/arXiv.2508.11406
+    \endverb
+    \verb{eprint}
+    \verb 2508.11406
+    \endverb
+    \field{title}{Open, {{Reproducible}} and {{Trustworthy Robot-Based
+  Experiments}} with {{Virtual Labs}} and {{Digital-Twin-Based Execution
+  Tracing}}}
+    \list{location}{1}{%
+      {Hangzhou, China}%
+    }
+    \verb{file}
+    \verb C:\Users\benja\Zotero\storage\CXRU8PBS\2508.html
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs}
+    \field{month}{08}
+    \field{year}{2025}
+    \field{urlday}{24}
+    \field{urlmonth}{08}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{kienleHiTAMPHierarchicalLLMModulo2025}{inproceedings}{}{}
+    \name{author}{4}{}{%
+      {{hash=KC}{%
+         family={Kienle},
+         familyi={K\bibinitperiod},
+         given={Claudius},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=AO}{%
+         family={Arenz},
+         familyi={A\bibinitperiod},
+         given={Oleg},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Peters},
+         familyi={P\bibinitperiod},
+         given={Jan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{my,workshop}
+    \strng{namehash}{KC+1}
+    \strng{fullhash}{KCABAOPJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{booktitle}{{{ICRA}} 2025 {{Workshop}} on {{Language}} and
+  {{Semantics}} of {{Task}} and {{Motion Planning}}}
+    \field{title}{{{HiTAMP}}: {{A Hierarchical LLM-Modulo Planner}} for
+  {{Feasible Long-Horizon Task}} and {{Motion Planning}}}
+    \list{location}{1}{%
+      {Atlanta, USA}%
+    }
+    \field{year}{2025}
+  \endentry
+
+  \entry{kienle_lodge_2025}{misc}{}{}
     \name{author}{4}{}{%
       {{hash=KC}{%
          family={Kienle},
@@ -142,25 +386,50 @@
     \list{publisher}{1}{%
       {arXiv}%
     }
-    \keyw{Computer Science - Artificial Intelligence,Computer Science -
-  Robotics,my}
+    \keyw{Computer Science - Artificial Intelligence, Computer Science -
+  Robotics, my}
     \strng{namehash}{KC+1}
     \strng{fullhash}{KCABAOPJ1}
     \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
+    \field{labeltitlesource}{shorttitle}
     \field{sortinit}{7}
     \field{sortinithash}{7}
+    \field{abstract}{%
+    Large Language Models (LLMs) enable planning from natural language
+  instructions using implicit world knowledge, but often produce flawed plans
+  that require refinement. Instead of directly predicting plans, recent methods
+  aim to learn a problem domain that can be solved for different goal states
+  using classical planners. However, these approaches require significant human
+  feedback to obtain useful models. We address this shortcoming by learning
+  hierarchical domains, where low-level predicates and actions are composed
+  into higher-level counterparts, and by leveraging simulation to validate
+  their preconditions and effects. This hierarchical approach is particularly
+  powerful for long-horizon planning, where LLM-based planning approaches
+  typically struggle. Furthermore, we introduce a central error reasoner to
+  ensure consistency among the different planning levels. Evaluation on two
+  challenging International Planning Competition (IPC) domains and a
+  long-horizon robot manipulation task demonstrates higher planning success
+  rates than state-of-the-art domain synthesis and LLM-modulo planning methods,
+  while constructing high-quality models of the domain. Resources, videos and
+  detailed experiment results are available at
+  https://claudius-kienle.github.io/lodge/.%
+    }
     \verb{doi}
     \verb 10.48550/arXiv.2505.13497
     \endverb
-    \verb{eprint}
-    \verb 2505.13497
+    \field{note}{arXiv:2505.13497 [cs]}
+    \field{shorttitle}{{LODGE}}
+    \field{title}{{LODGE}: {Joint} {Hierarchical} {Task} {Planning} and
+  {Learning} of {Domain} {Models} with {Grounded} {Execution}}
+    \verb{url}
+    \verb http://arxiv.org/abs/2505.13497
     \endverb
-    \field{number}{arXiv:2505.13497}
-    \field{title}{{{LODGE}}: {{Joint Hierarchical Task Planning}} and
-  {{Learning}} of {{Domain Models}} with {{Grounded Execution}}}
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs}
+    \verb{file}
+    \verb Preprint PDF:/home/ben/Zotero/storage/B6T6P9RF/Kienle et al. - 2025 -
+    \verb  LODGE Joint Hierarchical Task Planning and Learning of Domain Models
+    \verb  with Grounded Execution.pdf:application/pdf;Snapshot:/home/ben/Zoter
+    \verb o/storage/5CAHLBJC/2505.html:text/html
+    \endverb
     \field{month}{05}
     \field{year}{2025}
     \field{urlday}{26}
@@ -168,7 +437,7 @@
     \field{urlyear}{2025}
   \endentry
 
-  \entry{kienleQueryCADGroundedQuestion2025}{inproceedings}{}{}
+  \entry{kienle_querycad_2025}{inproceedings}{}{}
     \name{author}{4}{}{%
       {{hash=KC}{%
          family={Kienle},
@@ -189,7 +458,7 @@
          giveni={D\bibinitperiod},
       }}%
       {{hash=JR}{%
-         family={J{\"a}kel},
+         family={Jäkel},
          familyi={J\bibinitperiod},
          given={Rainer},
          giveni={R\bibinitperiod},
@@ -198,28 +467,51 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
-    \keyw{Computer Science - Robotics,my}
+    \keyw{Computer Science - Robotics, my}
     \strng{namehash}{KC+1}
     \strng{fullhash}{KCABKDJR1}
     \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
+    \field{labeltitlesource}{shorttitle}
     \field{sortinit}{7}
     \field{sortinithash}{7}
-    \field{booktitle}{2025 {{IEEE International Conference}} on {{Robotics}}
-  and {{Automation}} ({{ICRA}})}
+    \field{abstract}{%
+    CAD models are widely used in industry and are essential for robotic
+  automation processes. However, these models are rarely considered in novel
+  AI-based approaches, such as the automatic synthesis of robot programs, as
+  there are no readily available methods that would allow CAD models to be
+  incorporated for the analysis, interpretation, or extraction of information.
+  To address these limitations, we propose QueryCAD, the first system designed
+  for CAD question answering, enabling the extraction of precise information
+  from CAD models using natural language queries. QueryCAD incorporates SegCAD,
+  an open-vocabulary instance segmentation model we developed to identify and
+  select specific parts of the CAD model based on part descriptions. We further
+  propose a CAD question answering benchmark to evaluate QueryCAD and establish
+  a foundation for future research. Lastly, we integrate QueryCAD within an
+  automatic robot program synthesis framework, validating its ability to
+  enhance deep-learning solutions for robotics by enabling them to process CAD
+  models (https://claudius-kienle.github.com/querycad).%
+    }
+    \field{booktitle}{2025 {IEEE} {International} {Conference} on {Robotics}
+  and {Automation} ({ICRA})}
     \verb{doi}
     \verb 10.48550/arXiv.2409.08704
     \endverb
-    \verb{eprint}
-    \verb 2409.08704
+    \field{note}{arXiv:2409.08704 [cs]}
+    \field{shorttitle}{{QueryCAD}}
+    \field{title}{{QueryCAD}: {Grounded} {Question} {Answering} for {CAD}
+  {Models}}
+    \verb{url}
+    \verb http://arxiv.org/abs/2409.08704
     \endverb
-    \field{title}{{{QueryCAD}}: {{Grounded Question Answering}} for {{CAD
-  Models}}}
     \list{location}{1}{%
       {Atlanta, USA}%
     }
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs}
+    \verb{file}
+    \verb arXiv Fulltext PDF:/home/ben/Zotero/storage/I2YH4CEC/Kienle et al. -
+    \verb 2024 - QueryCAD Grounded Question Answering for CAD Models.pdf:applic
+    \verb ation/pdf;arXiv.org Snapshot:/home/ben/Zotero/storage/5EC2KGEA/2409.h
+    \verb tml:text/html
+    \endverb
     \field{month}{05}
     \field{year}{2025}
     \field{urlday}{27}
@@ -227,7 +519,7 @@
     \field{urlyear}{2024}
   \endentry
 
-  \entry{kienleAIbasedFrameworkRobust2025}{misc}{}{}
+  \entry{kienle_ai-based_2025}{inproceedings}{}{}
     \name{author}{6}{}{%
       {{hash=KC}{%
          family={Kienle},
@@ -254,7 +546,7 @@
          giveni={T\bibinitperiod},
       }}%
       {{hash=JR}{%
-         family={J{\"a}kel},
+         family={Jäkel},
          familyi={J\bibinitperiod},
          given={Rainer},
          giveni={R\bibinitperiod},
@@ -267,29 +559,57 @@
       }}%
     }
     \list{publisher}{1}{%
-      {arXiv}%
+      {IEEE}%
     }
-    \keyw{Computer Science - Artificial Intelligence,Computer Science -
-  Computational Engineering Finance and Science,Computer Science - Machine
-  Learning,Computer Science - Robotics,my}
+    \keyw{Computer Science - Artificial Intelligence, Computer Science -
+  Robotics, my, Computer Science - Machine Learning, Computer Science -
+  Computational Engineering, Finance, and Science}
     \strng{namehash}{KC+1}
     \strng{fullhash}{KCABSFPTJRRR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{7}
     \field{sortinithash}{7}
+    \field{abstract}{%
+    Despite the widespread adoption of industrial robots in automotive
+  assembly, wire harness installation remains a largely manual process, as it
+  requires precise and flexible manipulation. To address this challenge, we
+  design a novel AI-based framework that automates cable connector mating by
+  integrating force control with deep visuotactile learning. Our system
+  optimizes search-and-insertion strategies using first-order optimization over
+  a multimodal transformer architecture trained on visual, tactile, and
+  proprioceptive data. Additionally, we design a novel automated data
+  collection and optimization pipeline that minimizes the need for machine
+  learning expertise. The framework optimizes robot programs that run natively
+  on standard industrial controllers, permitting human experts to audit and
+  certify them. Experimental validations on a center console assembly task
+  demonstrate significant improvements in cycle times and robustness compared
+  to conventional robot programming approaches. Videos are available under
+  https://claudius-kienle.github.io/AppMuTT.%
+    }
     \verb{doi}
     \verb 10.48550/arXiv.2503.09409
     \endverb
-    \verb{eprint}
-    \verb 2503.09409
+    \field{note}{arXiv:2503.09409 [cs]}
+    \field{title}{{AI}-based {Framework} for {Robust} {Model}-{Based}
+  {Connector} {Mating} in {Robotic} {Wire} {Harness} {Installation}}
+    \verb{url}
+    \verb http://arxiv.org/abs/2503.09409
     \endverb
-    \field{number}{arXiv:2503.09409}
-    \field{title}{{{AI-based Framework}} for {{Robust Model-Based Connector
-  Mating}} in {{Robotic Wire Harness Installation}}}
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs}
-    \field{month}{03}
+    \list{location}{1}{%
+      {Los Angeles}%
+    }
+    \verb{file}
+    \verb Preprint PDF:/home/ben/Zotero/storage/RGN8LA5W/Kienle et al. - 2025 -
+    \verb  AI-based Framework for Robust Model-Based Connector Mating in Roboti
+    \verb c Wire Harness Installation.pdf:application/pdf;Snapshot:/home/ben/Zo
+    \verb tero/storage/CUGXVNMP/2503.html:text/html
+    \endverb
+    \field{annotation}{%
+    Comment: 6 pages, 6 figures, 4 tables, submitted to the 2025 IEEE 21st
+  International Conference on Automation Science and Engineering%
+    }
+    \field{month}{08}
     \field{year}{2025}
     \field{urlday}{17}
     \field{urlmonth}{03}
@@ -366,9 +686,21 @@
     \strng{namehash}{MA+1}
     \strng{fullhash}{MAABNGWASMWQHSRHSMBM1}
     \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
+    \field{labeltitlesource}{shorttitle}
     \field{sortinit}{7}
     \field{sortinithash}{7}
+    \field{abstract}{%
+    This survey explores recent developments in generating digital twins from
+  videos. Such digital twins can be used for robotics application, media
+  content creation, or design and construction works. We analyze various
+  approaches, including 3D Gaussian Splatting, generative in-painting, semantic
+  segmentation, and foundation models highlighting their advantages and
+  limitations. Additionally, we discuss challenges such as occlusions, lighting
+  variations, and scalability, as well as potential future research directions.
+  This survey aims to provide a comprehensive overview of state-of-the-art
+  methodologies and their implications for real-world applications. Awesome
+  list: https://github.com/ndrwmlnk/awesome-digital-twins%
+    }
     \verb{doi}
     \verb 10.48550/arXiv.2504.13159
     \endverb
@@ -376,8 +708,14 @@
     \verb 2504.13159
     \endverb
     \field{number}{arXiv:2504.13159}
+    \field{shorttitle}{Digital {{Twin Generation}} from {{Visual Data}}}
     \field{title}{Digital {{Twin Generation}} from {{Visual Data}}: {{A
   Survey}}}
+    \verb{file}
+    \verb C\:\\Users\\benja\\Zotero\\storage\\5TW2RP96\\Melnik et al. - 2025 -
+    \verb Digital Twin Generation from Visual Data A Survey.pdf;C\:\\Users\\ben
+    \verb ja\\Zotero\\storage\\DGSGFEUU\\2504.html
+    \endverb
     \field{eprinttype}{arXiv}
     \field{eprintclass}{cs}
     \field{month}{04}
@@ -442,21 +780,156 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{7}
     \field{sortinithash}{7}
+    \field{abstract}{%
+    (Semi-)autonomous robotic assistance in minimally invasive surgery has the
+  potential to alleviate surgical staff shortage and decrease the workload of
+  medical professionals. These robots must execute complex tasks within
+  unpredictable and unstructured environments encountered during surgery.
+  Although imitation learning approaches have the potential to learn complex
+  surgical skills, the interpretation of robot behavior during safety-critical
+  scenarios, such as surgery, remains a challenge. Through combining
+  interpretable 3D point cloud feature vectors based on domain knowledge with
+  feedforward neural networks and probabilistic movement primitives, domain
+  knowledge-informed movement primitives effectively learn surgical skills
+  while improving the interpretation of robot behavior. The evaluation on test
+  data proves that the proposed method can effectively learn surgical skills
+  based on a small number of demonstrations. Using the proposed imitation
+  learning method, a semi-autonomous robotic assistance for directed
+  gallbladder retraction is introduced and evaluated during gallbladder removal
+  on a silicone liver phantom and ex vivo porcine livers. Achieving over 91\%
+  and 92\% successful gallbladder retractions, the robotic assistance enables
+  effective support for surgeons during these surgical interventions.%
+    }
     \verb{doi}
     \verb 10.1109/LRA.2025.3577430
     \endverb
     \field{issn}{2377-3766}
-    \field{pages}{1\bibrangedash 8}
+    \field{number}{7}
+    \field{pages}{7468\bibrangedash 7475}
     \field{title}{Semi-{{Autonomous Robotic Assistance}} for {{Gallbladder
   Retraction}} in {{Surgery}}}
+    \field{volume}{10}
+    \verb{file}
+    \verb C:\Users\benja\Zotero\storage\YQI9PL5B\11027660.html
+    \endverb
     \field{journaltitle}{IEEE Robotics and Automation Letters}
+    \field{month}{07}
     \field{year}{2025}
-    \field{urlday}{08}
-    \field{urlmonth}{06}
-    \field{urlyear}{2025}
+    \field{urlday}{05}
+    \field{urlmonth}{02}
+    \field{urlyear}{2026}
   \endentry
 
-  \entry{altBANSAIBridgingAI2024}{inproceedings}{}{}
+  \entry{younisRoboticAutomationGallbladder2025}{inproceedings}{}{}
+    \name{author}{14}{}{%
+      {{hash=YR}{%
+         family={Younis},
+         familyi={Y\bibinitperiod},
+         given={Rayan},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=AB}{%
+         family={Alt},
+         familyi={A\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=KC}{%
+         family={Kunz},
+         familyi={K\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=PT}{%
+         family={Peretto},
+         familyi={P\bibinitperiod},
+         given={Tim},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=MW}{%
+         family={Meier},
+         familyi={M\bibinitperiod},
+         given={Wolfgang},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Daum},
+         familyi={D\bibinitperiod},
+         given={Marie},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RJA}{%
+         family={Rodriguez\bibnamedelima Jimenez},
+         familyi={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+         given={Ariel},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bodenstedt},
+         familyi={B\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Speidel},
+         familyi={S\bibinitperiod},
+         given={Stefanie},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Distler},
+         familyi={D\bibinitperiod},
+         given={Marius},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Weitz},
+         familyi={W\bibinitperiod},
+         given={J{\"u}rgen},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Katic},
+         familyi={K\bibinitperiod},
+         given={Darko},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MF}{%
+         family={{Mathis-Ullrich}},
+         familyi={M\bibinitperiod},
+         given={Franziska},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Wagner},
+         familyi={W\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {CRAS}%
+    }
+    \keyw{my}
+    \strng{namehash}{YR+1}
+    \strng{fullhash}{YRABKCPTMWDMRJABSSSDMWJKDMFWM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{7}
+    \field{sortinithash}{7}
+    \field{booktitle}{Proceedings of the 14th {{Conference}} on {{New
+  Technologies}} for {{Computer}}/{{Robot Assisted Surgery}}}
+    \field{isbn}{978-90-828931-8-2}
+    \field{pages}{79\bibrangedash 80}
+    \field{title}{Robotic {{Automation}} of {{Gallbladder Retraction}} for
+  {{Laparoscopic Cholecystectomy}}: {{An Exploratory Study}}}
+    \list{location}{1}{%
+      {Lisbon, Portugal}%
+    }
+    \field{year}{2025}
+  \endentry
+
+  \entry{alt_bansai_2024}{inproceedings}{}{}
     \name{author}{6}{}{%
       {{hash=AB}{%
          family={Alt},
@@ -477,7 +950,7 @@
          giveni={D\bibinitperiod},
       }}%
       {{hash=JR}{%
-         family={J{\"a}kel},
+         family={Jäkel},
          familyi={J\bibinitperiod},
          given={Rainer},
          giveni={R\bibinitperiod},
@@ -498,30 +971,47 @@
     \list{publisher}{1}{%
       {Elsevier B.V.}%
     }
-    \keyw{Industrial Robotics,my,Neurosymbolic Artificial
-  Intelligence,Optimization,Program Synthesis}
+    \keyw{my, Optimization, Program Synthesis, Industrial Robotics,
+  Neurosymbolic Artificial Intelligence}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABDJKDJRBMLG1}
     \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
+    \field{labeltitlesource}{shorttitle}
     \field{sortinit}{7}
     \field{sortinithash}{7}
-    \field{booktitle}{Procedia {{CIRP}}}
+    \field{abstract}{%
+    Over the past decade, deep learning helped solve manipulation problems
+  across all domains of robotics. At the same time, industrial robots continue
+  to be programmed overwhelmingly using traditional program representations and
+  interfaces. This paper undertakes an analysis of this “AI adoption gap”
+  from an industry practitioner’s perspective. In response, we propose the
+  BANSAI approach (Bridging the AI Adoption Gap via Neurosymbolic AI). It
+  systematically leverages principles of neurosymbolic AI to establish
+  data-driven, subsymbolic program synthesis and optimization in modern
+  industrial robot programming workflow. BANSAI conceptually unites several
+  lines of prior research and proposes a path toward practical, real-world
+  validation.%
+    }
+    \field{booktitle}{Procedia {CIRP}}
     \verb{doi}
     \verb 10.1016/j.procir.2024.10.125
     \endverb
-    \verb{eprint}
-    \verb 2404.13652
-    \endverb
+    \field{note}{arXiv:2404.13652 [cs]}
     \field{pages}{532\bibrangedash 537}
-    \field{title}{{{BANSAI}}: {{Towards Bridging}} the {{AI Adoption Gap}} in
-  {{Industrial Robotics}} with {{Neurosymbolic Programming}}}
+    \field{shorttitle}{{BANSAI}}
+    \field{title}{{BANSAI}: {Towards} {Bridging} the {AI} {Adoption} {Gap} in
+  {Industrial} {Robotics} with {Neurosymbolic} {Programming}}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S2212827124012824
+    \endverb
     \field{volume}{130}
     \list{location}{1}{%
-      {P{\'o}voa de Varzim, Portugal}%
+      {Póvoa de Varzim, Portugal}%
     }
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs}
+    \verb{file}
+    \verb ScienceDirect Snapshot:/home/ben/Zotero/storage/9EJ58Y6K/S22128271240
+    \verb 12824.html:text/html
+    \endverb
     \field{month}{01}
     \field{year}{2024}
     \field{urlday}{02}
@@ -538,7 +1028,7 @@
          giveni={B\bibinitperiod},
       }}%
       {{hash=KU}{%
-         family={Ke{\ss}ner},
+         family={Keßner},
          familyi={K\bibinitperiod},
          given={Urs},
          giveni={U\bibinitperiod},
@@ -562,7 +1052,7 @@
          giveni={A\bibinitperiod},
       }}%
       {{hash=JR}{%
-         family={J{\"a}kel},
+         family={Jäkel},
          familyi={J\bibinitperiod},
          given={Rainer},
          giveni={R\bibinitperiod},
@@ -591,36 +1081,40 @@
     \list{publisher}{1}{%
       {Springer Nature Switzerland}%
     }
-    \keyw{my,relevant}
+    \keyw{my, relevant}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABKUTAKDHAJRNG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{7}
     \field{sortinithash}{7}
-    \field{booktitle}{European {{Robotics Forum}} 2024}
+    \field{abstract}{%
+    Industrial robots are applied in a widening range of industries, but robot
+  programming mostly remains a task limited to programming experts. We propose
+  a natural language-based assistant for programming of advanced, industrial
+  robotic applications and investigate strategies for domain-specific
+  fine-tuning of foundation models with limited data and compute.%
+    }
+    \field{booktitle}{European {Robotics} {Forum} 2024}
     \verb{doi}
     \verb 10.1007/978-3-031-76424-0_49
     \endverb
-    \verb{eprint}
-    \verb 2312.13905
-    \endverb
-    \field{isbn}{978-3-031-76424-0}
     \field{pages}{274\bibrangedash 279}
-    \field{series}{Springer {{Proceedings}} in {{Advanced Robotics}}}
-    \field{title}{Domain-{{Specific Fine-Tuning}} of~{{Large Language Models}}
-  for~{{Interactive Robot Programming}}}
+    \field{series}{Springer {Proceedings} in {Advanced} {Robotics}}
+    \field{title}{Domain-{Specific} {Fine}-{Tuning} of {Large} {Language}
+  {Models} for {Interactive} {Robot} {Programming}}
+    \verb{url}
+    \verb https://link.springer.com/chapter/10.1007/978-3-031-76424-0_49
+    \endverb
     \field{volume}{32}
     \list{location}{1}{%
       {Rimini, Italy}%
     }
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs}
     \field{month}{03}
     \field{year}{2024}
   \endentry
 
-  \entry{altHumanAIInteractionIndustrial2024}{inproceedings}{}{}
+  \entry{alt_human-ai_2024}{inproceedings}{}{}
     \name{author}{10}{}{%
       {{hash=AB}{%
          family={Alt},
@@ -659,7 +1153,7 @@
          giveni={D\bibinitperiod},
       }}%
       {{hash=JR}{%
-         family={J{\"a}kel},
+         family={Jäkel},
          familyi={J\bibinitperiod},
          given={Rainer},
          giveni={R\bibinitperiod},
@@ -686,33 +1180,53 @@
     \list{publisher}{1}{%
       {Elsevier B.V.}%
     }
-    \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science -
-  Computational Engineering Finance and Science,Computer Science -
-  Human-Computer Interaction,Computer Science - Machine Learning,Computer
-  Science - Robotics,I.2.1,I.2.2,I.2.9,J.6,J.7,my}
+    \keyw{68T40, Computer Science - Artificial Intelligence, Computer Science -
+  Robotics, I.2.2, I.2.9, my, Computer Science - Human-Computer Interaction,
+  Computer Science - Machine Learning, Computer Science - Computational
+  Engineering, Finance, and Science, I.2.1, J.6, J.7}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABZJKCDJMMKDJRKTBMLG1}
     \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
+    \field{labeltitlesource}{shorttitle}
     \field{sortinit}{7}
     \field{sortinithash}{7}
-    \field{booktitle}{Procedia {{CIRP}}}
+    \field{abstract}{%
+    While recent advances in deep learning have demonstrated its transformative
+  potential, its adoption for real-world manufacturing applications remains
+  limited. We present an Explanation User Interface (XUI) for a
+  state-of-the-art deep learning-based robot program optimizer which provides
+  both naive and expert users with different user experiences depending on
+  their skill level, as well as Explainable AI (XAI) features to facilitate the
+  application of deep learning methods in real-world applications. To evaluate
+  the impact of the XUI on task performance, user satisfaction and cognitive
+  load, we present the results of a preliminary user survey and propose a study
+  design for a large-scale follow-up study.%
+    }
+    \field{booktitle}{Procedia {CIRP}}
     \verb{doi}
     \verb 10.1016/j.procir.2024.10.134
     \endverb
-    \verb{eprint}
-    \verb 2404.19349
-    \endverb
+    \field{note}{arXiv:2404.19349 [cs]}
     \field{pages}{591\bibrangedash 596}
-    \field{title}{Human-{{AI Interaction}} in {{Industrial Robotics}}:
-  {{Design}} and {{Empirical Evaluation}} of a {{User Interface}} for
-  {{Explainable AI-Based Robot Program Optimization}}}
+    \field{shorttitle}{Human-{AI} {Interaction} in {Industrial} {Robotics}}
+    \field{title}{Human-{AI} {Interaction} in {Industrial} {Robotics}: {Design}
+  and {Empirical} {Evaluation} of a {User} {Interface} for {Explainable}
+  {AI}-{Based} {Robot} {Program} {Optimization}}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S2212827124012915
+    \endverb
     \field{volume}{130}
     \list{location}{1}{%
-      {P{\'o}voa de Varzim, Portugal}%
+      {Póvoa de Varzim, Portugal}%
     }
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs}
+    \verb{file}
+    \verb arXiv.org Snapshot:/home/ben/Zotero/storage/ERH4U8FW/2404.html:text/h
+    \verb tml
+    \endverb
+    \field{annotation}{%
+    Comment: 6 pages, 4 figures, accepted at the 2024 CIRP International
+  Conference on Manufacturing Systems (CMS)%
+    }
     \field{month}{04}
     \field{year}{2024}
     \field{urlday}{10}
@@ -720,7 +1234,7 @@
     \field{urlyear}{2024}
   \endentry
 
-  \entry{altRoboGrindIntuitiveInteractive2024}{inproceedings}{}{}
+  \entry{alt_robogrind_2024}{inproceedings}{}{}
     \name{author}{13}{}{%
       {{hash=AB}{%
          family={Alt},
@@ -729,13 +1243,13 @@
          giveni={B\bibinitperiod},
       }}%
       {{hash=SF}{%
-         family={St{\"o}ckl},
+         family={Stöckl},
          familyi={S\bibinitperiod},
          given={Florian},
          giveni={F\bibinitperiod},
       }}%
       {{hash=MS}{%
-         family={M{\"u}ller},
+         family={Müller},
          familyi={M\bibinitperiod},
          given={Silvan},
          giveni={S\bibinitperiod},
@@ -777,7 +1291,7 @@
          giveni={D\bibinitperiod},
       }}%
       {{hash=JR}{%
-         family={J{\"a}kel},
+         family={Jäkel},
          familyi={J\bibinitperiod},
          given={Rainer},
          giveni={R\bibinitperiod},
@@ -804,31 +1318,51 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
-    \keyw{68T40,Computer Science - Artificial Intelligence,Computer Science -
-  Robotics,I.2.2,I.2.6,I.2.9,my,relevant}
+    \keyw{68T40, Computer Science - Artificial Intelligence, Computer Science -
+  Robotics, I.2.2, I.2.6, I.2.9, my, relevant}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABSFMSBCRJASRORLKDJRBMSMHMF1}
     \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
+    \field{labeltitlesource}{shorttitle}
     \field{sortinit}{7}
     \field{sortinithash}{7}
-    \field{booktitle}{2024 {{IEEE International Conference}} on {{Robotics}}
-  and {{Automation}} ({{ICRA}})}
+    \field{abstract}{%
+    Surface treatment tasks such as grinding, sanding or polishing are a vital
+  step of the value chain in many industries, but are notoriously challenging
+  to automate. We present RoboGrind, an integrated system for the intuitive,
+  interactive automation of surface treatment tasks with industrial robots. It
+  combines a sophisticated 3D perception pipeline for surface scanning and
+  automatic defect identification, an interactive voice-controlled wizard
+  system for the AI-assisted bootstrapping and parameterization of robot
+  programs, and an automatic planning and execution pipeline for
+  force-controlled robotic surface treatment. RoboGrind is evaluated both under
+  laboratory and real-world conditions in the context of refabricating
+  fiberglass wind turbine blades.%
+    }
+    \field{booktitle}{2024 {IEEE} {International} {Conference} on {Robotics}
+  and {Automation} ({ICRA})}
     \verb{doi}
     \verb 10.1109/ICRA57147.2024.10611143
     \endverb
-    \verb{eprint}
-    \verb 2402.16542
-    \endverb
     \field{isbn}{979-8-3503-8457-4}
     \field{pages}{1\bibrangedash 8}
-    \field{title}{{{RoboGrind}}: {{Intuitive}} and {{Interactive Surface
-  Treatment}} with {{Industrial Robots}}}
+    \field{shorttitle}{{RoboGrind}}
+    \field{title}{{RoboGrind}: {Intuitive} and {Interactive} {Surface}
+  {Treatment} with {Industrial} {Robots}}
+    \verb{url}
+    \verb https://ieeexplore.ieee.org/document/10611143
+    \endverb
     \list{location}{1}{%
       {Yokohama, Japan}%
     }
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs}
+    \verb{file}
+    \verb arXiv.org Snapshot:/home/ben/Zotero/storage/MII54EVS/2402.html:text/h
+    \verb tml
+    \endverb
+    \field{annotation}{%
+    Comment: 7 pages, 6 figures, accepted to the 2024 IEEE International
+  Conference on Robotics and Automation (ICRA 2024)%
+    }
     \field{month}{05}
     \field{year}{2024}
     \field{urlday}{05}
@@ -836,7 +1370,7 @@
     \field{urlyear}{2024}
   \endentry
 
-  \entry{kienleMuTTMultimodalTrajectory2024}{inproceedings}{}{}
+  \entry{kienle_mutt_2024}{inproceedings}{}{}
     \name{author}{7}{}{%
       {{hash=KC}{%
          family={Kienle},
@@ -869,7 +1403,7 @@
          giveni={D\bibinitperiod},
       }}%
       {{hash=JR}{%
-         family={J{\"a}kel},
+         family={Jäkel},
          familyi={J\bibinitperiod},
          given={Rainer},
          giveni={R\bibinitperiod},
@@ -884,30 +1418,54 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
-    \keyw{Computer Science - Machine Learning,Computer Science - Robotics,my}
+    \keyw{Computer Science - Robotics, my, Computer Science - Machine Learning}
     \strng{namehash}{KC+1}
     \strng{fullhash}{KCABCOBPKDJRNG1}
     \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
+    \field{labeltitlesource}{shorttitle}
     \field{sortinit}{7}
     \field{sortinithash}{7}
-    \field{booktitle}{{{IEEE}}/{{RSJ International Conference}} on
-  {{Intelligent Robots}} and {{Systems}} ({{IROS}})}
+    \field{abstract}{%
+    High-level robot skills represent an increasingly popular paradigm in robot
+  programming. However, configuring the skills' parameters for a specific task
+  remains a manual and time-consuming endeavor. Existing approaches for
+  learning or optimizing these parameters often require numerous real-world
+  executions or do not work in dynamic environments. To address these
+  challenges, we propose MuTT, a novel encoder-decoder transformer architecture
+  designed to predict environment-aware executions of robot skills by
+  integrating vision, trajectory, and robot skill parameters. Notably, we
+  pioneer the fusion of vision and trajectory, introducing a novel trajectory
+  projection. Furthermore, we illustrate MuTT's efficacy as a predictor when
+  combined with a model-based robot skill optimizer. This approach facilitates
+  the optimization of robot skill parameters for the current environment,
+  without the need for real-world executions during optimization. Designed for
+  compatibility with any representation of robot skills, MuTT demonstrates its
+  versatility across three comprehensive experiments, showcasing superior
+  performance across two different skill representations.%
+    }
+    \field{booktitle}{{IEEE}/{RSJ} {International} {Conference} on
+  {Intelligent} {Robots} and {Systems} ({IROS})}
     \verb{doi}
     \verb 10.1109/IROS58592.2024.10802198
     \endverb
-    \verb{eprint}
-    \verb 2407.15660
-    \endverb
     \field{isbn}{979-8-3503-7770-5}
+    \field{note}{arXiv:2407.15660 [cs]}
     \field{pages}{9644\bibrangedash 9651}
-    \field{title}{{{MuTT}}: {{A Multimodal Trajectory Transformer}} for {{Robot
-  Skills}}}
+    \field{shorttitle}{{MuTT}}
+    \field{title}{{MuTT}: {A} {Multimodal} {Trajectory} {Transformer} for
+  {Robot} {Skills}}
+    \verb{url}
+    \verb https://ieeexplore.ieee.org/document/10802198
+    \endverb
     \list{location}{1}{%
       {Abu Dhabi, United Arab Emirates}%
     }
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs}
+    \verb{file}
+    \verb arXiv Fulltext PDF:/home/ben/Zotero/storage/5R53CYV4/Kienle et al. -
+    \verb 2024 - MuTT A Multimodal Trajectory Transformer for Robot Skills.pdf:
+    \verb application/pdf;arXiv.org Snapshot:/home/ben/Zotero/storage/N4J4XCHV/
+    \verb 2407.html:text/html
+    \endverb
     \field{month}{08}
     \field{year}{2024}
     \field{urlday}{19}
@@ -915,7 +1473,7 @@
     \field{urlyear}{2024}
   \endentry
 
-  \entry{schultheisEASYEnergyEfficientAnalysis2024}{article}{}{}
+  \entry{schultheis_easy_2024}{article}{}{}
     \name{author}{17}{}{%
       {{hash=SA}{%
          family={Schultheis},
@@ -1020,22 +1578,47 @@
          giveni={M\bibinitperiod},
       }}%
     }
-    \keyw{Analysis and Control Processes,Artificial Intelligence,Edge-Cloud
-  Continuum,Energy- and Resource-Efficiency,my}
+    \list{language}{1}{%
+      {en}%
+    }
+    \keyw{my, Artificial Intelligence, Analysis and Control Processes,
+  Edge-Cloud Continuum, Energy- and Resource-Efficiency}
     \strng{namehash}{SA+1}
     \strng{fullhash}{SAABBSGAJDKDMJSTWSBRBSCLDGMLNSRMRM1}
     \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
+    \field{labeltitlesource}{shorttitle}
     \field{sortinit}{7}
     \field{sortinithash}{7}
+    \field{abstract}{%
+    According to the guiding principles of Industry 4.0, edge computing
+  enables the data-sovereign and near-real-time processing of data directly at
+  the point of origin. Using these edge devices in manufacturing organization
+  will drive the use of industrial analysis, control, and Artificial
+  Intelligence (AI) applications close to production. The goal of the EASY
+  project is to make the added value of edge computing available by providing
+  an easily usable Edge-Cloud Continuum with a runtime environment and services
+  for the execution of AI-based Analysis and Control processes. Within this
+  continuum, a dynamic, distributed, and optimized execution of services is
+  automated across the entire spectrum from centralized cloud to decentralized
+  edge instances to increase productivity and resource efficiency.%
+    }
     \verb{doi}
     \verb 10.1007/s13218-024-00868-3
     \endverb
     \field{issn}{1610-1987}
-    \field{title}{{{EASY}}: {{Energy-Efficient Analysis}} and {{Control
-  Processes}} in the {{Dynamic Edge-Cloud Continuum}} for {{Industrial
-  Manufacturing}}}
-    \field{journaltitle}{KI - K{\"u}nstliche Intelligenz}
+    \field{shorttitle}{{EASY}}
+    \field{title}{{EASY}: {Energy}-{Efficient} {Analysis} and {Control}
+  {Processes} in the {Dynamic} {Edge}-{Cloud} {Continuum} for {Industrial}
+  {Manufacturing}}
+    \verb{url}
+    \verb https://doi.org/10.1007/s13218-024-00868-3
+    \endverb
+    \verb{file}
+    \verb Full Text PDF:/home/ben/Zotero/storage/FGUCJREM/Schultheis et al. - 2
+    \verb 024 - EASY Energy-Efficient Analysis and Control Processes in the Dyn
+    \verb amic Edge-Cloud Continuum for Indust.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{KI - Künstliche Intelligenz}
     \field{month}{09}
     \field{year}{2024}
     \field{urlday}{05}
@@ -1043,7 +1626,7 @@
     \field{urlyear}{2024}
   \endentry
 
-  \entry{altKnowledgeDrivenRobotProgram2023}{inproceedings}{}{}
+  \entry{alt_knowledge-driven_2023}{inproceedings}{}{}
     \name{author}{6}{}{%
       {{hash=AB}{%
          family={Alt},
@@ -1070,7 +1653,7 @@
          giveni={D\bibinitperiod},
       }}%
       {{hash=JR}{%
-         family={J{\"a}kel},
+         family={Jäkel},
          familyi={J\bibinitperiod},
          given={Rainer},
          giveni={R\bibinitperiod},
@@ -1085,31 +1668,59 @@
     \list{publisher}{1}{%
       {IJCAI}%
     }
-    \keyw{68T30,Computer Science - Artificial Intelligence,Computer Science -
-  Robotics,D.1,F.3,I.2,my,relevant}
+    \keyw{Computer Science - Artificial Intelligence, Computer Science -
+  Robotics, my, 68T30, D.1, F.3, I.2}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABKFKHAKDJRBM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{7}
     \field{sortinithash}{7}
-    \field{booktitle}{Proceedings of the 20th {{International Conference}} on
-  {{Principles}} of {{Knowledge Representation}} and {{Reasoning}}}
+    \field{abstract}{%
+    Aging societies, labor shortages and increasing wage costs call for
+  assistance robots capable of autonomously performing a wide array of
+  real-world tasks. Such open-ended robotic manipulation requires not only
+  powerful knowledge representations and reasoning (KR\&R) algorithms, but also
+  methods for humans to instruct robots what tasks to perform and how to
+  perform them. In this paper, we present a system for automatically generating
+  executable robot control programs from human task demonstrations in virtual
+  reality (VR). We leverage common-sense knowledge and game engine-based
+  physics to semantically interpret human VR demonstrations, as well as an
+  expressive and general task representation and automatic path planning and
+  code generation, embedded into a state-of-the-art cognitive architecture. We
+  demonstrate our approach in the context of force-sensitive fetch-and-place
+  for a robotic shopping assistant. The source code is available at
+  https://github.com/ease-crc/vr-program-synthesis.%
+    }
+    \field{booktitle}{Proceedings of the 20th {International} {Conference} on
+  {Principles} of {Knowledge} {Representation} and {Reasoning}}
     \verb{doi}
     \verb 10.24963/kr.2023/4
     \endverb
     \field{isbn}{978-1-956792-02-7}
     \field{pages}{34\bibrangedash 43}
-    \field{title}{Knowledge-{{Driven Robot Program Synthesis}} from {{Human VR
-  Demonstrations}}}
+    \field{title}{Knowledge-{Driven} {Robot} {Program} {Synthesis} from {Human}
+  {VR} {Demonstrations}}
+    \verb{url}
+    \verb https://doi.org/10.24963/kr.2023/4
+    \endverb
     \list{location}{1}{%
       {Rhodes, Greece}%
+    }
+    \verb{file}
+    \verb arXiv.org Snapshot:/home/ben/Zotero/storage/9PHHGSAD/2306.html:text/h
+    \verb tml
+    \endverb
+    \field{annotation}{%
+    Comment: 10 pages, 11 figures, accepted at the 20th International
+  Conference on Principles of Knowledge Representation and Reasoning (KR2023,
+  https://kr.org/KR2023)%
     }
     \field{month}{09}
     \field{year}{2023}
   \endentry
 
-  \entry{altEfficientPPSPartawarePanoptic2023}{inproceedings}{}{}
+  \entry{alt_efficientpps_2023}{inproceedings}{}{}
     \name{author}{7}{}{%
       {{hash=AB}{%
          family={Alt},
@@ -1136,7 +1747,7 @@
          giveni={D\bibinitperiod},
       }}%
       {{hash=JR}{%
-         family={J{\"a}kel},
+         family={Jäkel},
          familyi={J\bibinitperiod},
          given={Rainer},
          giveni={R\bibinitperiod},
@@ -1144,7 +1755,7 @@
       {{hash=DR}{%
          family={Dillmann},
          familyi={D\bibinitperiod},
-         given={R{\"u}diger},
+         given={Rüdiger},
          giveni={R\bibinitperiod},
       }}%
       {{hash=SE}{%
@@ -1164,18 +1775,37 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{7}
     \field{sortinithash}{7}
-    \field{booktitle}{{{ISR Europe}} 2023}
+    \field{abstract}{%
+    The use of autonomous robots for assistance tasks in hospitals has the
+  potential to free up qualified staff and improve patient care. However, the
+  ubiquity of deformable and transparent objects in hospital settings poses
+  significant challenges to vision-based perception systems. We present
+  EfficientPPS, a neural architecture for part-aware panoptic segmentation that
+  provides robots with semantically rich visual information for grasping and
+  manipulation tasks. We also present an unsupervised data collection and
+  labelling method to reduce the need for human involvement in the training
+  process. EfficientPPS is evaluated on a dataset containing real-world
+  hospital objects and demonstrated to be robust and efficient in grasping
+  transparent transfusion bags with a collaborative robot arm.%
+    }
+    \field{booktitle}{{ISR} {Europe} 2023}
     \field{isbn}{978-3-8007-6140-1}
-    \field{title}{{{EfficientPPS}}: {{Part-aware Panoptic Segmentation}} of
-  {{Transparent Objects}} for {{Robotic Manipulation}}}
+    \field{title}{{EfficientPPS}: {Part}-aware {Panoptic} {Segmentation} of
+  {Transparent} {Objects} for {Robotic} {Manipulation}}
+    \verb{url}
+    \verb https://www.vde-verlag.de/proceedings-en/456140019.html
+    \endverb
     \list{location}{1}{%
       {Stuttgart, Germany}%
+    }
+    \field{annotation}{%
+    https://arxiv.org/abs/2312.13906%
     }
     \field{month}{09}
     \field{year}{2023}
   \endentry
 
-  \entry{raibleArtificialNeuralNetwork2023}{inproceedings}{}{}
+  \entry{raible_artificial_2023}{inproceedings}{}{}
     \name{author}{10}{}{%
       {{hash=RJ}{%
          family={Raible},
@@ -1214,7 +1844,7 @@
          giveni={L\bibinitperiod},
       }}%
       {{hash=MS}{%
-         family={M{\"u}ller},
+         family={Müller},
          familyi={M\bibinitperiod},
          given={Silvan},
          giveni={S\bibinitperiod},
@@ -1248,19 +1878,40 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{7}
     \field{sortinithash}{7}
-    \field{booktitle}{2023 {{IEEE}} 19th {{International Conference}} on
-  {{Automation Science}} and {{Engineering}} ({{CASE}})}
+    \field{abstract}{%
+    The absolute accuracy of industrial robots is influ-enced by numerous
+  geometric and non-geometric errors. Most state-of-the-art calibration and
+  compensation methods consider only the geometric errors and neglect the
+  non-geometric ones. In this paper, a hybrid compensation approach is proposed
+  that combines well-known kinematic models with a model-free data-driven
+  component using a neural network. This allows the use of established
+  calibration methods for the geometric influences captured in the kinematic
+  model to improve the non-geometric error compensation by the neural network.
+  The proposed approach is applied in two use cases: payload and wear
+  compensation. Simulations and real experiments show the improved absolute
+  accuracy of the hybrid compensation approach compared to classical
+  calibration methods.%
+    }
+    \field{booktitle}{2023 {IEEE} 19th {International} {Conference} on
+  {Automation} {Science} and {Engineering} ({CASE})}
     \verb{doi}
     \verb 10.1109/CASE56687.2023.10260559
     \endverb
     \field{isbn}{979-8-3503-2069-5}
-    \field{issn}{2161-8089}
+    \field{note}{ISSN: 2161-8089}
     \field{pages}{1\bibrangedash 8}
-    \field{title}{Artificial {{Neural Network Guided Compensation}} of
-  {{Nonlinear Payload}} and {{Wear Effects}} for {{Industrial Robots}}}
+    \field{title}{Artificial {Neural} {Network} {Guided} {Compensation} of
+  {Nonlinear} {Payload} and {Wear} {Effects} for {Industrial} {Robots}}
+    \verb{url}
+    \verb https://ieeexplore.ieee.org/document/10260559
+    \endverb
     \list{location}{1}{%
       {Auckland, New Zealand}%
     }
+    \verb{file}
+    \verb IEEE Xplore Abstract Record:/home/ben/Zotero/storage/WMG6FWY4/1026055
+    \verb 9.html:text/html
+    \endverb
     \field{month}{08}
     \field{year}{2023}
     \field{urlday}{16}
@@ -1268,10 +1919,10 @@
     \field{urlyear}{2023}
   \endentry
 
-  \entry{stocklAutonomousSurfaceGrinding2023}{inproceedings}{}{}
+  \entry{stockl_autonomous_2023}{inproceedings}{}{}
     \name{author}{9}{}{%
       {{hash=SF}{%
-         family={St{\"o}ckl},
+         family={Stöckl},
          familyi={S\bibinitperiod},
          given={Florian},
          giveni={F\bibinitperiod},
@@ -1283,7 +1934,7 @@
          giveni={M\bibinitperiod},
       }}%
       {{hash=MS}{%
-         family={M{\"u}ller},
+         family={Müller},
          familyi={M\bibinitperiod},
          given={Silvan},
          giveni={S\bibinitperiod},
@@ -1357,23 +2008,42 @@
          giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
       }}%
     }
+    \list{language}{1}{%
+      {en}%
+    }
     \list{publisher}{1}{%
       {Springer Nature Switzerland}%
     }
-    \keyw{Autonomous grinding,Hybrid AI,my,Remanufacturing}
+    \keyw{my, Autonomous grinding, Hybrid AI, Remanufacturing}
     \strng{namehash}{SF+1}
     \strng{fullhash}{SFSMMSHMRJBCKDABMH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{7}
     \field{sortinithash}{7}
-    \field{booktitle}{Intelligent {{Autonomous Systems}} 18}
+    \field{abstract}{%
+    Discarded wind turbine blades generate a considerable amount of waste that
+  could be reduced by remanufacturing. Manual remanufacturing is too costly,
+  which is why research is being conducted into automation techniques. The main
+  problem is the individuality of work pieces due to damages. This work
+  presents a workflow that includes damage analysis based on scans of the
+  blade, subsequent path planning, control engineering with an AI controller
+  for grinding and automatic review of the grinding process. Current problems
+  are the inaccuracy of the robot used for scanning and the colour sensitivity
+  of the used laser scanner. Our next steps besides solving the mentioned
+  problems are to train a supervised machine learning algorithm with damage
+  examples and to implement a specific and multi-step path planning algorithm.%
+    }
+    \field{booktitle}{Intelligent {Autonomous} {Systems} 18}
     \verb{doi}
     \verb 10.1007/978-3-031-44981-9_38
     \endverb
     \field{isbn}{978-3-031-44981-9}
     \field{pages}{451\bibrangedash 457}
-    \field{title}{Autonomous {{Surface Grinding}} of {{Wind Turbine Blades}}}
+    \field{title}{Autonomous {Surface} {Grinding} of {Wind} {Turbine} {Blades}}
+    \verb{url}
+    \verb https://link.springer.com/chapter/10.1007/978-3-031-44981-9_38
+    \endverb
     \list{location}{1}{%
       {Cham}%
     }
@@ -1381,7 +2051,7 @@
     \field{year}{2023}
   \endentry
 
-  \entry{altMethodSystemDetermining2022a}{patent}{}{}
+  \entry{alt_method_2022}{patent}{}{}
     \name{author}{3}{}{%
       {{hash=AB}{%
          family={Alt},
@@ -1390,7 +2060,7 @@
          giveni={B\bibinitperiod},
       }}%
       {{hash=JR}{%
-         family={J{\"a}kel},
+         family={Jäkel},
          familyi={J\bibinitperiod},
          given={Rainer},
          giveni={R\bibinitperiod},
@@ -1402,23 +2072,25 @@
          giveni={D\bibinitperiod},
       }}%
     }
-    \keyw{my,relevant}
+    \keyw{my}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABJRKD1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{7}
     \field{sortinithash}{7}
+    \field{note}{IPC:}
     \field{number}{WO2022022784A1}
-    \field{title}{Method and {{System}} for {{Determining Optimized Program
-  Parameters}} for a {{Robot Program}}}
+    \field{title}{Method and {System} for {Determining} {Optimized} {Program}
+  {Parameters} for a {Robot} {Program}}
+    \verb{url}
+    \verb http://depatisnet.dpma.de/DepatisNet/depatisnet?action=bibdat&docid=W
+    \verb O002022022784A1
+    \endverb
     \list{location}{1}{%
       {Karlsruhe}%
     }
     \field{type}{patent}
-    \field{annotation}{%
-    IPC:%
-    }
     \field{month}{02}
     \field{year}{2022}
     \field{urlday}{28}
@@ -1426,7 +2098,7 @@
     \field{urlyear}{2023}
   \endentry
 
-  \entry{altHeuristicFreeOptimizationForceControlled2022}{inproceedings}{}{}
+  \entry{alt_heuristic-free_2022}{inproceedings}{}{}
     \name{author}{4}{}{%
       {{hash=AB}{%
          family={Alt},
@@ -1441,7 +2113,7 @@
          giveni={D\bibinitperiod},
       }}%
       {{hash=JR}{%
-         family={J{\"a}kel},
+         family={Jäkel},
          familyi={J\bibinitperiod},
          given={Rainer},
          giveni={R\bibinitperiod},
@@ -1456,32 +2128,60 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
-    \keyw{Adaptation models,my,relevant,Runtime,Search problems,Service
-  robots,Spirals,Stochastic processes,Training}
+    \keyw{my, relevant, Runtime, Service robots, Adaptation models, Search
+  problems, Spirals, Stochastic processes, Training}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABKDJRBM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{7}
     \field{sortinithash}{7}
-    \field{booktitle}{2022 {{IEEE}}/{{RSJ International Conference}} on
-  {{Intelligent Robots}} and {{Systems}} ({{IROS}})}
+    \field{abstract}{%
+    In both industrial and service domains, a central benefit of the use of
+  robots is their ability to quickly and reliably execute repetitive tasks.
+  However, even relatively simple peg-in-hole tasks are typically subject to
+  stochastic variations, requiring search motions to find relevant features
+  such as holes. While search improves robustness, it comes at the cost of
+  increased runtime: More exhaustive search will maximize the probability of
+  successfully executing a given task, but will significantly delay any
+  downstream tasks. This trade-off is typically resolved by human experts
+  according to simple heuristics, which are rarely optimal. This paper
+  introduces an automatic, data-driven and heuristic-free approach to optimize
+  robot search strategies. By training a neural model of the search strategy on
+  a large set of simulated stochastic environments, conditioning it on few
+  real-world examples and inverting the model, we can infer search strategies
+  which adapt to the time-variant characteristics of the underlying probability
+  distributions, while requiring very few real-world measurements. We evaluate
+  our approach on two different industrial robots in the context of spiral and
+  probe search for THT electronics assembly.**See github.com/benjaminalt/dpse
+  for code and data.%
+    }
+    \field{booktitle}{2022 {IEEE}/{RSJ} {International} {Conference} on
+  {Intelligent} {Robots} and {Systems} ({IROS})}
     \verb{doi}
     \verb 10.1109/IROS47612.2022.9982093
     \endverb
     \field{isbn}{978-1-6654-7927-1}
-    \field{issn}{2153-0866}
     \field{pages}{8887\bibrangedash 8893}
-    \field{title}{Heuristic-{{Free Optimization}} of {{Force-Controlled Robot
-  Search Strategies}} in {{Stochastic Environments}}}
+    \field{title}{Heuristic-{Free} {Optimization} of {Force}-{Controlled}
+  {Robot} {Search} {Strategies} in {Stochastic} {Environments}}
+    \verb{url}
+    \verb https://ieeexplore.ieee.org/document/9982093
+    \endverb
     \list{location}{1}{%
       {Kyoto, Japan}%
     }
+    \verb{file}
+    \verb IEEE Xplore Abstract Record:/home/ben/Zotero/storage/B4WTVLJP/9982093
+    \verb .html:text/html;IEEE Xplore Full Text PDF:/home/ben/Zotero/storage/SA
+    \verb CZMZRB/Alt et al. - 2022 - Heuristic-free Optimization of Force-Contr
+    \verb olled Ro.pdf:application/pdf
+    \endverb
     \field{month}{10}
     \field{year}{2022}
   \endentry
 
-  \entry{altLapSeg3DWeaklySupervised2022}{inproceedings}{}{}
+  \entry{alt_lapseg3d_2022}{inproceedings}{}{}
     \name{author}{8}{}{%
       {{hash=AB}{%
          family={Alt},
@@ -1508,14 +2208,14 @@
          giveni={R\bibinitperiod},
       }}%
       {{hash=JR}{%
-         family={J{\"a}kel},
+         family={Jäkel},
          familyi={J\bibinitperiod},
          given={Rainer},
          giveni={R\bibinitperiod},
       }}%
-      {{hash=MBP}{%
-         family={{M{\"u}ller-Stich}},
-         familyi={M\bibinitperiod},
+      {{hash=MSBP}{%
+         family={Müller-Stich},
+         familyi={M\bibinithyphendelim S\bibinitperiod},
          given={Beat\bibnamedelima Peter},
          giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
       }}%
@@ -1525,9 +2225,9 @@
          given={Martin},
          giveni={M\bibinitperiod},
       }}%
-      {{hash=MF}{%
-         family={{Mathis-Ullrich}},
-         familyi={M\bibinitperiod},
+      {{hash=MUF}{%
+         family={Mathis-Ullrich},
+         familyi={M\bibinithyphendelim U\bibinitperiod},
          given={Franziska},
          giveni={F\bibinitperiod},
       }}%
@@ -1535,32 +2235,51 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
-    \keyw{Annotations,Laparoscopes,my,Pipelines,Point cloud compression,Robot
-  vision systems,Semantic segmentation,Training data}
+    \keyw{my, Annotations, Laparoscopes, Pipelines, Point cloud compression,
+  Robot vision systems, Semantic segmentation, Training data}
     \strng{namehash}{AB+1}
-    \strng{fullhash}{ABKCKDYRJRMBPWMMF1}
+    \strng{fullhash}{ABKCKDYRJRMSBPWMMUF1}
     \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
+    \field{labeltitlesource}{shorttitle}
     \field{sortinit}{7}
     \field{sortinithash}{7}
-    \field{booktitle}{2022 {{IEEE}}/{{RSJ International Conference}} on
-  {{Intelligent Robots}} and {{Systems}} ({{IROS}})}
+    \field{abstract}{%
+    The semantic segmentation of surgical scenes is a prerequisite for task
+  automation in robot assisted interventions. We propose LapSeg3D, a novel
+  DNN-based approach for the voxel-wise annotation of point clouds representing
+  surgical scenes. As the manual annotation of training data is highly time
+  consuming, we introduce a semi-autonomous clustering-based pipeline for the
+  annotation of the gallbladder, which is used to generate segmented labels for
+  the DNN. When evaluated against manually annotated data, LapSeg3D achieves an
+  F1 score of 0.94 for gallbladder segmentation on various datasets of ex-vivo
+  porcine livers. We show LapSeg3D to generalize accurately across different
+  gallbladders and datasets recorded with different RGB-D camera systems.%
+    }
+    \field{booktitle}{2022 {IEEE}/{RSJ} {International} {Conference} on
+  {Intelligent} {Robots} and {Systems} ({IROS})}
     \verb{doi}
     \verb 10.1109/IROS47612.2022.9981178
     \endverb
     \field{isbn}{978-1-6654-7927-1}
-    \field{issn}{2153-0866}
+    \field{note}{ISSN: 2153-0866}
     \field{pages}{5265\bibrangedash 5270}
-    \field{title}{{{LapSeg3D}}: {{Weakly Supervised Semantic Segmentation}} of
-  {{Point Clouds Representing Laparoscopic Scenes}}}
+    \field{shorttitle}{{LapSeg3D}}
+    \field{title}{{LapSeg3D}: {Weakly} {Supervised} {Semantic} {Segmentation}
+  of {Point} {Clouds} {Representing} {Laparoscopic} {Scenes}}
     \list{location}{1}{%
       {Kyoto, Japan}%
     }
+    \verb{file}
+    \verb IEEE Xplore Abstract Record:/home/ben/Zotero/storage/5C3SRM9T/9981178
+    \verb .html:text/html;IEEE Xplore Full Text PDF:/home/ben/Zotero/storage/RB
+    \verb QVYHM8/Alt et al. - 2022 - LapSeg3D Weakly Supervised Semantic Segmen
+    \verb tation .pdf:application/pdf
+    \endverb
     \field{month}{10}
     \field{year}{2022}
   \endentry
 
-  \entry{kluyMenschRoboterKollaborationKMUPotenziale2022}{incollection}{}{}
+  \entry{kluy_mensch-roboter-kollaboration_2022}{incollection}{}{}
     \name{author}{14}{}{%
       {{hash=KL}{%
          family={Kluy},
@@ -1569,7 +2288,7 @@
          giveni={L\bibinitperiod},
       }}%
       {{hash=KL}{%
-         family={K{\"o}lmel},
+         family={Kölmel},
          familyi={K\bibinitperiod},
          given={Lena},
          giveni={L\bibinitperiod},
@@ -1635,7 +2354,7 @@
          giveni={N\bibinitperiod},
       }}%
       {{hash=SA}{%
-         family={Sch{\"a}fer},
+         family={Schäfer},
          familyi={S\bibinitperiod},
          given={Arndt},
          giveni={A\bibinitperiod},
@@ -1661,7 +2380,7 @@
          giveni={C\bibinitperiod},
       }}%
       {{hash=HR}{%
-         family={H{\"a}u{\ss}ling},
+         family={Häußling},
          familyi={H\bibinitperiod},
          given={Roger},
          giveni={R\bibinitperiod},
@@ -1685,6 +2404,9 @@
          giveni={B\bibinitperiod},
       }}%
     }
+    \list{language}{1}{%
+      {de}%
+    }
     \list{publisher}{1}{%
       {Springer}%
     }
@@ -1695,16 +2417,38 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{7}
     \field{sortinithash}{7}
-    \field{booktitle}{{Digitalisierung der Arbeitswelt im Mittelstand 1:
-  Ergebnisse und Best Practice des BMBF-Forschungsschwerpunkts "Zukunft der
-  Arbeit: Mittelstand -- innovativ und sozial"}}
+    \field{abstract}{%
+    Die Einführung von kollaborativen Robotern (Cobots) verspricht eine aus
+  arbeitswissenschaftlicher Sichtweise sinnvolle Zusammenarbeit zwischen Mensch
+  und Roboter. Gerade kleinen und mittleren Unternehmen (KMU) gelingt es
+  allerdings häufig nicht oder nur teilweise, die damit verbundenen Potenziale
+  zu erschließen. Das vorliegende Kapitel beschreibt zum einen die
+  Identifizierung, Analyse und Realisierung von Cobot-Potenzialen im Projekt
+  ProBot („Proaktive Diagnose und Gestaltung des CoBot-Einsatzes in kleinen
+  und mittleren Unternehmen“). Zum anderen wird die Entwicklung und der
+  Aufbau einer interaktiven Einführungsunterstützung zur niederschwelligen
+  Planung und Umsetzung von
+  Mensch-Cobot-ArbeitssystemenMensch-Cobot-Arbeitssystem (MCA) (MCA) skizziert,
+  wobei einige der enthaltenen Methoden vertieft vorgestellt werden. Darüber
+  hinaus werden anhand realer Fallbeispiele von KMU die Möglichkeiten und
+  Grenzen von Mensch-Roboter-Kollaborationen (MRK) anschaulich dargestellt. Die
+  interaktive Einführungsunterstützung (KMU Cobot Coach) wird interessierten
+  KMU unter folgender Adresse zur freien Verfügung online bereitgestellt:
+  https://www.kmu-cobot-coach.de/.%
+    }
+    \field{booktitle}{Digitalisierung der {Arbeitswelt} im {Mittelstand} 1:
+  {Ergebnisse} und {Best} {Practice} des {BMBF}-{Forschungsschwerpunkts}
+  "{Zukunft} der {Arbeit}: {Mittelstand} – innovativ und sozial"}
     \verb{doi}
     \verb 10.1007/978-3-662-64803-2_3
     \endverb
     \field{isbn}{978-3-662-64803-2}
     \field{pages}{55\bibrangedash 97}
-    \field{title}{{Mensch-Roboter-Kollaboration in KMU -- Potenziale
-  identifizieren, analysieren und realisieren}}
+    \field{title}{Mensch-{Roboter}-{Kollaboration} in {KMU} – {Potenziale}
+  identifizieren, analysieren und realisieren}
+    \verb{url}
+    \verb https://doi.org/10.1007/978-3-662-64803-2_3
+    \endverb
     \list{location}{1}{%
       {Berlin, Heidelberg}%
     }
@@ -1714,7 +2458,7 @@
     \field{urlyear}{2022}
   \endentry
 
-  \entry{altRobotProgramParameter2021}{inproceedings}{}{}
+  \entry{alt_robot_2021}{inproceedings}{}{}
     \name{author}{5}{}{%
       {{hash=AB}{%
          family={Alt},
@@ -1729,7 +2473,7 @@
          giveni={D\bibinitperiod},
       }}%
       {{hash=JR}{%
-         family={J{\"a}kel},
+         family={Jäkel},
          familyi={J\bibinitperiod},
          given={Rainer},
          giveni={R\bibinitperiod},
@@ -1750,32 +2494,54 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
-    \keyw{Automation,Codes,Conferences,my,Production,relevant,Service
-  robots,Task analysis,Unsupervised learning}
+    \keyw{Task analysis, my, relevant, Automation, Conferences, Codes,
+  Production, Service robots, Unsupervised learning}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABKDJRBAKBM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{7}
     \field{sortinithash}{7}
-    \field{booktitle}{2021 {{IEEE International Conference}} on {{Robotics}}
-  and {{Automation}} ({{ICRA}})}
+    \field{abstract}{%
+    Challenging manipulation tasks can be solved effectively by combining
+  individual robot skills, which must be parameterized for the concrete
+  physical environment and task at hand. This is time-consuming and difficult
+  for human programmers, particularly for force-controlled skills. To this end,
+  we present Shadow Program Inversion (SPI), a novel approach to infer optimal
+  skill parameters directly from data. SPI leverages unsupervised learning to
+  train an auxiliary differentiable program representation ("shadow program")
+  and realizes parameter inference via gradient-based model inversion. Our
+  method enables the use of efficient first-order optimizers to infer optimal
+  parameters for originally non-differentiable skills, including many skill
+  variants currently used in production. SPI zero-shot generalizes across task
+  objectives, meaning that shadow programs do not need to be retrained to infer
+  parameters for different task variants. We evaluate our methods on three
+  different robots and skill frameworks in industrial and household scenarios.
+  Code and examples are available at https://innolab.artiminds.com/icra2021.%
+    }
+    \field{booktitle}{2021 {IEEE} {International} {Conference} on {Robotics}
+  and {Automation} ({ICRA})}
     \verb{doi}
     \verb 10.1109/ICRA48506.2021.9561206
     \endverb
-    \field{isbn}{978-1-7281-9077-8}
-    \field{issn}{2577-087X}
     \field{pages}{4672\bibrangedash 4678}
-    \field{title}{Robot {{Program Parameter Inference}} via {{Differentiable
-  Shadow Program Inversion}}}
+    \field{title}{Robot {Program} {Parameter} {Inference} via {Differentiable}
+  {Shadow} {Program} {Inversion}}
+    \verb{url}
+    \verb https://ieeexplore.ieee.org/document/9561206
+    \endverb
     \list{location}{1}{%
       {Xi'an, China}%
     }
+    \verb{file}
+    \verb IEEE Xplore Abstract Record:/home/ben/Zotero/storage/UD5WY2M9/9561206
+    \verb .html:text/html
+    \endverb
     \field{month}{05}
     \field{year}{2021}
   \endentry
 
-  \entry{dittusLocalizationTrackingUserDefined2021}{inproceedings}{}{}
+  \entry{dittus_localization_2021}{inproceedings}{}{}
     \name{author}{6}{}{%
       {{hash=DS}{%
          family={Dittus},
@@ -1802,7 +2568,7 @@
          giveni={D\bibinitperiod},
       }}%
       {{hash=JR}{%
-         family={J{\"a}kel},
+         family={Jäkel},
          familyi={J\bibinitperiod},
          given={Rainer},
          giveni={R\bibinitperiod},
@@ -1810,32 +2576,56 @@
       {{hash=FJ}{%
          family={Fleischer},
          familyi={F\bibinitperiod},
-         given={J{\"u}rgen},
+         given={Jürgen},
          giveni={J\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
       {IEEE}%
     }
-    \keyw{Computer Science - Computer Vision and Pattern Recognition,Computer
-  Science - Robotics,my,workshop}
+    \keyw{Computer Science - Robotics, my, Computer Science - Computer Vision
+  and Pattern Recognition, workshop}
     \strng{namehash}{DS+1}
     \strng{fullhash}{DSABHAKDJRFJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{7}
     \field{sortinithash}{7}
-    \field{booktitle}{{{IEEE ICRA Workshop}} on {{Representing}} and
-  {{Manipulating Deformable Objects}}}
-    \verb{eprint}
-    \verb 2105.09067
+    \field{abstract}{%
+    This paper introduces an efficient procedure to localize user-defined
+  points on the surface of deformable objects and track their positions in 3D
+  space over time. To cope with a deformable object's infinite number of DOF,
+  we propose a discretized deformation field, which is estimated during runtime
+  using a multi-step non-linear solver pipeline. The resulting high-dimensional
+  energy minimization problem describes the deviation between an
+  offline-defined reference model and a pre-processed camera image. An
+  additional regularization term allows for assumptions about the object's
+  hidden areas and increases the solver's numerical stability. Our approach is
+  capable of solving the localization problem online in a data-parallel manner,
+  making it ideally suitable for the perception of non-rigid objects in
+  industrial manufacturing processes.%
+    }
+    \field{booktitle}{{IEEE} {ICRA} {Workshop} on {Representing} and
+  {Manipulating} {Deformable} {Objects}}
+    \field{note}{arXiv: 2105.09067}
+    \field{title}{Localization and {Tracking} of {User}-{Defined} {Points} on
+  {Deformable} {Objects} for {Robotic} {Manipulation}}
+    \verb{url}
+    \verb http://arxiv.org/abs/2105.09067
     \endverb
-    \field{title}{Localization and {{Tracking}} of {{User-Defined Points}} on
-  {{Deformable Objects}} for {{Robotic Manipulation}}}
     \list{location}{1}{%
       {Xi'an, China}%
     }
-    \field{eprinttype}{arXiv}
+    \verb{file}
+    \verb arXiv Fulltext PDF:/home/ben/Zotero/storage/LJ2NYCCB/Dittus et al. -
+    \verb 2021 - Localization and Tracking of User-Defined Points o.pdf:applica
+    \verb tion/pdf;arXiv.org Snapshot:/home/ben/Zotero/storage/FKPUV3WL/2105.ht
+    \verb ml:text/html
+    \endverb
+    \field{annotation}{%
+    Comment: 4 pages, 4 figures, accepted at the ICRA 2021 Workshop on
+  Representing and Manipulating Deformable Objects%
+    }
     \field{month}{05}
     \field{year}{2021}
     \field{urlday}{02}
@@ -1843,7 +2633,7 @@
     \field{urlyear}{2021}
   \endentry
 
-  \entry{altModulareDatengetriebeneRoboterprogrammierung2020}{inproceedings}{}{}
+  \entry{alt_modulare_2020}{inproceedings}{}{}
     \name{author}{7}{}{%
       {{hash=AB}{%
          family={Alt},
@@ -1876,7 +2666,7 @@
          giveni={D\bibinitperiod},
       }}%
       {{hash=JR}{%
-         family={J{\"a}kel},
+         family={Jäkel},
          familyi={J\bibinitperiod},
          given={Rainer},
          giveni={R\bibinitperiod},
@@ -1898,19 +2688,43 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{7}
     \field{sortinithash}{7}
-    \field{booktitle}{{{AAL-Kongress}} 2020}
+    \field{abstract}{%
+    Increasing demand for high-standard elderly care and stagnant availability
+  of qualified labor makes the need for partially autonomous robotic ambient
+  assisted living (AAL) solutions increasingly urgent. The preparation and
+  serving of food and beverages is an important subdomain of care robotics,
+  which is rendered challenging by unstructured environments, a large variety
+  of manipulated objects and the need to interact with human users. This work
+  presents a modular, hardware agnostic approach for programming robots to
+  perform complex assistance functions in unstructured environments. We propose
+  a robot-agnostic library of parameterized robot skills which encapsulate
+  primitive tasks central to food preparation and serving, from which
+  hierarchical manipulation sequences can be constructed. We further propose an
+  approach for the automatic adaption of generated motions based on 3D point
+  clouds of the environment to manipulate objects of different dimensions and
+  shapes. We evaluate our solution on two 6-DOF robotic manipulators as well as
+  a bimanual humanoid assistance robot.%
+    }
+    \field{booktitle}{{AAL}-{Kongress} 2020}
     \field{isbn}{978-3-8007-5342-0}
     \field{pages}{17\bibrangedash 22}
-    \field{title}{Modulare, Datengetriebene {{Roboterprogrammierung}} F{\"u}r
-  Die {{L{\"o}sung}} Komplexer {{Handhabungsaufgaben}} in
-  {{Alltagsumgebungen}}}
+    \field{title}{Modulare, datengetriebene {Roboterprogrammierung} für die
+  {Lösung} komplexer {Handhabungsaufgaben} in {Alltagsumgebungen}}
+    \verb{url}
+    \verb http://publica.fraunhofer.de/documents/N-608626.html
+    \endverb
     \list{location}{1}{%
       {Berlin}%
     }
+    \verb{file}
+    \verb Modulare, datengetriebene Roboterprogrammierung für die Lösung komp
+    \verb lexer Handhabungsaufgaben in Alltagsumgebungen:/home/ben/Zotero/stora
+    \verb ge/LT5KQM5A/N-608626.html:text/html
+    \endverb
     \field{year}{2020}
   \endentry
 
-  \entry{grafRoPHaRobusteWahrnehmungsfahigkeiten2020}{incollection}{}{}
+  \entry{graf_ropha_2020}{incollection}{}{}
     \name{author}{11}{}{%
       {{hash=GB}{%
          family={Graf},
@@ -1936,9 +2750,9 @@
          given={Ronny},
          giveni={R\bibinitperiod},
       }}%
-      {{hash=AM}{%
-         family={{Abdel-Keream}},
-         familyi={A\bibinitperiod},
+      {{hash=AKM}{%
+         family={Abdel-Keream},
+         familyi={A\bibinithyphendelim K\bibinitperiod},
          given={Mona},
          giveni={M\bibinitperiod},
       }}%
@@ -1980,23 +2794,47 @@
       }}%
     }
     \list{publisher}{1}{%
-      {Bundesanstalt f{\"u}r Arbeitsschutz und Arbeitsmedizin}%
+      {Bundesanstalt für Arbeitsschutz und Arbeitsmedizin}%
     }
     \keyw{my}
     \strng{namehash}{GB+1}
-    \strng{fullhash}{GBJFBGMRAMMPGFECSRKDAB1}
+    \strng{fullhash}{GBJFBGMRAKMMPGFECSRKDAB1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{7}
     \field{sortinithash}{7}
-    \field{booktitle}{Autonome {{Roboter}} F{\"u}r {{Assistenz}}\-funktionen}
+    \field{abstract}{%
+    Ziel des RoPHa-Projekts war es, Grundfunktionen für die Unterstützung
+  älterer und pflegedürftiger Menschen bei der Handhabung typischer
+  Alltagsobjekte zu entwickeln. Als Use Case für die beispielhafte Umsetzung
+  und Integration der entwickelten Grundfunktionen wurde die mundgerechte
+  Bereitstellung von Nahrung betrachtet. Dafür wurden zunächst eine
+  systematische Anforderungsanalyse inklusive der Betrachtung von ELS-Aspekten
+  und eine Risikobetrachtung durchgeführt. Danach wurde ein
+  Interaktionskonzept basierend auf einer tabletgestützten GUI und
+  Sprachausgaben entwickelt. Im Bereich der Perzeption wurden Funktionen für
+  die Objekterkennung, die Lokalisierung und Klassifizierung von Speisen, die
+  Wahrnehmung des Menschen und für die aufgabenspezifische Auswahl und
+  Parametrierung von Perzeptionsfunktionen entwickelt und in ein Gesamtsystem
+  integriert. Für die sichere Manipulation wurden unterschiedliche elementare
+  Handhabungsfertigkeiten, bspw. für das Schneiden, Bestreuen, Aufnehmen und
+  Anreichen von Speisen entwickelt. Im Rahmen von zwei Testreihen mit
+  Mitarbeitern aus der Pflege wurden die entwickelten Szenarien evaluiert.%
+    }
+    \field{booktitle}{Autonome {Roboter} für {Assistenz}­funktionen}
     \field{pages}{118\bibrangedash 133}
-    \field{title}{{{RoPHa}} - {{Robuste Wahrnehmungsf{\"a}higkeiten}} F{\"u}r
-  {{Roboter}} Zur {{Unterst{\"u}tzung}} {\"A}lterer {{Nutzer}} Im
-  H{\"a}uslichen {{Umfeld}}}
+    \field{title}{{RoPHa} - {Robuste} {Wahrnehmungsfähigkeiten} für {Roboter}
+  zur {Unterstützung} älterer {Nutzer} im häuslichen {Umfeld}}
+    \verb{url}
+    \verb http://publica.fraunhofer.de/documents/N-618329.html
+    \endverb
     \list{location}{1}{%
       {Dortmund}%
     }
+    \verb{file}
+    \verb Fraunhofer-Publica:/home/ben/Zotero/storage/DTA2TDQH/servlet.html:tex
+    \verb t/html
+    \endverb
     \field{year}{2020}
   \endentry
 \enddatalist

@@ -95,13 +95,15 @@ Artificial Intelligence, Cognitive Robotics, AI Safety, Human-AI Interaction % P
 
 \section*{Education}
 
-\years{2020-2025}\textsc{Ph.D.} Computer Science\\
+\years{2020-2025}\textsc{Ph.D.} in Computer Science - \textit{magna cum laude} \\
 Institute for Artificial Intelligence, University of Bremen, Germany\\
 Dissertation: \textit{Neurosymbolic Robot Programming: A Framework for AI-Enabled Programming of Robot Manipulation Tasks}
+Advisor: Prof. Dr. Michael Beetz\\
+Committee: Prof. Dr. Aude Billard, Prof. Dr. Tania Schultz, Prof. Dr. Nico Hochgeschwender 
 
 \medskip
 
-\years{2017-2019}\textsc{M.Sc.} Computer Science\\
+\years{2017-2019}\textsc{M.Sc.} Computer Science\\ - \textit{with distinction}
 Institute for Anthropomatics and Robotics, Karlsruhe Institute of Technology, Germany
 
 \medskip
@@ -111,7 +113,7 @@ Institute for Anthropomatics and Robotics, Karlsruhe Institute of Technology, Ge
 
 \medskip
 
-\years{2012-2015}\textsc{B.A.} Political Science\\
+\years{2012-2015}\textsc{B.A.} Political Science\\ - \textit{summa cum laude} 
 Institut d'Études Politiques de Paris, France and Princeton University, NJ, USA
 
 %----------------------------------------------------------------------------------------
@@ -121,6 +123,10 @@ Institut d'Études Politiques de Paris, France and Princeton University, NJ, USA
 \section*{Professional Experience}
 
 \years{2025-}Technical Director, AICOR Institute for Artificial Intelligence, University of Bremen, Germany
+
+\medskip
+
+\years{2025-}Co-Founder and Chief Scientific Officer, AICOR Solutions GmbH, Bremen, Germany
 
 \medskip
 
@@ -165,6 +171,27 @@ Institut d'Études Politiques de Paris, France and Princeton University, NJ, USA
   \years{#1}\vspace{-10pt}\printbibliography[type=#2,heading=none,check=#1]
 }
 
+% Conference proceedings (excluding workshop papers)
+\newcommand{\firstconfentries}[1]{%
+  \defbibcheck{conf#1}{\iffieldequalstr{year}{#1}{}{\skipentry}\ifkeyword{workshop}{\skipentry}{}}%
+  \years{#1}\vspace{0pt}\printbibliography[type=inproceedings,heading=none,check=conf#1]
+}
+
+\newcommand{\confentries}[1]{%
+  \defbibcheck{conf#1}{\iffieldequalstr{year}{#1}{}{\skipentry}\ifkeyword{workshop}{\skipentry}{}}%
+  \years{#1}\vspace{-10pt}\printbibliography[type=inproceedings,heading=none,check=conf#1]
+}
+
+% Workshop papers
+\newcommand{\firstworkshopentries}[1]{%
+  \defbibcheck{ws#1}{\iffieldequalstr{year}{#1}{}{\skipentry}\ifkeyword{workshop}{}{\skipentry}}%
+  \years{#1}\vspace{0pt}\printbibliography[type=inproceedings,heading=none,check=ws#1]
+}
+
+\newcommand{\workshopentries}[1]{%
+  \defbibcheck{ws#1}{\iffieldequalstr{year}{#1}{}{\skipentry}\ifkeyword{workshop}{}{\skipentry}}%
+  \years{#1}\vspace{-10pt}\printbibliography[type=inproceedings,heading=none,check=ws#1]
+}
 
 \section*{Publications}
 
@@ -181,15 +208,21 @@ Institut d'Études Politiques de Paris, France and Princeton University, NJ, USA
 
 \subsection*{Conference Proceedings}
 
-\firstpubentries{2025}{inproceedings}
-\pubentries{2024}{inproceedings}
-\pubentries{2023}{inproceedings}
-\pubentries{2022}{inproceedings}
-\pubentries{2021}{inproceedings}
-\pubentries{2020}{inproceedings}
+\firstconfentries{2025}
+\confentries{2024}
+\confentries{2023}
+\confentries{2022}
+\confentries{2021}
+\confentries{2020}
+
+\subsection*{Workshop Papers}
+
+\firstworkshopentries{2025}
+\workshopentries{2021}
 
 \subsection*{Manuscripts in Submission}
-\firstpubentries{2025}{misc}
+\firstpubentries{2026}{misc}
+\pubentries{2025}{misc}
 
 %----------------------------------------------------------------------------------------
 %	GRANTS, HONOURS AND AWARDS
@@ -201,7 +234,12 @@ Institut d'Études Politiques de Paris, France and Princeton University, NJ, USA
 \years{2012-2019}e-fellows Merit Scholarship (Deutsche Telekom, Georg v. Holtzbrinck \& McKinsey)
 
 \section*{Grants}
-
+\years{2026-2028}MATENA innovate! Transfer Project\\
+Digital Twin-based Automated Fiber Placement for Rivet-Free Manufacturing of Aerospace Components (TWINSPACE)\\
+Co-PI\\
+\years{2025-2026}German Academic Exchange Service (DAAD) grant\\
+Digital Twins for Household Autonomous Robots\\
+PI\\
 \years{2024-2026}German Ministry of Education and Research grant \#16KIS2236\\
 Resilient, Intelligent Time-Sensitive Networks (RESI-TSN)\\
 Co-PI\\
@@ -255,6 +293,12 @@ Collaborator\\
 
 \years{2025}
 
+``Hybrid AI for Safe Embodied Intelligence''\\
+Robotics and Biology (RBO) Lab / Science of Intelligence Excellence Cluster\\
+Technische Universität Berlin, Berlin, 28.11.2025
+
+\medskip
+
 ``Semantic Digital Twins for Robust and Flexible Robot Behavior'' (Keynote)\\
 2nd Workshop on Semantic Reasoning and Goal Understanding in Robotics\\
 Robotics Science and Systems Conference (RSS 2025), Los Angeles, 21.06.2025
@@ -268,6 +312,12 @@ Stuttgart University of Applied Sciences, Stuttgart, 07.05.2025
 \medskip
 
 \years{2024}
+
+``Bridging the AI Application Gap in Industrial Robotics with Ontologies and Standards''\\
+3rd Workshop on Ontologies and Standards for Robotics and Automation (WOSRA)\\
+IEEE International Conference on Robotics and Automation (ICRA), Yokohama, 13.05.2024
+
+\medskip
 
 ``GPUs sind das neue Öl: Die KI-Revolution im deutschen Mittelstand erfordert ein Umdenken bei der Bereitstellung kritischer Rechenkapazitäten''\\
 Tag der digitalen Technologien, Fachforum ``Generative KI als Schlüssel zur Innovation!? Erfahrungen aus der (Arbeits-)Praxis''\\
@@ -356,7 +406,7 @@ German Chamber of Commerce and Industry (IHK), Karlsruhe, 13.07.2023
 
 ``Modulare, datengetriebene Roboterprogrammierung für die Lösung komplexer Handhabungsaufgaben in Alltagsumgebungen'', AAL-Kongress, September 29 - October 1
 
-\subsection*{Invited Workshop Talks}
+\subsection*{Invited Talks}
 
 \years{2025}
 ``Semantic Digital Twins for Robust and Flexible Robot Behavior'', 2nd Workshop on Semantic Reasoning and Goal Understanding in Robotics (SemRob), Robotics Science and Systems Conference (RSS 2025), June 21, 2025 
@@ -370,9 +420,20 @@ German Chamber of Commerce and Industry (IHK), Karlsruhe, 13.07.2023
 
 \years{2025}
 
-``The AICOR Virtual Research Building: Collaborative, Open Science and Education in the Cloud'', IEEE International Conference on Robotics and Automation (ICRA), May 20
+``The AICOR Virtual Research Building: Collaborative, Open Science and Education in the Cloud'', IEEE International Conference on Robotics and Automation (ICRA), May 20\\
+
+\medskip
+
+``The AICOR Virtual Research Building: Collaborative Robotics in the Cloud'', ROSCon UK, September 17
 
 \section*{Departmental Talks}
+
+\years{2025}
+``Hybrid AI for Safe Embodied Intelligence''\\
+Center for Human-Compatible AI (CHAI)\\
+University of California, Berkeley, 23.07.2025
+
+\medskip
 
 \years{2024}
 ``Neurosymbolic Robot Programming: Bridging the Gap between Safe and Capable Robot Intelligence''\\
@@ -418,7 +479,17 @@ Led research endeavor spanning 6 publicly funded research projects to develop th
 Interactive, natural-language robot program synthesis\\
 Led research endeavor spanning 4 publicly funded research projects to develop an AI assistant capable of synthesizing robot programs for complex, long-horizon tasks through natural-language dialogue with human users.
 
-% \section*{Service to the Profession}
+\section*{Service to the Profession}
+
+\subsection*{Editorial Service}
+
+\years{2026}Associate Editor, IEEE/SICE International Symposium on System Integration (SII)
+
+\subsection*{Reviewing}
+
+Conferences: IEEE ICRA, IEEE/RSJ IROS, IEEE CASE, KR
+
+Journals: IEEE Robotics and Automation Lettes (RA-L)
 
 \vfill % Whitespace before final footer
 

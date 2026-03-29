@@ -42,7 +42,7 @@
 \colorlet{accent}{blue!70!black}
 \colorlet{heading}{black}
 \colorlet{emphasis}{black}
-\colorlet{body}{black!80!white}
+\colorlet{body}{black}
 \newcommand{\itemmarker}{{\small\textbullet}}
 \newcommand{\ratingmarker}{\faCircle}
 
@@ -120,7 +120,8 @@
 \newcommand{\cvsection}[2][]{%
   \bigskip%
   \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%
-  {\color{heading}\LARGE\MakeUppercase{#2}}\\[-1ex]%
+  {\color{heading}\LARGE{#2}}\\[-1ex]%
+  %{\color{heading}\MakeUppercase{#2}}\\[-1ex]%
   {\color{heading}\rule{\linewidth}{1pt}\par}\medskip
 }
 
@@ -132,9 +133,9 @@
 \newcommand{\cvevent}[4]{%
   {\large\color{emphasis}#1\par}
   \smallskip
-  \makebox[0.6\linewidth][l]{\textbf{\color{accent}#2}}%
-  {\small\makebox[0.2\linewidth][l]{\faCalendar \hspace{0.5em}#3}%
-  \ifstrequal{#4}{}{}{\makebox[0.2\linewidth][r]{\faMapMarker\hspace{0.5em}#4}}\par}
+  \parbox[t]{0.62\linewidth}{\textbf{\color{accent}#2}}\hspace{0.05\linewidth}%
+  {\small\makebox[0.16\linewidth][l]{\faCalendar \hspace{0.5em}#3}%
+  \ifstrequal{#4}{}{}{\makebox[0.17\linewidth][r]{\faMapMarker\hspace{0.5em}#4}}\par}
   \medskip
 }
 
@@ -154,15 +155,26 @@
 }
 
 \newcommand{\project}[5]{%
-  \makebox[0.5\linewidth][l]{\large\color{emphasis}#1}%
+  \makebox[0.55\linewidth][l]{\large\color{emphasis}#1}%
   {\small 
     \makebox[0.15\linewidth][l]{\faInstitution\hspace{0.5em}#3}%
     \makebox[0.1\linewidth][l]{\faCalendar\hspace{0.5em}#4}%
-    \makebox[0.25\linewidth][r]{\faUser\hspace{0.5em}#5}%
+    \makebox[0.2\linewidth][r]{\faUser\hspace{0.5em}#5}%
   }\par
   \smallskip
   \makebox[0.6\linewidth][l]{\textbf{\color{accent}#2}}%
   \medskip
+}
+
+\newcommand{\talk}[4]{%
+  \begin{tabular*}{\linewidth}{@{}m{0.6\linewidth}@{\hspace{0.05\linewidth}}m{0.15\linewidth}@{}m{0.2\linewidth}@{}}
+    \normalsize\color{emphasis}#1 & 
+    \small\faCalendar \hspace{0.5em}#3 & 
+    \ifstrequal{#4}{}{}{\raggedleft\small\faMapMarker\hspace{0.5em}#4}
+  \end{tabular*}\par
+  \vspace{1pt}
+  {\small\color{accent}#2}\par
+  \smallskip
 }
 
 \newcommand{\githublink}[1]{%
@@ -174,6 +186,12 @@
   \ifstrequal{#2}{}{}{\githublink{#2}}%
   \smallskip
 }
+
+\newcommand{\cvitem}[2]{%
+  \color{emphasis}#1\hfill{\hspace{0.5em}#2}\par
+  \medskip
+}
+
 
 \newcommand{\cvaward}[2]{%
   \textbf{\color{emphasis}#1}\hfill{\hspace{0.5em}#2}\par

@@ -890,7 +890,7 @@
       \verb{url}
       \verb https://ieeexplore.ieee.org/document/9982093
       \endverb
-      \keyw{my,relevant,Runtime,Service robots,Adaptation models,Search problems,Spirals,Stochastic processes,Training}
+      \keyw{my,Runtime,Service robots,Adaptation models,Search problems,Spirals,Stochastic processes,Training}
     \endentry
     \entry{stockl_autonomous_2023}{inproceedings}{}{}
       \name{author}{9}{}{%
@@ -1266,7 +1266,7 @@
       \verb{url}
       \verb https://doi.org/10.24963/kr.2023/4
       \endverb
-      \keyw{Computer Science - Artificial Intelligence,Computer Science - Robotics,my,68T30,D.1,F.3,I.2}
+      \keyw{Computer Science - Artificial Intelligence,Computer Science - Robotics,my,relevant,68T30,D.1,F.3,I.2}
     \endentry
     \entry{schultheis_easy_2024}{article}{}{}
       \name{author}{17}{}{%

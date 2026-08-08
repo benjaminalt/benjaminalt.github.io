@@ -383,7 +383,6 @@ INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/fontawesome/FontAwesome--f
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/google/roboto/Roboto-Regular-lf-t1.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/google/roboto/Roboto-Bold-lf-t1.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/google/roboto/Roboto-Italic-lf-t1.tfm
-INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/google/roboto/Roboto-Regular-lf-ts1.tfm
 INPUT ./sections/education.tex
 INPUT ./sections/education.tex
 INPUT sections/education.tex
@@ -411,8 +410,6 @@ INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/google/roboto/Roboto-Regular-lf-t
 INPUT /opt/texlive/texdir/texmf-dist/fonts/enc/dvips/roboto/rbto_ocbbsb.enc
 INPUT /opt/texlive/texdir/texmf-dist/fonts/vf/google/roboto/Roboto-Regular-lf-t1.vf
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/google/roboto/Roboto-Regular-lf-t1--base.tfm
-INPUT /opt/texlive/texdir/texmf-dist/fonts/vf/google/roboto/Roboto-Regular-lf-ts1.vf
-INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/google/roboto/Roboto-Regular-lf-ts1--base.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/vf/google/roboto/Roboto-Italic-lf-t1.vf
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/google/roboto/Roboto-Italic-lf-t1--base.tfm
 INPUT ./sections/selected_publications.tex

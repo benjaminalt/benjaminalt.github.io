@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Roboticist & AI Researcher
+subtitle: Roboticist | Safe Physical AI
 
 profile:
   align: right
@@ -16,14 +16,15 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of
 ---
 
-I am interested in developing advanced cognitive architectures to solve real-world engineering problems with robots. As Technical Director of the [AICOR Institute for Artificial Intelligence](https://ai.uni-bremen.de/) at the University of Bremen, I work with a team of researchers, academic and industrial partners to bring about a future in which humans can intuitively program robots and ensure that their behavior is both task-oriented and safe.
+I want to live in a world in which robots help us live happier, healthier lives. To get there, we need robot intelligence that we can understand, test and shape according to our needs.
 
-Areas of interest:
+🏗️ Building a research organization for safe physical AI  
+🧪 Cofounder, [AICOR Solutions](https://aicor.io): a safe physical intelligence platform for industrial and lab automation  
+🎓 Associate Member, [AICOR Institute for Artificial Intelligence](https://ai.uni-bremen.de/), University of Bremen
 
-* Robot self-learning
-* Unsupervised and meta-learning
-* Differentiable programming
-* Mechanistic interpretability
-* Safe embodied AI
+Questions I am working on:
 
-Lab: [https://ai.uni-bremen.de](https://ai.uni-bremen.de)
+* How can we specify and test for safe robot behavior in the real world?
+* How can we make learned robot policies and latent plans interpretable?
+* How can we build evaluation frameworks for intelligent robots that scale?
+* How can we monitor robot behavior in a way that is privacy-preserving and tamper-proof?

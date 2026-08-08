@@ -6,14 +6,14 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Benjamin
 middle_name: 
 last_name: Alt
-email: benjamin.alt@uni-bremen.de
+email: benjamin_alt@outlook.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Roboticist & AI Researcher
+  Roboticist working on safe physical AI. Cofounder of AICOR Solutions.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: robotics, ai, ai-safety, robot-programming, human-ai-interaction, human-robot-interaction, task-planning, motion-planning, robot-manipulation, llm, vla # add your own keywords or leave empty
+keywords: robotics, ai, ai-safety, physical-ai, safe-physical-ai, embodied-ai, interpretability, robot-evaluation, robot-programming, human-robot-interaction, task-planning, robot-manipulation, llm, vla # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -63,9 +63,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: https://benjaminalt.github.io/assets/img/portrait.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -112,8 +112,11 @@ x_username: # your X handle
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
+# The mailto target is percent-encoded so the address is not plain text in the page
+# source. Do not use HTML entities here: jekyll-minifier runs in production and
+# decodes them back to plaintext. Re-encode with `printf %s ADDR | jq -sRr @uri`.
 contact_note: >
-  You can best reach me by <a href="mailto:benjamin.alt@uni-bremen.com">email</a>.
+  You can best reach me by <a href="mailto:%62%65%6E%6A%61%6D%69%6E%5F%61%6C%74%40%6F%75%74%6C%6F%6F%6B%2E%63%6F%6D">email</a>.
 
 
 # -----------------------------------------------------------------------------

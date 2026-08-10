@@ -1669,7 +1669,7 @@
       {IJCAI}%
     }
     \keyw{Computer Science - Artificial Intelligence, Computer Science -
-  Robotics, my, 68T30, D.1, F.3, I.2}
+  Robotics, my, relevant, 68T30, D.1, F.3, I.2}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABKFKHAKDJRBM1}
     \field{labelnamesource}{author}
@@ -2128,8 +2128,8 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
-    \keyw{my, relevant, Runtime, Service robots, Adaptation models, Search
-  problems, Spirals, Stochastic processes, Training}
+    \keyw{my, Runtime, Service robots, Adaptation models, Search problems,
+  Spirals, Stochastic processes, Training}
     \strng{namehash}{AB+1}
     \strng{fullhash}{ABKDJRBM1}
     \field{labelnamesource}{author}

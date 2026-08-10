@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex resume"] 1786228790.33738 "resume.aux" "resume.bbl" "resume" 1786228793.66157 0
-  "../publications.bib" 1786228698.83213 49500 7502ae9f9e7de3a9cc38799340543ec6 ""
-  "./resume-blx.bib" 1786228793.25915 344 c2ab4e6e3d8f016964c303397e91538d ""
+["bibtex resume"] 1786393887.40446 "resume.aux" "resume.bbl" "resume" 1786393890.82389 0
+  "../publications.bib" 1786393795.83861 49500 60baaf5ed98e6a22e8c85e9d938c4ddf ""
+  "./resume-blx.bib" 1786393890.43109 344 c2ab4e6e3d8f016964c303397e91538d ""
   "/opt/texlive/texdir/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1752177141 65510 9a2a51799b543ff279b8ea2dd91ec499 ""
-  "resume.aux" 1786228793.25315 1212 d588559ca0579f8b2ca1a1fb227dbf8c "pdflatex"
+  "resume.aux" 1786393890.42509 1216 0eb37140cdefc17e2ebfb8f71c6bdb5d "pdflatex"
   (generated)
   "resume.bbl"
   "resume.blg"
   (rewritten before read)
-["pdflatex"] 1786228792.07046 "resume.tex" "resume.pdf" "resume" 1786228793.66186 0
-  "../template/altacv.cls" 1786228698.83294 10835 df0f2e5a1957f0a24577079a7332703a ""
+["pdflatex"] 1786393889.20127 "resume.tex" "resume.pdf" "resume" 1786393890.82416 0
+  "../template/altacv.cls" 1786393795.83896 10835 df0f2e5a1957f0a24577079a7332703a ""
   "/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1463430686 1687 f004baecce60175c6453d0e3f808cf20 ""
   "/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1463430686 2679 32dd8ae231bf4a0752b98f62dc097183 ""
@@ -218,15 +218,15 @@
   "/opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1782931182 5573030 e9a973387705481b4e2cb8bfeaf8fe6e ""
   "/opt/texlive/texdir/texmf-var/web2c/pdftex/pdflatex.fmt" 1782931320 3656467 a5ebb1661181d99d7ab3cd063291429c ""
   "/opt/texlive/texdir/texmf.cnf" 1782931175 555 bd60ff59e4d560b42d96b004436f91d3 ""
-  "resume.aux" 1786228793.25315 1212 d588559ca0579f8b2ca1a1fb227dbf8c "pdflatex"
-  "resume.bbl" 1786228790.45014 94388 85874f6f50a30b7347731e2139dea8d3 "bibtex resume"
-  "resume.out" 1786228792.94015 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "resume.run.xml" 1786228793.26015 2642 a119463ce1be09744c39d8d5dcdf460c "pdflatex"
-  "resume.tex" 1786228698.83145 4706 dc1bd932e0b87680eb722910d2a9896c ""
-  "sections/education.tex" 1786228698.83145 1517 73b0ea714f579b6a8e82f994c6df6653 ""
-  "sections/relevant_experience.tex" 1786228698.83159 3997 8f44261e4e91c52bc2063638070e6dfb ""
-  "sections/selected_publications.tex" 1786228698.83159 228 a93cd1632a4358d1e537e0fb55e9bea6 ""
-  "sections/skills.tex" 1786228698.83159 1006 e71d7702f825376a386edb7cd180aad0 ""
+  "resume.aux" 1786393890.42509 1216 0eb37140cdefc17e2ebfb8f71c6bdb5d "pdflatex"
+  "resume.bbl" 1786393887.51809 94388 aaf9ae8b582acaf4f53c57a410c930f9 "bibtex resume"
+  "resume.out" 1786393890.10409 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "resume.run.xml" 1786393890.43209 2642 a119463ce1be09744c39d8d5dcdf460c "pdflatex"
+  "resume.tex" 1786393795.83793 4706 dc1bd932e0b87680eb722910d2a9896c ""
+  "sections/education.tex" 1786393795.83793 1517 73b0ea714f579b6a8e82f994c6df6653 ""
+  "sections/relevant_experience.tex" 1786393795.83806 3766 a96b129fa51b9211d2ed1880dfc2c079 ""
+  "sections/selected_publications.tex" 1786393795.83806 228 a93cd1632a4358d1e537e0fb55e9bea6 ""
+  "sections/skills.tex" 1786393795.83806 984 42d2a7687863b999d8b41e98dccb9b35 ""
   (generated)
   "resume-blx.bib"
   "resume.aux"

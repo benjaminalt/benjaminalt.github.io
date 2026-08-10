@@ -1,0 +1,209 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Academic CV
+% Based on Compact Academic CV template
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article} % Default document font size
+\usepackage{comment}
+\usepackage{currfile}
+
+\usepackage[style=ieee,maxnames=20,backend=biber]{biblatex}
+\AtEveryBibitem{\clearfield{urldate}}
+\DeclareFieldFormat{labelnumber}{}
+\setlength{\biblabelsep}{0pt}
+\defbibenvironment{bibliography}
+  {\list{}{\setlength{\leftmargin}{0pt}}}
+  {\endlist}
+  {\item}
+
+\addbibresource{../publications.bib}
+\DeclareFieldFormat{urldate}{}
+\renewbibmacro*{url+urldate}{%
+  \printfield{url}}
+
+\input{\currfiledir structure.tex} % Include the file specifying the document structure and styling
+
+% Set PDF meta-information
+\hypersetup{
+	pdftitle={Benjamin Alt - Curriculum vitae},
+	pdfauthor={Benjamin Alt}
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	CONTACT AND GENERAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+{\LARGE\bfseries Benjamin Alt}
+
+\bigskip
+
+Curriculum Vitae
+
+\bigskip\medskip % Whitespace
+
+\begin{minipage}{.5\textwidth}
+Am Fallturm 1\\
+28359 Bremen, Germany\\
++49 421 218 64016\\
+\href{mailto:benjamin.alt@uni-bremen.de}{benjamin.alt@uni-bremen.de}
+\end{minipage}%
+
+\medskip % Whitespace
+
+Personal website: \href{https://ai.uni-bremen.de/team/benjamin_alt}{ai.uni-bremen.de/team/benjamin\_alt}
+
+\medskip % Whitespace
+
+Born: September 16, 1993---Karlsruhe, Germany\\
+Nationality: German
+
+%------------------------------------------------
+
+\section*{Current Position}
+
+\emph{Technical Director}, AICOR Institute for Artificial Intelligence, University of Bremen, Germany
+
+%------------------------------------------------
+
+\section*{Areas of Specialisation}
+
+Artificial Intelligence, Cognitive Robotics, AI Safety, Human-AI Interaction
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section*{Education}
+
+\years{2020-2025}\textsc{Ph.D.} Computer Science, University of Bremen\\
+Dissertation: \href{https://doi.org/10.26092/elib/3727}{\textit{Neurosymbolic Robot Programming}}\\
+Advisor: Prof. Michael Beetz; Committee: Prof. Aude Billard, Prof. Tanja Schultz, Prof. Nico Hochgeschwender
+
+\medskip
+
+\years{2017-2019}\textsc{M.Sc.} Computer Science (with distinction), Karlsruhe Institute of Technology
+
+\medskip
+
+\years{2015-2017}\textsc{B.Sc.} Computer Science, Karlsruhe Institute of Technology
+
+\medskip
+
+\years{2012-2015}\textsc{B.A.} Political Science (summa cum laude), Institut d'Études Politiques de Paris / Princeton University
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section*{Professional Experience}
+
+\years{2025-}Technical Director, AICOR Institute for Artificial Intelligence, University of Bremen
+
+\medskip
+
+\years{2025-}Co-Founder and Chief Scientific Officer, AICOR Solutions GmbH, Bremen
+
+\medskip
+
+\years{2019-2025}Senior Team Lead Research / Senior Research Scientist / Research Scientist, ArtiMinds Robotics, Karlsruhe
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section*{Selected Publications}
+
+\nocite{*}
+\setlength{\bibitemsep}{0pt}
+\setlength{\bibparsep}{0pt}
+\setlength{\bibhang}{0pt}
+
+\printbibliography[keyword=relevant,heading=none]
+
+\smallskip
+Full list: \href{https://ai.uni-bremen.de/team/benjamin_alt}{ai.uni-bremen.de/team/benjamin\_alt}
+
+%----------------------------------------------------------------------------------------
+%	GRANTS
+%----------------------------------------------------------------------------------------
+
+\section*{Selected Grants}
+
+\years{2026-2028}TWINSPACE: Digital Twin-based Automated Fiber Placement for Aerospace Components (MATENA), Co-PI
+
+\years{2025-2026}DigiRob: Digital Twins for Household Autonomous Robots (DAAD), PI
+
+\years{2024-2026}RESI-TSN: Resilient, Intelligent Time-Sensitive Networks (BMBF), Co-PI
+
+\years{2024-2026}AutoKOOP: Automated Workflow for Patient-Specific Carbon-Reinforced Orthopedic Products (BMBF), Co-PI
+
+\years{2023-2026}ConfidentAM: Continuous Fiber-Reinforced Low-Density Thermoplastic Additive Manufacturing (BMBF), Co-PI
+
+\years{2023-2025}VADER: Networked Digital Assistant for Data-Driven Engineering of Robot Workcells (BMWK), Co-PI
+
+\smallskip
+\textit{Additional: 10 BMBF/BMWK projects, 1 ZIM project, 1 InvestBW project as collaborator.}
+
+Full list: \href{https://ai.uni-bremen.de/team/benjamin_alt}{ai.uni-bremen.de/team/benjamin\_alt}
+
+%----------------------------------------------------------------------------------------
+%	INVITED TALKS
+%----------------------------------------------------------------------------------------
+
+\section*{Invited Talks (Selection)}
+
+\years{2025}``Hybrid AI for Safe Embodied Intelligence'', RBO Lab / Science of Intelligence, TU Berlin
+
+\years{2025}``Semantic Digital Twins for Robust Robot Behavior'' (Keynote), SemRob Workshop, RSS 2025, Los Angeles
+
+\years{2024}``Bridging the AI Application Gap with Ontologies'' (Keynote), WOSRA Workshop, ICRA 2024, Yokohama
+
+\years{2024}``What's in Your Head? Neurosymbolic AI for Intelligent Robots'' (Keynote), e-fellows IT Day, Stuttgart
+
+%----------------------------------------------------------------------------------------
+%	SERVICE
+%----------------------------------------------------------------------------------------
+
+\section*{Service to the Profession}
+
+\subsection*{Editorial Service}
+
+\years{2026}Associate Editor, IEEE/SICE International Symposium on System Integration (SII)
+
+\subsection*{Reviewing}
+
+Conferences: IEEE ICRA, IEEE/RSJ IROS, IEEE CASE, KR
+
+Journals: IEEE Robotics and Automation Letters (RA-L)
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section*{Awards \& Honors}
+
+\years{2018-2019}Merit scholarship of the German Acad. Scholarship Foundation (Studienstiftung des deutschen Volkes)\\
+% \years{2012-2019}e-fellows Merit Scholarship (Deutsche Telekom, Georg v. Holtzbrinck \& McKinsey)
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+
+\vfill
+
+\begin{center}
+	\scriptsize
+	Last updated: \today
+\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

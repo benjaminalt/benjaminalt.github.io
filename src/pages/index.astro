@@ -1,0 +1,136 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PostRow from '../components/PostRow.astro';
+import NewsRow from '../components/NewsRow.astro';
+import Publication from '../components/Publication.astro';
+import { allPosts, allNews } from '../lib/content';
+import type { Publication as Pub } from '../loaders/bibtex';
+
+const posts = (await allPosts()).slice(0, 5);
+const news = (await allNews()).slice(0, 5);
+
+const pubs = await getCollection('publications');
+const selected = pubs
+  .map((p) => p.data as unknown as Pub)
+  .filter((p) => p.selected)
+  .sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
+const totalPubs = pubs.length;
+---
+
+<Base bare>
+  <div class="container">
+    <section class="hero">
+      <p class="statement">
+        I want to live in a world in which robots help us live happier, healthier lives.
+      </p>
+      <p class="sub measure">
+        To get there, we need robot intelligence that we can understand, test and shape
+        according to our needs.
+      </p>
+
+      <ul class="roles">
+        <li>Building a research organisation for safe physical AI</li>
+        <li>
+          Cofounder, <a href="https://aicor.io">AICOR Solutions</a> — a safe physical
+          intelligence platform for industrial and lab automation
+        </li>
+        <li>
+          Associate Member, <a href="https://ai.uni-bremen.de/">AICOR Institute for
+          Artificial Intelligence</a>, University of Bremen
+        </li>
+      </ul>
+    </section>
+
+    <hr class="rule" />
+
+    <section class="block">
+      <div class="head">
+        <h2 class="label">Writing</h2>
+        <a class="all mono" href="/blog/">all posts →</a>
+      </div>
+      <div class="list">
+        {posts.map((post) => <PostRow post={post} showDescription />)}
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="head">
+        <h2 class="label">Recent</h2>
+        <a class="all mono" href="/news/">archive →</a>
+      </div>
+      <ul class="list plain">
+        {news.map((item) => <NewsRow item={item} />)}
+      </ul>
+    </section>
+
+    <section class="block">
+      <div class="head">
+        <h2 class="label">Selected work</h2>
+        <a class="all mono" href="/publications/">all {totalPubs} →</a>
+      </div>
+      <div class="list">
+        {selected.map((pub) => <Publication pub={pub} compact />)}
+      </div>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .hero { padding-block: clamp(1rem, 0.5rem + 2vw, 2.5rem) 2.5rem; }
+  .statement {
+    font-size: var(--step-5);
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    max-width: 22ch;
+    text-wrap: balance;
+  }
+  .sub {
+    margin-block-start: 1.1rem;
+    color: var(--muted);
+    font-size: var(--step-1);
+    line-height: 1.5;
+  }
+  .roles {
+    list-style: none;
+    padding: 0;
+    margin-block-start: 2rem;
+    max-width: var(--measure);
+  }
+  .roles li {
+    padding-block: 0.4rem;
+    padding-inline-start: 1.1rem;
+    position: relative;
+    color: var(--muted);
+  }
+  .roles li::before {
+    content: '';
+    position: absolute;
+    inset-inline-start: 0;
+    inset-block-start: 1.15em;
+    width: 0.5rem;
+    height: 1px;
+    background: var(--accent);
+  }
+  .roles a { color: var(--text); }
+
+  .block { margin-block-start: 3.25rem; }
+  .head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-block-end: 0.5rem;
+    border-block-end: 1px solid var(--text);
+  }
+  .all {
+    font-size: var(--step--1);
+    color: var(--muted);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .all:hover { color: var(--accent); }
+  .list { max-width: var(--measure); }
+  .plain { list-style: none; padding: 0; margin: 0; }
+</style>

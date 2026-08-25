@@ -1,0 +1,66 @@
+/* ---- Design tokens -------------------------------------------------------
+   Warm editorial palette. Every colour is defined on bare :root first, so a
+   value never exists only inside a media query.
+   Theme has three states: explicit light, explicit dark, and system default. */
+
+:root {
+  /* colour — light */
+  --bg: #fbfaf7;
+  --surface: #f3f0ea;
+  --text: #1a1817;
+  --muted: #6b655e;
+  --rule: #e2dcd2;
+  --accent: #b5502a;
+  --accent-soft: #b5502a1a;
+  --selection: #b5502a26;
+
+  /* type */
+  --font-serif: 'Source Serif 4 Variable', 'Source Serif 4', Charter, 'Bitstream Charter',
+    'Sitka Text', Cambria, Georgia, serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas,
+    'Liberation Mono', monospace;
+
+  /* fluid scale, ~1.25 ratio */
+  --step--1: clamp(0.83rem, 0.81rem + 0.09vw, 0.89rem);
+  --step-0: clamp(1.05rem, 1.01rem + 0.19vw, 1.19rem);
+  --step-1: clamp(1.26rem, 1.19rem + 0.34vw, 1.49rem);
+  --step-2: clamp(1.51rem, 1.39rem + 0.57vw, 1.86rem);
+  --step-3: clamp(1.81rem, 1.62rem + 0.9vw, 2.33rem);
+  --step-4: clamp(2.18rem, 1.89rem + 1.38vw, 2.91rem);
+  --step-5: clamp(2.61rem, 2.19rem + 2.03vw, 3.64rem);
+
+  /* measure & rhythm */
+  --measure: 68ch;
+  --container: 1100px;
+  --gutter: clamp(1.25rem, 0.9rem + 1.75vw, 2.5rem);
+  --flow: 1.1em;
+
+  --radius: 3px;
+  --transition: 120ms ease;
+}
+
+/* dark — system preference, unless the reader explicitly chose light */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #14120f;
+    --surface: #1e1b18;
+    --text: #ede9e3;
+    --muted: #9a938a;
+    --rule: #2e2a25;
+    --accent: #e07a52;
+    --accent-soft: #e07a5222;
+    --selection: #e07a5233;
+  }
+}
+
+/* dark — explicit choice, wins in both directions */
+:root[data-theme='dark'] {
+  --bg: #14120f;
+  --surface: #1e1b18;
+  --text: #ede9e3;
+  --muted: #9a938a;
+  --rule: #2e2a25;
+  --accent: #e07a52;
+  --accent-soft: #e07a5222;
+  --selection: #e07a5233;
+}

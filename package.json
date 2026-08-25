@@ -1,6 +1,44 @@
 {
+  "name": "benjaminalt-github-io",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "node scripts/check-lfs.mjs && astro build",
+    "preview": "astro preview",
+    "check": "astro check && node scripts/check-bib.mjs",
+    "parity": "node scripts/url-parity.mjs",
+    "format": "prettier --write \"src/**/*.{astro,ts,js,css,md,mdx}\""
+  },
+  "dependencies": {
+    "@astrojs/markdown-remark": "^7.2.4",
+    "@astrojs/mdx": "^7.0.8",
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.3",
+    "@fontsource-variable/source-serif-4": "^5.2.8",
+    "@fontsource/ibm-plex-mono": "^5.2.8",
+    "@retorquere/bibtex-parser": "^10.0.1",
+    "astro": "^7.2.6",
+    "astro-expressive-code": "^0.44.1",
+    "astro-pagefind": "^2.0.1",
+    "katex": "^0.16.22",
+    "leaflet": "^1.9.4",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0",
+    "sharp": "^0.34.4"
+  },
   "devDependencies": {
-    "@shopify/prettier-plugin-liquid": "1.4.0",
-    "prettier": "3.1.1"
+    "@astrojs/check": "^0.9.10",
+    "prettier": "^3.4.2",
+    "prettier-plugin-astro": "^0.14.1",
+    "typescript": "^5.7.3"
+  },
+  "allowScripts": {
+    "sharp@0.34.5": true,
+    "esbuild@0.28.2": true
   }
 }

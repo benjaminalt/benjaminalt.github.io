@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Page not found">
+  <h1>Page not found</h1>
+  <p class="sub">That URL doesn't exist. It may have moved when the site was rebuilt.</p>
+  <p class="links mono">
+    <a href="/">home</a> · <a href="/blog/">writing</a> · <a href="/publications/">publications</a>
+  </p>
+</Base>
+
+<style>
+  .sub { color: var(--muted); margin-block-start: 0.8rem; }
+  .links { margin-block-start: 1.5rem; font-size: var(--step--1); }
+</style>

@@ -1,0 +1,99 @@
+---
+/* GPX is parsed to GeoJSON at build time, so the page needs Leaflet but not
+   leaflet-gpx (which the old site loaded from unpkg, unpinned and without SRI). */
+import { readFile } from 'node:fs/promises';
+
+interface Props {
+  file: string;
+  topo?: boolean;
+  color?: string;
+  height?: string;
+}
+const { file, topo = false, color = '#b5502a', height = '460px' } = Astro.props;
+
+const xml = await readFile(`public/assets/gpx/${file}`, 'utf8');
+
+/* <trkpt lat=".." lon=".."> in document order is the track. */
+const points: [number, number][] = [];
+for (const m of xml.matchAll(/<trkpt[^>]*\blat="([-\d.]+)"[^>]*\blon="([-\d.]+)"/g)) {
+  points.push([Number(m[1]), Number(m[2])]);
+}
+
+/* Douglas–Peucker would be nicer; simple decimation is enough to keep the
+   payload small for a track of this size. */
+const step = Math.max(1, Math.ceil(points.length / 2000));
+const track = points.filter((_, i) => i % step === 0 || i === points.length - 1);
+
+const lats = track.map((p) => p[0]);
+const lons = track.map((p) => p[1]);
+const bounds = [
+  [Math.min(...lats), Math.min(...lons)],
+  [Math.max(...lats), Math.max(...lons)],
+];
+---
+
+<link rel="stylesheet" href="/leaflet/leaflet.css" />
+
+<figure class="map-wrap">
+  <div
+    class="map"
+    style={`height:${height}`}
+    data-track={JSON.stringify(track)}
+    data-bounds={JSON.stringify(bounds)}
+    data-color={color}
+    data-topo={topo ? 'true' : 'false'}
+  >
+  </div>
+  <figcaption>
+    {track.length.toLocaleString('en-GB')} track points ·
+    <a href={`/assets/gpx/${file}`} download>download GPX</a>
+  </figcaption>
+</figure>
+
+<style>
+  .map-wrap {
+    margin-block: 2rem;
+    max-width: min(100%, calc(var(--measure) + var(--figure-bleed, 0px)));
+  }
+  .map {
+    width: 100%;
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    background: var(--surface);
+    z-index: 0;
+  }
+  figcaption {
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
+    color: var(--muted);
+    margin-block-start: 0.65rem;
+  }
+  /* Leaflet ships its own img sizing; keep the global reset from breaking tiles */
+  .map :global(img) { max-width: none; }
+</style>
+
+<script>
+  import L from 'leaflet';
+
+  document.querySelectorAll<HTMLElement>('.map[data-track]').forEach((el) => {
+    const track = JSON.parse(el.dataset.track!) as [number, number][];
+    const bounds = JSON.parse(el.dataset.bounds!) as [[number, number], [number, number]];
+    const topo = el.dataset.topo === 'true';
+
+    const map = L.map(el, { scrollWheelZoom: false });
+    L.tileLayer(
+      topo
+        ? 'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png'
+        : 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+      {
+        maxZoom: 18,
+        attribution: topo
+          ? '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · CyclOSM'
+          : '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      }
+    ).addTo(map);
+
+    L.polyline(track, { color: el.dataset.color ?? '#b5502a', weight: 4, opacity: 0.9 }).addTo(map);
+    map.fitBounds(bounds, { padding: [18, 18] });
+  });
+</script>

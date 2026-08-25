@@ -1,0 +1,42 @@
+---
+import type { Post } from '../lib/content';
+import { postUrl, isoDate } from '../lib/content';
+import { DISPLAY_TAGS } from '../consts';
+
+interface Props { post: Post; showDescription?: boolean }
+const { post, showDescription = false } = Astro.props;
+
+const shown = post.data.tags.filter((t) => (DISPLAY_TAGS as readonly string[]).includes(t)).slice(0, 2);
+---
+
+<article class="row">
+  <a class="title" href={postUrl(post)}>{post.data.title}</a>
+  {showDescription && post.data.description && <p class="desc">{post.data.description}</p>}
+  <p class="meta mono">
+    <time datetime={isoDate(post.data.date)}>{isoDate(post.data.date)}</time>
+    {shown.map((t) => <><span class="sep">·</span><span class="tag">{t}</span></>)}
+  </p>
+</article>
+
+<style>
+  .row { padding-block: 1.05rem; border-block-end: 1px solid var(--rule); }
+  .title {
+    font-size: var(--step-1);
+    font-weight: 600;
+    line-height: 1.25;
+    text-decoration: none;
+    text-wrap: balance;
+    display: inline-block;
+  }
+  .title:hover { color: var(--accent); }
+  .desc { color: var(--muted); margin-block-start: 0.3rem; }
+  .meta {
+    font-size: var(--step--1);
+    color: var(--muted);
+    margin-block-start: 0.35rem;
+    display: flex;
+    gap: 0.5em;
+    flex-wrap: wrap;
+  }
+  .sep { opacity: 0.5; }
+</style>

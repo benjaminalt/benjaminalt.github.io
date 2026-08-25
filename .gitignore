@@ -12,3 +12,7 @@ node_modules/
 vendor
 .idea
 Claude.md
+dist/
+.astro/
+public/assets/pdf/cv.pdf
+public/assets/pdf/resume.pdf

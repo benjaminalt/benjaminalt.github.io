@@ -1,0 +1,24 @@
+---
+import Base from '../../layouts/Base.astro';
+import PostList from '../../components/PostList.astro';
+import Pagination from '../../components/Pagination.astro';
+import { allPosts } from '../../lib/content';
+import { SITE } from '../../consts';
+
+const posts = await allPosts();
+const total = Math.max(1, Math.ceil(posts.length / SITE.postsPerPage));
+---
+
+<Base title="Writing" description="Essays and notes on robotics, learning and safe physical AI.">
+  <header class="head">
+    <h1>Writing</h1>
+    <p class="sub">Essays and notes on robotics, learning and safe physical AI.</p>
+  </header>
+  <PostList posts={posts.slice(0, SITE.postsPerPage)} />
+  <Pagination page={1} total={total} />
+</Base>
+
+<style>
+  .head { margin-block-end: 2rem; }
+  .sub { color: var(--muted); margin-block-start: 0.6rem; font-size: var(--step-1); }
+</style>

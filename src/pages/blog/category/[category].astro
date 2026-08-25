@@ -1,0 +1,44 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Base from '../../../layouts/Base.astro';
+import PostList from '../../../components/PostList.astro';
+import { allPosts, slugifyTag, type Post } from '../../../lib/content';
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const posts = await allPosts();
+  const map = new Map<string, { label: string; posts: Post[] }>();
+  for (const post of posts) {
+    for (const cat of post.data.categories) {
+      const slug = slugifyTag(cat);
+      if (!map.has(slug)) map.set(slug, { label: cat, posts: [] });
+      map.get(slug)!.posts.push(post);
+    }
+  }
+  return [...map].map(([slug, entry]) => ({
+    params: { category: slug },
+    props: { label: entry.label, posts: entry.posts },
+  }));
+};
+
+interface Props { label: string; posts: Post[] }
+const { label, posts } = Astro.props;
+---
+
+<Base title={`In ${label}`}>
+  <header class="head">
+    <p class="label">Category</p>
+    <h1 class="mono">{label}</h1>
+    <p class="sub">{posts.length} post{posts.length === 1 ? '' : 's'}</p>
+  </header>
+  <PostList posts={posts} />
+  <p class="back mono"><a href="/blog/">← all writing</a></p>
+</Base>
+
+<style>
+  .head { margin-block-end: 2rem; }
+  h1 { font-size: var(--step-3); }
+  .sub { color: var(--muted); margin-block-start: 0.5rem; }
+  .back { margin-block-start: 2.5rem; font-size: var(--step--1); }
+  .back a { text-decoration: none; color: var(--muted); }
+  .back a:hover { color: var(--accent); }
+</style>

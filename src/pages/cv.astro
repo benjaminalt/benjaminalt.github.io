@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="CV" description="Curriculum vitae and résumé for Benjamin Alt.">
+  <header class="head">
+    <h1>CV</h1>
+    <p class="sub">
+      Roboticist working on safe physical AI. Cofounder of AICOR Solutions and associate
+      member of the AICOR Institute for Artificial Intelligence at the University of Bremen.
+    </p>
+  </header>
+
+  <div class="downloads">
+    <a class="card" href="/assets/pdf/cv.pdf">
+      <span class="kind mono">Academic CV</span>
+      <span class="desc">Full publication list, talks, teaching and service.</span>
+      <span class="get mono">PDF →</span>
+    </a>
+    <a class="card" href="/assets/pdf/resume.pdf">
+      <span class="kind mono">Résumé</span>
+      <span class="desc">Two pages, industry-facing.</span>
+      <span class="get mono">PDF →</span>
+    </a>
+  </div>
+
+  <p class="note">
+    Both documents are generated from LaTeX on every deploy, so they are always current.
+    See also <a href="/publications/">publications</a>.
+  </p>
+</Base>
+
+<style>
+  .head { margin-block-end: 2.25rem; }
+  .sub { color: var(--muted); margin-block-start: 0.8rem; font-size: var(--step-1); line-height: 1.5; }
+  .downloads { display: grid; gap: 1rem; max-width: var(--measure); }
+  .card {
+    display: grid;
+    gap: 0.35rem;
+    padding: 1.15rem 1.25rem;
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: border-color var(--transition);
+  }
+  .card:hover { border-color: var(--accent); }
+  .kind { font-size: var(--step--1); letter-spacing: 0.06em; text-transform: uppercase; }
+  .desc { color: var(--muted); }
+  .get { font-size: var(--step--1); color: var(--accent); }
+  .note { margin-block-start: 2rem; color: var(--muted); font-size: var(--step--1); }
+</style>

@@ -1,0 +1,85 @@
+/* ---- Prose --------------------------------------------------------------
+   Applied to rendered Markdown. Figures are allowed to break out wider than
+   the text column; everything else stays on the measure. */
+
+.prose {
+  --figure-bleed: min(calc(50vw - 50%), 14rem);
+}
+
+.prose > * {
+  max-width: var(--measure);
+  margin-inline: auto;
+}
+.prose > * + * { margin-block-start: var(--flow); }
+
+.prose h2,
+.prose h3,
+.prose h4 { margin-block-start: 2.1em; }
+.prose h2 + *,
+.prose h3 + *,
+.prose h4 + * { margin-block-start: 0.6em; }
+
+.prose h2 { font-size: var(--step-2); }
+.prose h3 { font-size: var(--step-1); }
+.prose h4 { font-size: var(--step-0); font-weight: 700; }
+
+.prose a { text-decoration-color: var(--accent); }
+
+.prose ul,
+.prose ol { padding-inline-start: 1.35em; }
+.prose li + li { margin-block-start: 0.35em; }
+.prose li::marker { color: var(--muted); }
+
+.prose blockquote {
+  padding-inline-start: 1.1rem;
+  border-inline-start: 2px solid var(--accent);
+  color: var(--muted);
+  font-style: italic;
+}
+
+.prose hr {
+  border: 0;
+  border-block-start: 1px solid var(--rule);
+  margin-block: 2.5em;
+}
+
+.prose code:not(pre code) {
+  font-size: 0.88em;
+  background: var(--surface);
+  padding: 0.15em 0.35em;
+  border-radius: var(--radius);
+  border: 1px solid var(--rule);
+}
+
+/* Code blocks and tables scroll inside themselves, never the page. */
+.prose .expressive-code,
+.prose pre {
+  max-width: min(100%, calc(var(--measure) + var(--figure-bleed)));
+  overflow-x: auto;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--step--1);
+}
+.prose .table-wrap { overflow-x: auto; max-width: 100%; }
+.prose th,
+.prose td {
+  text-align: start;
+  padding: 0.5em 0.7em;
+  border-block-end: 1px solid var(--rule);
+}
+.prose th { font-family: var(--font-mono); font-weight: 500; font-size: var(--step--1); }
+
+/* Footnotes */
+.prose .footnotes {
+  font-size: var(--step--1);
+  color: var(--muted);
+  margin-block-start: 3rem;
+  padding-block-start: 1rem;
+  border-block-start: 1px solid var(--rule);
+}
+
+/* KaTeX: display math may scroll, inline math never breaks the line box */
+.prose .katex-display { overflow-x: auto; overflow-y: hidden; padding-block: 0.4em; }

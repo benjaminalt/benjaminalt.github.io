@@ -1,0 +1,55 @@
+---
+import ThemeToggle from './ThemeToggle.astro';
+import { NAV, SITE } from '../consts';
+
+const path = Astro.url.pathname;
+const isCurrent = (href: string) => (href === '/' ? path === '/' : path.startsWith(href));
+---
+
+<header data-pagefind-ignore>
+  <div class="container bar">
+    <a class="wordmark mono" href="/">{SITE.title}</a>
+    <nav aria-label="Primary">
+      {
+        NAV.map((item) => (
+          <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
+            {item.label}
+          </a>
+        ))
+      }
+      <ThemeToggle />
+    </nav>
+  </div>
+</header>
+
+<style>
+  header { border-block-end: 1px solid var(--rule); }
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 3.75rem;
+    flex-wrap: wrap;
+  }
+  .wordmark {
+    font-size: var(--step--1);
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .wordmark:hover { color: var(--accent); }
+  nav {
+    display: flex;
+    align-items: center;
+    gap: clamp(0.85rem, 0.5rem + 1.2vw, 1.6rem);
+  }
+  nav a {
+    font-size: var(--step--1);
+    text-decoration: none;
+    color: var(--muted);
+  }
+  nav a:hover { color: var(--accent); }
+  nav a[aria-current='page'] { color: var(--text); }
+</style>

@@ -1,0 +1,60 @@
+---
+import { SOCIAL, SITE } from '../consts';
+const year = new Date().getFullYear();
+const [user, domain] = SOCIAL.email;
+---
+
+<footer data-pagefind-ignore>
+  <div class="container inner">
+    <div class="links">
+      <a href={SOCIAL.github} rel="me noopener">GitHub</a>
+      <a href={SOCIAL.linkedin} rel="me noopener">LinkedIn</a>
+      <a href={SOCIAL.scholar} rel="me noopener">Scholar</a>
+      <a href={SOCIAL.orcid} rel="me noopener">ORCID</a>
+      <a href="/feed.xml">RSS</a>
+      <a class="mail" href="#" data-user={user} data-domain={domain}>Email</a>
+    </div>
+    <p class="mono meta">© {year} {SITE.title}</p>
+  </div>
+</footer>
+
+<style>
+  footer {
+    border-block-start: 1px solid var(--rule);
+    padding-block: 2rem 2.5rem;
+    margin-block-start: 4rem;
+  }
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .links {
+    display: flex;
+    gap: clamp(0.8rem, 0.5rem + 1vw, 1.4rem);
+    flex-wrap: wrap;
+  }
+  .links a {
+    font-size: var(--step--1);
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .links a:hover { color: var(--accent); }
+  .meta {
+    font-size: var(--step--1);
+    color: var(--muted);
+    margin: 0;
+  }
+</style>
+
+<script>
+  /* Assembled at runtime so the address is not sitting in the HTML source. */
+  const link = document.querySelector<HTMLAnchorElement>('a.mail');
+  if (link?.dataset.user && link.dataset.domain) {
+    link.href = `mailto:${link.dataset.user}@${link.dataset.domain}`;
+    link.removeAttribute('data-user');
+    link.removeAttribute('data-domain');
+  }
+</script>

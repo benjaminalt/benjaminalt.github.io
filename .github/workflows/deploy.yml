@@ -2,123 +2,98 @@ name: Deploy site
 
 on:
   push:
-    branches:
-      - master
-      - main
-    paths:
-      - "assets/**"
-      - "**.bib"
-      - "**.html"
-      - "**.js"
-      - "**.liquid"
-      - "**/*.md"
-      - "**.yml"
-      - "Gemfile"
-      - "Gemfile.lock"
-      - "!.github/workflows/axe.yml"
-      - "!.github/workflows/broken-links.yml"
-      - "!.github/workflows/deploy-docker-tag.yml"
-      - "!.github/workflows/deploy-image.yml"
-      - "!.github/workflows/docker-slim.yml"
-      - "!.github/workflows/lighthouse-badger.yml"
-      - "!.github/workflows/prettier.yml"
-      - "!CONTRIBUTING.md"
-      - "!CUSTOMIZE.md"
-      - "!FAQ.md"
-      - "!INSTALL.md"
-      - "!README.md"
+    branches: [master, main]
   pull_request:
-    branches:
-      - master
-      - main
-    paths:
-      - "assets/**"
-      - "**.bib"
-      - "**.html"
-      - "**.js"
-      - "**.liquid"
-      - "**/*.md"
-      - "**.yml"
-      - "Gemfile"
-      - "Gemfile.lock"
-      - "!.github/workflows/axe.yml"
-      - "!.github/workflows/broken-links.yml"
-      - "!.github/workflows/deploy-docker-tag.yml"
-      - "!.github/workflows/deploy-image.yml"
-      - "!.github/workflows/docker-slim.yml"
-      - "!.github/workflows/lighthouse-badger.yml"
-      - "!.github/workflows/prettier.yml"
-      - "!CONTRIBUTING.md"
-      - "!CUSTOMIZE.md"
-      - "!FAQ.md"
-      - "!INSTALL.md"
-      - "!README.md"
+    branches: [master, main]
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
-  deploy:
-    # available images: https://github.com/actions/runner-images#available-images
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout (submodules, LFS pulled separately so it can be cached)
         uses: actions/checkout@v4
         with:
-          lfs: true
           submodules: recursive
           token: ${{ secrets.PAT_TOKEN_WITH_LFS }}
-      
+          lfs: false
+
+      # The paper PDFs are ~145 MB. GitHub's free LFS tier is 1 GB/month, so
+      # pulling them uncached on every run would exhaust it in about seven builds.
+      - name: Compute LFS cache key
+        run: git lfs ls-files -l | cut -d' ' -f1 | sort > .lfs-assets-id
+
+      - name: Restore LFS cache
+        uses: actions/cache@v4
+        with:
+          path: .git/lfs
+          key: lfs-${{ hashFiles('.lfs-assets-id') }}
+
+      - name: Pull LFS objects
+        run: git lfs pull
+
       - name: Compile academic CV
         uses: xu-cheng/latex-action@v3
         with:
           working_directory: submodules/cv/academic_cv
           root_file: cv.tex
-      
-      - name: Copy academic CV into assets
-        run: |
-          cp submodules/cv/academic_cv/cv.pdf assets/pdf
 
       - name: Compile resume
         uses: xu-cheng/latex-action@v3
         with:
           working_directory: submodules/cv/english
           root_file: resume.tex
-        
-      - name: Copy resume into assets
-        run: |
-          cp submodules/cv/english/resume.pdf assets/pdf
 
-      # - name: Upload PDF file
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: PDF
-      #     path: main.pdf
-        
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: "3.2.2"
-          bundler-cache: true
-      - name: Update _config.yml ⚙️
-        uses: fjogeleit/yaml-update-action@main
-        with:
-          commitChange: false
-          valueFile: "_config.yml"
-          propertyPath: "giscus.repo"
-          value: ${{ github.repository }}
-      - name: Install and Build 🔧
+      - name: Stage generated PDFs
         run: |
-          pip3 install --upgrade jupyter
-          export JEKYLL_ENV=production
-          bundle exec jekyll build
-      - name: Purge unused CSS 🧹
+          mkdir -p public/assets/pdf
+          cp submodules/cv/academic_cv/cv.pdf public/assets/pdf/cv.pdf
+          cp submodules/cv/english/resume.pdf public/assets/pdf/resume.pdf
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Verify
+        env:
+          CI: 'true'
         run: |
-          npm install -g purgecss
-          purgecss -c purgecss.config.js
-      - name: Deploy 🚀
+          node scripts/check-bib.mjs
+          node scripts/check-links.mjs
+          node scripts/check-assets.mjs
+          node scripts/url-parity.mjs
+
+      - name: Upload Pages artifact
         if: github.event_name != 'pull_request'
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: actions/upload-pages-artifact@v3
         with:
-          folder: _site
+          path: dist
+
+  deploy:
+    needs: build
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

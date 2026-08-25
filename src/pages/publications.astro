@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Publication from '../components/Publication.astro';
+import type { Publication as Pub } from '../loaders/bibtex';
+
+const entries = await getCollection('publications');
+const pubs = entries.map((e) => e.data as unknown as Pub).sort((a, b) => a.order - b.order);
+
+const years = [...new Set(pubs.map((p) => p.year ?? 0))].sort((a, b) => b - a);
+const byYear = years.map((y) => ({ year: y, items: pubs.filter((p) => (p.year ?? 0) === y) }));
+---
+
+<Base title="Publications" description="Peer-reviewed papers, patents and preprints.">
+  <header class="head">
+    <h1>Publications</h1>
+    <p class="sub">
+      PhD dissertation: <a href="https://doi.org/10.26092/elib/3727">Neurosymbolic Robot
+      Programming: A Framework for AI-Enabled Programming of Robot Manipulation Tasks</a>
+    </p>
+  </header>
+
+  {
+    byYear.map(({ year, items }) => (
+      <section class="year">
+        <h2 class="label">{year || 'Undated'}</h2>
+        <div class="items">{items.map((pub) => <Publication pub={pub} />)}</div>
+      </section>
+    ))
+  }
+</Base>
+
+<style>
+  .head { margin-block-end: 2.5rem; }
+  .sub { color: var(--muted); margin-block-start: 0.8rem; line-height: 1.55; }
+  .year { margin-block-start: 2.75rem; }
+  .year h2 {
+    padding-block-end: 0.4rem;
+    border-block-end: 1px solid var(--text);
+  }
+  .items { max-width: var(--measure); }
+</style>

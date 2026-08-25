@@ -1,0 +1,86 @@
+---
+import Base from './Base.astro';
+import '../styles/prose.css';
+import { isoDate, slugifyTag } from '../lib/content';
+import type { Post } from '../lib/content';
+import Toc from '../components/Toc.astro';
+import type { MarkdownHeading } from 'astro';
+
+interface Props { post: Post; kind?: 'post' | 'news'; headings?: MarkdownHeading[] }
+const { post, kind = 'post', headings = [] } = Astro.props;
+const { title, date, description } = post.data as any;
+const tags: string[] = (post.data as any).tags ?? [];
+const math: boolean = (post.data as any).math ?? false;
+---
+
+<Base title={title} description={description} bare ogType="article" publishedTime={date}>
+  {math && <link rel="stylesheet" href="/katex/katex.min.css" slot="head" />}
+  <article class="container">
+    <header class="head">
+      <p class="kicker mono">
+        <a href={kind === 'news' ? '/news/' : '/blog/'}>{kind === 'news' ? 'News' : 'Writing'}</a>
+        <span aria-hidden="true">/</span>
+        <time datetime={isoDate(date)}>{isoDate(date)}</time>
+      </p>
+      <h1>{title}</h1>
+      {description && <p class="standfirst">{description}</p>}
+      {
+        tags.length > 0 && (
+          <p class="tags mono">
+            {tags.map((t) => (
+              <a href={`/blog/tag/${slugifyTag(t)}/`}>{t}</a>
+            ))}
+          </p>
+        )
+      }
+    </header>
+
+    {(post.data as any).toc && <Toc headings={headings} />}
+
+    <div class="prose">
+      <slot />
+    </div>
+  </article>
+</Base>
+
+<style>
+  .head {
+    max-width: var(--measure);
+    margin-inline: auto;
+    padding-block-end: 1.75rem;
+    margin-block-end: 2rem;
+    border-block-end: 1px solid var(--rule);
+  }
+  .kicker {
+    font-size: var(--step--1);
+    color: var(--muted);
+    display: flex;
+    gap: 0.6em;
+    margin-block-end: 1rem;
+  }
+  .kicker a { text-decoration: none; }
+  .kicker a:hover { color: var(--accent); }
+  h1 { font-size: var(--step-4); }
+  .standfirst {
+    font-size: var(--step-1);
+    color: var(--muted);
+    line-height: 1.5;
+    margin-block-start: 0.9rem;
+    text-wrap: pretty;
+  }
+  .tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-block-start: 1.15rem;
+  }
+  .tags a {
+    font-size: var(--step--1);
+    color: var(--muted);
+    text-decoration: none;
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    padding: 0.2em 0.55em;
+  }
+  .tags a:hover { color: var(--accent); border-color: var(--accent); }
+</style>

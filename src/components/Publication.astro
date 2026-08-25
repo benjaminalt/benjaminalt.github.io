@@ -1,0 +1,160 @@
+---
+import type { Publication } from '../loaders/bibtex';
+import { SITE } from '../consts';
+
+interface Props { pub: Publication; compact?: boolean }
+const { pub, compact = false } = Astro.props;
+
+const LIMIT = 3;
+const shown = pub.authors.slice(0, LIMIT);
+const hidden = pub.authors.slice(LIMIT);
+
+const venueLead = pub.venue.kind === 'proceedings' ? 'In ' : '';
+
+/** Rendered as a single string: JSX inserts whitespace between sibling
+ *  expressions, which puts a space before every comma. */
+const name = (a: (typeof pub.authors)[number]) => `${a.given} ${a.familyClean}`.trim();
+const dateBits = [pub.month, pub.year].filter(Boolean).join(' ');
+
+const links: { label: string; href: string }[] = [];
+if (pub.doi) links.push({ label: 'DOI', href: `https://doi.org/${pub.doi}` });
+if (pub.arxiv) links.push({ label: 'arXiv', href: `https://arxiv.org/abs/${pub.arxiv}` });
+if (pub.html) links.push({ label: 'HTML', href: pub.html.includes('://') ? pub.html : `/assets/html/${pub.html}` });
+if (pub.pdf) links.push({ label: 'PDF', href: pub.pdf.includes('://') ? pub.pdf : `/assets/pdf/${pub.pdf}` });
+---
+
+<article class:list={['pub', { compact }]}>
+  <h3 class:list={['title', { recommended: pub.recommended }]}>{pub.title}</h3>
+
+  <p class="authors">
+    {
+      shown.map((a, i) => (
+        <Fragment>
+          {i > 0 ? ', ' : ''}
+          {i === shown.length - 1 && hidden.length === 0 && shown.length > 1 ? 'and ' : ''}
+          {a.isOwner ? (
+            <em class="self">{name(a)}{a.marker ? <sup>{a.marker}</sup> : ''}</em>
+          ) : (
+            <Fragment>{name(a)}{a.marker ? <sup>{a.marker}</sup> : ''}</Fragment>
+          )}
+        </Fragment>
+      ))
+    }{
+      hidden.length > 0 && (
+        <Fragment>
+          {', and '}
+          <button class="more mono" type="button" aria-expanded="false">
+            {hidden.length} more author{hidden.length > 1 ? 's' : ''}
+          </button>
+          <span class="rest" hidden>{hidden.map(name).join(', ')}</span>
+        </Fragment>
+      )
+    }
+  </p>
+
+  {
+    (pub.venue.name || dateBits) && (
+      <p class="venue mono">
+        {pub.venue.name ? <em>{venueLead}{pub.venue.name}</em> : ''}{pub.venue.name && dateBits ? ', ' : ''}{dateBits}
+      </p>
+    )
+  }
+
+  {
+    (links.length > 0 || pub.abstract) && (
+      <p class="links">
+        {pub.abstract && (
+          <button class="chip mono" type="button" aria-expanded="false" data-abstract>Abstract</button>
+        )}
+        {links.map((l) => (
+          <a class="chip mono" href={l.href}>{l.label}</a>
+        ))}
+      </p>
+    )
+  }
+
+  {pub.abstract && <p class="abstract" hidden>{pub.abstract}</p>}
+</article>
+
+<style>
+  .pub { padding-block: 1.15rem; border-block-end: 1px solid var(--rule); }
+  .title {
+    font-size: var(--step-0);
+    font-weight: 600;
+    line-height: 1.35;
+    text-wrap: pretty;
+  }
+  .title.recommended { font-weight: 700; }
+  .authors, .venue {
+    font-size: var(--step--1);
+    color: var(--muted);
+    margin-block-start: 0.3rem;
+    line-height: 1.5;
+  }
+  .self { color: var(--text); font-style: italic; }
+  .venue em { font-style: italic; }
+  .more {
+    background: none;
+    border: 0;
+    border-block-end: 1px dotted currentColor;
+    padding: 0;
+    color: inherit;
+    font: inherit;
+    font-size: inherit;
+    cursor: pointer;
+  }
+  .more:hover { color: var(--accent); }
+  .links {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    margin-block-start: 0.55rem;
+  }
+  .chip {
+    font-size: var(--step--1);
+    line-height: 1;
+    padding: 0.32em 0.6em;
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    color: var(--muted);
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+  }
+  .chip:hover { color: var(--accent); border-color: var(--accent); }
+  .abstract {
+    font-size: var(--step--1);
+    color: var(--muted);
+    margin-block-start: 0.7rem;
+    padding-inline-start: 0.9rem;
+    border-inline-start: 2px solid var(--rule);
+    text-wrap: pretty;
+  }
+  .compact .venue { margin-block-start: 0.2rem; }
+</style>
+
+<script>
+  /* Author overflow + abstract toggles. Replaces al-folio's jQuery onclick
+     string and its setInterval typewriter. */
+  document.querySelectorAll<HTMLButtonElement>('button.more').forEach((btn) => {
+    const rest = btn.parentElement?.querySelector<HTMLElement>('.rest');
+    if (!rest) return;
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      rest.hidden = open;
+      btn.hidden = !open;
+    });
+  });
+
+  document.querySelectorAll<HTMLButtonElement>('button[data-abstract]').forEach((btn) => {
+    const pub = btn.closest('.pub');
+    const abs = pub?.querySelector<HTMLElement>('.abstract');
+    if (!abs) return;
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      abs.hidden = open;
+    });
+  });
+</script>

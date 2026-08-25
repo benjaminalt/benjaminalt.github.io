@@ -1,0 +1,39 @@
+---
+import type { NewsItem } from '../lib/content';
+import { newsUrl, shortDate } from '../lib/content';
+
+interface Props { item: NewsItem }
+const { item } = Astro.props;
+---
+
+<li class="item">
+  <time class="mono when" datetime={item.data.date.toISOString().slice(0, 10)}>
+    {shortDate(item.data.date)}
+  </time>
+  <a href={newsUrl(item)}>{item.data.title}</a>
+</li>
+
+<style>
+  .item {
+    display: grid;
+    grid-template-columns: 5.5rem 1fr;
+    gap: 0.25rem 1rem;
+    padding-block: 0.7rem;
+    border-block-end: 1px solid var(--rule);
+    align-items: baseline;
+  }
+  .when {
+    font-size: var(--step--1);
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .item a {
+    text-decoration: none;
+    line-height: 1.4;
+    text-wrap: pretty;
+  }
+  .item a:hover { color: var(--accent); }
+  @media (max-width: 34rem) {
+    .item { grid-template-columns: 1fr; }
+  }
+</style>

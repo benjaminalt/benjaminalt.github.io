@@ -1,0 +1,74 @@
+---
+/* Three-state theme control: system → light → dark → system. */
+---
+
+<button class="theme" type="button" aria-label="Switch colour theme" title="Switch colour theme">
+  <span class="dot" aria-hidden="true"></span>
+  <span class="name mono">auto</span>
+</button>
+
+<style>
+  .theme {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45em;
+    background: none;
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    padding: 0.25em 0.5em;
+    color: var(--muted);
+    cursor: pointer;
+    font: inherit;
+  }
+  .theme:hover { color: var(--accent); border-color: var(--rule); }
+  .theme:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .dot {
+    width: 0.62em;
+    height: 0.62em;
+    border-radius: 50%;
+    border: 1px solid currentColor;
+    background: linear-gradient(to right, currentColor 0 50%, transparent 50% 100%);
+  }
+  .name {
+    font-size: var(--step--1);
+    letter-spacing: 0.04em;
+  }
+  :global(:root[data-theme='light']) .dot { background: transparent; }
+  :global(:root[data-theme='dark']) .dot { background: currentColor; }
+</style>
+
+<script>
+  const STATES = ['auto', 'light', 'dark'] as const;
+  type State = (typeof STATES)[number];
+
+  const btn = document.querySelector<HTMLButtonElement>('.theme');
+  const label = btn?.querySelector<HTMLElement>('.name');
+
+  function read(): State {
+    try {
+      const v = localStorage.getItem('theme');
+      return v === 'light' || v === 'dark' ? v : 'auto';
+    } catch {
+      return 'auto';
+    }
+  }
+
+  function apply(state: State) {
+    if (state === 'auto') document.documentElement.removeAttribute('data-theme');
+    else document.documentElement.setAttribute('data-theme', state);
+    if (label) label.textContent = state;
+    try {
+      if (state === 'auto') localStorage.removeItem('theme');
+      else localStorage.setItem('theme', state);
+    } catch {
+      /* storage blocked — the in-page choice still works for this session */
+    }
+  }
+
+  apply(read());
+
+  btn?.addEventListener('click', () => {
+    const next = STATES[(STATES.indexOf(read()) + 1) % STATES.length];
+    apply(next);
+  });
+</script>

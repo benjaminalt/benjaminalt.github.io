@@ -1,0 +1,58 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  src: ImageMetadata;
+  alt?: string;
+  caption?: string;
+  /** `bleed` breaks out wider than the text column; `narrow` pulls in. */
+  width?: 'measure' | 'bleed' | 'narrow';
+  loading?: 'eager' | 'lazy';
+}
+
+const { src, alt = '', caption, width = 'bleed', loading = 'lazy' } = Astro.props;
+---
+
+<figure class:list={['fig', width]}>
+  <Image
+    src={src}
+    alt={alt}
+    widths={[480, 800, 1400]}
+    sizes="(max-width: 44rem) 100vw, 800px"
+    loading={loading}
+    decoding="async"
+  />
+  {
+    caption ? (
+      <figcaption>{caption}</figcaption>
+    ) : (
+      Astro.slots.has('default') && (
+        <figcaption>
+          <slot />
+        </figcaption>
+      )
+    )
+  }
+</figure>
+
+<style>
+  .fig { margin-block: 2rem; }
+  .fig :global(img) {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+  .measure { max-width: var(--measure); }
+  .narrow { max-width: min(100%, 34rem); }
+  .bleed { max-width: min(100%, calc(var(--measure) + var(--figure-bleed, 0px))); }
+  figcaption {
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
+    line-height: 1.5;
+    color: var(--muted);
+    margin-block-start: 0.65rem;
+    text-wrap: pretty;
+  }
+</style>

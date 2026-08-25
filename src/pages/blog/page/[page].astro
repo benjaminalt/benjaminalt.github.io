@@ -1,0 +1,39 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Base from '../../../layouts/Base.astro';
+import PostList from '../../../components/PostList.astro';
+import Pagination from '../../../components/Pagination.astro';
+import { allPosts, type Post } from '../../../lib/content';
+import { SITE } from '../../../consts';
+
+/* Page 1 lives at /blog/, matching the old site, so this route starts at 2.
+   Astro's paginate() would put page 1 at the route root and break that. */
+export const getStaticPaths: GetStaticPaths = async () => {
+  const posts = await allPosts();
+  const total = Math.ceil(posts.length / SITE.postsPerPage);
+  return Array.from({ length: Math.max(0, total - 1) }, (_, i) => {
+    const page = i + 2;
+    return {
+      params: { page: String(page) },
+      props: {
+        posts: posts.slice((page - 1) * SITE.postsPerPage, page * SITE.postsPerPage),
+        page,
+        total,
+      },
+    };
+  });
+};
+
+interface Props { posts: Post[]; page: number; total: number }
+const { posts, page, total } = Astro.props;
+---
+
+<Base title={`Writing · page ${page}`}>
+  <header class="head"><h1>Writing</h1></header>
+  <PostList posts={posts} />
+  <Pagination page={page} total={total} />
+</Base>
+
+<style>
+  .head { margin-block-end: 2rem; }
+</style>

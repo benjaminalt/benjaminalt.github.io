@@ -1,0 +1,36 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Base from '../../../layouts/Base.astro';
+import PostList from '../../../components/PostList.astro';
+import { allPosts, postYear, type Post } from '../../../lib/content';
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const posts = await allPosts();
+  const years = [...new Set(posts.map(postYear))];
+  return years.map((year) => ({
+    params: { year: String(year) },
+    props: { posts: posts.filter((p) => postYear(p) === year), year },
+  }));
+};
+
+interface Props { posts: Post[]; year: number }
+const { posts, year } = Astro.props;
+---
+
+<Base title={`Writing · ${year}`}>
+  <header class="head">
+    <p class="label">Archive</p>
+    <h1>{year}</h1>
+    <p class="sub">{posts.length} post{posts.length === 1 ? '' : 's'}</p>
+  </header>
+  <PostList posts={posts} />
+  <p class="back mono"><a href="/blog/">← all writing</a></p>
+</Base>
+
+<style>
+  .head { margin-block-end: 2rem; }
+  .sub { color: var(--muted); margin-block-start: 0.5rem; }
+  .back { margin-block-start: 2.5rem; font-size: var(--step--1); }
+  .back a { text-decoration: none; color: var(--muted); }
+  .back a:hover { color: var(--accent); }
+</style>

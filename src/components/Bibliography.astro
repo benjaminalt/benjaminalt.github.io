@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import Publication from './Publication.astro';
+import type { Publication as Pub } from '../loaders/bibtex';
+
+interface Props { collection: 'publications' | 'readingList' }
+const { collection } = Astro.props;
+
+const entries = await getCollection(collection);
+const pubs = entries.map((e) => e.data as unknown as Pub).sort((a, b) => a.order - b.order);
+const years = [...new Set(pubs.map((p) => p.year ?? 0))].sort((a, b) => b - a);
+---
+
+<div class="bibliography">
+  {
+    years.map((year) => (
+      <section>
+        <h3 class="label">{year || 'Undated'}</h3>
+        {pubs.filter((p) => (p.year ?? 0) === year).map((pub) => <Publication pub={pub} compact />)}
+      </section>
+    ))
+  }
+</div>
+
+<style>
+  .bibliography { margin-block: 2rem; }
+  .bibliography section + section { margin-block-start: 1.75rem; }
+  .bibliography h3 {
+    padding-block-end: 0.35rem;
+    border-block-end: 1px solid var(--rule);
+    margin-block-end: 0.25rem;
+  }
+</style>

@@ -1,5 +1,5 @@
 export const SITE = {
-  url: 'https://benjaminalt.github.io',
+  url: 'https://benjaminalt.ai',
   title: 'Benjamin Alt',
   tagline: 'Roboticist · Safe Physical AI',
   description: 'Roboticist working on safe physical AI. Cofounder of AICOR Solutions.',

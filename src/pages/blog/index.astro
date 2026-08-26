@@ -9,10 +9,9 @@ const posts = await allPosts();
 const total = Math.max(1, Math.ceil(posts.length / SITE.postsPerPage));
 ---
 
-<Base title="Writing" description="Essays and notes on robotics, learning and safe physical AI.">
+<Base title="Writing" description="Essays and notes on life and robots.">
   <header class="head">
     <h1>Writing</h1>
-    <p class="sub">Essays and notes on robotics, learning and safe physical AI.</p>
   </header>
   <PostList posts={posts.slice(0, SITE.postsPerPage)} />
   <Pagination page={1} total={total} />

@@ -30,7 +30,11 @@
   --step-5: clamp(2.61rem, 2.19rem + 2.03vw, 3.64rem);
 
   /* measure & rhythm */
-  --measure: 68ch;
+  /* A fixed length, deliberately not `ch`: ch resolves against each element's
+     OWN font-size, so a 68ch cap made an h2 (--step-2) ~1.7x wider than body
+     text and pushed headings out into the left margin. One column width, held
+     by every element regardless of its type size. */
+  --measure: 46rem;
   --container: 1100px;
   --gutter: clamp(1.25rem, 0.9rem + 1.75vw, 2.5rem);
   --flow: 1.1em;

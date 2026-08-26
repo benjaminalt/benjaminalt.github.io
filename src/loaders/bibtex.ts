@@ -32,7 +32,7 @@ export interface Publication {
   authors: Author[];
   year: number | null;
   month: string | null;
-  venue: { kind: 'journal' | 'proceedings' | 'thesis' | 'other'; name: string | null };
+  venue: { kind: 'journal' | 'proceedings' | 'thesis' | 'preprint' | 'patent' | 'other'; name: string | null };
   address: string | null;
   doi: string | null;
   pdf: string | null;
@@ -86,6 +86,10 @@ export function bibtexLoader({ file, owner }: Options): Loader {
             ? monthNum - 1
             : MONTHS.findIndex((m) => m.toLowerCase() === monthRaw.slice(0, 3));
 
+          /* Every entry gets a venue line: a bare title with no context reads as
+             an oversight. Zotero exports unpublished work as @misc with an
+             `eprint`, so name the preprint server rather than leaving it blank. */
+          const preprintServer = nfc(f.archiveprefix) || nfc(f.publisher);
           const venue: Publication['venue'] =
             type === 'article'
               ? { kind: 'journal', name: nfc(f.journal) || null }
@@ -93,7 +97,11 @@ export function bibtexLoader({ file, owner }: Options): Loader {
                 ? { kind: 'proceedings', name: nfc(f.booktitle) || null }
                 : THESIS.has(type)
                   ? { kind: 'thesis', name: nfc(f.school) || null }
-                  : { kind: 'other', name: null };
+                  : type === 'patent'
+                    ? { kind: 'patent', name: `Patent ${nfc(f.number)}`.trim() }
+                    : nfc(f.eprint)
+                      ? { kind: 'preprint', name: `${preprintServer || 'Preprint'} preprint`.trim() }
+                      : { kind: 'other', name: nfc(f.publisher) || nfc(f.howpublished) || null };
 
           const data: Publication = {
             key: entry.key,

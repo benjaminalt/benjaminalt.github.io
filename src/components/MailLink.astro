@@ -1,0 +1,29 @@
+---
+import { SOCIAL } from '../consts';
+
+interface Props {
+  /** Defaults to the site owner's address. */
+  address?: string;
+  class?: string;
+}
+const { address = SOCIAL.email.join('@'), class: className } = Astro.props;
+
+/* Base64 keeps the address out of the markup as a *matchable* string: harvesters
+   regex for `user@host` or scrape `mailto:` hrefs, and neither survives here.
+   Splitting it across two adjacent data- attributes did not — joining them is
+   one line of scraper code. Anything that executes JS still resolves the
+   address; this raises the cost of harvesting, it is not a wall. */
+const encoded = Buffer.from(address, 'utf8').toString('base64');
+---
+
+<a class:list={['mail', className]} href="#" data-mail={encoded}><slot /></a>
+
+<script>
+  /* Assembled at runtime; Astro hoists this once no matter how many links. */
+  document.querySelectorAll<HTMLAnchorElement>('a[data-mail]').forEach((link) => {
+    const encoded = link.dataset.mail;
+    if (!encoded) return;
+    link.href = `mailto:${atob(encoded)}`;
+    link.removeAttribute('data-mail');
+  });
+</script>

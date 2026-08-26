@@ -1,5 +1,5 @@
 ---
-title: Best Poster Award at IROS 2025 Workshop on Embodied AI and Robotics for Future Scientific Discovery (AIR4S)
+title: Best Poster Award at IROS 2025 AIR4S Workshop
 date: 2025-10-13 01:00:00-0000
 ---
 

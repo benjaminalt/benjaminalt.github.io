@@ -2,11 +2,11 @@
 import type { NewsItem } from '../lib/content';
 import { newsUrl, shortDate } from '../lib/content';
 
-interface Props { item: NewsItem }
-const { item } = Astro.props;
+interface Props { item: NewsItem; compact?: boolean }
+const { item, compact = false } = Astro.props;
 ---
 
-<li class="item">
+<li class:list={['item', { compact }]}>
   <time class="mono when" datetime={item.data.date.toISOString().slice(0, 10)}>
     {shortDate(item.data.date)}
   </time>
@@ -33,6 +33,13 @@ const { item } = Astro.props;
     text-wrap: pretty;
   }
   .item a:hover { color: var(--accent); }
+  /* The sidebar is far narrower than the viewport, so it stacks regardless. */
+  .item.compact {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+    padding-block: 0.6rem;
+  }
+  .item.compact a { font-size: var(--step--1); line-height: 1.45; }
   @media (max-width: 34rem) {
     .item { grid-template-columns: 1fr; }
   }

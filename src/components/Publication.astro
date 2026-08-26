@@ -10,6 +10,9 @@ const shown = pub.authors.slice(0, LIMIT);
 const hidden = pub.authors.slice(LIMIT);
 
 const venueLead = pub.venue.kind === 'proceedings' ? 'In ' : '';
+/* Titles of published venues are italicised; a patent number or "arXiv
+   preprint" is a label, not a title, so it stays roman. */
+const venueItalic = pub.venue.kind === 'proceedings' || pub.venue.kind === 'journal';
 
 /** Rendered as a single string: JSX inserts whitespace between sibling
  *  expressions, which puts a space before every comma. */
@@ -55,7 +58,9 @@ if (pub.pdf) links.push({ label: 'PDF', href: pub.pdf.includes('://') ? pub.pdf 
   {
     (pub.venue.name || dateBits) && (
       <p class="venue mono">
-        {pub.venue.name ? <em>{venueLead}{pub.venue.name}</em> : ''}{pub.venue.name && dateBits ? ', ' : ''}{dateBits}
+        {pub.venue.name ? (
+          venueItalic ? <em>{venueLead}{pub.venue.name}</em> : <span>{pub.venue.name}</span>
+        ) : ''}{pub.venue.name && dateBits ? ', ' : ''}{dateBits}
       </p>
     )
   }
@@ -67,7 +72,7 @@ if (pub.pdf) links.push({ label: 'PDF', href: pub.pdf.includes('://') ? pub.pdf 
           <button class="chip mono" type="button" aria-expanded="false" data-abstract>Abstract</button>
         )}
         {links.map((l) => (
-          <a class="chip mono" href={l.href}>{l.label}</a>
+          <a class="chip mono" href={l.href} target="_blank" rel="noopener">{l.label}</a>
         ))}
       </p>
     )

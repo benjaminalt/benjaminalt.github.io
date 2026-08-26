@@ -3,9 +3,12 @@ import type { MarkdownHeading } from 'astro';
 
 interface Props { headings: MarkdownHeading[] }
 const { headings } = Astro.props;
-/* h1 in the body is the post's own section heading level in this content, so
-   include depth 1-2 and indent 3. */
+
 const items = headings.filter((h) => h.depth <= 3);
+/* Posts disagree about where their top level sits: some open at h1, others at
+   h2. Indent by distance from the shallowest heading actually present rather
+   than by absolute depth, so nesting reads correctly in either convention. */
+const top = items.length > 0 ? Math.min(...items.map((h) => h.depth)) : 1;
 ---
 
 {
@@ -14,7 +17,7 @@ const items = headings.filter((h) => h.depth <= 3);
       <p class="label" id="toc-heading">Contents</p>
       <ol>
         {items.map((h) => (
-          <li class:list={[`d${h.depth}`]}>
+          <li class:list={[`lvl${h.depth - top}`]}>
             <a href={`#${h.slug}`}>{h.text}</a>
           </li>
         ))}
@@ -39,7 +42,14 @@ const items = headings.filter((h) => h.depth <= 3);
     font-size: var(--step--1);
   }
   .toc li + li { margin-block-start: 0.3rem; }
-  .toc .d3 { padding-inline-start: 1.1rem; }
+
+  /* Indentation alone is far too thin a signal at this type size, so the
+     hierarchy leans on three things at once: a wider indent step, weight and
+     colour on the top level, and air before each new top-level section. */
+  .toc .lvl1 { padding-inline-start: 1.5rem; }
+  .toc .lvl2 { padding-inline-start: 3rem; }
+  .toc li + li.lvl0 { margin-block-start: 0.9rem; }
+  .toc .lvl0 > a { color: var(--text); font-weight: 600; }
   .toc a { color: var(--muted); text-decoration: none; }
   .toc a:hover { color: var(--accent); }
 </style>

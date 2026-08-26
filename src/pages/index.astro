@@ -30,13 +30,18 @@ const totalPubs = pubs.length;
       </p>
 
       <ul class="roles">
-        <li>Building a research organisation for safe physical AI</li>
         <li>
-          Cofounder, <a href="https://aicor.io">AICOR Solutions</a> — a safe physical
+          <span class="mark" aria-hidden="true">🏗️ </span>
+          Building a research organisation for safe physical AI
+        </li>
+        <li>
+          <span class="mark" aria-hidden="true">🧪 </span>
+          Cofounder, <a href="https://aicor.io" target="_blank" rel="noopener">AICOR Solutions</a>: a safe physical
           intelligence platform for industrial and lab automation
         </li>
         <li>
-          Associate Member, <a href="https://ai.uni-bremen.de/">AICOR Institute for
+          <span class="mark" aria-hidden="true">🎓 </span>
+          Associate Member, <a href="https://ai.uni-bremen.de/" target="_blank" rel="noopener">AICOR Institute for
           Artificial Intelligence</a>, University of Bremen
         </li>
       </ul>
@@ -44,35 +49,41 @@ const totalPubs = pubs.length;
 
     <hr class="rule" />
 
-    <section class="block">
-      <div class="head">
-        <h2 class="label">Writing</h2>
-        <a class="all mono" href="/blog/">all posts →</a>
-      </div>
-      <div class="list">
-        {posts.map((post) => <PostRow post={post} showDescription />)}
-      </div>
-    </section>
+    <div class="cols">
+      <div class="main">
+        <section class="block">
+          <div class="head">
+            <h2 class="label">Writing</h2>
+            <a class="all mono" href="/blog/">all posts →</a>
+          </div>
+          <div class="list">
+            {posts.map((post) => <PostRow post={post} showDescription />)}
+          </div>
+        </section>
 
-    <section class="block">
-      <div class="head">
-        <h2 class="label">Recent</h2>
-        <a class="all mono" href="/news/">archive →</a>
+        <section class="block">
+          <div class="head">
+            <h2 class="label">Selected work</h2>
+            <a class="all mono" href="/publications/">all {totalPubs} →</a>
+          </div>
+          <div class="list">
+            {selected.map((pub) => <Publication pub={pub} compact />)}
+          </div>
+        </section>
       </div>
-      <ul class="list plain">
-        {news.map((item) => <NewsRow item={item} />)}
-      </ul>
-    </section>
 
-    <section class="block">
-      <div class="head">
-        <h2 class="label">Selected work</h2>
-        <a class="all mono" href="/publications/">all {totalPubs} →</a>
-      </div>
-      <div class="list">
-        {selected.map((pub) => <Publication pub={pub} compact />)}
-      </div>
-    </section>
+      <aside class="side" aria-label="Recent news">
+        <section class="block">
+          <div class="head">
+            <h2 class="label">Recent</h2>
+            <a class="all mono" href="/news/">archive →</a>
+          </div>
+          <ul class="list plain">
+            {news.map((item) => <NewsRow item={item} compact />)}
+          </ul>
+        </section>
+      </aside>
+    </div>
   </div>
 </Base>
 
@@ -98,24 +109,43 @@ const totalPubs = pubs.length;
     margin-block-start: 2rem;
     max-width: var(--measure);
   }
+  /* Hanging indent: the marker stays in the inline flow, so the emoji sits on
+     the text baseline on its own without hand-tuned offsets. */
   .roles li {
     padding-block: 0.4rem;
-    padding-inline-start: 1.1rem;
-    position: relative;
+    padding-inline-start: 2rem;
+    text-indent: -2rem;
     color: var(--muted);
   }
-  .roles li::before {
-    content: '';
-    position: absolute;
-    inset-inline-start: 0;
-    inset-block-start: 1.15em;
-    width: 0.5rem;
-    height: 1px;
-    background: var(--accent);
+  .mark {
+    display: inline-block;
+    width: 2rem;
+    text-indent: 0;
+    font-size: 0.95em;
+    font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
   }
   .roles a { color: var(--text); }
 
+  /* News used to sit below Writing, where it was easy to scroll past. */
+  .cols {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 17rem;
+    gap: 0 clamp(2rem, 1rem + 3vw, 3.5rem);
+    align-items: start;
+  }
+  .side {
+    position: sticky;
+    inset-block-start: 1.5rem;
+  }
+  .side .list { max-width: none; }
   .block { margin-block-start: 3.25rem; }
+  .main > .block:first-child,
+  .side > .block { margin-block-start: 2.75rem; }
+
+  @media (max-width: 60rem) {
+    .cols { grid-template-columns: 1fr; }
+    .side { position: static; order: -1; }
+  }
   .head {
     display: flex;
     align-items: baseline;

@@ -23,6 +23,10 @@ const posts = defineCollection({
     categories: listish,
     /** Escape hatch: pin the URL year if a frontmatter date is ever corrected. */
     urlYear: z.number().int().optional(),
+    /** Provenance for co-authored or cross-posted pieces, and any thanks owed.
+     *  Both render above the contents; inline HTML is allowed so they can link. */
+    note: z.string().optional(),
+    acknowledgements: z.string().optional(),
     math: z.boolean().default(false),
     toc: z.boolean().default(false),
     draft: z.boolean().default(false),

@@ -11,6 +11,8 @@ const { post, kind = 'post', headings = [] } = Astro.props;
 const { title, date, description } = post.data as any;
 const tags: string[] = (post.data as any).tags ?? [];
 const math: boolean = (post.data as any).math ?? false;
+const note: string | undefined = (post.data as any).note;
+const acknowledgements: string | undefined = (post.data as any).acknowledgements;
 ---
 
 <Base title={title} description={description} bare ogType="article" publishedTime={date}>
@@ -34,6 +36,15 @@ const math: boolean = (post.data as any).math ?? false;
         )
       }
     </header>
+
+    {
+      (note || acknowledgements) && (
+        <div class="frontnote">
+          {note && <p set:html={note} />}
+          {acknowledgements && <p class="ack" set:html={acknowledgements} />}
+        </div>
+      )
+    }
 
     {(post.data as any).toc && <Toc headings={headings} />}
 
@@ -83,4 +94,17 @@ const math: boolean = (post.data as any).math ?? false;
     padding: 0.2em 0.55em;
   }
   .tags a:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* Provenance and thanks: part of the apparatus around the piece rather than
+     the piece itself, so they sit above the contents and read quieter. */
+  .frontnote {
+    max-width: var(--measure);
+    margin-inline: auto;
+    margin-block-end: 2rem;
+    font-size: var(--step--1);
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .frontnote p + p { margin-block-start: 0.7rem; }
+  .frontnote .ack { font-style: italic; }
 </style>

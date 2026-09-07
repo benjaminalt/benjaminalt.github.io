@@ -1,0 +1,195 @@
+---
+title: "Building Safe Physical AI: Open Questions, Risks, and a Call for Collaboration"
+date: 2026-07-10 09:00:00-0000
+categories: blog
+tags: ai-safety physical-ai robotics
+description: Why advanced physical AI poses distinct risks, the questions the field has not answered, and an invitation to work on them.
+note: >-
+  Written with Laurie Burns-Mill and Andrew Nelson, and <a href="https://convergentrobotics.org/building-safe-physical-ai.html" target="_blank" rel="noopener">originally published on the Convergent Robotics blog</a>.
+acknowledgements: >-
+  We thank Finn Metz, Anna Magpie, Jan Wehner, Lee Sharkey, Chris Pang, Sigmund Hennum Høeg, and Marta Krzeminska for their feedback on early versions of this post. All views and errors in this post are our own.
+toc: true
+---
+
+import Figure from '../../components/Figure.astro';
+import img_capability_layers from '../../assets/img/physical-ai-safety/capability-layers.png';
+
+## Executive summary
+
+Physical AI — intelligent robots, drones, and other systems directly acting on the physical world — could remove the limits placed by the availability and cost of human labor on what humanity can build. However, the capabilities that make this possible also create distinct and pressing safety problems. In the digital realm, the AI safety community has made great progress on aligning, evaluating, and controlling language models. Similarly, dedicated efforts will be required to address the risks posed by physical AI at the frontier.
+
+The fact that physical AI operates directly in the physical world means that physical AI models will be inherently multimodal, and require a new generation of alignment techniques, interpretability tools, and evals. We need new methods of specifying and testing for safe real-world behavior, as well as methods for scalably generating large amounts of simulated and real-world safety training and testing data. The safety implications of embodiment are largely unknown: it may accelerate the learning of general cognitive abilities, and it may make rollback, sandboxing and shut-off much harder.
+
+Physical AI also poses distinct downstream risks. Misaligned or deliberately misused robots can cause irreversible physical harm at scale. Systems with access to their own hardware may remove guardrails and self-replicate, and pervasive automation can lead to gradual disempowerment and concentration of power. As the field is still pre-paradigmatic, there are no settled answers to these open challenges, and we do not yet fully know which questions to ask. This post lays out our current intuitions and an invitation to work on them with us.
+
+## A future of abundance, powered by robots?
+
+> “There will be no poverty. All work will be done by living machines.”
+>
+> — Karel Čapek, *Rossum’s Universal Robots*
+
+A physical AI revolution could reduce the cost of building houses, developing medications and producing food as dramatically as the generative AI revolution reduced the cost of building software. Digital intelligence has exploded in capability over the last decade and now automates knowledge work across all sectors of the economy, but it acts on the physical world only through human hands. Physical AI acts on it directly, and promises to bring about a world of abundance. This vision for the future is old: Karel Čapek put it in the mouth of a factory manager in *Rossum’s Universal Robots*, the 1920 play that coined the term *robot*.
+
+In this future, what a society can build, make and repair is no longer bounded by the availability and cost of human labor. Machines can do the repetitive and dangerous jobs, so scaling up no longer depends on how many people are willing to do them. Machines can reach where people cannot: outward into space to mine for materials, inward through mazes of vertical farms, and into human bodies for intra-cellular interventions against disease. The same machines can increase the autonomy of people who need physical help, such as the elderly or people with disabilities. Physical labor evolves from the dangerous and monotonous to the creative and purposeful.
+
+The same AI capabilities that make this future possible also pose serious safety challenges. In *Rossum’s Universal Robots*, all life on earth is killed by misaligned robots. For language models, the AI safety community has made a lot of technical & regulatory progress to avoid such a future.[^1] We argue that advanced physical AI poses distinct risks that current technologies and regulatory frameworks do not sufficiently address. In their [excellent post](https://paisi.ai/the-case-for-physical-ai-safety), Bear Häon and Kaylene Stocking set out why physical AI safety is important, neglected and tractable, and launched the [Physical AI Safety Institute](https://paisi.ai/) to grow the community working on it. We agree with their arguments and want to work together to move the field forward. In this post, we lay out some of our intuitions about those risks and make the case for a dedicated, cross-disciplinary effort to address them.
+
+## Intuitions on the risks of advanced physical AI
+
+The robotics and machine learning communities have produced a comprehensive body of work on the vulnerabilities of physical AI systems. In their excellent survey, [Li et al.](https://arxiv.org/abs/2605.02900) argue that physical AI introduces risks beyond those of non-embodied AI systems, as robots and other cyberphysical systems contain several layers of intelligence that translate physical stimuli to mental representations and back into physical actions, and that stack several heterogeneous hardware and software architectures.
+
+<Figure src={img_capability_layers} alt="Two panels side by side. On the left, labelled Capabilities, five nested boxes run from Agentic System on the outside inward through Action, Planning, Cognition to Perception at the core, each listing its components and an example system: humanoid robots, robotic arms, autonomous driving, tour guide robots, smart gates. On the right, labelled Risks, the same five levels are mirrored in dark as Agentic, Behavioral, Decisional, Cognitive and Perceptual Attack, listing threats such as memory poisoning and misevolution, adversarial policy and misalignment, goal hijacking, prompt injection and chain-of-thought hijacking, and adversarial, backdoor and sensor attacks. Rules connect each capability level to its matching risk level. A caption beneath reads: capability grows outward, risk surface expands correspondingly." width="bleed">
+  Each capability layer in physical AI systems expands the risk surface. Adapted from <a href="https://arxiv.org/abs/2605.02900">Li et al.</a>
+</Figure>
+
+These risks are tied to the functional layers shared by virtually all physical intelligence architectures, and that enable robots to (1) perceive their surroundings, (2) understand their operational context and the task they are given, (3) make plans to achieve their goals, and (4) translate these plans into physical actions that take into account the behavior of other physical agents. Each layer in this cognitive stack introduces its own hardware and software vulnerabilities, and misalignment, intentional misuse or lack of robustness can cause system failure or unintended behavior across all downstream layers.
+
+There are several comprehensive surveys of the vulnerabilities of intelligent robots.[^2] Most current work focuses on lack of robustness or deliberate misuse, resulting in task failure or immediate physical harm to humans. We, along with an increasing amount of robotics researchers, believe that the combination of frontier-level, cross-modal models with increasingly powerful, general-purpose hardware (e.g. humanoids) introduces risks that go far beyond immediate physical harm, and look more like embodied variants of the existential risks the AI safety community has been addressing in frontier LLMs.[^3] We also believe that the risks from advanced physical intelligence are sufficiently distinct from LLM risks to require dedicated research and mitigations. The following list reflects our current intuitions about the larger-scale risks posed by advanced physical AI, as well as the challenges that must be overcome to mitigate them. It is not exhaustive, and is intended as a jumping-off point for further inquiry.
+
+### Risks
+
+Advanced physical intelligence inherits the risks of disembodied AI systems (such as LLMs), and adds several new risks on top. We are chiefly interested in the risks from advanced physical intelligence itself: **What could go wrong if robots are no longer bottlenecked by lack of dexterity?**[^4]
+
+#### Physical harm is often irreversible
+
+The most dangerous property of physical AI systems is that they directly interact with the environment, which often makes the consequences of their actions irreversible. Immediate physical harm to humans by accident, as a consequence of misalignment or deliberate misuse, is the most salient example and can take many forms. Beyond damage to individual workers, e.g. by humanoid robots [failing unsafely](https://oecd.ai/en/incidents/2026-02-05-f85d) or misbehaving, widely deployed intelligent robots and drones can become large-scale risks (e.g. via the [abuse of civilian drones for terrorism](https://www.airuniversity.af.edu/Portals/10/ASPJ/journals/Volume-34_Issue-3/F-Chavez_Swed.pdf)). Other forms of physical harm are more subtle and downstream of immediate action[^5] by the AI system, such as a robot handing a knife to a toddler, or a lab automation system [synthesizing and releasing hazardous organic compounds](https://www.nature.com/articles/s42256-022-00465-9) by accident, intentionally or [on command](https://www.longtermresilience.org/reports/understanding-risks-at-the-intersection-of-ai-and-bio/). Existing safety standards only cover safety cases with immediate harm on impact, and new methodologies are required to understand, model and control for the causal effects of robot actions in complex environments.[^6]
+
+#### Physical self-modification and self-replication
+
+Depending on the implementation, physical capabilities may afford physical self-modification of the AI system, allowing it to remove guardrails and hack rewards[^7] through physical modification. By making advanced AI embodied in hardware that it has physical access to, advanced physical AI systems could effectively hack their own embodiments, making physical (on-robot) hardware safety mechanisms much more difficult to harden. In the extreme, robots can autonomously build and maintain other robots, including copies of themselves. Physical self-replication is often seen as one of the vectors in [loss-of-control scenarios](https://www.planned-obsolescence.org/p/self-sufficient-ai), leading to a self-replicating robot economy created in an “[industrial explosion](https://www.forethought.org/research/the-industrial-explosion)”. We don’t know yet how a rapidly unfolding industrial explosion can be steered to be in line with human needs. The current (and still comparatively slow) onset of the digital intelligence explosion points to technological progress not being aligned with broader human preferences by default.[^8]
+
+#### Gradual disempowerment
+
+Embodiment irreversibly changes the structure of the world. Once machines do most of the physical work in a sector, the spaces are redesigned around what machines are good at. This has started in warehouses and [ports](https://archis.org/volume/welcome-to-futureland/), where it has already happened, and extends to other domains, reducing the ability of civilization to function without the help of intelligent machines. Physical [gradual disempowerment](https://arxiv.org/abs/2501.16946) is a system-level extension of the [Ironies of Automation](https://davidjusth.com/s/Ironies-of-Automation_Bainbridge_1983.pdf): When a process is automated, humans lose the practical understanding required to perform, maintain or even control the process. It is particularly consequential because it is very hard to reverse. We might find ourselves in a situation similar to urban planners today, who are struggling to reverse [decades of urban development](https://mitpress.mit.edu/9780262516129/fighting-traffic/) along the needs of cars and car owners. Pervasive physical AI will touch all aspects of our physical environment, including our homes, and intelligent machines will be deeply entrenched in our daily lives. Designing the technological landscape we inhabit in a way that maintains human agency is an open and important problem.
+
+#### Concentration of power
+
+Physical AI is likely to concentrate economic power: Building and running fleets of robots requires factories, supply chain access and service infrastructure, which [favors few, very large enterprises](https://www.nber.org/papers/w26738). Whatever share of economic power AI concentrates, [embodiment concentrates it further and into fewer hands](https://www.tandfonline.com/doi/full/10.1080/02692171.2024.2440078), because the physical layer adds additional capital requirements beyond those of inference. The concrete failure is a world where a small number of robot fleet owners [capture most of what the fleets produce](https://intelligence-curse.ai), proceeds from capital are [not widely distributed](https://www.nber.org/system/files/working_papers/w32980/w32980.pdf), and precarious human labor is doing the physical work the machines cannot perform yet, becoming physical [reverse centaurs](https://pluralistic.net/tag/reverse-centaurs/) (as in modern [warehouse work](https://onlabor.org/amazons-approach-to-robotics-is-seriously-injuring-warehouse-workers/)).
+
+The same might be true for political power. Physical AI may make coups less risky and more likely to succeed, since it weakens the last check on a coup: the need for individual human soldiers to support it. Sufficient automation of the military reduces the number of humans involved in making and carrying out orders, and the number of humans who have to agree to a coup drops from thousands to a few top-level decisionmakers. Similarly, pervasive physical AI may lead to large-scale surveillance, which accelerates concentration of political power.[^9]
+
+### Technical challenges
+
+What unique properties do physical AI systems have, and how do these properties influence our ability to align, control or evaluate them?
+
+#### Multimodality makes attacks easier and validation harder
+
+##### Non-language input modalities
+
+Most state-of-the-art alignment methods, interpretability techniques, and evals are built primarily around language as an input modality.[^10] Physical AI models, however, take in multimodal inputs from the physical world. [Visual](https://arxiv.org/pdf/2604.23775), [tactile](https://arxiv.org/abs/2605.13492) and [proprioceptive](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-tu.pdf) input widens the attack surface for jailbreaking, prompt injection and out of distribution anomalies. In the context of vision-language-action (VLA) models, the well-studied vulnerabilities of vision models combine with the failure modes and misalignment inherited from LLM base models. The most immediately obvious safety challenge is cross-modal prompt injection, such as [embedding malicious text on physical objects](https://arxiv.org/abs/2510.00181) to bypass language-based safety mechanisms, as shown with [text on posters and bags in real-world robot trials](https://arxiv.org/abs/2601.17383v1). The researchers also identified that these attacks were robust against varied lighting conditions, proximity and viewing angles, suggesting that the inherent variability of the physical world makes mitigation more challenging. Alignment capabilities initially developed within the textual embedding space [have been shown](https://arxiv.org/abs/2410.09047) to [transfer poorly](https://arxiv.org/abs/2410.12662) to multimodal representations.
+
+##### Non-language output modalities
+
+Existing AI safety methods also rely heavily on language, or sometimes vision/audio, as output modalities. By contrast, many physical AI models generate real-world actions, such as actuator commands. [We are not yet well-equipped to control or validate such outputs](https://arxiv.org/html/2606.00773). Safe states and safe transitions in the physical world are hard to [specify](https://openreview.net/forum?id=dt940loCBT), test, or [verify](https://arxiv.org/abs/2602.06971). Defining the safe state transitions for a robot in a kitchen, with a child in it, is an [open problem](https://arxiv.org/abs/2506.16402) due to the sheer number of possible scenarios, and specifications of safe behavior may be incomplete in ways we cannot enumerate in advance. This is further complicated by the fact that in order to validate properties of the physical world, the world needs to be turned into a machine-readable representation, which involves perception and interpretation by unsafe AI systems. Moreover, we don’t have methodologies yet to robustly evaluate physical AI models at scale: Given the [eval awareness](https://arxiv.org/abs/2505.23836) of language models, it is likely that physical AI frontier models become eval sensitive in simulated environments, and realistic real-world evals are expensive and require substantial new methodology and infrastructure.
+
+#### Safety is context-dependent, and generating the right training and testing contexts is hard
+
+Safety is context-dependent: the same instruction can be safe or dangerous depending on the scene, and models that identify a risk in the abstract [have been shown to fail](https://arxiv.org/abs/2410.06172) to act safely in concrete situations. Safety fine-tuning therefore requires a large amount of rare edge cases to be included. The large-scale generation of relevant, sufficiently realistic synthetic training contexts for physical AI systems remains an [open problem](https://arxiv.org/pdf/2312.08782) that is currently holding back the field of robotics as a whole. It is likely to disproportionately bottleneck safety training, as physical AI models may become highly eval aware, if training environments and large-scale safety tests in simulation literally “look and feel” simulated to the model. Scaling real-world safety training and evaluation is extremely challenging as it is resource-intensive, time consuming and [many unsafe scenarios cannot be ethically reproduced in real-world contexts](https://arxiv.org/pdf/2605.02900).
+
+#### Embodiment is a big unknown
+
+Many cognitive scientists and robotics researchers subscribe to a version of the [embodiment hypothesis](https://pubmed.ncbi.nlm.nih.gov/15811218/), which posits that some cognitive abilities, such as intuitive physics, are learned more efficiently if the learning system is embodied and can act in the physical world through sensors and actuators. If true, training multimodal models with increasing amounts of real-world data, or interactively via embodied reinforcement learning, could trigger a step change in model capabilities. Under such a scenario, cognitive abilities acquired on physical tasks could significantly boost model performance on non-physical tasks.[^11]
+
+The fact that robots are physically deployed in the world and often able to autonomously move makes interventions such as model-level rollbacks, sandboxing, rate limiting or physical shut-off switches much more difficult. Shutting down or reconfiguring deployed fleets of robots may require physical interventions across many warehouses, hospitals and people’s homes, and effectively bound the speed at which interventions can be deployed. Conversely, permanently maintaining network connections to robot fleets for control and updates poses [security risks](https://spectrum.ieee.org/unitree-robot-exploit) and poses serious [privacy concerns](https://www.technologyreview.com/2022/12/19/1065306/roomba-irobot-robot-vacuums-artificial-intelligence-training-data-privacy/). One certainty about embodiment is that deployment of AI systems in robot bodies means that some part of the AI architecture will have to run in relatively low-latency, closed control loops. Monitoring and control methods for physical AI architectures must be made much more efficient to be usable in closed-loop architectures.
+
+## Open questions for physical AI safety
+
+Advanced general-purpose AI is so recent, and the physical AI landscape is changing so rapidly, that the field of physical AI safety is still pre-paradigmatic: The field is not just lacking good answers to the questions and risks we mentioned, but there is also the larger question of what questions we should be asking.
+
+In order to make progress, we propose the following set as a basis for collaboration and feedback:
+
+- What are the most important threats from advanced physical AI, and by what mechanisms would they materialize?
+
+- How do we specify what is safe-enough behavior in the physical world?
+
+- How can we evaluate observed behavior against design specifications (or even AI constitutions)?
+
+- How can we build scalable evals for physical AI?
+
+- What novel technical mitigations might be needed?
+
+- To what extent does embodiment accelerate AI development (learning of general-purpose cognitive abilities)?
+
+We expect that these questions will not be addressed through “traditional” (digital) AI safety efforts, and thus physical-specific efforts are required for navigating physical AI scaling.
+
+## Next steps
+
+We are launching [Convergent Robotics](https://convergentrobotics.org), an independent research lab for physical AI safety. As the field is still preparadigmatic, we want to empirically investigate the risks posed by intelligent robots, and build effective mitigations based on our findings. We believe that red-teaming is the best pathway to achieve this, as it allows us to test frontier physical AI models in concrete, threat model-informed scenarios.
+
+We want to focus on *physical* eval environments and real robots from the beginning, as we believe that frontier models will develop eval awareness and associate simulated environments with evaluations very soon. How we can build realistic and robust test environments for real-world robots is one of the first questions we will be investigating.
+
+## How to collaborate with us
+
+Our first step was to understand the problem better and to work with the small but growing community around physical AI safety. We co-organized the [1st IJCAI Workshop on Safe Physical AI](https://safephysicalai.github.io), an interdisciplinary exchange between the machine learning, robotics and AI ethics communities. We are now looking for collaborators on threat modeling and red-teaming in biosecurity, cybersecurity, industrial manufacturing, and other areas likely affected by a physical intelligence explosion.
+
+If you’re interested in collaborating with us, learning more or sharing what you’re working on in this field, you can [get in touch here](https://convergentrobotics.org/contact.html). We’re especially interested in discussing:
+
+1. Physical threat models (e.g. autonomous violence, infrastructure security, loss of control),
+
+2. Safety considerations of roboticists and developers of Vision-Language-Action models (VLA) and World Action Models (WAMs), and
+
+3. Forecasting of physical AI capabilities and their downstream impacts on economics and power concentration.
+
+## FAQ
+
+#### 1. What is physical AI, exactly?
+
+We define physical AI as AI that *directly* acts in the physical world. This definition excludes AI systems that act through human intermediaries, and includes all kinds of intelligent physical devices that have at least one physical actuator and act with a degree of autonomy. It includes robots, drones, autonomous vehicles, autonomous production systems, etc. The degree and types of risk posed by physical AI systems largely depends on the sophistication of its AI capabilities, its physical degrees of freedom, and its capacity to act agentically.
+
+#### 2. Isn’t physical intelligence just downstream of nonphysical intelligence?
+
+This question is hotly debated, and some argue that physical intelligence is actually [upstream of general intelligence](https://arxiv.org/abs/2402.03824). Looking at current model capabilities, LLMs have been shown to have [world models](https://proceedings.iclr.cc/paper_files/paper/2024/hash/0a6059857ae5c82ea9726ee9282a7145-Abstract-Conference.html) and can be used for [high-level planning tasks](https://arxiv.org/abs/2511.07410) in robotics contexts. At the same time, LLMs trained on textual or even visual inputs lack cognitive abilities relating to physical intelligence, such as spatial reasoning and intuitive physics. Controlling robots with Transformer-based VLAs still requires task- and embodiment-specific adaptation, and introduces substantial architectural differences. [Benchmarks built for cross-task generalization](https://arxiv.org/abs/2505.15660) find that models trained on large, diverse robot datasets fail on unseen manipulation tasks, and performance degrades on novel objects, instructions, and environments outside the training distribution. Recent generalist models such as π0.5 push this boundary, and show impressive zero-shot generalization capabilities in previously unseen kitchens and bedrooms. This real-world transfer ability is not web-pretrained backbone alone, but from a co-training mixture in which 97.6% of examples are data from different robots, cross-embodiment datasets, web images and VQA, and hand-annotated subtask labels. At the architecture level, π0.5 departs from language-style next-token prediction over discretized actions by generating the low-level action chunk with a separate flow-matching action expert. Others go further and drop the pixel-space generative objective (e.g. [diffusion policies](https://arxiv.org/abs/2303.04137), [joint predictive embeddings](https://arxiv.org/abs/2506.09985), [World Action Models](https://www.nvidia.com/en-us/glossary/world-action-model/)). It appears, then, that advanced physical intelligence will be architecturally different and require different training curricula and safety approaches than LLMs.[^12]
+
+A stronger version of the downstream argument is that robotics will be “solved” by superintelligent LLMs. We argue that “robotics” is not a thing that can be “solved” or not, but rather that many types of action in the real world require many kinds of physical and cognitive capabilities, and that there will be a transition in which AI models are increasingly deployed in and trained on real-world settings and acquire these capabilities. That transition affords humanity to make choices about how we want future physical intelligences to look like.
+
+#### 3. There are established safety regulations and standards for robots ([EU machinery regulation](https://www.tuv.com/world/en/new-machinery-regulation-eu-2023-1230.html), [ISO 10218-1:2025](https://www.iso.org/standard/73933.html), [ISO 10218-2:2025](https://www.iso.org/standard/73934.html), [ISO 25785-1](https://www.iso.org/standard/91469.html)). Don’t these address safety for robots?
+
+The existing regulations and standards address safety from a mechanical point of view and are designed to prevent collisions that exert critical force. As a consequence, most applications that require contact (e.g. all manipulation tasks in industry and household) currently require safety fences or similar safety equipment, which prevent the kinds of flexible, human-robot collaborative behaviors that are possible with advanced intelligence. The EU AI act covers most advanced physical AI applications as high-risk applications, but there are no good technical solutions for implementing the monitoring, oversight, robustness, and cybersecurity requirements.
+
+#### 4. How is physical AI safety different from autonomous vehicle safety?
+
+Autonomous vehicles (AVs) are the branch of physical AI that has the most well-established safety paradigms and is widely deployed in the field, with considerable success (and very open challenges). Robust safety for advanced physical intelligence systems in general is much less explored, particularly for systems with monolithic models trained end-to-end and systems that have to generalize in a wide variety of usage contexts. The big differentiator is that AV safety centers around collision avoidance, while for most physical tasks, contact (collision with the environment) is *required*. Moreover, multipurpose robots have much larger task and action spaces than autonomous vehicles, making the specification of safe behavior much more challenging.
+
+#### 5. Won’t capabilities work solve most physical AI safety problems?
+
+A more comprehensive version of this question asks whether every physical AI system must be sufficiently safe in order to be accepted by its users. There are several arguments pointing to this not being the case. Even in operational safety (avoidance of immediate physical harm to e.g. factory workers), there are past examples of technologies being introduced into the workplace that caused severe harm to large numbers of workers before regulation caught up and restricted their use.[^13] Most of the risks of advanced physical AI, however, are not related to immediate physical harm and are, in nature, more similar to the risks that the wider AI safety community is already concerned about, but harder to mitigate. The same arms-race dynamics of international competition create incentives for the deployment of misaligned or otherwise unsafe physical AI technologies long before robust mitigations have been developed. Most saliently, we simply don’t know enough about the relationship between task and safety competence yet: On [IS-Bench](https://arxiv.org/abs/2506.16402), enforcing safety-aware chain-of-thought improved safety at a substantial cost of capabilities.
+
+#### 6. Isn’t physical AI safety work just capability work?
+
+It is true that evaluation, monitoring, interpretability or alignment methodologies can be used to accelerate the further development of physical AI capabilities. We argue that a well-developed research agenda and selective publication strategy can accelerate the development of safety technologies at a faster rate than other kinds of technologies, and is required to close the safety gap.
+
+#### 7. What would change your mind?
+
+Strong evidence that the embodiment hypothesis is wrong would cause us to update away from the belief that advanced physical intelligence requires dedicated safety methodologies at the model level. This would include evidence that strong sensorimotor capabilities, along with cognitive abilities relating to understanding and predicting the physical world, can emerge purely from textual data in Transformer architectures. Dedicated monitoring or mitigations at the physical level (e.g. robustly and quickly observing what robots are doing to be able to intervene) as well as methodologies to specify safe real-world behavior would still be important.
+
+#### 8. What is your theory of change?
+
+We believe that progress toward safe, advanced physical intelligence requires dedicated research on methodology for modeling and expressing safe and unsafe behavior for complex tasks at scale, evaluating physical AI systems against such specifications, training or controlling physical AI systems to be in line with such specifications, and making physical AI architectures more interpretable. The field does not have robust answers to these challenges yet. We try to find answers to these questions by red-teaming state-of-the-art robot foundation models on physical hardware, in scenarios that reflect concrete threat models. By taking an empirical approach, we can benchmark models on real scenarios and on real hardware, and can develop technical mitigations that actually work in deployment.
+
+For technical mitigations to be effective, they must be adopted by frontier physical AI companies and robot manufacturers. We take a direct-to-lab approach and work with frontier physical AI labs and robot manufacturers to shape the trajectory of physical intelligence early on. At the same time, we want to partner with governance organizations and standardization bodies to inform regulatory frameworks and standards for intelligent robots.
+
+[^1]: Though not enough and possibly [of the wrong kind](https://www.lesswrong.com/posts/9RL9MuGZjzm4q3gKG/what-just-happened-a-retrospective-of-ai-alignment).
+
+[^2]: Embodied AI safety and security: [Xing et al.](https://arxiv.org/abs/2502.13175), [X. Li et al.](https://arxiv.org/abs/2605.02900), [Ma et al.](https://arxiv.org/abs/2602.17345), [Q. Li et al.](https://arxiv.org/abs/2604.23775), [Liu et al.](https://arxiv.org/abs/2607.28226), [Kojima et al.](https://arxiv.org/abs/2505.12583); robot cybersecurity: [Neupane et al.](https://arxiv.org/abs/2310.08565), [Botta et al.](https://www.sciencedirect.com/science/article/pii/S2667305323000625), [Mayoral-Vilches](https://conceptechint.net/index.php/CFATI/article/view/41); sensors and the physical layer: [Yan et al.](https://oaklandsok.github.io/papers/yan2020.pdf), [Xiao et al.](https://arxiv.org/abs/2508.16133), [Modas et al.](https://arxiv.org/abs/2007.10115); by platform: [Surve et al.](https://arxiv.org/abs/2508.17481), [Sabouri](https://arxiv.org/abs/2602.23404), [Guesmi and Shafique](https://arxiv.org/abs/2409.20426), [Liang et al.](https://www.sciencedirect.com/science/article/abs/pii/S0925231226012816)
+
+[^3]: See [Li et al.](https://arxiv.org/abs/2605.02900): “Despite rapid progress in embodied perception, reasoning, planning, and control, current systems remain fragile and far from internalizing robust notions of risk, hazard, or alignment.” They list real-world safety evaluation, safety generalization across tasks and environments, safety for generalist embodied foundation models as well as physical AI governance as open challenges for the field.
+
+[^4]: For a broader taxonomy that includes privacy, anthropomorphization, emotional dependency and labor displacement, among others, see [The Case for Physical AI Safety](https://paisi.ai/the-case-for-physical-ai-safety).
+
+[^5]: The [ASIMOV benchmark](https://arxiv.org/abs/2503.08663) explicitly takes into account physical harm as downstream consequences of robot actions.
+
+[^6]: See FAQ 3 for why most safety cases beyond physical harm on impact are not covered by existing safety standards.
+
+[^7]: The concept of reward hacking originated in the context of reinforcement learning for robots; see [Randløv & Alstrøm](https://www.researchgate.net/profile/Preben-Alstrom/publication/221346431_Learning_to_Drive_a_Bicycle_Using_Reinforcement_Learning_and_Shaping/links/02e7e52ded857eb896000000/Learning-to-Drive-a-Bicycle-Using-Reinforcement-Learning-and-Shaping.pdf).
+
+[^8]: The physical aspects of the digital intelligence explosion are interesting pointers: The energy and water consumption of datacenters are [raising widespread public concern](https://www.nytimes.com/2026/08/08/climate/amazon-data-center-texas-pollution.html), and efforts to reduce the energy and water footprint of frontier AI systems are outrun by growth. A fully automated and largely self-sustaining manufacturing sector may have similar dynamics (unsustainable resource use and disregard of the needs of human communities).
+
+[^9]: The [Auki Whitepaper](https://auki.gitbook.io/whitepaper/introduction/part-4-glassholes-and-privacy) makes a compelling case for disempowerment as a consequence of widespread, centralized data collection with intelligent physical devices.
+
+[^10]: For a survey on mechanistic interpretability for multimodal foundation models, see [Lin et al.](https://arxiv.org/abs/2502.17516)
+
+[^11]: The exact role of embodiment in human cognition remains hotly debated: See [Paolo et al.](https://arxiv.org/abs/2402.03824) vs. [Ma et al.](https://arxiv.org/abs/2601.17588) for recent takes on both sides of the argument.
+
+[^12]: See e.g. [Bad World](https://arxiv.org/html/2606.16519) and [False Prophets](https://arxiv.org/abs/2607.23147v1) for the vulnerabilities of world models in general, and [Liu et al.](https://arxiv.org/abs/2607.28226) for a survey on the security of world models in physical AI.
+
+[^13]: Factory production in 1830s Britain created large numbers of industrial amputations, particularly of the hands and fingers ([source](https://victorianweb.org/technology/ir/capuano.html)).

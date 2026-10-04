@@ -8,11 +8,20 @@ toc: true
 ---
 
 import Figure from '../../components/Figure.astro';
+import Summary from '../../components/Summary.astro';
 import img_horse from '../../assets/img/physical-ai-scaling/horse-in-motion.jpg';
 
 <Figure src={img_horse} alt="A card of twelve photographs in a three-by-four grid, each showing a jockey on a galloping horse against a backdrop of numbered vertical lines. Read in order, the frames break one stride into its phases; in some of them all four hooves are off the ground. Printed beneath: The Horse in Motion, illustrated by Muybridge. Sallie Gardner, owned by Leland Stanford, running at a 1:40 gait over the Palo Alto track, 19th June 1878." width="bleed" loading="eager">
   Eadweard Muybridge, <em>The Horse in Motion</em> (1878): the first motion-capture dataset. Public domain, via <a href="https://commons.wikimedia.org/wiki/File:The_Horse_in_Motion_high_res.jpg">Wikimedia Commons</a>.
 </Figure>
+
+<Summary>
+
+## Summary
+
+Recent studies on imitation learning, vision-language-action models and robot foundation models find that physical AI follows LLM-style scaling laws: Performance grows as a power law with data, data diversity matters more than raw volume, and additional data can trigger phase shifts to qualitatively higher capabilities. Large uncertainties remain, as robot datasets are orders of magnitude smaller than LLM training corpora, touch may be bottlenecked by sensor hardware rather than data, and no one has yet published a scaling law for real-world robot success. For safety, this means we urgently need evidence on how failure rates in the long tail scale with data, and that tracking new sources of embodied data may help forecast when step changes in robot capabilities will arrive.
+
+</Summary>
 
 I spend a lot of time these days thinking about the future of robot intelligence. To make good decisions about what models to test and what kinds of safety technologies to develop, I often find myself wishing for a crystal ball that could tell me what robot brains in 1, 3 or 10 years will look like. Given the lack of oracles in the world, we have to fall back on our intuitions and empirical learnings from the past. One such intuition is that we may be able to make predictions about AI by decomposing it into three necessary components: Algorithms, hardware, and data. In robotics, as in LLMs, these are not independent: Certain types of learning algorithms may need significantly larger amounts of data than others, and the availability and properties of certain types of hardware (such as efficient GPUs) may make some algorithms viable that were previously not.[^1]
 

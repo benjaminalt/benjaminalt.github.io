@@ -15,10 +15,13 @@ const stripDate = ({ entry }: { entry: string }) =>
 
 const posts = defineCollection({
   loader: glob({ base: './src/content/posts', pattern: '**/*.{md,mdx}', generateId: stripDate }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
     date: z.coerce.date(),
     description: z.string().optional(),
+    /** Social preview card (og:image); ~1200×628 reads best. Without it, the post's
+     *  opening <Figure> is used (src/lib/banner.ts), then the portrait. */
+    image: image().optional(),
     tags: listish,
     categories: listish,
     /** Escape hatch: pin the URL year if a frontmatter date is ever corrected. */

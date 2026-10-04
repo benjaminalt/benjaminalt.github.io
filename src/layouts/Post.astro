@@ -5,6 +5,8 @@ import { isoDate, slugifyTag } from '../lib/content';
 import type { Post } from '../lib/content';
 import Toc from '../components/Toc.astro';
 import type { MarkdownHeading } from 'astro';
+import { getImage } from 'astro:assets';
+import { bannerImage } from '../lib/banner';
 
 interface Props { post: Post; kind?: 'post' | 'news'; headings?: MarkdownHeading[] }
 const { post, kind = 'post', headings = [] } = Astro.props;
@@ -13,9 +15,14 @@ const tags: string[] = (post.data as any).tags ?? [];
 const math: boolean = (post.data as any).math ?? false;
 const note: string | undefined = (post.data as any).note;
 const acknowledgements: string | undefined = (post.data as any).acknowledgements;
+// Preview card: explicit frontmatter `image`, else the banner the post opens with.
+const image = (post.data as any).image ?? bannerImage(post as Post);
+const ogImage = image
+  ? (await getImage({ src: image, format: 'jpg', width: Math.min(1200, image.width) })).src
+  : undefined;
 ---
 
-<Base title={title} description={description} bare ogType="article" publishedTime={date}>
+<Base title={title} description={description} bare ogType="article" publishedTime={date} ogImage={ogImage}>
   {math && <link rel="stylesheet" href="/katex/katex.min.css" slot="head" />}
   <article class="container">
     <header class="head">

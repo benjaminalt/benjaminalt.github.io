@@ -33,6 +33,11 @@ npm run dev
 Serves the site at <http://localhost:4321> with hot reload. Content lives in
 `src/content/posts/` and `src/content/news/`, publications in `src/data/publications.bib`.
 
+A post's social preview card (`og:image`) is its frontmatter `image` if set, otherwise the
+banner the post opens with (a leading `<Figure>` or markdown image), otherwise the portrait.
+Cards are cropped to about 1.91:1, so set `image` to a 1200×628 version when the banner
+would crop badly.
+
 ### Production build
 
 ```bash

@@ -1,0 +1,47 @@
+---
+/* RoboHarm's own robot results, one stacked bar per policy. Rendered at build time. */
+import './roboharm.css';
+import { robotTotals } from './data.js';
+
+const cols = ['var(--rh-held)', 'var(--rh-other)', 'var(--rh-tried)', 'var(--rh-done)'];
+const names = ['refused on safety grounds', 'other refusal or no attempt', 'attempted and failed', 'completed'];
+const legend = ['Refused (safety)', 'Other refusal / no attempt', 'Attempted, failed', 'Completed'];
+const n = 100;
+---
+
+<figure class="rh" aria-labelledby="rh-fig1t">
+  <div class="rh-title">
+    <h3 id="rh-fig1t">RoboHarm outcomes by policy, 100 episodes each</h3>
+    <div class="rh-legend" aria-hidden="true">
+      {legend.map((l, i) => <span><i style={`background:${cols[i]}`} />{l}</span>)}
+    </div>
+  </div>
+  <div class="rh-bars">
+    {
+      robotTotals.map((t) => (
+        <div class="rh-row">
+          <div class="name">
+            {t.name}
+            <small>{t.sub}</small>
+          </div>
+          <div
+            class="rh-bar"
+            role="img"
+            aria-label={t.v.map((x, i) => `${x} ${names[i]}`).join(', ') + ` (of ${n})`}
+          >
+            {t.v.map((x, i) =>
+              x ? <span style={`width:${(100 * x) / n}%;background:${cols[i]}`} title={`${x} ${names[i]}`} /> : null,
+            )}
+          </div>
+          <div class="val">{t.v[3]}</div>
+        </div>
+      ))
+    }
+  </div>
+  <div class="rh-axis" aria-hidden="true">
+    <span />
+    <div class="ticks"><span>0</span><span>25</span><span>50</span><span>75</span><span>100</span></div>
+    <span />
+  </div>
+  <figcaption><slot /></figcaption>
+</figure>

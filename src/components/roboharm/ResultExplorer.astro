@@ -1,0 +1,112 @@
+---
+/* Per-scene, per-model sample responses with the scene's camera image. */
+import './roboharm.css';
+import brick from '../../assets/img/roboharm/roboharm-brick-setup.jpg';
+import burner from '../../assets/img/roboharm/roboharm-burner-setup.jpg';
+import doll from '../../assets/img/roboharm/roboharm-doll-setup.jpg';
+import pour from '../../assets/img/roboharm/roboharm-pour-setup.jpg';
+import toaster from '../../assets/img/roboharm/roboharm-toaster-setup.jpg';
+
+const images = { brick: brick.src, burner: burner.src, doll: doll.src, pour: pour.src, toaster: toaster.src };
+---
+
+<figure class="rh" aria-labelledby="rh-ext" data-rh-explorer data-images={JSON.stringify(images)}>
+  <div class="rh-explorer">
+    <div class="rh-title"><h3 id="rh-ext">Result samples</h3></div>
+    <div class="rh-ctrls">
+      <div class="rh-seg" role="group" aria-label="Scene" data-tabs="scene"></div>
+      <div class="rh-seg" role="group" aria-label="Model" data-tabs="model"></div>
+    </div>
+    <div class="rh-instr"><span class="label">Instruction</span><span data-instr></span></div>
+    <div class="rh-split">
+      <figure>
+        <h4>Camera image · framing 4</h4>
+        <img data-img src={brick.src} width="640" height="360" alt="" />
+        <figcaption data-cap></figcaption>
+      </figure>
+      <div>
+        <h4>Model output</h4>
+        <div class="rh-answers" data-answers></div>
+      </div>
+    </div>
+  </div>
+  <figcaption><slot /></figcaption>
+</figure>
+
+<script>
+  import { scenes, framings, unsafeN, responses, chipText, modelName } from './data.js';
+
+  type Key = 'scene' | 'model';
+  const KEY = 'roboharm-explorer';
+
+  document.querySelectorAll<HTMLElement>('[data-rh-explorer]').forEach((root) => {
+    const images: Record<string, string> = JSON.parse(root.dataset.images ?? '{}');
+    let state: Record<Key, string> = { scene: 'brick', model: 'astra' };
+    try {
+      const saved = JSON.parse(localStorage.getItem(KEY) || 'null');
+      if (saved && saved.scene in scenes && saved.model in responses) state = saved;
+    } catch {}
+
+    const $ = <T extends HTMLElement>(sel: string) => root.querySelector<T>(sel)!;
+
+    function tabs(key: Key, items: [string, string][]) {
+      const el = $(`[data-tabs="${key}"]`);
+      el.replaceChildren(
+        ...items.map(([id, label]) => {
+          const b = document.createElement('button');
+          b.type = 'button';
+          b.textContent = label;
+          b.setAttribute('aria-pressed', String(state[key] === id));
+          b.addEventListener('click', () => {
+            state[key] = id;
+            try { localStorage.setItem(KEY, JSON.stringify(state)); } catch {}
+            render();
+          });
+          return b;
+        }),
+      );
+    }
+
+    const unsafeLabel = (u: number | string | null) =>
+      u === null ? 'no response' : (typeof u === 'number' ? `${u}/5` : u) + ' unsafe';
+
+    function render() {
+      tabs('scene', Object.entries(scenes).map(([k, s]) => [k, s.label]));
+      tabs('model', Object.entries(modelName) as [string, string][]);
+      const sc = (scenes as any)[state.scene];
+      $('[data-instr]').textContent = sc.instr;
+      const img = $<HTMLImageElement>('[data-img]');
+      img.src = images[state.scene];
+      img.width = sc.px[0];
+      img.height = sc.px[1];
+      img.alt = sc.alt;
+      $('[data-cap]').textContent = `RoboHarm setup photo from the robot's top camera, ${sc.px[0]}×${sc.px[1]} pixels. CC BY-NC 4.0, Robocurve.`;
+
+      const counts: any[] = (unsafeN as any)[state.model][state.scene];
+      const samples: any[] = (responses as any)[state.model][state.scene];
+      $('[data-answers]').replaceChildren(
+        ...samples.map((x, i) => {
+          const d = document.createElement('div');
+          d.className = 'rh-ans';
+          const h = document.createElement('header');
+          const lvl = document.createElement('span');
+          lvl.className = 'lvl';
+          lvl.textContent = `${i + 1} · ${framings[i]}`;
+          const chip = document.createElement('span');
+          chip.className = `rh-chip ${x[0]}`;
+          chip.textContent = (chipText as any)[x[0]];
+          const n = document.createElement('span');
+          n.className = 'lvl';
+          n.textContent = unsafeLabel(counts[i]);
+          h.append(lvl, chip, n);
+          const p = document.createElement('p');
+          if (x[2]) p.className = 'mono';
+          p.textContent = x[1];
+          d.append(h, p);
+          return d;
+        }),
+      );
+    }
+    render();
+  });
+</script>

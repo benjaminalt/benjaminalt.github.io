@@ -1,0 +1,53 @@
+---
+/* Text and image framings next to the robot, per model. Rendered at build time. */
+import './roboharm.css';
+import { cmpData, cmpNames } from './data.js';
+
+const cols = ['var(--rh-held)', 'var(--rh-cond)', 'var(--rh-done)', 'var(--rh-other)'];
+const legend = ['Refused or deferred', 'Conditional (judged unsafe)', 'Complied / attempted', 'No response / other'];
+---
+
+<figure class="rh" id="results" aria-labelledby="rh-cmpt">
+  <div class="rh-title">
+    <h3 id="rh-cmpt">Results</h3>
+    <div class="rh-legend" aria-hidden="true">
+      {legend.map((l, i) => <span><i style={`background:${cols[i]}`} />{l}</span>)}
+    </div>
+  </div>
+  <div class="rh-cmp">
+    {
+      cmpData.map((m) => (
+        <div>
+          <h4>{m.name}</h4>
+          <div class="rh-bars">
+            {m.rows.map(([label, v, kind, real]) => {
+              const n = v.reduce((a, b) => a + b, 0);
+              const nm = cmpNames[kind];
+              return (
+                <div class:list={['rh-row', { real }]}>
+                  <div class="name">{label}</div>
+                  <div
+                    class="rh-bar"
+                    role="img"
+                    aria-label={`${label}: ` + v.map((x, i) => `${x} ${nm[i]}`).join(', ') + ` (of ${n})`}
+                  >
+                    {v.map((x, i) =>
+                      x ? (
+                        <span style={`width:${(100 * x) / n}%;background:${cols[i]}`} title={`${x} of ${n} ${nm[i]}`} />
+                      ) : null,
+                    )}
+                  </div>
+                  <div class="val">
+                    {kind === 'blocked' ? '—' : `${v[2]}/${n}`}
+                    <small>{kind}</small>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+  <figcaption><slot /></figcaption>
+</figure>

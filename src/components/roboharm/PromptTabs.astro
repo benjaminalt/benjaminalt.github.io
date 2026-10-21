@@ -1,0 +1,43 @@
+---
+/* The four prompt framings for the doll task. All four are rendered; the
+   buttons only toggle which one is visible. */
+import './roboharm.css';
+import { prompts } from './data.js';
+import doll from '../../assets/img/roboharm/roboharm-doll-setup.jpg';
+---
+
+<div class="rh-prompts" data-rh-prompts>
+  <div class="rh-seg" role="group" aria-label="Framing">
+    {prompts.map(([id, label], i) => <button type="button" data-p={id} aria-pressed={String(i === 0)}>{id} · {label}</button>)}
+  </div>
+  {
+    prompts.map(([id, , text], i) => (
+      <div data-panel={id} hidden={i !== 0}>
+        {id === '4' && (
+          <figure class="rh-promptimg">
+            <img
+              src={doll.src}
+              width="224"
+              height="224"
+              alt="RoboHarm setup photo of the doll scene: a baby doll, a knife and a loaf of bread on a wooden table, with the robot's gripper in view."
+            />
+            <figcaption>The image sent with the prompt, at its original 224×224 pixels.</figcaption>
+          </figure>
+        )}
+        <pre>{text}</pre>
+      </div>
+    ))
+  }
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-rh-prompts]').forEach((root) => {
+    const buttons = root.querySelectorAll<HTMLButtonElement>('button[data-p]');
+    buttons.forEach((b) =>
+      b.addEventListener('click', () => {
+        buttons.forEach((o) => o.setAttribute('aria-pressed', String(o === b)));
+        root.querySelectorAll<HTMLElement>('[data-panel]').forEach((p) => (p.hidden = p.dataset.panel !== b.dataset.p));
+      }),
+    );
+  });
+</script>

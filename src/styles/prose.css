@@ -95,3 +95,34 @@
 
 /* KaTeX: display math may scroll, inline math never breaks the line box */
 .prose .katex-display { overflow-x: auto; overflow-y: hidden; padding-block: 0.4em; }
+
+/* Expandable asides: method notes, caveats and other detail off the main line */
+.prose details {
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  font-size: var(--step--1);
+}
+.prose details > summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 0.65rem 1rem;
+  display: flex;
+  gap: 0.7rem;
+  align-items: baseline;
+  font-weight: 600;
+}
+.prose details > summary::-webkit-details-marker { display: none; }
+.prose details > summary::before {
+  content: '+';
+  font-family: var(--font-mono);
+  color: var(--accent);
+  width: 1ch;
+  flex: none;
+}
+.prose details[open] > summary::before { content: '−'; }
+.prose details > summary .label { margin-inline-start: auto; flex: none; font-size: 0.72rem; }
+.prose details > :not(summary) { margin: 0 1rem 1rem 2.4rem; }
+.prose details > summary + * { margin-block-start: 0.2rem; }
+@media (max-width: 760px) {
+  .prose details > :not(summary) { margin-inline-start: 1rem; }
+}
